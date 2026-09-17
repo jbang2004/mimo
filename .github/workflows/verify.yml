@@ -1,0 +1,79 @@
+name: Verify public observatory
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [index.html, app.v2.js, styles.v2.css, .github/workflows/verify.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install browser
+        run: |
+          python -m pip install playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Verify actual public website
+        run: |
+          python - <<'PY'
+          import json, time
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          out = Path('site-verification'); out.mkdir(exist_ok=True)
+          result = {'ok': False, 'url': 'https://mimo.waveshift.net/'}
+          try:
+              with sync_playwright() as p:
+                  browser = p.chromium.launch(headless=True)
+                  page = browser.new_page(viewport={'width': 1440, 'height': 1100})
+                  errors = []; page.on('pageerror', lambda e: errors.append(str(e)))
+                  status = None
+                  for attempt in range(6):
+                      r = page.goto(result['url'] + '?verify=' + str(int(time.time())), wait_until='networkidle', timeout=45000)
+                      status = r.status if r else None
+                      version = page.locator('meta[name="observatory-version"]')
+                      if status == 200 and version.count() and version.get_attribute('content') == '2.0':
+                          break
+                      page.wait_for_timeout(10000)
+                  assert status == 200, f'HTTP status: {status}'
+                  assert page.locator('meta[name="observatory-version"]').get_attribute('content') == '2.0'
+                  page.wait_for_selector('#status-label:has-text("已核验")', timeout=20000)
+                  assert page.locator('.chart').count() == 2
+                  assert page.locator('.attempt').count() == 16
+                  assert page.locator('.attempt.success').count() == 6
+                  result.update(http_status=status, title=page.title(), headline=page.locator('#headline').inner_text(),
+                                status=page.locator('#status-label').inner_text(), checked_at=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()))
+                  page.screenshot(path=str(out/'desktop.png'), full_page=True)
+                  page.set_viewport_size({'width':390,'height':844})
+                  assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Mobile overflow'
+                  page.screenshot(path=str(out/'mobile.png'), full_page=True)
+                  page.locator('[data-mode="all"]').click()
+                  assert page.locator('.attempt.success').count() == 16
+                  page.locator('[data-mode="none"]').click()
+                  assert page.locator('.attempt.success').count() == 0
+                  page.locator('[data-mode="mixed"]').click()
+                  page.locator('#train-model').select_option('flash')
+                  assert page.locator('#train-chart .chart.flash').count() == 1
+                  page.locator('#bench-model').select_option('flash')
+                  assert page.locator('#bench-chart .chart.flash').count() == 1
+                  assert not errors, str(errors)
+                  result.update(ok=True, charts=2, teaching_attempts=16, mobile_width=390, javascript_errors=errors)
+                  browser.close()
+          except Exception as exc:
+              result['error'] = f'{type(exc).__name__}: {exc}'
+              raise
+          finally:
+              (out/'result.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+              print(json.dumps(result, ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: observatory-site-verification
+          path: site-verification/
+          retention-days: 7
