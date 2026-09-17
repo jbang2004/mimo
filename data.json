@@ -1,0 +1,57 @@
+{
+  "updated_at": "2026-09-17 11:58 CST",
+  "models": {
+    "pro": {
+      "phase": "Step 11 · training",
+      "step": 11,
+      "step_delta": "+1",
+      "dynsam": "0.590",
+      "dynsam_delta": "+0.026 vs Step 1",
+      "deepswe": "62.24",
+      "deepswe_delta": "checkpoint ~Step 8",
+      "tokens": "20.6B+",
+      "context": "~89K",
+      "cost": "$740K+",
+      "reward": "~0.582",
+      "zero": "~15.0%",
+      "one": "~21.3%",
+      "grad_norm": "~0.0061",
+      "kl": "~0.0088",
+      "turns": "~55.0",
+      "infra_error": "~0.61%",
+      "step_time": "~2h 06m"
+    },
+    "flash": {
+      "phase": "Step 17 · rollout",
+      "step": 17,
+      "step_delta": "+1",
+      "dynsam": "0.603",
+      "dynsam_delta": "+0.089 vs Step 1",
+      "deepswe": "60.77",
+      "deepswe_delta": "checkpoint ~Step 12",
+      "tokens": "37.8B+",
+      "context": "~104K",
+      "cost": "$321K+",
+      "reward": "~0.581",
+      "zero": "~14.9%",
+      "one": "~21.8%",
+      "grad_norm": "~0.0055",
+      "kl": "~0.0083",
+      "turns": "~52.6",
+      "infra_error": "~0.56%",
+      "step_time": "~1h 50m"
+    }
+  },
+  "analysis": {
+    "signal": "中",
+    "headline": "训练仍在健康推进，Flash 的相对增益更明显",
+    "summary": "当前公开曲线没有显示 reward 坍塌、梯度异常或明显的 train/infer 偏离。Flash 的 dynsam 提升幅度显著大于 Pro，更像是起点较低后的快速追赶；但 Pro 的已公开 DeepSWE checkpoint 仍略高。真正值得等待的是下一批外部 benchmark：如果训练内 reward 继续涨而 DeepSWE 不再提升，才可能出现收益递减或过拟合训练分布。"
+  },
+  "history": [
+    {
+      "time": "2026-09-17 11:58 CST",
+      "title": "建立基线快照",
+      "text": "Pro 已进入 Step 11，Flash 已进入 Step 17。当前最明显的结构性现象是 Flash 训练内指标提升更快，但外部 DeepSWE checkpoint 仍未超过 Pro。"
+    }
+  ]
+}
