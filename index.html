@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="light" />
+<title>MiMo RL Watch</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#171717;--muted:#747474;--line:#e8e7e3;--orange:#ff6900;--purple:#635bff;--green:#178a55;--red:#c53b36;--shadow:0 1px 2px rgba(0,0,0,.03),0 10px 30px rgba(0,0,0,.035)}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:-.01em}.wrap{max-width:1180px;margin:auto;padding:34px 24px 70px}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:28px}.eyebrow{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.title{font-size:36px;line-height:1.05;margin:8px 0 10px;font-weight:750;letter-spacing:-.04em}.sub{font-size:14px;color:var(--muted);max-width:720px;line-height:1.7}.live{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);white-space:nowrap;margin-top:4px}.dot{width:8px;height:8px;background:#28a66a;border-radius:50%;box-shadow:0 0 0 5px rgba(40,166,106,.1)}.hero{display:grid;grid-template-columns:1fr 1fr;gap:16px}.model{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.modelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.modelname{font-weight:700;font-size:17px}.badge{font-size:11px;padding:6px 9px;border-radius:99px;background:#f1f1ee;color:#555}.bigrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.metric .label{font-size:11px;color:var(--muted);margin-bottom:6px}.metric .value{font-size:25px;font-weight:730;letter-spacing:-.035em}.metric .delta{font-size:11px;margin-top:5px}.up{color:var(--green)}.down{color:var(--red)}.section{margin-top:28px}.section-title{font-size:13px;font-weight:700;margin:0 0 12px;letter-spacing:.01em}.insight{background:#171717;color:white;border-radius:20px;padding:24px;display:grid;grid-template-columns:130px 1fr;gap:20px}.score{font-size:12px;color:#aaa}.score strong{display:block;color:white;font-size:38px;line-height:1;margin-top:10px;letter-spacing:-.04em}.insight h2{font-size:20px;margin:0 0 8px}.insight p{margin:0;color:#d0d0d0;line-height:1.75;font-size:14px}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}.table{width:100%;border-collapse:collapse;font-size:13px}.table th{text-align:left;color:var(--muted);font-weight:500;padding:0 0 10px;border-bottom:1px solid var(--line)}.table td{padding:12px 0;border-bottom:1px solid #f0efec}.table tr:last-child td{border-bottom:0}.table td:nth-child(n+2),.table th:nth-child(n+2){text-align:right}.log{display:flex;flex-direction:column;gap:12px}.logitem{padding:14px 0;border-bottom:1px solid var(--line)}.logitem:first-child{padding-top:0}.logitem:last-child{border-bottom:0}.time{font-size:11px;color:var(--muted);margin-bottom:5px}.logtitle{font-size:14px;font-weight:650;margin-bottom:5px}.logtext{font-size:13px;color:#5f5f5f;line-height:1.65}.footer{margin-top:30px;color:#999;font-size:11px;display:flex;justify-content:space-between;gap:16px}.footer a{color:#666;text-decoration:none}.skeleton{animation:pulse 1.2s infinite alternate}@keyframes pulse{to{opacity:.45}}
+@media(max-width:820px){.wrap{padding:24px 16px 50px}.top{display:block}.live{margin-top:16px}.hero,.grid{grid-template-columns:1fr}.bigrow{grid-template-columns:repeat(3,1fr)}.insight{grid-template-columns:1fr}.title{font-size:31px}}
+@media(max-width:520px){.bigrow{grid-template-columns:1fr 1fr}.metric .value{font-size:22px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <div><div class="eyebrow">Independent training monitor</div><h1 class="title">MiMo RL Watch</h1><div class="sub">每小时追踪小米 MiMo-V2.6 Pro / Flash 强化学习公开训练进度。重点不是复述数字，而是判断训练是否仍在有效学习、是否出现收益递减、异常波动，以及 Pro 与 Flash 的分化。</div></div>
+    <div class="live"><span class="dot"></span><span id="updated">载入中…</span></div>
+  </div>
+
+  <div id="hero" class="hero"></div>
+
+  <section class="section">
+    <h3 class="section-title">本小时结论</h3>
+    <div class="insight"><div class="score">信号强度<strong id="signal">—</strong></div><div><h2 id="headline">正在读取最新分析</h2><p id="summary">—</p></div></div>
+  </section>
+
+  <section class="section grid">
+    <div class="card"><h3 class="section-title">关键指标对比</h3><table class="table"><thead><tr><th>指标</th><th>Pro</th><th>Flash</th></tr></thead><tbody id="metrics"></tbody></table></div>
+    <div class="card"><h3 class="section-title">监控记录</h3><div id="log" class="log"></div></div>
+  </section>
+
+  <div class="footer"><span>数据来源：Xiaomi MiMo 公开 RL Dashboard · 分析为独立解读，并非小米官方结论</span><a href="https://mimo.xiaomi.com/rl/" target="_blank" rel="noreferrer">打开官方页面 ↗</a></div>
+</main>
+<script>
+const fmt=v=>v===null||v===undefined?'—':v;
+const delta=(v)=>!v?'':`<div class="delta ${String(v).startsWith('-')?'down':'up'}">${v}</div>`;
+function modelCard(name,m){return `<article class="model"><div class="modelhead"><div class="modelname">${name}</div><div class="badge">${fmt(m.phase)}</div></div><div class="bigrow"><div class="metric"><div class="label">Step</div><div class="value">${fmt(m.step)}</div>${delta(m.step_delta)}</div><div class="metric"><div class="label">dynsam avg@n</div><div class="value">${fmt(m.dynsam)}</div>${delta(m.dynsam_delta)}</div><div class="metric"><div class="label">DeepSWE</div><div class="value">${fmt(m.deepswe)}</div>${delta(m.deepswe_delta)}</div><div class="metric"><div class="label">累计 Tokens</div><div class="value">${fmt(m.tokens)}</div></div><div class="metric"><div class="label">Avg Context</div><div class="value">${fmt(m.context)}</div></div><div class="metric"><div class="label">成本</div><div class="value">${fmt(m.cost)}</div></div></div></article>`}
+async function load(){try{const r=await fetch('data.json?ts='+Date.now(),{cache:'no-store'});const d=await r.json();document.getElementById('updated').textContent='更新于 '+d.updated_at;document.getElementById('hero').innerHTML=modelCard('MiMo-V2.6 Pro',d.models.pro)+modelCard('MiMo-V2.6 Flash',d.models.flash);document.getElementById('signal').textContent=d.analysis.signal;document.getElementById('headline').textContent=d.analysis.headline;document.getElementById('summary').textContent=d.analysis.summary;const rows=[['Reward mean','reward'],['Passrate zero','zero'],['Passrate one','one'],['Grad norm','grad_norm'],['Train/Infer KL','kl'],['Avg turns','turns'],['Infra error','infra_error'],['Step time','step_time']];document.getElementById('metrics').innerHTML=rows.map(([n,k])=>`<tr><td>${n}</td><td>${fmt(d.models.pro[k])}</td><td>${fmt(d.models.flash[k])}</td></tr>`).join('');document.getElementById('log').innerHTML=(d.history||[]).slice().reverse().slice(0,8).map(x=>`<div class="logitem"><div class="time">${x.time}</div><div class="logtitle">${x.title}</div><div class="logtext">${x.text}</div></div>`).join('')||'<div class="logtext">等待下一次监控更新。</div>'}catch(e){document.getElementById('updated').textContent='数据暂时无法读取';document.getElementById('headline').textContent='页面已上线，等待数据更新';document.getElementById('summary').textContent='监控数据文件尚未就绪或正在更新。';}}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>
