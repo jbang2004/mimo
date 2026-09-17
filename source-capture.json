@@ -1,207 +1,11 @@
 {
-  "captured_at": "2026-09-17T10:00:35+00:00",
+  "captured_at": "2026-09-17T11:42:31+00:00",
   "source_url": "https://mimo.xiaomi.com/rl/",
   "capture_ok": true,
   "note": "Public browser capture; source material, not verified analysis.",
   "http_status": 200,
   "summary": {
     "runs": {
-      "pro": {
-        "run": {
-          "key": "pro",
-          "label": "mimo-v2.6-pro",
-          "start": 1789468339.334,
-          "end": null,
-          "mode": "live"
-        },
-        "clock": {
-          "now": 1789639236.9681027
-        },
-        "version": "3-5513.14.7.0",
-        "step": {
-          "last": 14,
-          "last_wall": 1789627881.7613647,
-          "since": 1879.6341025829315,
-          "expected": 9416.42,
-          "progress": 0.1996123901209729,
-          "phase": "rollout",
-          "gen_frac": 0.5195222844942621,
-          "restarted_at": 1789637357.334
-        },
-        "totals": {
-          "tokens_step": 2649950000.0,
-          "trained_step": 25088.0,
-          "sandboxes_step": 178352.0,
-          "prompts_per_step": 1568.0,
-          "tokens_cum": 30223660000.0,
-          "trained_cum": 351232.0,
-          "sandboxes_cum": 1961284.0,
-          "restarts": 6
-        },
-        "headline": {
-          "tag": "dynsam/avg@n",
-          "last": 0.615234,
-          "prev": 0.623849,
-          "first": 0.564662,
-          "first_step": 1
-        },
-        "cost": {
-          "rate_per_s": 5.71,
-          "so_far": 975825.4907257486
-        },
-        "events": [
-          {
-            "t": 1789475059.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789482975.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789492877.8213444,
-            "kind": "step",
-            "step": 1,
-            "value": 0.564662,
-            "delta": null,
-            "tokens": 1800520000.0,
-            "redo": false
-          },
-          {
-            "t": 1789498698.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789506681.7189453,
-            "kind": "step",
-            "step": 2,
-            "value": 0.555333,
-            "delta": -0.009329000000000032,
-            "tokens": 1730640000.0,
-            "redo": false
-          },
-          {
-            "t": 1789516937.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789526194.9290926,
-            "kind": "step",
-            "step": 3,
-            "value": 0.566948,
-            "delta": 0.011615000000000042,
-            "tokens": 1855440000.0,
-            "redo": false
-          },
-          {
-            "t": 1789533051.6273456,
-            "kind": "step",
-            "step": 4,
-            "value": 0.575625,
-            "delta": 0.008677000000000046,
-            "tokens": 2010940000.0,
-            "redo": false
-          },
-          {
-            "t": 1789540010.4015698,
-            "kind": "step",
-            "step": 5,
-            "value": 0.569944,
-            "delta": -0.005681000000000047,
-            "tokens": 2009690000.0,
-            "redo": false
-          },
-          {
-            "t": 1789546959.498796,
-            "kind": "step",
-            "step": 6,
-            "value": 0.585981,
-            "delta": 0.016036999999999968,
-            "tokens": 2118430000.0,
-            "redo": false
-          },
-          {
-            "t": 1789554781.2837293,
-            "kind": "step",
-            "step": 7,
-            "value": 0.588339,
-            "delta": 0.0023579999999999712,
-            "tokens": 2246470000.0,
-            "redo": false
-          },
-          {
-            "t": 1789562521.9800744,
-            "kind": "step",
-            "step": 8,
-            "value": 0.60271,
-            "delta": 0.014371000000000023,
-            "tokens": 2266550000.0,
-            "redo": false
-          },
-          {
-            "t": 1789571198.3765173,
-            "kind": "step",
-            "step": 9,
-            "value": 0.603837,
-            "delta": 0.0011269999999999891,
-            "tokens": 2327390000.0,
-            "redo": false
-          },
-          {
-            "t": 1789578788.328568,
-            "kind": "step",
-            "step": 10,
-            "value": 0.590406,
-            "delta": -0.01343099999999997,
-            "tokens": 2224380000.0,
-            "redo": false
-          },
-          {
-            "t": 1789588716.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789598901.2092798,
-            "kind": "step",
-            "step": 11,
-            "value": 0.614156,
-            "delta": 0.02375000000000005,
-            "tokens": 2164150000.0,
-            "redo": false
-          },
-          {
-            "t": 1789607960.959003,
-            "kind": "step",
-            "step": 12,
-            "value": 0.608784,
-            "delta": -0.005372000000000043,
-            "tokens": 2328100000.0,
-            "redo": false
-          },
-          {
-            "t": 1789617388.31858,
-            "kind": "step",
-            "step": 13,
-            "value": 0.623849,
-            "delta": 0.015064999999999995,
-            "tokens": 2491010000.0,
-            "redo": false
-          },
-          {
-            "t": 1789627881.7613647,
-            "kind": "step",
-            "step": 14,
-            "value": 0.615234,
-            "delta": -0.00861500000000004,
-            "tokens": 2649950000.0,
-            "redo": false
-          },
-          {
-            "t": 1789637357.334,
-            "kind": "restart"
-          }
-        ]
-      },
       "flash": {
         "run": {
           "key": "flash",
@@ -211,16 +15,16 @@
           "mode": "live"
         },
         "clock": {
-          "now": 1789639237.1400268
+          "now": 1789645354.0015087
         },
         "version": "3-5513.20.3.16",
         "step": {
           "last": 18,
           "last_wall": 1789638268.1659763,
-          "since": 968.9740505218506,
+          "since": 7085.835532426834,
           "expected": 8930.39,
-          "progress": 0.10850299376867648,
-          "phase": "rollout",
+          "progress": 0.7934519693346914,
+          "phase": "training",
           "gen_frac": 0.5134479009315382,
           "restarted_at": null
         },
@@ -243,7 +47,7 @@
         },
         "cost": {
           "rate_per_s": 2.855,
-          "so_far": 439235.6860567105
+          "so_far": 456699.3255875492
         },
         "events": [
           {
@@ -433,6 +237,206 @@
             "delta": 0.0010019999999999474,
             "tokens": 2822210000.0,
             "redo": false
+          }
+        ]
+      },
+      "pro": {
+        "run": {
+          "key": "pro",
+          "label": "mimo-v2.6-pro",
+          "start": 1789468339.334,
+          "end": null,
+          "mode": "live"
+        },
+        "clock": {
+          "now": 1789645354.003143
+        },
+        "version": "3-5513.14.8.15",
+        "step": {
+          "last": 14,
+          "last_wall": 1789627881.7613647,
+          "since": 1246.669142961502,
+          "expected": 9416.42,
+          "progress": 0.13239311149688546,
+          "phase": "rollout",
+          "gen_frac": 0.5195222844942621,
+          "restarted_at": 1789644107.334
+        },
+        "totals": {
+          "tokens_step": 2649950000.0,
+          "trained_step": 25088.0,
+          "sandboxes_step": 178352.0,
+          "prompts_per_step": 1568.0,
+          "tokens_cum": 30223660000.0,
+          "trained_cum": 351232.0,
+          "sandboxes_cum": 1961284.0,
+          "restarts": 7
+        },
+        "headline": {
+          "tag": "dynsam/avg@n",
+          "last": 0.615234,
+          "prev": 0.623849,
+          "first": 0.564662,
+          "first_step": 1
+        },
+        "cost": {
+          "rate_per_s": 5.71,
+          "so_far": 1010753.7608063102
+        },
+        "events": [
+          {
+            "t": 1789475059.334,
+            "kind": "restart"
+          },
+          {
+            "t": 1789482975.334,
+            "kind": "restart"
+          },
+          {
+            "t": 1789492877.8213444,
+            "kind": "step",
+            "step": 1,
+            "value": 0.564662,
+            "delta": null,
+            "tokens": 1800520000.0,
+            "redo": false
+          },
+          {
+            "t": 1789498698.334,
+            "kind": "restart"
+          },
+          {
+            "t": 1789506681.7189453,
+            "kind": "step",
+            "step": 2,
+            "value": 0.555333,
+            "delta": -0.009329000000000032,
+            "tokens": 1730640000.0,
+            "redo": false
+          },
+          {
+            "t": 1789516937.334,
+            "kind": "restart"
+          },
+          {
+            "t": 1789526194.9290926,
+            "kind": "step",
+            "step": 3,
+            "value": 0.566948,
+            "delta": 0.011615000000000042,
+            "tokens": 1855440000.0,
+            "redo": false
+          },
+          {
+            "t": 1789533051.6273456,
+            "kind": "step",
+            "step": 4,
+            "value": 0.575625,
+            "delta": 0.008677000000000046,
+            "tokens": 2010940000.0,
+            "redo": false
+          },
+          {
+            "t": 1789540010.4015698,
+            "kind": "step",
+            "step": 5,
+            "value": 0.569944,
+            "delta": -0.005681000000000047,
+            "tokens": 2009690000.0,
+            "redo": false
+          },
+          {
+            "t": 1789546959.498796,
+            "kind": "step",
+            "step": 6,
+            "value": 0.585981,
+            "delta": 0.016036999999999968,
+            "tokens": 2118430000.0,
+            "redo": false
+          },
+          {
+            "t": 1789554781.2837293,
+            "kind": "step",
+            "step": 7,
+            "value": 0.588339,
+            "delta": 0.0023579999999999712,
+            "tokens": 2246470000.0,
+            "redo": false
+          },
+          {
+            "t": 1789562521.9800744,
+            "kind": "step",
+            "step": 8,
+            "value": 0.60271,
+            "delta": 0.014371000000000023,
+            "tokens": 2266550000.0,
+            "redo": false
+          },
+          {
+            "t": 1789571198.3765173,
+            "kind": "step",
+            "step": 9,
+            "value": 0.603837,
+            "delta": 0.0011269999999999891,
+            "tokens": 2327390000.0,
+            "redo": false
+          },
+          {
+            "t": 1789578788.328568,
+            "kind": "step",
+            "step": 10,
+            "value": 0.590406,
+            "delta": -0.01343099999999997,
+            "tokens": 2224380000.0,
+            "redo": false
+          },
+          {
+            "t": 1789588716.334,
+            "kind": "restart"
+          },
+          {
+            "t": 1789598901.2092798,
+            "kind": "step",
+            "step": 11,
+            "value": 0.614156,
+            "delta": 0.02375000000000005,
+            "tokens": 2164150000.0,
+            "redo": false
+          },
+          {
+            "t": 1789607960.959003,
+            "kind": "step",
+            "step": 12,
+            "value": 0.608784,
+            "delta": -0.005372000000000043,
+            "tokens": 2328100000.0,
+            "redo": false
+          },
+          {
+            "t": 1789617388.31858,
+            "kind": "step",
+            "step": 13,
+            "value": 0.623849,
+            "delta": 0.015064999999999995,
+            "tokens": 2491010000.0,
+            "redo": false
+          },
+          {
+            "t": 1789627881.7613647,
+            "kind": "step",
+            "step": 14,
+            "value": 0.615234,
+            "delta": -0.00861500000000004,
+            "tokens": 2649950000.0,
+            "redo": false
+          },
+          {
+            "t": 1789637357.334,
+            "kind": "restart"
+          },
+          {
+            "t": 1789644107.334,
+            "kind": "restart"
           }
         ]
       }
@@ -667,7 +671,7 @@
       },
       "pro": {
         "run": "pro",
-        "version": "3-5513.14.7.0",
+        "version": "3-5513.14.8.15",
         "steps": [
           1,
           2,
@@ -2144,7 +2148,7 @@
       "ctx_total_length/mean": "total context length per trajectory (prompt + response), in tokens"
     }
   },
-  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$1,415,119\nBEIJING\n18:00:45\nLOS ANGELES\n03:00:45\nNEW YORK\n06:00:45\nLONDON\n11:00:45\n◐\nnotices\n7h 33m ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n13h 52m ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n16h 02m ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nin progress\nstep 14\n1d 23:28:24\nstarted 2026-09-15 10:32 UTC\nrestarting · trainer relaunched 31m 26s ago\ndynsam/avg@n · Δ vs step 1\n0.615 ▲0.051\ncost so far\n$975,864\ntokens · step 14\n2.65B\ntokens · total\n30.2B\nsamples trained\n351k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nin progress\nstep 18\n1d 18:44:14\nstarted 2026-09-15 15:16 UTC\nstep 19: rollout · 1,248/1,568 accepted · 16m 16s in\ndynsam/avg@n · Δ vs step 1\n0.602 ▲0.089\ncost so far\n$439,255\ntokens · step 18\n2.82B\ntokens · total\n43.1B\nsamples trained\n452k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 65.78\nmimo-v2.6-flash 60.77\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.615▼0.009\n0.602▲0.001\ncritic/rewards/mean\n0.588▼0.000237\n0.577▼0.00705\nactor/entropy_loss\n0.405▲0.00684\n0.433▼0.000691\nactor/pg_loss\n0.00583▼0.00155\n0.013▲0.00544\nactor/grad_norm\n0.00555▲0.000694\n0.00668▲0.00117\ntrain_infer_diff/new_infer/kl\n0.00937▲0.000844\n0.00834▲0.00339\nctx_total_length/mean\n106k▲6.6k\n116k▲7.3k\ndynsam/agg_turn/mean\n59.5▼5.33\n63.2▲10.6\nperf/total_num_tokens\n2.65B▲160M\n2.82B▲160M\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 1h 53m ago\n31m ago\ntrainer restarted\n1h 53m ago\naccepted 2,656/1,568 · judged 2,505 · pass 0.593 (n=10,393) · remaining 185 +881 partial +321 rewarding · prewarm 286\nstep 15\n1h 53m ago\naccepted 2,648/1,568 · judged 2,500 · pass 0.592 (n=10,381) · remaining 186 +892 partial +328 rewarding · prewarm 286\nstep 15\n1h 54m ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.592 (n=10,371) · remaining 191 +896 partial +332 rewarding · prewarm 286\nstep 15\n1h 54m ago\naccepted 2,632/1,568 · judged 2,483 · pass 0.592 (n=10,357) · remaining 198 +903 partial +343 rewarding · prewarm 286\nstep 15\n1h 54m ago\naccepted 2,624/1,568 · judged 2,476 · pass 0.592 (n=10,342) · remaining 205 +911 partial +342 rewarding · prewarm 286\nstep 15\n1h 55m ago\naccepted 2,616/1,568 · judged 2,469 · pass 0.592 (n=10,330) · remaining 211 +916 partial +358 rewarding · prewarm 286\nstep 15\n1h 55m ago\naccepted 2,608/1,568 · judged 2,458 · pass 0.593 (n=10,312) · remaining 218 +928 partial +376 rewarding · prewarm 286\nstep 15\n1h 55m ago\naccepted 2,600/1,568 · judged 2,450 · pass 0.592 (n=10,301) · remaining 223 +934 partial +379 rewarding · prewarm 286\nstep 15\n1h 56m ago\naccepted 2,592/1,568 · judged 2,442 · pass 0.592 (n=10,290) · remaining 228 +940 partial +347 rewarding · prewarm 286\nstep 15\n1h 56m ago\naccepted 2,584/1,568 · judged 2,438 · pass 0.592 (n=10,276) · remaining 238 +944 partial +367 rewarding · prewarm 286\nstep 15\n1h 56m ago\naccepted 2,576/1,568 · judged 2,429 · pass 0.593 (n=10,257) · remaining 244 +954 partial +374 rewarding · prewarm 286\nstep 15\n1h 57m ago\naccepted 2,568/1,568 · judged 2,417 · pass 0.593 (n=10,244) · remaining 255 +955 partial +363 rewarding · prewarm 287\nstep 15\n1h 57m ago\naccepted 2,560/1,568 · judged 2,408 · pass 0.592 (n=10,234) · remaining 262 +959 partial +374 rewarding · prewarm 287\nstep 15\n1h 57m ago\naccepted 2,552/1,568 · judged 2,403 · pass 0.592 (n=10,221) · remaining 271 +963 partial +391 rewarding · prewarm 287\nstep 15\n1h 58m ago\naccepted 2,544/1,568 · judged 2,393 · pass 0.592 (n=10,209) · remaining 282 +964 partial +398 rewarding · prewarm 287\nstep 15\n1h 58m ago\naccepted 2,536/1,568 · judged 2,385 · pass 0.592 (n=10,201) · remaining 285 +968 partial +370 rewarding · prewarm 287\nstep 15\n1h 58m ago\naccepted 2,528/1,568 · judged 2,372 · pass 0.592 (n=10,188) · remaining 298 +969 partial +359 rewarding · prewarm 287\nstep 15\n1h 59m ago\naccepted 2,520/1,568 · judged 2,366 · pass 0.592 (n=10,177) · remaining 302 +976 partial +366 rewarding · prewarm 287\nstep 15\n1h 59m ago\naccepted 2,512/1,568 · judged 2,358 · pass 0.592 (n=10,162) · remaining 307 +986 partial +384 rewarding · prewarm 287\nstep 15\n1h 59m ago\naccepted 2,504/1,568 · judged 2,349 · pass 0.592 (n=10,152) · remaining 312 +990 partial +361 rewarding · prewarm 287\nstep 15\n2h 00m ago\naccepted 2,496/1,568 · judged 2,341 · pass 0.592 (n=10,133) · remaining 323 +997 partial +351 rewarding · prewarm 288\nstep 15\n2h 00m ago\naccepted 2,488/1,568 · judged 2,335 · pass 0.592 (n=10,124) · remaining 331 +998 partial +362 rewarding · prewarm 288\nstep 15\n2h 00m ago\naccepted 2,480/1,568 · judged 2,329 · pass 0.591 (n=10,114) · remaining 335 +1,003 partial +356 rewarding · prewarm 288\nstep 15\n2h 00m ago\naccepted 2,472/1,568 · judged 2,320 · pass 0.591 (n=10,105) · remaining 338 +1,008 partial +371 rewarding · prewarm 288\nstep 15\n2h 01m ago\naccepted 2,464/1,568 · judged 2,317 · pass 0.592 (n=10,086) · remaining 346 +1,017 partial +357 rewarding · prewarm 289\nstep 15\n2h 01m ago\naccepted 2,456/1,568 · judged 2,309 · pass 0.592 (n=10,067) · remaining 354 +1,027 partial +357 rewarding · prewarm 289\nstep 15\n2h 01m ago\naccepted 2,448/1,568 · judged 2,304 · pass 0.592 (n=10,057) · remaining 357 +1,032 partial +349 rewarding · prewarm 289\nstep 15\n2h 02m ago\naccepted 2,440/1,568 · judged 2,296 · pass 0.592 (n=10,042) · remaining 367 +1,036 partial +361 rewarding · prewarm 290\nstep 15\n2h 02m ago\naccepted 2,432/1,568 · judged 2,290 · pass 0.592 (n=10,031) · remaining 374 +1,041 partial +362 rewarding · prewarm 290\nstep 15\n2h 02m ago\naccepted 2,424/1,568 · judged 2,284 · pass 0.591 (n=10,019) · remaining 381 +1,046 partial +352 rewarding · prewarm 290\nstep 15\n2h 02m ago\naccepted 2,416/1,568 · judged 2,276 · pass 0.592 (n=10,003) · remaining 390 +1,052 partial +354 rewarding · prewarm 290\nstep 15\n2h 03m ago\naccepted 2,400/1,568 · judged 2,260 · pass 0.592 (n=9,977) · remaining 417 +1,049 partial +357 rewarding · prewarm 290\nstep 15\n2h 03m ago\naccepted 2,392/1,568 · judged 2,252 · pass 0.592 (n=9,962) · remaining 425 +1,056 partial +393 rewarding · prewarm 290\nstep 15\n2h 04m ago\naccepted 2,384/1,568 · judged 2,242 · pass 0.592 (n=9,947) · remaining 440 +1,054 partial +449 rewarding · prewarm 290\nstep 15\n2h 04m ago\naccepted 2,368/1,568 · judged 2,218 · pass 0.592 (n=9,920) · remaining 453 +1,062 partial +361 rewarding · prewarm 292\nstep 15\n2h 05m ago\naccepted 2,360/1,568 · judged 2,212 · pass 0.591 (n=9,911) · remaining 465 +1,060 partial +380 rewarding · prewarm 292\nstep 15\n2h 05m ago\naccepted 2,352/1,568 · judged 2,208 · pass 0.592 (n=9,896) · remaining 481 +1,059 partial +366 rewarding · prewarm 292\nstep 15\n2h 05m ago\naccepted 2,344/1,568 · judged 2,196 · pass 0.591 (n=9,884) · remaining 492 +1,059 partial +390 rewarding · prewarm 293\nstep 15\n2h 06m ago\naccepted 2,336/1,568 · judged 2,190 · pass 0.592 (n=9,867) · remaining 494 +1,072 partial +390 rewarding · prewarm 295\nstep 15\nstep 15 · accepted 2,656/1,568 · last report before the restart\n1h 53m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t261 / 154\t\n\t0\t234\t178\ncode/dataset-zg6q\t213 / 154\t\n\t0\t202\t44\ncode/dataset-sin0\t208 / 154\t\n\t0\t185\t59\ncode/dataset-m1dt\t182 / 154\t\n\t0\t—\t50\ncode/dataset-x7wh\t233 / 129\t\n\t0\t202\t101\ncyber/dataset-9aui\t162 / 64\t\n\t0\t—\t209\ngeneral/dataset-trla\t94 / 64\t\n\t0\t—\t6\ngeneral/dataset-epqd\t93 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t96 / 63\t\n\t0\t81\t64\ncode/dataset-dnpn\t91 / 63\t\n\t0\t74\t13\ncode/dataset-yfch\t335 / 55\t\n\t0\t—\t198\ncode/dataset-bvg7\t75 / 52\t\n\t0\t65\t23\ncode/dataset-v7yx\t67 / 52\t\n\t0\t50\t28\nvisual/dataset-gtav\t61 / 41\t\n\t0\t—\t1\nvisual/dataset-jzd3\t60 / 41\t\n\t0\t—\t2\nvisual/dataset-ve5o\t58 / 31\t\n\t0\t—\t23\nvisual/dataset-053e\t57 / 31\t\n\t0\t—\t14\nvisual/dataset-ol8x\t54 / 31\t\n\t0\t—\t15\nvisual/dataset-pt5v\t48 / 31\t\n\t0\t—\t13\ngeneral/dataset-1doa\t47 / 31\t\n\t0\t—\t4\ncode/dataset-4onq\t46 / 31\t\n\t0\t—\t4\ngeneral/dataset-5610\t42 / 31\t\n\t0\t—\t9\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-eup7\t24 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t23 / 15\t\n\t0\t—\t1\ntotal\t2,656 / 1,568\t\t0\t2,505\t1,066\ndynamic sampler mimo-v2.6-flash\nfeed\nlog up to date\njust now\naccepted 1,248/1,568 · judged 1,219 · pass 0.600 (n=9,919) · remaining 1,461 +1,520 partial +413 rewarding · prewarm 512\nstep 19\njust now\naccepted 1,240/1,568 · judged 1,212 · pass 0.600 (n=9,899) · remaining 1,474 +1,491 partial +378 rewarding · prewarm 512\nstep 19\n1m ago\naccepted 1,232/1,568 · judged 1,205 · pass 0.600 (n=9,888) · remaining 1,479 +1,477 partial +382 rewarding · prewarm 512\nstep 19\n1m ago\naccepted 1,224/1,568 · judged 1,199 · pass 0.600 (n=9,875) · remaining 1,487 +1,460 partial +382 rewarding · prewarm 512\nstep 19\n2m ago\naccepted 1,216/1,568 · judged 1,190 · pass 0.600 (n=9,860) · remaining 1,502 +1,433 partial +342 rewarding · prewarm 512\nstep 19\n2m ago\naccepted 1,208/1,568 · judged 1,184 · pass 0.600 (n=9,846) · remaining 1,509 +1,416 partial +331 rewarding · prewarm 512\nstep 19\n2m ago\naccepted 1,200/1,568 · judged 1,177 · pass 0.600 (n=9,835) · remaining 1,520 +1,403 partial +333 rewarding · prewarm 512\nstep 19\n3m ago\naccepted 1,192/1,568 · judged 1,169 · pass 0.600 (n=9,824) · remaining 1,529 +1,373 partial +286 rewarding · prewarm 512\nstep 19\n3m ago\naccepted 1,184/1,568 · judged 1,165 · pass 0.600 (n=9,807) · remaining 1,550 +1,335 partial +260 rewarding · prewarm 512\nstep 19\n4m ago\naccepted 1,176/1,568 · judged 1,162 · pass 0.600 (n=9,795) · remaining 1,572 +1,305 partial +257 rewarding · prewarm 512\nstep 19\n5m ago\naccepted 1,168/1,568 · judged 1,155 · pass 0.601 (n=9,778) · remaining 1,605 +1,244 partial +264 rewarding · prewarm 512\nstep 19\n5m ago\naccepted 1,160/1,568 · judged 1,148 · pass 0.600 (n=9,766) · remaining 1,627 +1,206 partial +244 rewarding · prewarm 512\nstep 19\n7m ago\naccepted 1,152/1,568 · judged 1,143 · pass 0.601 (n=9,750) · remaining 1,661 +1,137 partial +171 rewarding · prewarm 512\nstep 19\n8m ago\naccepted 1,144/1,568 · judged 1,138 · pass 0.600 (n=9,740) · remaining 1,693 +1,083 partial +159 rewarding · prewarm 512\nstep 19\n9m ago\naccepted 1,136/1,568 · judged 1,132 · pass 0.600 (n=9,731) · remaining 1,740 +1,017 partial +127 rewarding · prewarm 512\nstep 19\n16m ago\naccepted 1,130/1,568 · judged 1,126 · pass 0.600 (n=9,723) · remaining 1,825 +896 partial +30 rewarding · prewarm 512\nstep 19\n16m ago\nstep 18 done · dynsam/avg@n 0.602 ▲0.001\n2.82B tok\n1h 30m ago\naccepted 2,680/1,568 · judged 2,568 · pass 0.600 (n=9,697) · remaining 49 +918 partial +142 rewarding · prewarm 274\nstep 18\n1h 30m ago\naccepted 2,672/1,568 · judged 2,557 · pass 0.600 (n=9,685) · remaining 50 +929 partial +143 rewarding · prewarm 274\nstep 18\n1h 31m ago\naccepted 2,664/1,568 · judged 2,547 · pass 0.599 (n=9,675) · remaining 50 +939 partial +148 rewarding · prewarm 274\nstep 18\n1h 31m ago\naccepted 2,656/1,568 · judged 2,539 · pass 0.599 (n=9,667) · remaining 52 +945 partial +141 rewarding · prewarm 274\nstep 18\n1h 31m ago\naccepted 2,648/1,568 · judged 2,529 · pass 0.599 (n=9,657) · remaining 54 +953 partial +146 rewarding · prewarm 274\nstep 18\n1h 32m ago\naccepted 2,640/1,568 · judged 2,521 · pass 0.599 (n=9,647) · remaining 56 +961 partial +164 rewarding · prewarm 274\nstep 18\n1h 32m ago\naccepted 2,632/1,568 · judged 2,512 · pass 0.599 (n=9,636) · remaining 57 +971 partial +159 rewarding · prewarm 274\nstep 18\n1h 32m ago\naccepted 2,624/1,568 · judged 2,498 · pass 0.598 (n=9,627) · remaining 58 +979 partial +164 rewarding · prewarm 274\nstep 18\n1h 33m ago\naccepted 2,616/1,568 · judged 2,494 · pass 0.598 (n=9,617) · remaining 59 +988 partial +154 rewarding · prewarm 274\nstep 18\n1h 33m ago\naccepted 2,608/1,568 · judged 2,486 · pass 0.598 (n=9,609) · remaining 59 +994 partial +157 rewarding · prewarm 274\nstep 18\n1h 33m ago\naccepted 2,600/1,568 · judged 2,474 · pass 0.598 (n=9,596) · remaining 62 +1,007 partial +148 rewarding · prewarm 274\nstep 18\n1h 34m ago\naccepted 2,592/1,568 · judged 2,466 · pass 0.598 (n=9,584) · remaining 63 +1,018 partial +135 rewarding · prewarm 274\nstep 18\n1h 34m ago\naccepted 2,584/1,568 · judged 2,456 · pass 0.598 (n=9,571) · remaining 65 +1,029 partial +182 rewarding · prewarm 274\nstep 18\n1h 34m ago\naccepted 2,576/1,568 · judged 2,448 · pass 0.597 (n=9,563) · remaining 65 +1,037 partial +156 rewarding · prewarm 274\nstep 18\n1h 34m ago\naccepted 2,568/1,568 · judged 2,439 · pass 0.597 (n=9,553) · remaining 66 +1,046 partial +186 rewarding · prewarm 274\nstep 18\n1h 35m ago\naccepted 2,560/1,568 · judged 2,433 · pass 0.597 (n=9,545) · remaining 66 +1,053 partial +183 rewarding · prewarm 274\nstep 18\n1h 35m ago\naccepted 2,552/1,568 · judged 2,425 · pass 0.596 (n=9,537) · remaining 67 +1,061 partial +193 rewarding · prewarm 274\nstep 18\n1h 35m ago\naccepted 2,544/1,568 · judged 2,416 · pass 0.596 (n=9,525) · remaining 66 +1,073 partial +193 rewarding · prewarm 275\nstep 18\n1h 36m ago\naccepted 2,536/1,568 · judged 2,405 · pass 0.596 (n=9,511) · remaining 67 +1,083 partial +213 rewarding · prewarm 276\nstep 18\n1h 36m ago\naccepted 2,528/1,568 · judged 2,400 · pass 0.596 (n=9,500) · remaining 70 +1,090 partial +214 rewarding · prewarm 277\nstep 18\n1h 36m ago\naccepted 2,520/1,568 · judged 2,394 · pass 0.596 (n=9,491) · remaining 71 +1,098 partial +219 rewarding · prewarm 277\nstep 18\n1h 37m ago\naccepted 2,512/1,568 · judged 2,381 · pass 0.596 (n=9,480) · remaining 74 +1,107 partial +225 rewarding · prewarm 277\nstep 18\n1h 37m ago\naccepted 2,504/1,568 · judged 2,373 · pass 0.596 (n=9,468) · remaining 77 +1,116 partial +201 rewarding · prewarm 277\nstep 18\nstep 19 · accepted 1,248/1,568\njust now\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t141 / 154\t\n\t13\t135\t327\ncode/dataset-sin0\t92 / 154\t\n\t62\t82\t323\ncode/dataset-zg6q\t82 / 154\t\n\t72\t80\t338\ncode/dataset-m1dt\t69 / 154\t\n\t85\t—\t171\ncode/dataset-x7wh\t118 / 129\t\n\t11\t115\t180\ngeneral/dataset-epqd\t43 / 64\t\n\t21\t—\t80\ngeneral/dataset-trla\t36 / 64\t\n\t28\t—\t98\ncyber/dataset-9aui\t11 / 64\t\n\t53\t—\t302\ncode/dataset-ta4j\t54 / 63\t\n\t9\t52\t120\ncode/dataset-dnpn\t31 / 63\t\n\t32\t30\t106\ncode/dataset-yfch\t194 / 55\t\n\t0\t—\t330\ncode/dataset-bvg7\t32 / 52\t\n\t20\t27\t112\ncode/dataset-v7yx\t21 / 52\t\n\t31\t21\t118\nvisual/dataset-gtav\t24 / 41\t\n\t17\t—\t41\nvisual/dataset-jzd3\t21 / 41\t\n\t20\t—\t43\nvisual/dataset-ve5o\t50 / 31\t\n\t0\t—\t33\nvisual/dataset-053e\t40 / 31\t\n\t0\t—\t24\nvisual/dataset-pt5v\t40 / 31\t\n\t0\t—\t37\nvisual/dataset-ol8x\t36 / 31\t\n\t0\t—\t32\ncode/dataset-4onq\t21 / 31\t\n\t10\t—\t34\ngeneral/dataset-1doa\t19 / 31\t\n\t12\t—\t49\ngeneral/dataset-5610\t17 / 31\t\n\t14\t—\t58\nchat/dataset-eup7\t24 / 16\t\n\t0\t—\t2\nchat/dataset-8kb6\t14 / 16\t\n\t2\t—\t18\nchat/dataset-lm3t\t18 / 15\t\n\t0\t—\t5\ntotal\t1,248 / 1,568\t\t320\t1,219\t2,981\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 14\n1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,061\t67.7%\t▲0.5 pt\ngeneral\t4\t190\t12.1%\t▼0.3 pt\ncyber\t1\t64\t4.1%\t▼0.1 pt\nvisual\t6\t206\t13.1%\t▼0.3 pt\nchat\t3\t47\t3.0%\t▲0.1 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
+  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$1,467,509\nBEIJING\n19:42:41\nLOS ANGELES\n04:42:41\nNEW YORK\n07:42:41\nLONDON\n12:42:41\n◐\nnotices\n9h 15m ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n15h 34m ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n17h 44m ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nin progress\nstep 14\n2d 01:10:21\nstarted 2026-09-15 10:32 UTC\nstep 15: rollout · 0/1,568 accepted · 20m 53s in\ndynsam/avg@n · Δ vs step 1\n0.615 ▲0.051\ncost so far\n$1,010,791\ntokens · step 14\n2.65B\ntokens · total\n30.2B\nsamples trained\n351k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nin progress\nstep 18\n1d 20:26:11\nstarted 2026-09-15 15:16 UTC\nstep 19: training · 2,616/1,568 accepted · 1h 58m in\ndynsam/avg@n · Δ vs step 1\n0.602 ▲0.089\ncost so far\n$456,718\ntokens · step 18\n2.82B\ntokens · total\n43.1B\nsamples trained\n452k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 65.78\nmimo-v2.6-flash 60.77\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.615▼0.009\n0.602▲0.001\ncritic/rewards/mean\n0.588▼0.000237\n0.577▼0.00705\nactor/entropy_loss\n0.405▲0.00684\n0.433▼0.000691\nactor/pg_loss\n0.00583▼0.00155\n0.013▲0.00544\nactor/grad_norm\n0.00555▲0.000694\n0.00668▲0.00117\ntrain_infer_diff/new_infer/kl\n0.00937▲0.000844\n0.00834▲0.00339\nctx_total_length/mean\n106k▲6.6k\n116k▲7.3k\ndynsam/agg_turn/mean\n59.5▼5.33\n63.2▲10.6\nperf/total_num_tokens\n2.65B▲160M\n2.82B▲160M\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 5m ago\n5m ago\naccepted 0/1,568 · judged 0 · pass 0.000 (n=0) · remaining 1,024 +0 partial +0 rewarding · prewarm 512\nstep 15\n20m ago\ntrainer restarted\n2h 13m ago\ntrainer restarted\n3h 35m ago\naccepted 2,656/1,568 · judged 2,505 · pass 0.593 (n=10,393) · remaining 185 +881 partial +321 rewarding · prewarm 286\nstep 15\n3h 35m ago\naccepted 2,648/1,568 · judged 2,500 · pass 0.592 (n=10,381) · remaining 186 +892 partial +328 rewarding · prewarm 286\nstep 15\n3h 36m ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.592 (n=10,371) · remaining 191 +896 partial +332 rewarding · prewarm 286\nstep 15\n3h 36m ago\naccepted 2,632/1,568 · judged 2,483 · pass 0.592 (n=10,357) · remaining 198 +903 partial +343 rewarding · prewarm 286\nstep 15\n3h 36m ago\naccepted 2,624/1,568 · judged 2,476 · pass 0.592 (n=10,342) · remaining 205 +911 partial +342 rewarding · prewarm 286\nstep 15\n3h 37m ago\naccepted 2,616/1,568 · judged 2,469 · pass 0.592 (n=10,330) · remaining 211 +916 partial +358 rewarding · prewarm 286\nstep 15\n3h 37m ago\naccepted 2,608/1,568 · judged 2,458 · pass 0.593 (n=10,312) · remaining 218 +928 partial +376 rewarding · prewarm 286\nstep 15\n3h 37m ago\naccepted 2,600/1,568 · judged 2,450 · pass 0.592 (n=10,301) · remaining 223 +934 partial +379 rewarding · prewarm 286\nstep 15\n3h 38m ago\naccepted 2,592/1,568 · judged 2,442 · pass 0.592 (n=10,290) · remaining 228 +940 partial +347 rewarding · prewarm 286\nstep 15\n3h 38m ago\naccepted 2,584/1,568 · judged 2,438 · pass 0.592 (n=10,276) · remaining 238 +944 partial +367 rewarding · prewarm 286\nstep 15\n3h 38m ago\naccepted 2,576/1,568 · judged 2,429 · pass 0.593 (n=10,257) · remaining 244 +954 partial +374 rewarding · prewarm 286\nstep 15\n3h 39m ago\naccepted 2,568/1,568 · judged 2,417 · pass 0.593 (n=10,244) · remaining 255 +955 partial +363 rewarding · prewarm 287\nstep 15\n3h 39m ago\naccepted 2,560/1,568 · judged 2,408 · pass 0.592 (n=10,234) · remaining 262 +959 partial +374 rewarding · prewarm 287\nstep 15\n3h 39m ago\naccepted 2,552/1,568 · judged 2,403 · pass 0.592 (n=10,221) · remaining 271 +963 partial +391 rewarding · prewarm 287\nstep 15\n3h 40m ago\naccepted 2,544/1,568 · judged 2,393 · pass 0.592 (n=10,209) · remaining 282 +964 partial +398 rewarding · prewarm 287\nstep 15\n3h 40m ago\naccepted 2,536/1,568 · judged 2,385 · pass 0.592 (n=10,201) · remaining 285 +968 partial +370 rewarding · prewarm 287\nstep 15\n3h 40m ago\naccepted 2,528/1,568 · judged 2,372 · pass 0.592 (n=10,188) · remaining 298 +969 partial +359 rewarding · prewarm 287\nstep 15\n3h 41m ago\naccepted 2,520/1,568 · judged 2,366 · pass 0.592 (n=10,177) · remaining 302 +976 partial +366 rewarding · prewarm 287\nstep 15\n3h 41m ago\naccepted 2,512/1,568 · judged 2,358 · pass 0.592 (n=10,162) · remaining 307 +986 partial +384 rewarding · prewarm 287\nstep 15\n3h 41m ago\naccepted 2,504/1,568 · judged 2,349 · pass 0.592 (n=10,152) · remaining 312 +990 partial +361 rewarding · prewarm 287\nstep 15\n3h 42m ago\naccepted 2,496/1,568 · judged 2,341 · pass 0.592 (n=10,133) · remaining 323 +997 partial +351 rewarding · prewarm 288\nstep 15\n3h 42m ago\naccepted 2,488/1,568 · judged 2,335 · pass 0.592 (n=10,124) · remaining 331 +998 partial +362 rewarding · prewarm 288\nstep 15\n3h 42m ago\naccepted 2,480/1,568 · judged 2,329 · pass 0.591 (n=10,114) · remaining 335 +1,003 partial +356 rewarding · prewarm 288\nstep 15\n3h 42m ago\naccepted 2,472/1,568 · judged 2,320 · pass 0.591 (n=10,105) · remaining 338 +1,008 partial +371 rewarding · prewarm 288\nstep 15\n3h 43m ago\naccepted 2,464/1,568 · judged 2,317 · pass 0.592 (n=10,086) · remaining 346 +1,017 partial +357 rewarding · prewarm 289\nstep 15\n3h 43m ago\naccepted 2,456/1,568 · judged 2,309 · pass 0.592 (n=10,067) · remaining 354 +1,027 partial +357 rewarding · prewarm 289\nstep 15\n3h 43m ago\naccepted 2,448/1,568 · judged 2,304 · pass 0.592 (n=10,057) · remaining 357 +1,032 partial +349 rewarding · prewarm 289\nstep 15\n3h 43m ago\naccepted 2,440/1,568 · judged 2,296 · pass 0.592 (n=10,042) · remaining 367 +1,036 partial +361 rewarding · prewarm 290\nstep 15\n3h 44m ago\naccepted 2,432/1,568 · judged 2,290 · pass 0.592 (n=10,031) · remaining 374 +1,041 partial +362 rewarding · prewarm 290\nstep 15\n3h 44m ago\naccepted 2,424/1,568 · judged 2,284 · pass 0.591 (n=10,019) · remaining 381 +1,046 partial +352 rewarding · prewarm 290\nstep 15\n3h 44m ago\naccepted 2,416/1,568 · judged 2,276 · pass 0.592 (n=10,003) · remaining 390 +1,052 partial +354 rewarding · prewarm 290\nstep 15\n3h 45m ago\naccepted 2,400/1,568 · judged 2,260 · pass 0.592 (n=9,977) · remaining 417 +1,049 partial +357 rewarding · prewarm 290\nstep 15\n3h 45m ago\naccepted 2,392/1,568 · judged 2,252 · pass 0.592 (n=9,962) · remaining 425 +1,056 partial +393 rewarding · prewarm 290\nstep 15\n3h 45m ago\naccepted 2,384/1,568 · judged 2,242 · pass 0.592 (n=9,947) · remaining 440 +1,054 partial +449 rewarding · prewarm 290\nstep 15\n3h 46m ago\naccepted 2,368/1,568 · judged 2,218 · pass 0.592 (n=9,920) · remaining 453 +1,062 partial +361 rewarding · prewarm 292\nstep 15\n3h 47m ago\naccepted 2,360/1,568 · judged 2,212 · pass 0.591 (n=9,911) · remaining 465 +1,060 partial +380 rewarding · prewarm 292\nstep 15\n3h 47m ago\naccepted 2,352/1,568 · judged 2,208 · pass 0.592 (n=9,896) · remaining 481 +1,059 partial +366 rewarding · prewarm 292\nstep 15\nstep 15 · accepted 0/1,568\n5m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-sin0\t0 / 154\t\n\t154\t0\t108\ncode/dataset-obg8\t0 / 154\t\n\t154\t0\t185\ncode/dataset-zg6q\t0 / 154\t\n\t154\t0\t73\ncode/dataset-m1dt\t0 / 154\t\n\t154\t—\t48\ncode/dataset-x7wh\t0 / 129\t\n\t129\t0\t119\ngeneral/dataset-epqd\t0 / 64\t\n\t64\t—\t14\ngeneral/dataset-trla\t0 / 64\t\n\t64\t—\t19\nvisual/dataset-gtav\t0 / 64\t\n\t64\t—\t14\nvisual/dataset-jzd3\t0 / 64\t\n\t64\t—\t14\ncode/dataset-dnpn\t0 / 63\t\n\t63\t0\t26\ncode/dataset-ta4j\t0 / 63\t\n\t63\t0\t64\ncode/dataset-yfch\t0 / 55\t\n\t55\t—\t133\ncode/dataset-bvg7\t0 / 52\t\n\t52\t0\t44\ncode/dataset-v7yx\t0 / 52\t\n\t52\t0\t38\nvisual/dataset-ol8x\t0 / 41\t\n\t41\t—\t23\nvisual/dataset-053e\t0 / 39\t\n\t39\t—\t23\ngeneral/dataset-1doa\t0 / 31\t\n\t31\t—\t10\ngeneral/dataset-5610\t0 / 31\t\n\t31\t—\t19\nvisual/dataset-ve5o\t0 / 31\t\n\t31\t—\t20\nvisual/dataset-pt5v\t0 / 31\t\n\t31\t—\t15\ncode/dataset-4onq\t0 / 31\t\n\t31\t—\t13\nchat/dataset-eup7\t0 / 16\t\n\t16\t—\t0\nchat/dataset-8kb6\t0 / 16\t\n\t16\t—\t2\nchat/dataset-lm3t\t0 / 15\t\n\t15\t—\t0\ntotal\t0 / 1,568\t\t1,568\t0\t1,024\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 59m ago\n59m ago\naccepted 2,616/1,568 · judged 2,458 · pass 0.601 (n=12,189) · remaining 89 +1,057 partial +396 rewarding · prewarm 292\nstep 19\n59m ago\naccepted 2,608/1,568 · judged 2,452 · pass 0.601 (n=12,173) · remaining 95 +1,066 partial +418 rewarding · prewarm 292\nstep 19\n59m ago\naccepted 2,600/1,568 · judged 2,444 · pass 0.601 (n=12,159) · remaining 97 +1,079 partial +417 rewarding · prewarm 292\nstep 19\n1h 00m ago\naccepted 2,592/1,568 · judged 2,440 · pass 0.601 (n=12,147) · remaining 103 +1,085 partial +409 rewarding · prewarm 292\nstep 19\n1h 00m ago\naccepted 2,584/1,568 · judged 2,434 · pass 0.601 (n=12,136) · remaining 108 +1,091 partial +403 rewarding · prewarm 292\nstep 19\n1h 00m ago\naccepted 2,576/1,568 · judged 2,422 · pass 0.600 (n=12,125) · remaining 112 +1,098 partial +423 rewarding · prewarm 292\nstep 19\n1h 01m ago\naccepted 2,568/1,568 · judged 2,420 · pass 0.600 (n=12,115) · remaining 115 +1,105 partial +399 rewarding · prewarm 292\nstep 19\n1h 01m ago\naccepted 2,560/1,568 · judged 2,411 · pass 0.600 (n=12,103) · remaining 115 +1,115 partial +406 rewarding · prewarm 294\nstep 19\n1h 01m ago\naccepted 2,552/1,568 · judged 2,399 · pass 0.601 (n=12,083) · remaining 118 +1,130 partial +422 rewarding · prewarm 296\nstep 19\n1h 01m ago\naccepted 2,544/1,568 · judged 2,388 · pass 0.601 (n=12,069) · remaining 120 +1,141 partial +429 rewarding · prewarm 296\nstep 19\n1h 02m ago\naccepted 2,536/1,568 · judged 2,382 · pass 0.600 (n=12,059) · remaining 121 +1,149 partial +430 rewarding · prewarm 297\nstep 19\n1h 02m ago\naccepted 2,520/1,568 · judged 2,361 · pass 0.600 (n=12,030) · remaining 134 +1,162 partial +457 rewarding · prewarm 297\nstep 19\n1h 02m ago\naccepted 2,512/1,568 · judged 2,357 · pass 0.600 (n=12,017) · remaining 139 +1,173 partial +473 rewarding · prewarm 297\nstep 19\n1h 02m ago\naccepted 2,504/1,568 · judged 2,347 · pass 0.600 (n=12,006) · remaining 142 +1,181 partial +495 rewarding · prewarm 297\nstep 19\n1h 03m ago\naccepted 2,496/1,568 · judged 2,342 · pass 0.600 (n=11,996) · remaining 145 +1,188 partial +474 rewarding · prewarm 297\nstep 19\n1h 03m ago\naccepted 2,488/1,568 · judged 2,328 · pass 0.600 (n=11,980) · remaining 150 +1,199 partial +474 rewarding · prewarm 297\nstep 19\n1h 04m ago\naccepted 2,480/1,568 · judged 2,311 · pass 0.600 (n=11,969) · remaining 151 +1,208 partial +475 rewarding · prewarm 297\nstep 19\n1h 04m ago\naccepted 2,472/1,568 · judged 2,306 · pass 0.600 (n=11,960) · remaining 152 +1,216 partial +480 rewarding · prewarm 297\nstep 19\n1h 04m ago\naccepted 2,464/1,568 · judged 2,297 · pass 0.600 (n=11,947) · remaining 159 +1,221 partial +465 rewarding · prewarm 297\nstep 19\n1h 05m ago\naccepted 2,456/1,568 · judged 2,293 · pass 0.600 (n=11,936) · remaining 163 +1,227 partial +445 rewarding · prewarm 297\nstep 19\n1h 05m ago\naccepted 2,448/1,568 · judged 2,285 · pass 0.600 (n=11,920) · remaining 166 +1,239 partial +451 rewarding · prewarm 298\nstep 19\n1h 05m ago\naccepted 2,440/1,568 · judged 2,279 · pass 0.600 (n=11,906) · remaining 170 +1,249 partial +468 rewarding · prewarm 298\nstep 19\n1h 05m ago\naccepted 2,432/1,568 · judged 2,273 · pass 0.600 (n=11,895) · remaining 171 +1,259 partial +458 rewarding · prewarm 298\nstep 19\n1h 06m ago\naccepted 2,424/1,568 · judged 2,270 · pass 0.600 (n=11,885) · remaining 175 +1,266 partial +471 rewarding · prewarm 298\nstep 19\n1h 06m ago\naccepted 2,416/1,568 · judged 2,260 · pass 0.600 (n=11,872) · remaining 180 +1,273 partial +476 rewarding · prewarm 299\nstep 19\n1h 06m ago\naccepted 2,408/1,568 · judged 2,254 · pass 0.600 (n=11,863) · remaining 184 +1,278 partial +473 rewarding · prewarm 299\nstep 19\n1h 06m ago\naccepted 2,400/1,568 · judged 2,249 · pass 0.599 (n=11,851) · remaining 187 +1,285 partial +474 rewarding · prewarm 300\nstep 19\n1h 07m ago\naccepted 2,392/1,568 · judged 2,238 · pass 0.599 (n=11,839) · remaining 193 +1,291 partial +490 rewarding · prewarm 300\nstep 19\n1h 07m ago\naccepted 2,384/1,568 · judged 2,229 · pass 0.599 (n=11,830) · remaining 194 +1,300 partial +457 rewarding · prewarm 300\nstep 19\n1h 07m ago\naccepted 2,376/1,568 · judged 2,220 · pass 0.599 (n=11,819) · remaining 195 +1,309 partial +463 rewarding · prewarm 300\nstep 19\n1h 08m ago\naccepted 2,368/1,568 · judged 2,210 · pass 0.599 (n=11,803) · remaining 197 +1,323 partial +460 rewarding · prewarm 300\nstep 19\n1h 08m ago\naccepted 2,360/1,568 · judged 2,203 · pass 0.599 (n=11,793) · remaining 197 +1,330 partial +483 rewarding · prewarm 300\nstep 19\n1h 08m ago\naccepted 2,352/1,568 · judged 2,187 · pass 0.599 (n=11,779) · remaining 200 +1,341 partial +480 rewarding · prewarm 301\nstep 19\n1h 08m ago\naccepted 2,344/1,568 · judged 2,184 · pass 0.599 (n=11,762) · remaining 204 +1,349 partial +457 rewarding · prewarm 301\nstep 19\n1h 09m ago\naccepted 2,336/1,568 · judged 2,175 · pass 0.599 (n=11,747) · remaining 208 +1,359 partial +462 rewarding · prewarm 302\nstep 19\n1h 09m ago\naccepted 2,328/1,568 · judged 2,164 · pass 0.600 (n=11,724) · remaining 219 +1,371 partial +467 rewarding · prewarm 302\nstep 19\n1h 09m ago\naccepted 2,320/1,568 · judged 2,161 · pass 0.600 (n=11,714) · remaining 220 +1,380 partial +478 rewarding · prewarm 302\nstep 19\n1h 09m ago\naccepted 2,312/1,568 · judged 2,148 · pass 0.600 (n=11,700) · remaining 222 +1,391 partial +469 rewarding · prewarm 302\nstep 19\n1h 10m ago\naccepted 2,304/1,568 · judged 2,140 · pass 0.600 (n=11,674) · remaining 234 +1,403 partial +476 rewarding · prewarm 302\nstep 19\n1h 10m ago\naccepted 2,296/1,568 · judged 2,132 · pass 0.600 (n=11,664) · remaining 238 +1,409 partial +465 rewarding · prewarm 302\nstep 19\nstep 19 · accepted 2,616/1,568\n59m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t252 / 154\t\n\t0\t213\t173\ncode/dataset-sin0\t224 / 154\t\n\t0\t196\t80\ncode/dataset-zg6q\t209 / 154\t\n\t0\t201\t52\ncode/dataset-m1dt\t195 / 154\t\n\t0\t—\t44\ncode/dataset-x7wh\t219 / 129\t\n\t0\t183\t90\ngeneral/dataset-epqd\t100 / 64\t\n\t0\t—\t4\ngeneral/dataset-trla\t96 / 64\t\n\t0\t—\t11\ncyber/dataset-9aui\t63 / 64\t\n\t1\t—\t241\ncode/dataset-ta4j\t108 / 63\t\n\t0\t88\t57\ncode/dataset-dnpn\t92 / 63\t\n\t0\t82\t8\ncode/dataset-yfch\t340 / 55\t\n\t0\t—\t188\ncode/dataset-bvg7\t76 / 52\t\n\t0\t66\t32\ncode/dataset-v7yx\t65 / 52\t\n\t0\t58\t34\nvisual/dataset-gtav\t65 / 41\t\n\t0\t—\t1\nvisual/dataset-jzd3\t62 / 41\t\n\t0\t—\t2\nvisual/dataset-ve5o\t77 / 31\t\n\t0\t—\t21\nvisual/dataset-053e\t60 / 31\t\n\t0\t—\t16\nvisual/dataset-pt5v\t56 / 31\t\n\t0\t—\t31\nvisual/dataset-ol8x\t53 / 31\t\n\t0\t—\t23\ngeneral/dataset-1doa\t44 / 31\t\n\t0\t—\t10\ngeneral/dataset-5610\t43 / 31\t\n\t0\t—\t18\ncode/dataset-4onq\t43 / 31\t\n\t0\t—\t9\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t25 / 16\t\n\t0\t—\t1\nchat/dataset-lm3t\t23 / 15\t\n\t0\t—\t0\ntotal\t2,616 / 1,568\t\t0\t2,458\t1,146\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 14\n1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,061\t67.7%\t▲0.5 pt\ngeneral\t4\t190\t12.1%\t▼0.3 pt\ncyber\t1\t64\t4.1%\t▼0.1 pt\nvisual\t6\t206\t13.1%\t▼0.3 pt\nchat\t3\t47\t3.0%\t▲0.1 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
   "public_json_responses": [
     {
       "url": "https://mimo.xiaomi.com/rl/api/runs",
@@ -2296,205 +2300,6 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/status?run=pro",
-      "data": {
-        "run": {
-          "key": "pro",
-          "label": "mimo-v2.6-pro",
-          "start": 1789468339.334,
-          "end": null,
-          "mode": "live"
-        },
-        "cost": {
-          "rate_per_s": 5.71,
-          "so_far": 975825.4907257486
-        },
-        "clock": {
-          "now": 1789639236.9681027
-        },
-        "version": "3-5513.14.7.0",
-        "step": {
-          "last": 14,
-          "last_wall": 1789627881.7613647,
-          "since": 1879.6341025829315,
-          "expected": 9416.42,
-          "progress": 0.1996123901209729,
-          "phase": "rollout",
-          "gen_frac": 0.5195222844942621,
-          "restarted_at": 1789637357.334
-        },
-        "totals": {
-          "tokens_step": 2649950000.0,
-          "trained_step": 25088.0,
-          "sandboxes_step": 178352.0,
-          "prompts_per_step": 1568.0,
-          "tokens_cum": 30223660000.0,
-          "trained_cum": 351232.0,
-          "sandboxes_cum": 1961284.0,
-          "restarts": 6
-        },
-        "events": [
-          {
-            "t": 1789475059.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789482975.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789492877.8213444,
-            "kind": "step",
-            "step": 1,
-            "value": 0.564662,
-            "delta": null,
-            "tokens": 1800520000.0,
-            "redo": false
-          },
-          {
-            "t": 1789498698.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789506681.7189453,
-            "kind": "step",
-            "step": 2,
-            "value": 0.555333,
-            "delta": -0.009329000000000032,
-            "tokens": 1730640000.0,
-            "redo": false
-          },
-          {
-            "t": 1789516937.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789526194.9290926,
-            "kind": "step",
-            "step": 3,
-            "value": 0.566948,
-            "delta": 0.011615000000000042,
-            "tokens": 1855440000.0,
-            "redo": false
-          },
-          {
-            "t": 1789533051.6273456,
-            "kind": "step",
-            "step": 4,
-            "value": 0.575625,
-            "delta": 0.008677000000000046,
-            "tokens": 2010940000.0,
-            "redo": false
-          },
-          {
-            "t": 1789540010.4015698,
-            "kind": "step",
-            "step": 5,
-            "value": 0.569944,
-            "delta": -0.005681000000000047,
-            "tokens": 2009690000.0,
-            "redo": false
-          },
-          {
-            "t": 1789546959.498796,
-            "kind": "step",
-            "step": 6,
-            "value": 0.585981,
-            "delta": 0.016036999999999968,
-            "tokens": 2118430000.0,
-            "redo": false
-          },
-          {
-            "t": 1789554781.2837293,
-            "kind": "step",
-            "step": 7,
-            "value": 0.588339,
-            "delta": 0.0023579999999999712,
-            "tokens": 2246470000.0,
-            "redo": false
-          },
-          {
-            "t": 1789562521.9800744,
-            "kind": "step",
-            "step": 8,
-            "value": 0.60271,
-            "delta": 0.014371000000000023,
-            "tokens": 2266550000.0,
-            "redo": false
-          },
-          {
-            "t": 1789571198.3765173,
-            "kind": "step",
-            "step": 9,
-            "value": 0.603837,
-            "delta": 0.0011269999999999891,
-            "tokens": 2327390000.0,
-            "redo": false
-          },
-          {
-            "t": 1789578788.328568,
-            "kind": "step",
-            "step": 10,
-            "value": 0.590406,
-            "delta": -0.01343099999999997,
-            "tokens": 2224380000.0,
-            "redo": false
-          },
-          {
-            "t": 1789588716.334,
-            "kind": "restart"
-          },
-          {
-            "t": 1789598901.2092798,
-            "kind": "step",
-            "step": 11,
-            "value": 0.614156,
-            "delta": 0.02375000000000005,
-            "tokens": 2164150000.0,
-            "redo": false
-          },
-          {
-            "t": 1789607960.959003,
-            "kind": "step",
-            "step": 12,
-            "value": 0.608784,
-            "delta": -0.005372000000000043,
-            "tokens": 2328100000.0,
-            "redo": false
-          },
-          {
-            "t": 1789617388.31858,
-            "kind": "step",
-            "step": 13,
-            "value": 0.623849,
-            "delta": 0.015064999999999995,
-            "tokens": 2491010000.0,
-            "redo": false
-          },
-          {
-            "t": 1789627881.7613647,
-            "kind": "step",
-            "step": 14,
-            "value": 0.615234,
-            "delta": -0.00861500000000004,
-            "tokens": 2649950000.0,
-            "redo": false
-          },
-          {
-            "t": 1789637357.334,
-            "kind": "restart"
-          }
-        ],
-        "headline": {
-          "tag": "dynsam/avg@n",
-          "last": 0.615234,
-          "prev": 0.623849,
-          "first": 0.564662,
-          "first_step": 1
-        }
-      }
-    },
-    {
       "url": "https://mimo.xiaomi.com/rl/api/status?run=flash",
       "data": {
         "run": {
@@ -2506,19 +2311,19 @@
         },
         "cost": {
           "rate_per_s": 2.855,
-          "so_far": 439235.6860567105
+          "so_far": 456699.3255875492
         },
         "clock": {
-          "now": 1789639237.1400268
+          "now": 1789645354.0015087
         },
         "version": "3-5513.20.3.16",
         "step": {
           "last": 18,
           "last_wall": 1789638268.1659763,
-          "since": 968.9740505218506,
+          "since": 7085.835532426834,
           "expected": 8930.39,
-          "progress": 0.10850299376867648,
-          "phase": "rollout",
+          "progress": 0.7934519693346914,
+          "phase": "training",
           "gen_frac": 0.5134479009315382,
           "restarted_at": null
         },
@@ -2732,1771 +2537,382 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/live?run=flash",
+      "url": "https://mimo.xiaomi.com/rl/api/status?run=pro",
       "data": {
-        "log_time": 1789639223.264,
-        "latest": {
-          "t": 1789639223.264,
-          "step": 19,
-          "accept": 1248,
-          "target": 1568,
-          "judged": 1219,
-          "judged_of": 1248,
-          "ds": {
-            "code/dataset-bvg7": [
-              32,
-              52,
-              27,
-              112
-            ],
-            "code/dataset-v7yx": [
-              21,
-              52,
-              21,
-              118
-            ],
-            "code/dataset-dnpn": [
-              31,
-              63,
-              30,
-              106
-            ],
-            "code/dataset-ta4j": [
-              54,
-              63,
-              52,
-              120
-            ],
-            "code/dataset-sin0": [
-              92,
-              154,
-              82,
-              323
-            ],
-            "code/dataset-obg8": [
-              141,
-              154,
-              135,
-              327
-            ],
-            "code/dataset-zg6q": [
-              82,
-              154,
-              80,
-              338
-            ],
-            "code/dataset-yfch": [
-              194,
-              55,
-              null,
-              330
-            ],
-            "code/dataset-x7wh": [
-              118,
-              129,
-              115,
-              180
-            ],
-            "code/dataset-m1dt": [
-              69,
-              154,
-              null,
-              171
-            ],
-            "general/dataset-epqd": [
-              43,
-              64,
-              null,
-              80
-            ],
-            "general/dataset-trla": [
-              36,
-              64,
-              null,
-              98
-            ],
-            "general/dataset-1doa": [
-              19,
-              31,
-              null,
-              49
-            ],
-            "general/dataset-5610": [
-              17,
-              31,
-              null,
-              58
-            ],
-            "chat/dataset-lm3t": [
-              18,
-              15,
-              null,
-              5
-            ],
-            "chat/dataset-eup7": [
-              24,
-              16,
-              null,
-              2
-            ],
-            "chat/dataset-8kb6": [
-              14,
-              16,
-              null,
-              18
-            ],
-            "visual/dataset-gtav": [
-              24,
-              41,
-              null,
-              41
-            ],
-            "visual/dataset-jzd3": [
-              21,
-              41,
-              null,
-              43
-            ],
-            "visual/dataset-ol8x": [
-              36,
-              31,
-              null,
-              32
-            ],
-            "visual/dataset-053e": [
-              40,
-              31,
-              null,
-              24
-            ],
-            "visual/dataset-ve5o": [
-              50,
-              31,
-              null,
-              33
-            ],
-            "visual/dataset-pt5v": [
-              40,
-              31,
-              null,
-              37
-            ],
-            "cyber/dataset-9aui": [
-              11,
-              64,
-              null,
-              302
-            ],
-            "code/dataset-4onq": [
-              21,
-              31,
-              null,
-              34
-            ]
-          },
-          "passrate": 0.6,
-          "n": 9919,
-          "pr0": 0.159,
-          "pr1": 0.239,
-          "partial": [
-            9,
-            4593,
-            4730
-          ],
-          "working": 256,
-          "remain": 1461,
-          "remain_partial": 1520,
-          "remain_seq": 413,
-          "prewarm": 512,
-          "prewarm_wait": 4489.2
+        "run": {
+          "key": "pro",
+          "label": "mimo-v2.6-pro",
+          "start": 1789468339.334,
+          "end": null,
+          "mode": "live"
         },
-        "entries": [
+        "cost": {
+          "rate_per_s": 5.71,
+          "so_far": 1010753.7608063102
+        },
+        "clock": {
+          "now": 1789645354.003143
+        },
+        "version": "3-5513.14.8.15",
+        "step": {
+          "last": 14,
+          "last_wall": 1789627881.7613647,
+          "since": 1246.669142961502,
+          "expected": 9416.42,
+          "progress": 0.13239311149688546,
+          "phase": "rollout",
+          "gen_frac": 0.5195222844942621,
+          "restarted_at": 1789644107.334
+        },
+        "totals": {
+          "tokens_step": 2649950000.0,
+          "trained_step": 25088.0,
+          "sandboxes_step": 178352.0,
+          "prompts_per_step": 1568.0,
+          "tokens_cum": 30223660000.0,
+          "trained_cum": 351232.0,
+          "sandboxes_cum": 1961284.0,
+          "restarts": 7
+        },
+        "events": [
           {
-            "t": 1789632964.264,
-            "step": 18,
-            "accept": 2320,
-            "target": 1568,
-            "judged": 2162,
-            "judged_of": 2320,
-            "passrate": 0.594,
-            "n": 9188,
-            "pr0": 0.16,
-            "pr1": 0.245,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 159,
-            "remain_partial": 1310,
-            "remain_seq": 288,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789475059.334,
+            "kind": "restart"
           },
           {
-            "t": 1789632982.264,
-            "step": 18,
-            "accept": 2328,
-            "target": 1568,
-            "judged": 2170,
-            "judged_of": 2328,
-            "passrate": 0.594,
-            "n": 9196,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 155,
-            "remain_partial": 1306,
-            "remain_seq": 300,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789482975.334,
+            "kind": "restart"
           },
           {
-            "t": 1789632996.264,
-            "step": 18,
-            "accept": 2336,
-            "target": 1568,
-            "judged": 2176,
-            "judged_of": 2336,
-            "passrate": 0.594,
-            "n": 9211,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 150,
-            "remain_partial": 1297,
-            "remain_seq": 295,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789492877.8213444,
+            "kind": "step",
+            "step": 1,
+            "value": 0.564662,
+            "delta": null,
+            "tokens": 1800520000.0,
+            "redo": false
           },
           {
-            "t": 1789633030.264,
-            "step": 18,
-            "accept": 2352,
-            "target": 1568,
-            "judged": 2192,
-            "judged_of": 2352,
-            "passrate": 0.594,
-            "n": 9241,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 137,
-            "remain_partial": 1282,
-            "remain_seq": 303,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789498698.334,
+            "kind": "restart"
           },
           {
-            "t": 1789633048.264,
-            "step": 18,
-            "accept": 2360,
-            "target": 1568,
-            "judged": 2199,
-            "judged_of": 2360,
-            "passrate": 0.594,
-            "n": 9250,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 135,
-            "remain_partial": 1275,
-            "remain_seq": 313,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789506681.7189453,
+            "kind": "step",
+            "step": 2,
+            "value": 0.555333,
+            "delta": -0.009329000000000032,
+            "tokens": 1730640000.0,
+            "redo": false
           },
           {
-            "t": 1789633072.264,
-            "step": 18,
-            "accept": 2368,
-            "target": 1568,
-            "judged": 2207,
-            "judged_of": 2368,
-            "passrate": 0.594,
-            "n": 9267,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 131,
-            "remain_partial": 1264,
-            "remain_seq": 341,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789516937.334,
+            "kind": "restart"
           },
           {
-            "t": 1789633083.264,
-            "step": 18,
-            "accept": 2376,
-            "target": 1568,
-            "judged": 2216,
-            "judged_of": 2376,
-            "passrate": 0.594,
-            "n": 9279,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 130,
-            "remain_partial": 1253,
-            "remain_seq": 350,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789526194.9290926,
+            "kind": "step",
+            "step": 3,
+            "value": 0.566948,
+            "delta": 0.011615000000000042,
+            "tokens": 1855440000.0,
+            "redo": false
           },
           {
-            "t": 1789633106.264,
-            "step": 18,
-            "accept": 2384,
-            "target": 1568,
-            "judged": 2224,
-            "judged_of": 2384,
-            "passrate": 0.594,
-            "n": 9291,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 121,
-            "remain_partial": 1250,
-            "remain_seq": 369,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789533051.6273456,
+            "kind": "step",
+            "step": 4,
+            "value": 0.575625,
+            "delta": 0.008677000000000046,
+            "tokens": 2010940000.0,
+            "redo": false
           },
           {
-            "t": 1789633131.264,
-            "step": 18,
-            "accept": 2392,
-            "target": 1568,
-            "judged": 2231,
-            "judged_of": 2392,
-            "passrate": 0.594,
-            "n": 9301,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 119,
-            "remain_partial": 1242,
-            "remain_seq": 328,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789540010.4015698,
+            "kind": "step",
+            "step": 5,
+            "value": 0.569944,
+            "delta": -0.005681000000000047,
+            "tokens": 2009690000.0,
+            "redo": false
           },
           {
-            "t": 1789633138.264,
-            "step": 18,
-            "accept": 2400,
-            "target": 1568,
-            "judged": 2242,
-            "judged_of": 2400,
-            "passrate": 0.595,
-            "n": 9312,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 119,
-            "remain_partial": 1231,
-            "remain_seq": 308,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789546959.498796,
+            "kind": "step",
+            "step": 6,
+            "value": 0.585981,
+            "delta": 0.016036999999999968,
+            "tokens": 2118430000.0,
+            "redo": false
           },
           {
-            "t": 1789633157.264,
-            "step": 18,
-            "accept": 2408,
-            "target": 1568,
-            "judged": 2252,
-            "judged_of": 2408,
-            "passrate": 0.595,
-            "n": 9322,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 116,
-            "remain_partial": 1221,
-            "remain_seq": 330,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789554781.2837293,
+            "kind": "step",
+            "step": 7,
+            "value": 0.588339,
+            "delta": 0.0023579999999999712,
+            "tokens": 2246470000.0,
+            "redo": false
           },
           {
-            "t": 1789633173.264,
-            "step": 18,
-            "accept": 2416,
-            "target": 1568,
-            "judged": 2261,
-            "judged_of": 2416,
-            "passrate": 0.595,
-            "n": 9337,
-            "pr0": 0.16,
-            "pr1": 0.244,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 109,
-            "remain_partial": 1213,
-            "remain_seq": 289,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789562521.9800744,
+            "kind": "step",
+            "step": 8,
+            "value": 0.60271,
+            "delta": 0.014371000000000023,
+            "tokens": 2266550000.0,
+            "redo": false
           },
           {
-            "t": 1789633188.264,
-            "step": 18,
-            "accept": 2424,
-            "target": 1568,
-            "judged": 2268,
-            "judged_of": 2424,
-            "passrate": 0.595,
-            "n": 9349,
-            "pr0": 0.16,
-            "pr1": 0.243,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 106,
-            "remain_partial": 1206,
-            "remain_seq": 258,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789571198.3765173,
+            "kind": "step",
+            "step": 9,
+            "value": 0.603837,
+            "delta": 0.0011269999999999891,
+            "tokens": 2327390000.0,
+            "redo": false
           },
           {
-            "t": 1789633202.264,
-            "step": 18,
-            "accept": 2432,
-            "target": 1568,
-            "judged": 2278,
-            "judged_of": 2432,
-            "passrate": 0.595,
-            "n": 9360,
-            "pr0": 0.16,
-            "pr1": 0.243,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 106,
-            "remain_partial": 1195,
-            "remain_seq": 262,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789578788.328568,
+            "kind": "step",
+            "step": 10,
+            "value": 0.590406,
+            "delta": -0.01343099999999997,
+            "tokens": 2224380000.0,
+            "redo": false
           },
           {
-            "t": 1789633221.264,
-            "step": 18,
-            "accept": 2440,
-            "target": 1568,
-            "judged": 2291,
-            "judged_of": 2440,
-            "passrate": 0.595,
-            "n": 9369,
-            "pr0": 0.16,
-            "pr1": 0.243,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 104,
-            "remain_partial": 1188,
-            "remain_seq": 268,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789588716.334,
+            "kind": "restart"
           },
           {
-            "t": 1789633232.264,
-            "step": 18,
-            "accept": 2448,
-            "target": 1568,
-            "judged": 2297,
-            "judged_of": 2448,
-            "passrate": 0.595,
-            "n": 9380,
-            "pr0": 0.16,
-            "pr1": 0.243,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 102,
-            "remain_partial": 1179,
-            "remain_seq": 271,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789598901.2092798,
+            "kind": "step",
+            "step": 11,
+            "value": 0.614156,
+            "delta": 0.02375000000000005,
+            "tokens": 2164150000.0,
+            "redo": false
           },
           {
-            "t": 1789633247.264,
-            "step": 18,
-            "accept": 2456,
-            "target": 1568,
-            "judged": 2304,
-            "judged_of": 2456,
-            "passrate": 0.595,
-            "n": 9393,
-            "pr0": 0.16,
-            "pr1": 0.243,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 101,
-            "remain_partial": 1167,
-            "remain_seq": 232,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789607960.959003,
+            "kind": "step",
+            "step": 12,
+            "value": 0.608784,
+            "delta": -0.005372000000000043,
+            "tokens": 2328100000.0,
+            "redo": false
           },
           {
-            "t": 1789633265.264,
-            "step": 18,
-            "accept": 2464,
-            "target": 1568,
-            "judged": 2311,
-            "judged_of": 2464,
-            "passrate": 0.595,
-            "n": 9406,
-            "pr0": 0.16,
-            "pr1": 0.243,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 93,
-            "remain_partial": 1160,
-            "remain_seq": 211,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789617388.31858,
+            "kind": "step",
+            "step": 13,
+            "value": 0.623849,
+            "delta": 0.015064999999999995,
+            "tokens": 2491010000.0,
+            "redo": false
           },
           {
-            "t": 1789633341.264,
-            "step": 18,
-            "accept": 2480,
-            "target": 1568,
-            "judged": 2342,
-            "judged_of": 2480,
-            "passrate": 0.595,
-            "n": 9435,
-            "pr0": 0.161,
-            "pr1": 0.242,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 83,
-            "remain_partial": 1143,
-            "remain_seq": 201,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789627881.7613647,
+            "kind": "step",
+            "step": 14,
+            "value": 0.615234,
+            "delta": -0.00861500000000004,
+            "tokens": 2649950000.0,
+            "redo": false
           },
           {
-            "t": 1789633360.264,
-            "step": 18,
-            "accept": 2488,
-            "target": 1568,
-            "judged": 2348,
-            "judged_of": 2488,
-            "passrate": 0.595,
-            "n": 9445,
-            "pr0": 0.161,
-            "pr1": 0.242,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 83,
-            "remain_partial": 1133,
-            "remain_seq": 195,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
+            "t": 1789637357.334,
+            "kind": "restart"
           },
           {
-            "t": 1789633381.264,
-            "step": 18,
-            "accept": 2496,
-            "target": 1568,
-            "judged": 2361,
-            "judged_of": 2496,
-            "passrate": 0.595,
-            "n": 9459,
-            "pr0": 0.161,
-            "pr1": 0.242,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 80,
-            "remain_partial": 1122,
-            "remain_seq": 206,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
-          },
-          {
-            "t": 1789633412.264,
-            "step": 18,
-            "accept": 2504,
-            "target": 1568,
-            "judged": 2373,
-            "judged_of": 2504,
-            "passrate": 0.596,
-            "n": 9468,
-            "pr0": 0.161,
-            "pr1": 0.242,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 77,
-            "remain_partial": 1116,
-            "remain_seq": 201,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
-          },
-          {
-            "t": 1789633424.264,
-            "step": 18,
-            "accept": 2512,
-            "target": 1568,
-            "judged": 2381,
-            "judged_of": 2512,
-            "passrate": 0.596,
-            "n": 9480,
-            "pr0": 0.161,
-            "pr1": 0.242,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 74,
-            "remain_partial": 1107,
-            "remain_seq": 225,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
-          },
-          {
-            "t": 1789633447.264,
-            "step": 18,
-            "accept": 2520,
-            "target": 1568,
-            "judged": 2394,
-            "judged_of": 2520,
-            "passrate": 0.596,
-            "n": 9491,
-            "pr0": 0.161,
-            "pr1": 0.242,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 71,
-            "remain_partial": 1098,
-            "remain_seq": 219,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
-          },
-          {
-            "t": 1789633464.264,
-            "step": 18,
-            "accept": 2528,
-            "target": 1568,
-            "judged": 2400,
-            "judged_of": 2528,
-            "passrate": 0.596,
-            "n": 9500,
-            "pr0": 0.161,
-            "pr1": 0.241,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 70,
-            "remain_partial": 1090,
-            "remain_seq": 214,
-            "prewarm": 277,
-            "prewarm_wait": 3367.2
-          },
-          {
-            "t": 1789633481.264,
-            "step": 18,
-            "accept": 2536,
-            "target": 1568,
-            "judged": 2405,
-            "judged_of": 2536,
-            "passrate": 0.596,
-            "n": 9511,
-            "pr0": 0.161,
-            "pr1": 0.241,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 67,
-            "remain_partial": 1083,
-            "remain_seq": 213,
-            "prewarm": 276,
-            "prewarm_wait": 3369.2
-          },
-          {
-            "t": 1789633499.264,
-            "step": 18,
-            "accept": 2544,
-            "target": 1568,
-            "judged": 2416,
-            "judged_of": 2544,
-            "passrate": 0.596,
-            "n": 9525,
-            "pr0": 0.161,
-            "pr1": 0.241,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 66,
-            "remain_partial": 1073,
-            "remain_seq": 193,
-            "prewarm": 275,
-            "prewarm_wait": 3371.1
-          },
-          {
-            "t": 1789633515.264,
-            "step": 18,
-            "accept": 2552,
-            "target": 1568,
-            "judged": 2425,
-            "judged_of": 2552,
-            "passrate": 0.596,
-            "n": 9537,
-            "pr0": 0.161,
-            "pr1": 0.241,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 67,
-            "remain_partial": 1061,
-            "remain_seq": 193,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633533.264,
-            "step": 18,
-            "accept": 2560,
-            "target": 1568,
-            "judged": 2433,
-            "judged_of": 2560,
-            "passrate": 0.597,
-            "n": 9545,
-            "pr0": 0.161,
-            "pr1": 0.241,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 66,
-            "remain_partial": 1053,
-            "remain_seq": 183,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633551.264,
-            "step": 18,
-            "accept": 2568,
-            "target": 1568,
-            "judged": 2439,
-            "judged_of": 2568,
-            "passrate": 0.597,
-            "n": 9553,
-            "pr0": 0.161,
-            "pr1": 0.241,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 66,
-            "remain_partial": 1046,
-            "remain_seq": 186,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633559.264,
-            "step": 18,
-            "accept": 2576,
-            "target": 1568,
-            "judged": 2448,
-            "judged_of": 2576,
-            "passrate": 0.597,
-            "n": 9563,
-            "pr0": 0.161,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 65,
-            "remain_partial": 1037,
-            "remain_seq": 156,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633578.264,
-            "step": 18,
-            "accept": 2584,
-            "target": 1568,
-            "judged": 2456,
-            "judged_of": 2584,
-            "passrate": 0.598,
-            "n": 9571,
-            "pr0": 0.161,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 65,
-            "remain_partial": 1029,
-            "remain_seq": 182,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633598.264,
-            "step": 18,
-            "accept": 2592,
-            "target": 1568,
-            "judged": 2466,
-            "judged_of": 2592,
-            "passrate": 0.598,
-            "n": 9584,
-            "pr0": 0.161,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 63,
-            "remain_partial": 1018,
-            "remain_seq": 135,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633621.264,
-            "step": 18,
-            "accept": 2600,
-            "target": 1568,
-            "judged": 2474,
-            "judged_of": 2600,
-            "passrate": 0.598,
-            "n": 9596,
-            "pr0": 0.16,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 62,
-            "remain_partial": 1007,
-            "remain_seq": 148,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633642.264,
-            "step": 18,
-            "accept": 2608,
-            "target": 1568,
-            "judged": 2486,
-            "judged_of": 2608,
-            "passrate": 0.598,
-            "n": 9609,
-            "pr0": 0.161,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 59,
-            "remain_partial": 994,
-            "remain_seq": 157,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633660.264,
-            "step": 18,
-            "accept": 2616,
-            "target": 1568,
-            "judged": 2494,
-            "judged_of": 2616,
-            "passrate": 0.598,
-            "n": 9617,
-            "pr0": 0.16,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 59,
-            "remain_partial": 988,
-            "remain_seq": 154,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633676.264,
-            "step": 18,
-            "accept": 2624,
-            "target": 1568,
-            "judged": 2498,
-            "judged_of": 2624,
-            "passrate": 0.598,
-            "n": 9627,
-            "pr0": 0.16,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 58,
-            "remain_partial": 979,
-            "remain_seq": 164,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633691.264,
-            "step": 18,
-            "accept": 2632,
-            "target": 1568,
-            "judged": 2512,
-            "judged_of": 2632,
-            "passrate": 0.599,
-            "n": 9636,
-            "pr0": 0.16,
-            "pr1": 0.24,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 57,
-            "remain_partial": 971,
-            "remain_seq": 159,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633714.264,
-            "step": 18,
-            "accept": 2640,
-            "target": 1568,
-            "judged": 2521,
-            "judged_of": 2640,
-            "passrate": 0.599,
-            "n": 9647,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 56,
-            "remain_partial": 961,
-            "remain_seq": 164,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633726.264,
-            "step": 18,
-            "accept": 2648,
-            "target": 1568,
-            "judged": 2529,
-            "judged_of": 2648,
-            "passrate": 0.599,
-            "n": 9657,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 54,
-            "remain_partial": 953,
-            "remain_seq": 146,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633750.264,
-            "step": 18,
-            "accept": 2656,
-            "target": 1568,
-            "judged": 2539,
-            "judged_of": 2656,
-            "passrate": 0.599,
-            "n": 9667,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 52,
-            "remain_partial": 945,
-            "remain_seq": 141,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633777.264,
-            "step": 18,
-            "accept": 2664,
-            "target": 1568,
-            "judged": 2547,
-            "judged_of": 2664,
-            "passrate": 0.599,
-            "n": 9675,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 50,
-            "remain_partial": 939,
-            "remain_seq": 148,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633788.264,
-            "step": 18,
-            "accept": 2672,
-            "target": 1568,
-            "judged": 2557,
-            "judged_of": 2672,
-            "passrate": 0.6,
-            "n": 9685,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 50,
-            "remain_partial": 929,
-            "remain_seq": 143,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789633816.264,
-            "step": 18,
-            "accept": 2680,
-            "target": 1568,
-            "judged": 2568,
-            "judged_of": 2680,
-            "passrate": 0.6,
-            "n": 9697,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 49,
-            "remain_partial": 918,
-            "remain_seq": 142,
-            "prewarm": 274,
-            "prewarm_wait": 3373.1
-          },
-          {
-            "t": 1789638284.264,
-            "step": 19,
-            "accept": 1130,
-            "target": 1568,
-            "judged": 1126,
-            "judged_of": 1130,
-            "passrate": 0.6,
-            "n": 9723,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              4,
-              4586,
-              4730
-            ],
-            "working": 256,
-            "remain": 1825,
-            "remain_partial": 896,
-            "remain_seq": 30,
-            "prewarm": 512,
-            "prewarm_wait": 4383.2
-          },
-          {
-            "t": 1789638691.264,
-            "step": 19,
-            "accept": 1136,
-            "target": 1568,
-            "judged": 1132,
-            "judged_of": 1136,
-            "passrate": 0.6,
-            "n": 9731,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              5,
-              4587,
-              4730
-            ],
-            "working": 256,
-            "remain": 1740,
-            "remain_partial": 1017,
-            "remain_seq": 127,
-            "prewarm": 512,
-            "prewarm_wait": 4391.4
-          },
-          {
-            "t": 1789638760.264,
-            "step": 19,
-            "accept": 1144,
-            "target": 1568,
-            "judged": 1138,
-            "judged_of": 1144,
-            "passrate": 0.6,
-            "n": 9740,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              6,
-              4589,
-              4730
-            ],
-            "working": 256,
-            "remain": 1693,
-            "remain_partial": 1083,
-            "remain_seq": 159,
-            "prewarm": 512,
-            "prewarm_wait": 4398.4
-          },
-          {
-            "t": 1789638821.264,
-            "step": 19,
-            "accept": 1152,
-            "target": 1568,
-            "judged": 1143,
-            "judged_of": 1152,
-            "passrate": 0.601,
-            "n": 9750,
-            "pr0": 0.159,
-            "pr1": 0.238,
-            "partial": [
-              6,
-              4589,
-              4730
-            ],
-            "working": 256,
-            "remain": 1661,
-            "remain_partial": 1137,
-            "remain_seq": 171,
-            "prewarm": 512,
-            "prewarm_wait": 4406.0
-          },
-          {
-            "t": 1789638899.264,
-            "step": 19,
-            "accept": 1160,
-            "target": 1568,
-            "judged": 1148,
-            "judged_of": 1160,
-            "passrate": 0.6,
-            "n": 9766,
-            "pr0": 0.16,
-            "pr1": 0.238,
-            "partial": [
-              6,
-              4589,
-              4730
-            ],
-            "working": 256,
-            "remain": 1627,
-            "remain_partial": 1206,
-            "remain_seq": 244,
-            "prewarm": 512,
-            "prewarm_wait": 4420.4
-          },
-          {
-            "t": 1789638930.264,
-            "step": 19,
-            "accept": 1168,
-            "target": 1568,
-            "judged": 1155,
-            "judged_of": 1168,
-            "passrate": 0.601,
-            "n": 9778,
-            "pr0": 0.16,
-            "pr1": 0.238,
-            "partial": [
-              7,
-              4590,
-              4730
-            ],
-            "working": 256,
-            "remain": 1605,
-            "remain_partial": 1244,
-            "remain_seq": 264,
-            "prewarm": 512,
-            "prewarm_wait": 4428.5
-          },
-          {
-            "t": 1789638985.264,
-            "step": 19,
-            "accept": 1176,
-            "target": 1568,
-            "judged": 1162,
-            "judged_of": 1176,
-            "passrate": 0.6,
-            "n": 9795,
-            "pr0": 0.16,
-            "pr1": 0.238,
-            "partial": [
-              7,
-              4590,
-              4730
-            ],
-            "working": 256,
-            "remain": 1572,
-            "remain_partial": 1305,
-            "remain_seq": 257,
-            "prewarm": 512,
-            "prewarm_wait": 4443.9
-          },
-          {
-            "t": 1789639015.264,
-            "step": 19,
-            "accept": 1184,
-            "target": 1568,
-            "judged": 1165,
-            "judged_of": 1184,
-            "passrate": 0.6,
-            "n": 9807,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              8,
-              4591,
-              4730
-            ],
-            "working": 256,
-            "remain": 1550,
-            "remain_partial": 1335,
-            "remain_seq": 260,
-            "prewarm": 512,
-            "prewarm_wait": 4449.7
-          },
-          {
-            "t": 1789639050.264,
-            "step": 19,
-            "accept": 1192,
-            "target": 1568,
-            "judged": 1169,
-            "judged_of": 1192,
-            "passrate": 0.6,
-            "n": 9824,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              8,
-              4592,
-              4730
-            ],
-            "working": 256,
-            "remain": 1529,
-            "remain_partial": 1373,
-            "remain_seq": 286,
-            "prewarm": 512,
-            "prewarm_wait": 4461.9
-          },
-          {
-            "t": 1789639085.264,
-            "step": 19,
-            "accept": 1200,
-            "target": 1568,
-            "judged": 1177,
-            "judged_of": 1200,
-            "passrate": 0.6,
-            "n": 9835,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              8,
-              4592,
-              4730
-            ],
-            "working": 256,
-            "remain": 1520,
-            "remain_partial": 1403,
-            "remain_seq": 333,
-            "prewarm": 512,
-            "prewarm_wait": 4473.1
-          },
-          {
-            "t": 1789639096.264,
-            "step": 19,
-            "accept": 1208,
-            "target": 1568,
-            "judged": 1184,
-            "judged_of": 1208,
-            "passrate": 0.6,
-            "n": 9846,
-            "pr0": 0.159,
-            "pr1": 0.239,
-            "partial": [
-              8,
-              4592,
-              4730
-            ],
-            "working": 256,
-            "remain": 1509,
-            "remain_partial": 1416,
-            "remain_seq": 331,
-            "prewarm": 512,
-            "prewarm_wait": 4477.7
-          },
-          {
-            "t": 1789639123.264,
-            "step": 19,
-            "accept": 1216,
-            "target": 1568,
-            "judged": 1190,
-            "judged_of": 1216,
-            "passrate": 0.6,
-            "n": 9860,
-            "pr0": 0.16,
-            "pr1": 0.239,
-            "partial": [
-              8,
-              4592,
-              4730
-            ],
-            "working": 256,
-            "remain": 1502,
-            "remain_partial": 1433,
-            "remain_seq": 342,
-            "prewarm": 512,
-            "prewarm_wait": 4483.7
-          },
-          {
-            "t": 1789639148.264,
-            "step": 19,
-            "accept": 1224,
-            "target": 1568,
-            "judged": 1199,
-            "judged_of": 1224,
-            "passrate": 0.6,
-            "n": 9875,
-            "pr0": 0.159,
-            "pr1": 0.239,
-            "partial": [
-              9,
-              4593,
-              4730
-            ],
-            "working": 256,
-            "remain": 1487,
-            "remain_partial": 1460,
-            "remain_seq": 382,
-            "prewarm": 512,
-            "prewarm_wait": 4489.1
-          },
-          {
-            "t": 1789639169.264,
-            "step": 19,
-            "accept": 1232,
-            "target": 1568,
-            "judged": 1205,
-            "judged_of": 1232,
-            "passrate": 0.6,
-            "n": 9888,
-            "pr0": 0.159,
-            "pr1": 0.239,
-            "partial": [
-              9,
-              4593,
-              4730
-            ],
-            "working": 256,
-            "remain": 1479,
-            "remain_partial": 1477,
-            "remain_seq": 382,
-            "prewarm": 512,
-            "prewarm_wait": 4492.3
-          },
-          {
-            "t": 1789639188.264,
-            "step": 19,
-            "accept": 1240,
-            "target": 1568,
-            "judged": 1212,
-            "judged_of": 1240,
-            "passrate": 0.6,
-            "n": 9899,
-            "pr0": 0.159,
-            "pr1": 0.239,
-            "partial": [
-              9,
-              4593,
-              4730
-            ],
-            "working": 256,
-            "remain": 1474,
-            "remain_partial": 1491,
-            "remain_seq": 378,
-            "prewarm": 512,
-            "prewarm_wait": 4492.4
-          },
-          {
-            "t": 1789639223.264,
-            "step": 19,
-            "accept": 1248,
-            "target": 1568,
-            "judged": 1219,
-            "judged_of": 1248,
-            "passrate": 0.6,
-            "n": 9919,
-            "pr0": 0.159,
-            "pr1": 0.239,
-            "partial": [
-              9,
-              4593,
-              4730
-            ],
-            "working": 256,
-            "remain": 1461,
-            "remain_partial": 1520,
-            "remain_seq": 413,
-            "prewarm": 512,
-            "prewarm_wait": 4489.2
+            "t": 1789644107.334,
+            "kind": "restart"
           }
-        ]
+        ],
+        "headline": {
+          "tag": "dynsam/avg@n",
+          "last": 0.615234,
+          "prev": 0.623849,
+          "first": 0.564662,
+          "first_step": 1
+        }
       }
     },
     {
       "url": "https://mimo.xiaomi.com/rl/api/live?run=pro",
       "data": {
-        "log_time": 1789632430.334,
+        "log_time": 1789645043.334,
         "latest": {
-          "t": 1789632430.334,
+          "t": 1789645043.334,
           "step": 15,
-          "accept": 2656,
+          "accept": 0,
           "target": 1568,
-          "judged": 2505,
-          "judged_of": 2656,
+          "judged": 0,
+          "judged_of": 0,
           "ds": {
             "code/dataset-bvg7": [
-              75,
+              0,
               52,
-              65,
-              23
+              0,
+              44
             ],
             "code/dataset-v7yx": [
-              67,
+              0,
               52,
-              50,
-              28
+              0,
+              38
             ],
             "code/dataset-dnpn": [
-              91,
+              0,
               63,
-              74,
-              13
+              0,
+              26
             ],
             "code/dataset-ta4j": [
-              96,
+              0,
               63,
-              81,
+              0,
               64
             ],
             "code/dataset-sin0": [
-              208,
+              0,
               154,
-              185,
-              59
+              0,
+              108
             ],
             "code/dataset-obg8": [
-              261,
+              0,
               154,
-              234,
-              178
+              0,
+              185
             ],
             "code/dataset-zg6q": [
-              213,
+              0,
               154,
-              202,
-              44
+              0,
+              73
             ],
             "code/dataset-yfch": [
-              335,
+              0,
               55,
               null,
-              198
+              133
             ],
             "code/dataset-x7wh": [
-              233,
+              0,
               129,
-              202,
-              101
+              0,
+              119
             ],
             "code/dataset-m1dt": [
-              182,
+              0,
               154,
               null,
-              50
+              48
             ],
             "general/dataset-epqd": [
-              93,
+              0,
               64,
               null,
-              7
+              14
             ],
             "general/dataset-trla": [
-              94,
+              0,
               64,
               null,
-              6
+              19
             ],
             "general/dataset-1doa": [
-              47,
+              0,
               31,
               null,
-              4
+              10
             ],
             "general/dataset-5610": [
-              42,
+              0,
               31,
               null,
-              9
+              19
             ],
             "chat/dataset-lm3t": [
-              23,
+              0,
               15,
               null,
-              1
+              0
             ],
             "chat/dataset-eup7": [
-              24,
+              0,
               16,
               null,
               0
             ],
             "chat/dataset-8kb6": [
-              26,
+              0,
               16,
-              null,
-              0
-            ],
-            "visual/dataset-gtav": [
-              61,
-              41,
-              null,
-              1
-            ],
-            "visual/dataset-jzd3": [
-              60,
-              41,
               null,
               2
             ],
+            "visual/dataset-gtav": [
+              0,
+              64,
+              null,
+              14
+            ],
+            "visual/dataset-jzd3": [
+              0,
+              64,
+              null,
+              14
+            ],
             "visual/dataset-ol8x": [
-              54,
+              0,
+              41,
+              null,
+              23
+            ],
+            "visual/dataset-053e": [
+              0,
+              39,
+              null,
+              23
+            ],
+            "visual/dataset-ve5o": [
+              0,
+              31,
+              null,
+              20
+            ],
+            "visual/dataset-pt5v": [
+              0,
               31,
               null,
               15
             ],
-            "visual/dataset-053e": [
-              57,
-              31,
-              null,
-              14
-            ],
-            "visual/dataset-ve5o": [
-              58,
-              31,
-              null,
-              23
-            ],
-            "visual/dataset-pt5v": [
-              48,
+            "code/dataset-4onq": [
+              0,
               31,
               null,
               13
-            ],
-            "cyber/dataset-9aui": [
-              162,
-              64,
-              null,
-              209
-            ],
-            "code/dataset-4onq": [
-              46,
-              31,
-              null,
-              4
             ]
           },
-          "passrate": 0.593,
-          "n": 10393,
-          "pr0": 0.149,
-          "pr1": 0.258,
+          "passrate": 0.0,
+          "n": 0,
+          "pr0": 0.0,
+          "pr1": 0.0,
           "partial": [
-            112,
-            2631,
-            2651
+            0,
+            0,
+            0
           ],
           "working": 256,
-          "remain": 185,
-          "remain_partial": 881,
-          "remain_seq": 321,
-          "prewarm": 286,
-          "prewarm_wait": 2377.2
+          "remain": 1024,
+          "remain_partial": 0,
+          "remain_seq": 0,
+          "prewarm": 512,
+          "prewarm_wait": 8.6
         },
         "entries": [
-          {
-            "t": 1789631299.334,
-            "step": 15,
-            "accept": 2160,
-            "target": 1568,
-            "judged": 2025,
-            "judged_of": 2160,
-            "passrate": 0.591,
-            "n": 9579,
-            "pr0": 0.15,
-            "pr1": 0.259,
-            "partial": [
-              111,
-              2628,
-              2651
-            ],
-            "working": 256,
-            "remain": 647,
-            "remain_partial": 1124,
-            "remain_seq": 477,
-            "prewarm": 309,
-            "prewarm_wait": 2387.0
-          },
           {
             "t": 1789631321.334,
             "step": 15,
@@ -5853,6 +4269,1592 @@
             "remain_seq": 321,
             "prewarm": 286,
             "prewarm_wait": 2377.2
+          },
+          {
+            "t": 1789645043.334,
+            "step": 15,
+            "accept": 0,
+            "target": 1568,
+            "judged": 0,
+            "judged_of": 0,
+            "passrate": 0.0,
+            "n": 0,
+            "pr0": 0.0,
+            "pr1": 0.0,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 1024,
+            "remain_partial": 0,
+            "remain_seq": 0,
+            "prewarm": 512,
+            "prewarm_wait": 8.6
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://mimo.xiaomi.com/rl/api/live?run=flash",
+      "data": {
+        "log_time": 1789641808.264,
+        "latest": {
+          "t": 1789641808.264,
+          "step": 19,
+          "accept": 2616,
+          "target": 1568,
+          "judged": 2458,
+          "judged_of": 2616,
+          "ds": {
+            "code/dataset-bvg7": [
+              76,
+              52,
+              66,
+              32
+            ],
+            "code/dataset-v7yx": [
+              65,
+              52,
+              58,
+              34
+            ],
+            "code/dataset-dnpn": [
+              92,
+              63,
+              82,
+              8
+            ],
+            "code/dataset-ta4j": [
+              108,
+              63,
+              88,
+              57
+            ],
+            "code/dataset-sin0": [
+              224,
+              154,
+              196,
+              80
+            ],
+            "code/dataset-obg8": [
+              252,
+              154,
+              213,
+              173
+            ],
+            "code/dataset-zg6q": [
+              209,
+              154,
+              201,
+              52
+            ],
+            "code/dataset-yfch": [
+              340,
+              55,
+              null,
+              188
+            ],
+            "code/dataset-x7wh": [
+              219,
+              129,
+              183,
+              90
+            ],
+            "code/dataset-m1dt": [
+              195,
+              154,
+              null,
+              44
+            ],
+            "general/dataset-epqd": [
+              100,
+              64,
+              null,
+              4
+            ],
+            "general/dataset-trla": [
+              96,
+              64,
+              null,
+              11
+            ],
+            "general/dataset-1doa": [
+              44,
+              31,
+              null,
+              10
+            ],
+            "general/dataset-5610": [
+              43,
+              31,
+              null,
+              18
+            ],
+            "chat/dataset-lm3t": [
+              23,
+              15,
+              null,
+              0
+            ],
+            "chat/dataset-eup7": [
+              26,
+              16,
+              null,
+              0
+            ],
+            "chat/dataset-8kb6": [
+              25,
+              16,
+              null,
+              1
+            ],
+            "visual/dataset-gtav": [
+              65,
+              41,
+              null,
+              1
+            ],
+            "visual/dataset-jzd3": [
+              62,
+              41,
+              null,
+              2
+            ],
+            "visual/dataset-ol8x": [
+              53,
+              31,
+              null,
+              23
+            ],
+            "visual/dataset-053e": [
+              60,
+              31,
+              null,
+              16
+            ],
+            "visual/dataset-ve5o": [
+              77,
+              31,
+              null,
+              21
+            ],
+            "visual/dataset-pt5v": [
+              56,
+              31,
+              null,
+              31
+            ],
+            "cyber/dataset-9aui": [
+              63,
+              64,
+              null,
+              241
+            ],
+            "code/dataset-4onq": [
+              43,
+              31,
+              null,
+              9
+            ]
+          },
+          "passrate": 0.601,
+          "n": 12189,
+          "pr0": 0.155,
+          "pr1": 0.243,
+          "partial": [
+            45,
+            4636,
+            4730
+          ],
+          "working": 256,
+          "remain": 89,
+          "remain_partial": 1057,
+          "remain_seq": 396,
+          "prewarm": 292,
+          "prewarm_wait": 4126.3
+        },
+        "entries": [
+          {
+            "t": 1789640835.264,
+            "step": 19,
+            "accept": 2128,
+            "target": 1568,
+            "judged": 1966,
+            "judged_of": 2128,
+            "passrate": 0.6,
+            "n": 11383,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              27,
+              4616,
+              4730
+            ],
+            "working": 256,
+            "remain": 359,
+            "remain_partial": 1558,
+            "remain_seq": 570,
+            "prewarm": 304,
+            "prewarm_wait": 4132.6
+          },
+          {
+            "t": 1789640854.264,
+            "step": 19,
+            "accept": 2136,
+            "target": 1568,
+            "judged": 1978,
+            "judged_of": 2136,
+            "passrate": 0.6,
+            "n": 11396,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              27,
+              4616,
+              4730
+            ],
+            "working": 256,
+            "remain": 353,
+            "remain_partial": 1551,
+            "remain_seq": 585,
+            "prewarm": 304,
+            "prewarm_wait": 4132.6
+          },
+          {
+            "t": 1789640868.264,
+            "step": 19,
+            "accept": 2144,
+            "target": 1568,
+            "judged": 1987,
+            "judged_of": 2144,
+            "passrate": 0.6,
+            "n": 11409,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              27,
+              4616,
+              4730
+            ],
+            "working": 256,
+            "remain": 343,
+            "remain_partial": 1547,
+            "remain_seq": 585,
+            "prewarm": 304,
+            "prewarm_wait": 4132.6
+          },
+          {
+            "t": 1789640880.264,
+            "step": 19,
+            "accept": 2152,
+            "target": 1568,
+            "judged": 1993,
+            "judged_of": 2152,
+            "passrate": 0.6,
+            "n": 11423,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              27,
+              4616,
+              4730
+            ],
+            "working": 256,
+            "remain": 339,
+            "remain_partial": 1540,
+            "remain_seq": 557,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640899.264,
+            "step": 19,
+            "accept": 2160,
+            "target": 1568,
+            "judged": 2003,
+            "judged_of": 2160,
+            "passrate": 0.6,
+            "n": 11440,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              28,
+              4617,
+              4730
+            ],
+            "working": 256,
+            "remain": 335,
+            "remain_partial": 1529,
+            "remain_seq": 541,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640911.264,
+            "step": 19,
+            "accept": 2168,
+            "target": 1568,
+            "judged": 2009,
+            "judged_of": 2168,
+            "passrate": 0.6,
+            "n": 11454,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              28,
+              4617,
+              4730
+            ],
+            "working": 256,
+            "remain": 328,
+            "remain_partial": 1521,
+            "remain_seq": 524,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640939.264,
+            "step": 19,
+            "accept": 2184,
+            "target": 1568,
+            "judged": 2023,
+            "judged_of": 2184,
+            "passrate": 0.6,
+            "n": 11477,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              28,
+              4617,
+              4730
+            ],
+            "working": 256,
+            "remain": 315,
+            "remain_partial": 1512,
+            "remain_seq": 524,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640955.264,
+            "step": 19,
+            "accept": 2192,
+            "target": 1568,
+            "judged": 2029,
+            "judged_of": 2192,
+            "passrate": 0.6,
+            "n": 11492,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              29,
+              4618,
+              4730
+            ],
+            "working": 256,
+            "remain": 307,
+            "remain_partial": 1506,
+            "remain_seq": 491,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640962.264,
+            "step": 19,
+            "accept": 2200,
+            "target": 1568,
+            "judged": 2035,
+            "judged_of": 2200,
+            "passrate": 0.6,
+            "n": 11511,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              29,
+              4618,
+              4730
+            ],
+            "working": 256,
+            "remain": 302,
+            "remain_partial": 1494,
+            "remain_seq": 474,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640980.264,
+            "step": 19,
+            "accept": 2208,
+            "target": 1568,
+            "judged": 2043,
+            "judged_of": 2208,
+            "passrate": 0.6,
+            "n": 11523,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              29,
+              4618,
+              4730
+            ],
+            "working": 256,
+            "remain": 301,
+            "remain_partial": 1484,
+            "remain_seq": 468,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789640992.264,
+            "step": 19,
+            "accept": 2216,
+            "target": 1568,
+            "judged": 2055,
+            "judged_of": 2216,
+            "passrate": 0.6,
+            "n": 11532,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              30,
+              4619,
+              4730
+            ],
+            "working": 256,
+            "remain": 297,
+            "remain_partial": 1479,
+            "remain_seq": 463,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789641000.264,
+            "step": 19,
+            "accept": 2224,
+            "target": 1568,
+            "judged": 2064,
+            "judged_of": 2224,
+            "passrate": 0.6,
+            "n": 11542,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              30,
+              4619,
+              4730
+            ],
+            "working": 256,
+            "remain": 292,
+            "remain_partial": 1475,
+            "remain_seq": 479,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789641013.264,
+            "step": 19,
+            "accept": 2232,
+            "target": 1568,
+            "judged": 2069,
+            "judged_of": 2232,
+            "passrate": 0.6,
+            "n": 11557,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              30,
+              4619,
+              4730
+            ],
+            "working": 256,
+            "remain": 281,
+            "remain_partial": 1471,
+            "remain_seq": 461,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789641031.264,
+            "step": 19,
+            "accept": 2240,
+            "target": 1568,
+            "judged": 2079,
+            "judged_of": 2240,
+            "passrate": 0.6,
+            "n": 11570,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              30,
+              4619,
+              4730
+            ],
+            "working": 256,
+            "remain": 275,
+            "remain_partial": 1464,
+            "remain_seq": 448,
+            "prewarm": 303,
+            "prewarm_wait": 4131.5
+          },
+          {
+            "t": 1789641048.264,
+            "step": 19,
+            "accept": 2248,
+            "target": 1568,
+            "judged": 2086,
+            "judged_of": 2248,
+            "passrate": 0.6,
+            "n": 11584,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              31,
+              4620,
+              4730
+            ],
+            "working": 256,
+            "remain": 269,
+            "remain_partial": 1457,
+            "remain_seq": 461,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641052.264,
+            "step": 19,
+            "accept": 2256,
+            "target": 1568,
+            "judged": 2092,
+            "judged_of": 2256,
+            "passrate": 0.6,
+            "n": 11596,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              31,
+              4620,
+              4730
+            ],
+            "working": 256,
+            "remain": 260,
+            "remain_partial": 1454,
+            "remain_seq": 448,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641072.264,
+            "step": 19,
+            "accept": 2264,
+            "target": 1568,
+            "judged": 2102,
+            "judged_of": 2264,
+            "passrate": 0.6,
+            "n": 11606,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              31,
+              4620,
+              4730
+            ],
+            "working": 256,
+            "remain": 252,
+            "remain_partial": 1451,
+            "remain_seq": 455,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641088.264,
+            "step": 19,
+            "accept": 2272,
+            "target": 1568,
+            "judged": 2112,
+            "judged_of": 2272,
+            "passrate": 0.6,
+            "n": 11620,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              32,
+              4621,
+              4730
+            ],
+            "working": 256,
+            "remain": 249,
+            "remain_partial": 1441,
+            "remain_seq": 441,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641106.264,
+            "step": 19,
+            "accept": 2280,
+            "target": 1568,
+            "judged": 2119,
+            "judged_of": 2280,
+            "passrate": 0.6,
+            "n": 11637,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4622,
+              4730
+            ],
+            "working": 256,
+            "remain": 246,
+            "remain_partial": 1426,
+            "remain_seq": 451,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641122.264,
+            "step": 19,
+            "accept": 2288,
+            "target": 1568,
+            "judged": 2124,
+            "judged_of": 2288,
+            "passrate": 0.6,
+            "n": 11649,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4622,
+              4730
+            ],
+            "working": 256,
+            "remain": 242,
+            "remain_partial": 1418,
+            "remain_seq": 463,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641130.264,
+            "step": 19,
+            "accept": 2296,
+            "target": 1568,
+            "judged": 2132,
+            "judged_of": 2296,
+            "passrate": 0.6,
+            "n": 11664,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4622,
+              4730
+            ],
+            "working": 256,
+            "remain": 238,
+            "remain_partial": 1409,
+            "remain_seq": 465,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641143.264,
+            "step": 19,
+            "accept": 2304,
+            "target": 1568,
+            "judged": 2140,
+            "judged_of": 2304,
+            "passrate": 0.6,
+            "n": 11674,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4622,
+              4730
+            ],
+            "working": 256,
+            "remain": 234,
+            "remain_partial": 1403,
+            "remain_seq": 476,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641163.264,
+            "step": 19,
+            "accept": 2312,
+            "target": 1568,
+            "judged": 2148,
+            "judged_of": 2312,
+            "passrate": 0.6,
+            "n": 11700,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4622,
+              4730
+            ],
+            "working": 256,
+            "remain": 222,
+            "remain_partial": 1391,
+            "remain_seq": 469,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641181.264,
+            "step": 19,
+            "accept": 2320,
+            "target": 1568,
+            "judged": 2161,
+            "judged_of": 2320,
+            "passrate": 0.6,
+            "n": 11714,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4623,
+              4730
+            ],
+            "working": 256,
+            "remain": 220,
+            "remain_partial": 1380,
+            "remain_seq": 478,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641189.264,
+            "step": 19,
+            "accept": 2328,
+            "target": 1568,
+            "judged": 2164,
+            "judged_of": 2328,
+            "passrate": 0.6,
+            "n": 11724,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4623,
+              4730
+            ],
+            "working": 256,
+            "remain": 219,
+            "remain_partial": 1371,
+            "remain_seq": 467,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641216.264,
+            "step": 19,
+            "accept": 2336,
+            "target": 1568,
+            "judged": 2175,
+            "judged_of": 2336,
+            "passrate": 0.599,
+            "n": 11747,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4623,
+              4730
+            ],
+            "working": 256,
+            "remain": 208,
+            "remain_partial": 1359,
+            "remain_seq": 462,
+            "prewarm": 302,
+            "prewarm_wait": 4132.8
+          },
+          {
+            "t": 1789641234.264,
+            "step": 19,
+            "accept": 2344,
+            "target": 1568,
+            "judged": 2184,
+            "judged_of": 2344,
+            "passrate": 0.599,
+            "n": 11762,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              33,
+              4623,
+              4730
+            ],
+            "working": 256,
+            "remain": 204,
+            "remain_partial": 1349,
+            "remain_seq": 457,
+            "prewarm": 301,
+            "prewarm_wait": 4132.0
+          },
+          {
+            "t": 1789641250.264,
+            "step": 19,
+            "accept": 2352,
+            "target": 1568,
+            "judged": 2187,
+            "judged_of": 2352,
+            "passrate": 0.599,
+            "n": 11779,
+            "pr0": 0.155,
+            "pr1": 0.245,
+            "partial": [
+              33,
+              4623,
+              4730
+            ],
+            "working": 256,
+            "remain": 200,
+            "remain_partial": 1341,
+            "remain_seq": 480,
+            "prewarm": 301,
+            "prewarm_wait": 4132.0
+          },
+          {
+            "t": 1789641271.264,
+            "step": 19,
+            "accept": 2360,
+            "target": 1568,
+            "judged": 2203,
+            "judged_of": 2360,
+            "passrate": 0.599,
+            "n": 11793,
+            "pr0": 0.155,
+            "pr1": 0.245,
+            "partial": [
+              33,
+              4623,
+              4730
+            ],
+            "working": 256,
+            "remain": 197,
+            "remain_partial": 1330,
+            "remain_seq": 483,
+            "prewarm": 300,
+            "prewarm_wait": 4131.3
+          },
+          {
+            "t": 1789641278.264,
+            "step": 19,
+            "accept": 2368,
+            "target": 1568,
+            "judged": 2210,
+            "judged_of": 2368,
+            "passrate": 0.599,
+            "n": 11803,
+            "pr0": 0.155,
+            "pr1": 0.245,
+            "partial": [
+              34,
+              4624,
+              4730
+            ],
+            "working": 256,
+            "remain": 197,
+            "remain_partial": 1323,
+            "remain_seq": 460,
+            "prewarm": 300,
+            "prewarm_wait": 4131.3
+          },
+          {
+            "t": 1789641296.264,
+            "step": 19,
+            "accept": 2376,
+            "target": 1568,
+            "judged": 2220,
+            "judged_of": 2376,
+            "passrate": 0.599,
+            "n": 11819,
+            "pr0": 0.155,
+            "pr1": 0.245,
+            "partial": [
+              34,
+              4624,
+              4730
+            ],
+            "working": 256,
+            "remain": 195,
+            "remain_partial": 1309,
+            "remain_seq": 463,
+            "prewarm": 300,
+            "prewarm_wait": 4131.3
+          },
+          {
+            "t": 1789641310.264,
+            "step": 19,
+            "accept": 2384,
+            "target": 1568,
+            "judged": 2229,
+            "judged_of": 2384,
+            "passrate": 0.599,
+            "n": 11830,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              34,
+              4624,
+              4730
+            ],
+            "working": 256,
+            "remain": 194,
+            "remain_partial": 1300,
+            "remain_seq": 457,
+            "prewarm": 300,
+            "prewarm_wait": 4131.3
+          },
+          {
+            "t": 1789641331.264,
+            "step": 19,
+            "accept": 2392,
+            "target": 1568,
+            "judged": 2238,
+            "judged_of": 2392,
+            "passrate": 0.599,
+            "n": 11839,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              35,
+              4625,
+              4730
+            ],
+            "working": 256,
+            "remain": 193,
+            "remain_partial": 1291,
+            "remain_seq": 490,
+            "prewarm": 300,
+            "prewarm_wait": 4131.3
+          },
+          {
+            "t": 1789641346.264,
+            "step": 19,
+            "accept": 2400,
+            "target": 1568,
+            "judged": 2249,
+            "judged_of": 2400,
+            "passrate": 0.599,
+            "n": 11851,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              35,
+              4625,
+              4730
+            ],
+            "working": 256,
+            "remain": 187,
+            "remain_partial": 1285,
+            "remain_seq": 474,
+            "prewarm": 300,
+            "prewarm_wait": 4131.3
+          },
+          {
+            "t": 1789641353.264,
+            "step": 19,
+            "accept": 2408,
+            "target": 1568,
+            "judged": 2254,
+            "judged_of": 2408,
+            "passrate": 0.6,
+            "n": 11863,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              36,
+              4626,
+              4730
+            ],
+            "working": 256,
+            "remain": 184,
+            "remain_partial": 1278,
+            "remain_seq": 473,
+            "prewarm": 299,
+            "prewarm_wait": 4130.6
+          },
+          {
+            "t": 1789641372.264,
+            "step": 19,
+            "accept": 2416,
+            "target": 1568,
+            "judged": 2260,
+            "judged_of": 2416,
+            "passrate": 0.6,
+            "n": 11872,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              36,
+              4626,
+              4730
+            ],
+            "working": 256,
+            "remain": 180,
+            "remain_partial": 1273,
+            "remain_seq": 476,
+            "prewarm": 299,
+            "prewarm_wait": 4130.6
+          },
+          {
+            "t": 1789641390.264,
+            "step": 19,
+            "accept": 2424,
+            "target": 1568,
+            "judged": 2270,
+            "judged_of": 2424,
+            "passrate": 0.6,
+            "n": 11885,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              36,
+              4626,
+              4730
+            ],
+            "working": 256,
+            "remain": 175,
+            "remain_partial": 1266,
+            "remain_seq": 471,
+            "prewarm": 298,
+            "prewarm_wait": 4129.9
+          },
+          {
+            "t": 1789641406.264,
+            "step": 19,
+            "accept": 2432,
+            "target": 1568,
+            "judged": 2273,
+            "judged_of": 2432,
+            "passrate": 0.6,
+            "n": 11895,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              37,
+              4627,
+              4730
+            ],
+            "working": 256,
+            "remain": 171,
+            "remain_partial": 1259,
+            "remain_seq": 458,
+            "prewarm": 298,
+            "prewarm_wait": 4129.9
+          },
+          {
+            "t": 1789641417.264,
+            "step": 19,
+            "accept": 2440,
+            "target": 1568,
+            "judged": 2279,
+            "judged_of": 2440,
+            "passrate": 0.6,
+            "n": 11906,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              37,
+              4627,
+              4730
+            ],
+            "working": 256,
+            "remain": 170,
+            "remain_partial": 1249,
+            "remain_seq": 468,
+            "prewarm": 298,
+            "prewarm_wait": 4129.9
+          },
+          {
+            "t": 1789641433.264,
+            "step": 19,
+            "accept": 2448,
+            "target": 1568,
+            "judged": 2285,
+            "judged_of": 2448,
+            "passrate": 0.6,
+            "n": 11920,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              38,
+              4628,
+              4730
+            ],
+            "working": 256,
+            "remain": 166,
+            "remain_partial": 1239,
+            "remain_seq": 451,
+            "prewarm": 298,
+            "prewarm_wait": 4129.9
+          },
+          {
+            "t": 1789641457.264,
+            "step": 19,
+            "accept": 2456,
+            "target": 1568,
+            "judged": 2293,
+            "judged_of": 2456,
+            "passrate": 0.6,
+            "n": 11936,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              39,
+              4629,
+              4730
+            ],
+            "working": 256,
+            "remain": 163,
+            "remain_partial": 1227,
+            "remain_seq": 445,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641475.264,
+            "step": 19,
+            "accept": 2464,
+            "target": 1568,
+            "judged": 2297,
+            "judged_of": 2464,
+            "passrate": 0.6,
+            "n": 11947,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              40,
+              4630,
+              4730
+            ],
+            "working": 256,
+            "remain": 159,
+            "remain_partial": 1221,
+            "remain_seq": 465,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641498.264,
+            "step": 19,
+            "accept": 2472,
+            "target": 1568,
+            "judged": 2306,
+            "judged_of": 2472,
+            "passrate": 0.6,
+            "n": 11960,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              40,
+              4630,
+              4730
+            ],
+            "working": 256,
+            "remain": 152,
+            "remain_partial": 1216,
+            "remain_seq": 480,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641510.264,
+            "step": 19,
+            "accept": 2480,
+            "target": 1568,
+            "judged": 2311,
+            "judged_of": 2480,
+            "passrate": 0.6,
+            "n": 11969,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              40,
+              4630,
+              4730
+            ],
+            "working": 256,
+            "remain": 151,
+            "remain_partial": 1208,
+            "remain_seq": 475,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641543.264,
+            "step": 19,
+            "accept": 2488,
+            "target": 1568,
+            "judged": 2328,
+            "judged_of": 2488,
+            "passrate": 0.6,
+            "n": 11980,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              40,
+              4631,
+              4730
+            ],
+            "working": 256,
+            "remain": 150,
+            "remain_partial": 1199,
+            "remain_seq": 474,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641563.264,
+            "step": 19,
+            "accept": 2496,
+            "target": 1568,
+            "judged": 2342,
+            "judged_of": 2496,
+            "passrate": 0.6,
+            "n": 11996,
+            "pr0": 0.155,
+            "pr1": 0.244,
+            "partial": [
+              40,
+              4631,
+              4730
+            ],
+            "working": 256,
+            "remain": 145,
+            "remain_partial": 1188,
+            "remain_seq": 474,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641582.264,
+            "step": 19,
+            "accept": 2504,
+            "target": 1568,
+            "judged": 2347,
+            "judged_of": 2504,
+            "passrate": 0.6,
+            "n": 12006,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              41,
+              4632,
+              4730
+            ],
+            "working": 256,
+            "remain": 142,
+            "remain_partial": 1181,
+            "remain_seq": 495,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641599.264,
+            "step": 19,
+            "accept": 2512,
+            "target": 1568,
+            "judged": 2357,
+            "judged_of": 2512,
+            "passrate": 0.6,
+            "n": 12017,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              41,
+              4632,
+              4730
+            ],
+            "working": 256,
+            "remain": 139,
+            "remain_partial": 1173,
+            "remain_seq": 473,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641608.264,
+            "step": 19,
+            "accept": 2520,
+            "target": 1568,
+            "judged": 2361,
+            "judged_of": 2520,
+            "passrate": 0.6,
+            "n": 12030,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              42,
+              4633,
+              4730
+            ],
+            "working": 256,
+            "remain": 134,
+            "remain_partial": 1162,
+            "remain_seq": 457,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641637.264,
+            "step": 19,
+            "accept": 2536,
+            "target": 1568,
+            "judged": 2382,
+            "judged_of": 2536,
+            "passrate": 0.6,
+            "n": 12059,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              44,
+              4635,
+              4730
+            ],
+            "working": 256,
+            "remain": 121,
+            "remain_partial": 1149,
+            "remain_seq": 430,
+            "prewarm": 297,
+            "prewarm_wait": 4129.2
+          },
+          {
+            "t": 1789641653.264,
+            "step": 19,
+            "accept": 2544,
+            "target": 1568,
+            "judged": 2388,
+            "judged_of": 2544,
+            "passrate": 0.601,
+            "n": 12069,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              44,
+              4635,
+              4730
+            ],
+            "working": 256,
+            "remain": 120,
+            "remain_partial": 1141,
+            "remain_seq": 429,
+            "prewarm": 296,
+            "prewarm_wait": 4128.6
+          },
+          {
+            "t": 1789641663.264,
+            "step": 19,
+            "accept": 2552,
+            "target": 1568,
+            "judged": 2399,
+            "judged_of": 2552,
+            "passrate": 0.601,
+            "n": 12083,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              44,
+              4635,
+              4730
+            ],
+            "working": 256,
+            "remain": 118,
+            "remain_partial": 1130,
+            "remain_seq": 422,
+            "prewarm": 296,
+            "prewarm_wait": 4128.6
+          },
+          {
+            "t": 1789641679.264,
+            "step": 19,
+            "accept": 2560,
+            "target": 1568,
+            "judged": 2411,
+            "judged_of": 2560,
+            "passrate": 0.6,
+            "n": 12103,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              44,
+              4635,
+              4730
+            ],
+            "working": 256,
+            "remain": 115,
+            "remain_partial": 1115,
+            "remain_seq": 406,
+            "prewarm": 294,
+            "prewarm_wait": 4127.4
+          },
+          {
+            "t": 1789641696.264,
+            "step": 19,
+            "accept": 2568,
+            "target": 1568,
+            "judged": 2420,
+            "judged_of": 2568,
+            "passrate": 0.6,
+            "n": 12115,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              44,
+              4635,
+              4730
+            ],
+            "working": 256,
+            "remain": 115,
+            "remain_partial": 1105,
+            "remain_seq": 399,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
+          },
+          {
+            "t": 1789641712.264,
+            "step": 19,
+            "accept": 2576,
+            "target": 1568,
+            "judged": 2422,
+            "judged_of": 2576,
+            "passrate": 0.6,
+            "n": 12125,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              44,
+              4635,
+              4730
+            ],
+            "working": 256,
+            "remain": 112,
+            "remain_partial": 1098,
+            "remain_seq": 423,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
+          },
+          {
+            "t": 1789641734.264,
+            "step": 19,
+            "accept": 2584,
+            "target": 1568,
+            "judged": 2434,
+            "judged_of": 2584,
+            "passrate": 0.601,
+            "n": 12136,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              45,
+              4636,
+              4730
+            ],
+            "working": 256,
+            "remain": 108,
+            "remain_partial": 1091,
+            "remain_seq": 403,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
+          },
+          {
+            "t": 1789641749.264,
+            "step": 19,
+            "accept": 2592,
+            "target": 1568,
+            "judged": 2440,
+            "judged_of": 2592,
+            "passrate": 0.601,
+            "n": 12147,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              45,
+              4636,
+              4730
+            ],
+            "working": 256,
+            "remain": 103,
+            "remain_partial": 1085,
+            "remain_seq": 409,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
+          },
+          {
+            "t": 1789641768.264,
+            "step": 19,
+            "accept": 2600,
+            "target": 1568,
+            "judged": 2444,
+            "judged_of": 2600,
+            "passrate": 0.601,
+            "n": 12159,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              45,
+              4636,
+              4730
+            ],
+            "working": 256,
+            "remain": 97,
+            "remain_partial": 1079,
+            "remain_seq": 417,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
+          },
+          {
+            "t": 1789641791.264,
+            "step": 19,
+            "accept": 2608,
+            "target": 1568,
+            "judged": 2452,
+            "judged_of": 2608,
+            "passrate": 0.601,
+            "n": 12173,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              45,
+              4636,
+              4730
+            ],
+            "working": 256,
+            "remain": 95,
+            "remain_partial": 1066,
+            "remain_seq": 418,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
+          },
+          {
+            "t": 1789641808.264,
+            "step": 19,
+            "accept": 2616,
+            "target": 1568,
+            "judged": 2458,
+            "judged_of": 2616,
+            "passrate": 0.601,
+            "n": 12189,
+            "pr0": 0.155,
+            "pr1": 0.243,
+            "partial": [
+              45,
+              4636,
+              4730
+            ],
+            "working": 256,
+            "remain": 89,
+            "remain_partial": 1057,
+            "remain_seq": 396,
+            "prewarm": 292,
+            "prewarm_wait": 4126.3
           }
         ]
       }
@@ -5922,10 +5924,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/tags?run=pro&v=3-5513.14.7.0",
+      "url": "https://mimo.xiaomi.com/rl/api/tags?run=pro&v=3-5513.14.8.15",
       "data": {
         "run": "pro",
-        "version": "3-5513.14.7.0",
+        "version": "3-5513.14.8.15",
         "tags": [
           "actor/agentic/entropy_loss",
           "actor/agentic/pg_clipfrac",
@@ -10241,10 +10243,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.14.7.0&tags=dynsam%2Favg%40n%2Ccritic%2Frewards%2Fmean%2Cactor%2Fentropy_loss%2Cactor%2Fpg_loss%2Cactor%2Fgrad_norm%2Ctrain_infer_diff%2Fnew_infer%2Fkl%2Cctx_total_length%2Fmean%2Cdynsam%2Fagg_turn%2Fmean%2Cperf%2Ftotal_num_tokens",
+      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.14.8.15&tags=dynsam%2Favg%40n%2Ccritic%2Frewards%2Fmean%2Cactor%2Fentropy_loss%2Cactor%2Fpg_loss%2Cactor%2Fgrad_norm%2Ctrain_infer_diff%2Fnew_infer%2Fkl%2Cctx_total_length%2Fmean%2Cdynsam%2Fagg_turn%2Fmean%2Cperf%2Ftotal_num_tokens",
       "data": {
         "run": "pro",
-        "version": "3-5513.14.7.0",
+        "version": "3-5513.14.8.15",
         "steps": [
           1,
           2,
@@ -11643,10 +11645,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.14.7.0&tags=dynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fstep%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fheld%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fnum_target",
+      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.14.8.15&tags=dynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fstep%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fheld%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fnum_target",
       "data": {
         "run": "pro",
-        "version": "3-5513.14.7.0",
+        "version": "3-5513.14.8.15",
         "steps": [
           1,
           2,
@@ -12910,5 +12912,5 @@
     "headline": "",
     "status": ""
   },
-  "finished_at": "2026-09-17T10:00:48+00:00"
+  "finished_at": "2026-09-17T11:42:43+00:00"
 }
