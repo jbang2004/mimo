@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [index.html, app.v2.js, styles.v2.css, visual.v3.js, visual.v3.css, .github/workflows/verify.yml]
+    paths: [index.html, app.v2.js, styles.v2.css, visual.v3.js, visual.v3.css, visual.base.v3.css, .github/workflows/verify.yml]
 permissions:
   contents: read
 jobs:
@@ -42,7 +42,7 @@ jobs:
                   assert status == 200, f'HTTP: {status}'
                   page.wait_for_selector('#v3', timeout=20000)
                   page.wait_for_function("typeof MimoVisual!=='undefined' && !!MimoVisual.last('pro')", timeout=20000)
-                  for filename in ['visual.v3.js','visual.v3.css']:
+                  for filename in ['visual.v3.js','visual.v3.css','visual.base.v3.css']:
                       rr = page.request.get(result['url']+filename+'?verify='+str(int(time.time())))
                       assert rr.status == 200
                       assert hashlib.sha256(rr.body()).digest() == hashlib.sha256(Path(filename).read_bytes()).digest(), filename+' cache mismatch'
@@ -84,8 +84,8 @@ jobs:
                       if width==390:page.screenshot(path=str(out/'mobile.png'),full_page=True)
                       assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'), f'Overflow at {width}px'
                       widths.append(width)
-                  # Preserve the existing deeper analysis and teaching exercise.
-                  page.locator('a[href="#learn"]').last.click()
+                  # Open the link in the visible visual view, not a hidden legacy link.
+                  page.locator('.v-discovery a[href="#learn"]').click()
                   assert page.locator('#v3-more').evaluate('(e)=>e.open')
                   assert page.locator('.chart').count()==2
                   assert page.locator('.attempt').count()==16
