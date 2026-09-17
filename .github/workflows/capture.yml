@@ -34,6 +34,12 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Capture only public dashboard evidence
         run: python capture.py
+      - name: Archive public source evidence
+        uses: actions/upload-artifact@v5
+        with:
+          name: mimo-public-evidence
+          path: source-capture.json
+          retention-days: 7
       - name: Save capture result without changing analysis
         shell: bash
         run: |
