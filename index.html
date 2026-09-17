@@ -1,44 +1,55 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="color-scheme" content="light" />
-<title>MiMo RL Watch</title>
-<style>
-:root{--bg:#f7f7f5;--card:#fff;--ink:#171717;--muted:#747474;--line:#e8e7e3;--orange:#ff6900;--purple:#635bff;--green:#178a55;--red:#c53b36;--shadow:0 1px 2px rgba(0,0,0,.03),0 10px 30px rgba(0,0,0,.035)}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:-.01em}.wrap{max-width:1180px;margin:auto;padding:34px 24px 70px}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:28px}.eyebrow{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.title{font-size:36px;line-height:1.05;margin:8px 0 10px;font-weight:750;letter-spacing:-.04em}.sub{font-size:14px;color:var(--muted);max-width:720px;line-height:1.7}.live{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);white-space:nowrap;margin-top:4px}.dot{width:8px;height:8px;background:#28a66a;border-radius:50%;box-shadow:0 0 0 5px rgba(40,166,106,.1)}.hero{display:grid;grid-template-columns:1fr 1fr;gap:16px}.model{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.modelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.modelname{font-weight:700;font-size:17px}.badge{font-size:11px;padding:6px 9px;border-radius:99px;background:#f1f1ee;color:#555}.bigrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.metric .label{font-size:11px;color:var(--muted);margin-bottom:6px}.metric .value{font-size:25px;font-weight:730;letter-spacing:-.035em}.metric .delta{font-size:11px;margin-top:5px}.up{color:var(--green)}.down{color:var(--red)}.section{margin-top:28px}.section-title{font-size:13px;font-weight:700;margin:0 0 12px;letter-spacing:.01em}.insight{background:#171717;color:white;border-radius:20px;padding:24px;display:grid;grid-template-columns:130px 1fr;gap:20px}.score{font-size:12px;color:#aaa}.score strong{display:block;color:white;font-size:38px;line-height:1;margin-top:10px;letter-spacing:-.04em}.insight h2{font-size:20px;margin:0 0 8px}.insight p{margin:0;color:#d0d0d0;line-height:1.75;font-size:14px}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}.table{width:100%;border-collapse:collapse;font-size:13px}.table th{text-align:left;color:var(--muted);font-weight:500;padding:0 0 10px;border-bottom:1px solid var(--line)}.table td{padding:12px 0;border-bottom:1px solid #f0efec}.table tr:last-child td{border-bottom:0}.table td:nth-child(n+2),.table th:nth-child(n+2){text-align:right}.log{display:flex;flex-direction:column;gap:12px}.logitem{padding:14px 0;border-bottom:1px solid var(--line)}.logitem:first-child{padding-top:0}.logitem:last-child{border-bottom:0}.time{font-size:11px;color:var(--muted);margin-bottom:5px}.logtitle{font-size:14px;font-weight:650;margin-bottom:5px}.logtext{font-size:13px;color:#5f5f5f;line-height:1.65}.footer{margin-top:30px;color:#999;font-size:11px;display:flex;justify-content:space-between;gap:16px}.footer a{color:#666;text-decoration:none}.skeleton{animation:pulse 1.2s infinite alternate}@keyframes pulse{to{opacity:.45}}
-@media(max-width:820px){.wrap{padding:24px 16px 50px}.top{display:block}.live{margin-top:16px}.hero,.grid{grid-template-columns:1fr}.bigrow{grid-template-columns:repeat(3,1fr)}.insight{grid-template-columns:1fr}.title{font-size:31px}}
-@media(max-width:520px){.bigrow{grid-template-columns:1fr 1fr}.metric .value{font-size:22px}}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="observatory-version" content="2.0">
+<meta name="description" content="每小时解读小米 MiMo 的公开强化学习训练。先看发生了什么，再看证据；用交互演示理解模型怎样从尝试中学习。">
+<title>MiMo 训练观察室 · 看进展，也看懂原理</title>
+<link rel="stylesheet" href="./styles.v2.css">
 </head>
 <body>
-<main class="wrap">
-  <div class="top">
-    <div><div class="eyebrow">Independent training monitor</div><h1 class="title">MiMo RL Watch</h1><div class="sub">每小时追踪小米 MiMo-V2.6 Pro / Flash 强化学习公开训练进度。重点不是复述数字，而是判断训练是否仍在有效学习、是否出现收益递减、异常波动，以及 Pro 与 Flash 的分化。</div></div>
-    <div class="live"><span class="dot"></span><span id="updated">载入中…</span></div>
-  </div>
-
-  <div id="hero" class="hero"></div>
-
-  <section class="section">
-    <h3 class="section-title">本小时结论</h3>
-    <div class="insight"><div class="score">信号强度<strong id="signal">—</strong></div><div><h2 id="headline">正在读取最新分析</h2><p id="summary">—</p></div></div>
-  </section>
-
-  <section class="section grid">
-    <div class="card"><h3 class="section-title">关键指标对比</h3><table class="table"><thead><tr><th>指标</th><th>Pro</th><th>Flash</th></tr></thead><tbody id="metrics"></tbody></table></div>
-    <div class="card"><h3 class="section-title">监控记录</h3><div id="log" class="log"></div></div>
-  </section>
-
-  <div class="footer"><span>数据来源：Xiaomi MiMo 公开 RL Dashboard · 分析为独立解读，并非小米官方结论</span><a href="https://mimo.xiaomi.com/rl/" target="_blank" rel="noreferrer">打开官方页面 ↗</a></div>
+<a class="skip" href="#main">跳到正文</a>
+<header class="topbar"><div class="shell nav"><a class="brand" href="#"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>MiMo 训练观察室<small>THE RL OBSERVATORY</small></span></a><nav aria-label="主要导航"><a href="#progress">看进展</a><a href="#learn">懂原理</a><a href="#journal">观察记录</a><a href="https://mimo.xiaomi.com/rl/" target="_blank" rel="noopener noreferrer">官方现场 ↗</a></nav></div></header>
+<main class="shell" id="main">
+<section class="hero" aria-labelledby="headline">
+<div class="hero-top"><span class="eyebrow">不是多看数字，是看懂变化。</span><span class="pill" id="status-label">正在读取观察记录</span></div>
+<div class="hero-grid"><div><h1 id="headline">它正在练习，<br>我们一起看懂进步。</h1><p class="hero-copy" id="hero-summary">从一次尝试，到一次模型更新。这里把训练进展、外部测验和仍待验证的判断分开讲清楚。</p><div class="actions"><a class="btn" href="#progress">看训练证据 <span aria-hidden="true">↓</span></a><a class="btn secondary" href="#learn">动手理解强化学习 <span aria-hidden="true">↗</span></a></div></div>
+<div class="questions"><div class="question"><span class="n">01</span><div><p class="q">训练在继续吗？</p><p class="answer" id="answer-progress">等待核验最近训练状态</p></div></div><div class="question"><span class="n">02</span><div><p class="q">练习表现变好了吗？</p><p class="answer" id="answer-training">需要比较同口径的前后记录</p></div></div><div class="question"><span class="n">03</span><div><p class="q">实际能力也提高了吗？</p><p class="answer" id="answer-benchmark">还要看外部测验的证据</p></div></div></div></div>
+<div class="freshness"><span id="last-check">最近检查：尚未加载</span><span id="last-success">最近成功取数：尚未加载</span><span>计划每小时分析 · 页面每分钟检查更新</span><button type="button" id="refresh">立即刷新</button></div>
+<p class="data-notice" id="data-notice" role="status" hidden></p>
+<details class="evidence" id="hero-evidence"><summary>这次观察依据什么？</summary><div id="hero-evidence-body"><p>正在读取证据。教学内容可先行浏览。</p></div></details>
+</section>
+<section class="section" id="progress" aria-labelledby="progress-title"><div class="section-head"><div><div class="eyebrow">01 / 进步，需要两种证据</div><h2 id="progress-title">练习分数，不是能力判决。</h2></div><p>先看模型在训练中拿到了什么反馈，再看这些变化是否出现在相同条件的外部测验里。</p></div>
+<div class="twocol"><article class="panel"><div class="category">TRAINING · 训练内表现</div><h3>这批练习，做得怎样？</h3><p class="description">默认展示每道任务多次尝试的平均成功比例；切换“平均奖励”可查看训练系统的评分。两者不是同一个指标。</p><div id="training-readings" class="loading-text">正在读取训练记录…</div><div class="chart-tools"><label for="train-model">观察</label><select id="train-model"><option value="pro">Pro</option><option value="flash">Flash</option></select><label for="train-metric">指标</label><select id="train-metric"><option value="dynsam">练习尝试成功比例</option><option value="reward">平均奖励</option></select></div><div id="train-chart"></div><details class="expand"><summary>为什么分数涨了，也要谨慎？</summary><p>任务难度、任务构成、评分规则都可能变化。训练内曲线描述的是这些练习上的表现，不能单凭它证明模型变得更聪明。</p><p><a href="https://huggingface.co/docs/trl/grpo_trainer#using-a-custom-reward-function" target="_blank" rel="noopener noreferrer">原理参考：奖励可以由多个评分函数组成 ↗</a></p></details></article>
+<article class="panel"><div class="category">EVALUATION · 外部能力测验</div><h3>换到测验里，还能做好吗？</h3><p class="description">优先观察相同测验版本、工具配置和统计方式下，不同训练轮次的成绩变化。</p><div id="benchmark-readings" class="loading-text">正在读取测验记录…</div><div class="chart-tools"><label for="bench-model">观察</label><select id="bench-model"><option value="pro">Pro</option><option value="flash">Flash</option></select></div><div id="bench-chart"></div><details class="expand"><summary>如何把变化翻译成人话？</summary><p>只有确认指标是通过率，且测验条件相同，才能说“从 60% 到 64%，相当于平均每 100 次尝试多成功 4 次”。这是表达示例，不是小米的新成绩。</p><p>测验没有更新 ≠ 能力没有进步。不同统计方式也不能直接排高下；例如 avg@3 不等于 pass@3。</p></details></article></div>
+<div class="takeaway"><b>读图提醒</b><span>不把训练轮次当成完成百分比，不把旧测验当成本轮成绩，也不把一个奖励数字当作“智商”。</span></div>
+</section>
+<section class="section" id="process" aria-labelledby="process-title"><div class="section-head"><div><div class="eyebrow">02 / 训练在做什么</div><h2 id="process-title">不是只读书，而是尝试把事做成。</h2></div><p>一次训练循环的简化示意。只有取得明确状态才高亮阶段；这里不是内部操作的实时直播。</p></div><div class="twocol" id="process-cards"><p class="loading-text">正在读取训练阶段…</p></div></section>
+<section class="section" id="learn" aria-labelledby="learn-title"><div class="section-head"><div><div class="eyebrow">03 / 动手理解强化学习</div><h2 id="learn-title">一道任务，为什么要试很多次？</h2></div><p>不需要先懂公式。换一种结果分布，看看训练系统从中能得到什么。</p></div>
+<div class="lab"><div class="lab-top"><div><div class="eyebrow">ONE TASK. MANY ATTEMPTS.</div><h3>16 次尝试，哪一组更有比较价值？</h3><p>点选情境，再点击任意小方块查看一条操作示例。</p></div><span class="pill">教学示意 · 非真实训练数据</span></div>
+<div class="lab-grid"><div><div class="task"><b>假设的编程任务</b>修复登录程序：输入正确密码后，仍然无法登录。</div><div class="segmented" role="group" aria-label="选择教学情境"><button type="button" data-mode="mixed" aria-pressed="true">有成有败</button><button type="button" data-mode="all" aria-pressed="false">全部成功</button><button type="button" data-mode="none" aria-pressed="false">全部失败</button></div><div class="attempts" id="attempts" aria-label="16 次模拟尝试"></div><p class="lab-count" id="lab-count"></p></div>
+<div class="lab-explain" aria-live="polite"><h4 id="lab-heading"></h4><p id="lab-explanation"></p><div class="trajectory"><div class="trajectory-title" id="trajectory-title"></div><ol id="trajectory"></ol></div><details class="expand"><summary>展开看一个简单计算</summary><pre class="formula" id="formula"></pre><p>这里只演示“奖励减去组内平均奖励”，省略标准差归一化、裁剪、正则项等。它不是小米训练损失的复现。</p></details></div></div>
+<div class="lab-foot">在仅用成功 / 失败评分的组内比较里，结果有差异才有相对奖励信号。全对不代表任务永远没价值，全错也不代表模型永远做不到。<a href="https://dapo-sia.github.io/" target="_blank" rel="noopener noreferrer">DAPO 动态采样</a>与 <a href="https://huggingface.co/docs/trl/grpo_trainer#looking-deeper-into-the-grpo-method" target="_blank" rel="noopener noreferrer">GRPO 原理</a>可作参考；本演示不宣称小米采用相同实现。</div></div>
+</section>
+<section class="section" id="journal" aria-labelledby="journal-title"><div class="section-head"><div><div class="eyebrow">04 / 每小时观察札记</div><h2 id="journal-title">留下变化，不堆流水账。</h2></div><div class="segmented" role="group" aria-label="筛选观察记录"><button type="button" data-filter="important" aria-pressed="true">关键观察</button><button type="button" data-filter="all" aria-pressed="false">全部检查</button></div></div><div class="timeline" id="timeline"><p class="loading-text">正在读取观察记录…</p></div><button class="btn secondary" id="more" type="button" hidden>展开更早记录</button><details class="expand"><summary>旧版记录归档 · 不用于新趋势判断</summary><p>原有文字和数据完整保留。早期记录未附可回溯的官方快照，下列内容是历史归档，不是本次重新确认的事实。</p><div id="legacy-log"></div></details></section>
+<section class="section" id="reference" aria-labelledby="reference-title"><div class="section-head"><div><div class="eyebrow">05 / 想再懂一点</div><h2 id="reference-title">术语，放回它该在的位置。</h2></div><p>先知道它在回答什么问题，再看原始名字。没有公布的口径，明确保留不确定性。</p></div>
+<div class="glossary">
+<details><summary><span>一轮训练 <small>Step</small></span></summary><p>通常指一轮经验收集与参数更新的计数；具体边界以训练系统定义为准。“正在第 11 轮”和“已完成 11 轮”不同。总计划未知时，不能计算完成百分比。</p></details>
+<details><summary><span>一次尝试 <small>Rollout</small></span></summary><p>模型为完成任务生成的执行过程，可以包含多轮工具调用。收集尝试还不等于已经用这些尝试更新了参数。</p></details>
+<details><summary><span>练习得到的反馈 <small>Reward</small></span></summary><p>评分可能来自测试、规则或模型评审，也可能是多项奖励的组合。0.6 不一定意味着 60% 正确。指标名中的 critic 也不能单独证明有独立 Critic 网络。</p></details>
+<details><summary><span>挑选有价值的练习 <small>Dynamic sampling</small></span></summary><p>根据尝试的结果选择训练样本。例如有的方法过滤全部成功或全部失败的题组。小米已将 avg@n 定义为：先计算每题 n 次尝试的成功比例，再对题目取平均；这不代表任务完全相同或难度恒定。</p></details>
+<details><summary><span>尝试有没有变得单一 <small>Entropy</small></span></summary><p>小米官方将此字段定义为策略的平均逐 token 熵，与输出分布的多样性有关。需要结合历史走势解释，不能把一个较小数值直接判成“停止探索”。</p></details>
+<details><summary><span>更新有没有异常 <small>Gradient · KL</small></span></summary><p>小米官方定义：梯度是裁剪前的全局梯度范数；此处 KL 比较同一批 token 在推理引擎与训练器中的 log-prob，不是相对参考模型的 KL。一个读数不足以诊断崩溃。</p></details>
+<details><summary><span>一次任务有多长 <small>Context · Turns · Tokens</small></span></summary><p>Tokens 是文本等输入输出的计量单位，不等于汉字数；Context 和轮数反映任务执行长度。更长可能意味着更难，也可能意味着低效，不能默认越长越聪明。</p></details>
+<details><summary><span>失败是谁造成的 <small>Infra error</small></span></summary><p>环境或基础设施错误与模型没有解决任务是两类问题。分母和重试规则也会影响错误率，因此应结合系统日志与连续观测解释。</p></details>
+</div>
+<details class="panel raw"><summary>查看原始指标与可回溯快照</summary><p id="raw-caption"></p><div class="table-wrap" id="raw-table"></div><div class="linkrow"><a href="./data.json" target="_blank" rel="noopener">打开完整数据 JSON ↗</a><a href="https://mimo.xiaomi.com/rl/" target="_blank" rel="noopener noreferrer">核对小米官方现场 ↗</a><a href="https://github.com/jbang2004/mimo" target="_blank" rel="noopener noreferrer">查看版本记录 ↗</a></div><details class="expand"><summary>展开最近一份已核验快照</summary><pre id="raw-json">尚无已核验快照。</pre></details></details>
+</section>
+<footer class="footer"><p>MiMo 训练观察室 / 独立观察，非小米官方。<br>原始数据归其来源所有。页面区分观测事实、分析推断与教学示例；不对缺失数据补数，不以单个指标判断总体能力。</p><a href="#main">回到顶部 ↑</a></footer>
 </main>
-<script>
-const fmt=v=>v===null||v===undefined?'—':v;
-const delta=(v)=>!v?'':`<div class="delta ${String(v).startsWith('-')?'down':'up'}">${v}</div>`;
-function modelCard(name,m){return `<article class="model"><div class="modelhead"><div class="modelname">${name}</div><div class="badge">${fmt(m.phase)}</div></div><div class="bigrow"><div class="metric"><div class="label">Step</div><div class="value">${fmt(m.step)}</div>${delta(m.step_delta)}</div><div class="metric"><div class="label">dynsam avg@n</div><div class="value">${fmt(m.dynsam)}</div>${delta(m.dynsam_delta)}</div><div class="metric"><div class="label">DeepSWE</div><div class="value">${fmt(m.deepswe)}</div>${delta(m.deepswe_delta)}</div><div class="metric"><div class="label">累计 Tokens</div><div class="value">${fmt(m.tokens)}</div></div><div class="metric"><div class="label">Avg Context</div><div class="value">${fmt(m.context)}</div></div><div class="metric"><div class="label">成本</div><div class="value">${fmt(m.cost)}</div></div></div></article>`}
-async function load(){try{const r=await fetch('data.json?ts='+Date.now(),{cache:'no-store'});const d=await r.json();document.getElementById('updated').textContent='更新于 '+d.updated_at;document.getElementById('hero').innerHTML=modelCard('MiMo-V2.6 Pro',d.models.pro)+modelCard('MiMo-V2.6 Flash',d.models.flash);document.getElementById('signal').textContent=d.analysis.signal;document.getElementById('headline').textContent=d.analysis.headline;document.getElementById('summary').textContent=d.analysis.summary;const rows=[['Reward mean','reward'],['Passrate zero','zero'],['Passrate one','one'],['Grad norm','grad_norm'],['Train/Infer KL','kl'],['Avg turns','turns'],['Infra error','infra_error'],['Step time','step_time']];document.getElementById('metrics').innerHTML=rows.map(([n,k])=>`<tr><td>${n}</td><td>${fmt(d.models.pro[k])}</td><td>${fmt(d.models.flash[k])}</td></tr>`).join('');document.getElementById('log').innerHTML=(d.history||[]).slice().reverse().slice(0,8).map(x=>`<div class="logitem"><div class="time">${x.time}</div><div class="logtitle">${x.title}</div><div class="logtext">${x.text}</div></div>`).join('')||'<div class="logtext">等待下一次监控更新。</div>'}catch(e){document.getElementById('updated').textContent='数据暂时无法读取';document.getElementById('headline').textContent='页面已上线，等待数据更新';document.getElementById('summary').textContent='监控数据文件尚未就绪或正在更新。';}}
-load();setInterval(load,60000);
-</script>
+<noscript><div class="shell data-notice">你的浏览器未启用 JavaScript，无法加载数据和交互演示。请启用后刷新；也可直接查看 data.json。</div></noscript>
+<script src="./app.v2.js" defer></script>
 </body>
 </html>
