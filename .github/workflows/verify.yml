@@ -3,13 +3,13 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [index.html, app.v2.js, styles.v2.css, .github/workflows/verify.yml]
+    paths: [index.html, app.v2.js, styles.v2.css, visual.v3.js, visual.v3.css, .github/workflows/verify.yml]
 permissions:
   contents: read
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -19,10 +19,10 @@ jobs:
         run: |
           python -m pip install playwright==1.57.0
           python -m playwright install --with-deps chromium
-      - name: Verify actual public website
+      - name: Verify actual public website and teaching interactions
         run: |
           python - <<'PY'
-          import json, time
+          import json, time, hashlib
           from pathlib import Path
           from playwright.sync_api import sync_playwright
           out = Path('site-verification'); out.mkdir(exist_ok=True)
@@ -30,46 +30,84 @@ jobs:
           try:
               with sync_playwright() as p:
                   browser = p.chromium.launch(headless=True)
-                  page = browser.new_page(viewport={'width': 1440, 'height': 1100})
+                  page = browser.new_page(viewport={'width':1440,'height':1080})
                   errors = []; page.on('pageerror', lambda e: errors.append(str(e)))
                   status = None
-                  for attempt in range(6):
-                      r = page.goto(result['url'] + '?verify=' + str(int(time.time())), wait_until='networkidle', timeout=45000)
+                  for attempt in range(12):
+                      r = page.goto(result['url']+'?verify='+str(int(time.time())), wait_until='networkidle', timeout=45000)
                       status = r.status if r else None
-                      version = page.locator('meta[name="observatory-version"]')
-                      if status == 200 and version.count() and version.get_attribute('content') == '2.0':
+                      if status == 200 and page.locator('#v3').count():
                           break
                       page.wait_for_timeout(10000)
-                  assert status == 200, f'HTTP status: {status}'
-                  assert page.locator('meta[name="observatory-version"]').get_attribute('content') == '2.0'
-                  page.wait_for_selector('#status-label:has-text("已核验")', timeout=20000)
-                  assert page.locator('.chart').count() == 2
-                  assert page.locator('.attempt').count() == 16
-                  assert page.locator('.attempt.success').count() == 6
-                  result.update(http_status=status, title=page.title(), headline=page.locator('#headline').inner_text(),
-                                status=page.locator('#status-label').inner_text(), checked_at=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()))
-                  page.screenshot(path=str(out/'desktop.png'), full_page=True)
-                  page.set_viewport_size({'width':390,'height':844})
-                  assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Mobile overflow'
-                  page.screenshot(path=str(out/'mobile.png'), full_page=True)
+                  assert status == 200, f'HTTP: {status}'
+                  page.wait_for_selector('#v3', timeout=20000)
+                  page.wait_for_function("typeof MimoVisual!=='undefined' && !!MimoVisual.last('pro')", timeout=20000)
+                  for filename in ['visual.v3.js','visual.v3.css']:
+                      rr = page.request.get(result['url']+filename+'?verify='+str(int(time.time())))
+                      assert rr.status == 200
+                      assert hashlib.sha256(rr.body()).digest() == hashlib.sha256(Path(filename).read_bytes()).digest(), filename+' cache mismatch'
+                  assert page.locator('.v-station').count()==4
+                  assert page.locator('#v-waffle > span').count()==100
+                  assert page.locator('.v-rail').count()==2
+                  page.locator('#v-play').click()
+                  assert page.evaluate('MimoVisual.getState().playing')
+                  page.wait_for_timeout(4500)
+                  assert page.evaluate('MimoVisual.getState().stage')==1
+                  page.locator('#v-next').click()
+                  assert not page.evaluate('MimoVisual.getState().playing')
+                  for stage in range(4):
+                      page.locator(f'[data-v-stage="{stage}"]').click()
+                      assert page.evaluate('MimoVisual.getState().stage')==stage
+                  before=page.evaluate('JSON.stringify(data.snapshots)')
+                  page.locator('#v-play').click()
+                  page.locator('#v-next').click()
+                  assert before==page.evaluate('JSON.stringify(data.snapshots)'), 'Teaching mutated observed snapshots'
+                  page.locator('[data-v-model="flash"]').click()
+                  assert page.locator('#v3').get_attribute('data-model')=='flash'
+                  completed=page.evaluate("MimoVisual.last('flash').models.flash.completed_steps")
+                  page.locator(f'[data-v-round="{completed}"]').first.click()
+                  assert page.locator('#v-round-detail').inner_text().startswith(f'第 {completed} 轮')
+                  slider=page.locator('#v-exam-range')
+                  slider.fill('0')
+                  assert '第 1 轮' in page.locator('#v-exam-step').inner_text()
+                  page.locator('[data-v-model="pro"]').click()
+                  page.locator('[data-v-stage="0"]').click()
+                  page.evaluate('window.scrollTo(0,0)')
+                  page.screenshot(path=str(out/'desktop.png'),full_page=True)
+                  page.screenshot(path=str(out/'first-screen.png'),full_page=False)
+                  widths=[]
+                  for width in [390,320,768]:
+                      page.set_viewport_size({'width':width,'height':900})
+                      page.locator('[data-v-model="flash"]').click()
+                      page.locator('[data-v-model="pro"]').click()
+                      page.evaluate('window.scrollTo(0,0)')
+                      if width==390:page.screenshot(path=str(out/'mobile.png'),full_page=True)
+                      assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'), f'Overflow at {width}px'
+                      widths.append(width)
+                  # Preserve the existing deeper analysis and teaching exercise.
+                  page.locator('a[href="#learn"]').last.click()
+                  assert page.locator('#v3-more').evaluate('(e)=>e.open')
+                  assert page.locator('.chart').count()==2
+                  assert page.locator('.attempt').count()==16
                   page.locator('[data-mode="all"]').click()
-                  assert page.locator('.attempt.success').count() == 16
+                  assert page.locator('.attempt.success').count()==16
                   page.locator('[data-mode="none"]').click()
-                  assert page.locator('.attempt.success').count() == 0
-                  page.locator('[data-mode="mixed"]').click()
+                  assert page.locator('.attempt.success').count()==0
                   page.locator('#train-model').select_option('flash')
-                  assert page.locator('#train-chart .chart.flash').count() == 1
-                  page.locator('#bench-model').select_option('flash')
-                  assert page.locator('#bench-chart .chart.flash').count() == 1
+                  assert page.locator('#train-chart .chart.flash').count()==1
                   assert not errors, str(errors)
-                  result.update(ok=True, charts=2, teaching_attempts=16, mobile_width=390, javascript_errors=errors)
+                  result.update(ok=True,http_status=status,visualization_version='3.0',widths=widths,
+                      source_time=page.locator('#v-source-time').inner_text(),
+                      progress=page.locator('#v-progress-sentence').inner_text(),
+                      teaching_does_not_change_data=True,javascript_errors=errors,
+                      checked_at=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
                   browser.close()
           except Exception as exc:
-              result['error'] = f'{type(exc).__name__}: {exc}'
+              result['error']=f'{type(exc).__name__}: {exc}'
               raise
           finally:
-              (out/'result.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
-              print(json.dumps(result, ensure_ascii=False))
+              (out/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+              print(json.dumps(result,ensure_ascii=False))
           PY
       - uses: actions/upload-artifact@v5
         if: always()

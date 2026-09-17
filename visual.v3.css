@@ -1,0 +1,7 @@
+@import url('./visual.base.v3.css');
+/* Keep navigation readable above the visual scene on narrow screens. */
+@media(max-width:680px){
+ .topbar .nav{height:auto;min-height:74px;flex-wrap:wrap;gap:8px;padding:13px 0 10px}
+ .topbar .nav nav{width:100%;justify-content:space-between;gap:10px;font-size:11px}
+ .topbar .nav nav a:last-child{display:block}
+}
