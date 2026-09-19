@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-19T20:42:03+00:00",
+  "captured_at": "2026-09-19T23:07:35+00:00",
   "source_url": "https://mimo.xiaomi.com/rl/",
   "capture_ok": true,
   "note": "Public browser capture; source material, not verified analysis.",
@@ -15,7 +15,7 @@
           "mode": "ended"
         },
         "clock": {
-          "now": 1789850525.2848797
+          "now": 1789859255.4725935
         },
         "version": "3-5513.32.6.28",
         "step": {
@@ -306,50 +306,41 @@
           "mode": "live"
         },
         "clock": {
-          "now": 1789850525.284103
+          "now": 1789859256.0556204
         },
-        "version": "3-5513.26.13.26",
+        "version": "3-5513.27.13.26",
         "step": {
-          "last": 26,
-          "last_wall": 1789840512.2571833,
-          "since": 10013.026919603348,
-          "expected": 13385.1,
-          "progress": 0.7480726269959393,
-          "phase": "training",
-          "gen_frac": 0.5035824042424049,
+          "last": 27,
+          "last_wall": 1789855804.2271216,
+          "since": 3451.828498840332,
+          "expected": 15286.5,
+          "progress": 0.22580894899684897,
+          "phase": "rollout",
+          "gen_frac": 0.4679161351519315,
           "restarted_at": null
         },
         "totals": {
-          "tokens_step": 2925840000.0,
+          "tokens_step": 3151650000.0,
           "trained_step": 25088.0,
-          "sandboxes_step": 22784.0,
+          "sandboxes_step": 86352.0,
           "prompts_per_step": 1568.0,
-          "tokens_cum": 61975610000.0,
-          "trained_cum": 652288.0,
-          "sandboxes_cum": 3356112.0,
+          "tokens_cum": 65127260000.0,
+          "trained_cum": 677376.0,
+          "sandboxes_cum": 3442464.0,
           "restarts": 12
         },
         "headline": {
           "tag": "dynsam/avg@n",
-          "last": 0.62138,
-          "prev": 0.626439,
+          "last": 0.602605,
+          "prev": 0.62138,
           "first": 0.564662,
           "first_step": 1
         },
         "cost": {
           "rate_per_s": 5.71,
-          "so_far": 2182281.7750870227
+          "so_far": 2232134.4804520346
         },
         "events": [
-          {
-            "t": 1789540010.4015698,
-            "kind": "step",
-            "step": 5,
-            "value": 0.569944,
-            "delta": -0.005681000000000047,
-            "tokens": 2009690000.0,
-            "redo": false
-          },
           {
             "t": 1789546959.498796,
             "kind": "step",
@@ -570,6 +561,15 @@
             "delta": -0.005058999999999925,
             "tokens": 2925840000.0,
             "redo": false
+          },
+          {
+            "t": 1789855804.2271216,
+            "kind": "step",
+            "step": 27,
+            "value": 0.602605,
+            "delta": -0.018775000000000097,
+            "tokens": 3151650000.0,
+            "redo": false
           }
         ]
       }
@@ -577,7 +577,7 @@
     "series": {
       "pro": {
         "run": "pro",
-        "version": "3-5513.26.13.26",
+        "version": "3-5513.27.13.26",
         "steps": [
           1,
           2,
@@ -604,7 +604,8 @@
           23,
           24,
           25,
-          26
+          26,
+          27
         ],
         "walls": [
           1789492877.8213444,
@@ -632,7 +633,8 @@
           1789791158.7968752,
           1789804322.9385362,
           1789817711.3393211,
-          1789840512.2571833
+          1789840512.2571833,
+          1789855804.2271216
         ],
         "run_start": 1789468339.334,
         "series": {
@@ -662,7 +664,8 @@
             0.621683,
             0.596417,
             0.626439,
-            0.62138
+            0.62138,
+            0.602605
           ],
           "critic/rewards/mean": [
             0.552211,
@@ -690,7 +693,8 @@
             0.594113,
             0.596313,
             0.585872,
-            0.59637
+            0.59637,
+            0.586579
           ],
           "actor/entropy_loss": [
             0.395265,
@@ -718,7 +722,8 @@
             0.44236,
             0.443705,
             0.449144,
-            0.455583
+            0.455583,
+            0.456695
           ],
           "actor/pg_loss": [
             0.00411032,
@@ -746,7 +751,8 @@
             0.00474929,
             0.00639693,
             0.00483615,
-            0.00439114
+            0.00439114,
+            0.00822892
           ],
           "actor/grad_norm": [
             0.00533389,
@@ -774,7 +780,8 @@
             0.00609306,
             0.00541792,
             0.00467387,
-            0.00468369
+            0.00468369,
+            0.00482392
           ],
           "train_infer_diff/new_infer/kl": [
             0.0021894,
@@ -802,7 +809,8 @@
             0.00382564,
             0.00697729,
             0.00948334,
-            0.00444067
+            0.00444067,
+            0.00740074
           ],
           "dynsam/code/dataset-4onq/num_accepted/step": [
             66.0,
@@ -830,7 +838,8 @@
             42.0,
             36.0,
             23.0,
-            44.0
+            44.0,
+            36.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/held": [
             66.0,
@@ -858,7 +867,8 @@
             42.0,
             47.0,
             39.0,
-            44.0
+            44.0,
+            49.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/carryover": [
             35.0,
@@ -886,7 +896,8 @@
             11.0,
             16.0,
             7.0,
-            13.0
+            13.0,
+            18.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/step": [
             126.0,
@@ -914,7 +925,8 @@
             80.0,
             59.0,
             40.0,
-            67.0
+            67.0,
+            71.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/held": [
             126.0,
@@ -942,7 +954,8 @@
             80.0,
             87.0,
             75.0,
-            67.0
+            67.0,
+            86.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/carryover": [
             74.0,
@@ -970,7 +983,8 @@
             28.0,
             35.0,
             23.0,
-            15.0
+            15.0,
+            35.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/step": [
             95.0,
@@ -998,7 +1012,8 @@
             94.0,
             54.0,
             49.0,
-            88.0
+            88.0,
+            79.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/held": [
             95.0,
@@ -1026,7 +1041,8 @@
             94.0,
             85.0,
             71.0,
-            88.0
+            88.0,
+            104.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/carryover": [
             32.0,
@@ -1054,7 +1070,8 @@
             31.0,
             22.0,
             8.0,
-            25.0
+            25.0,
+            42.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/step": [
             311.0,
@@ -1082,7 +1099,8 @@
             172.0,
             152.0,
             138.0,
-            187.0
+            187.0,
+            192.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/held": [
             311.0,
@@ -1110,7 +1128,8 @@
             172.0,
             170.0,
             155.0,
-            187.0
+            187.0,
+            225.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/carryover": [
             157.0,
@@ -1138,7 +1157,8 @@
             18.0,
             17.0,
             0.0,
-            33.0
+            33.0,
+            71.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/step": [
             246.0,
@@ -1166,7 +1186,8 @@
             265.0,
             224.0,
             93.0,
-            208.0
+            208.0,
+            251.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/held": [
             246.0,
@@ -1194,7 +1215,8 @@
             265.0,
             335.0,
             274.0,
-            208.0
+            208.0,
+            305.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/carryover": [
             92.0,
@@ -1222,7 +1244,8 @@
             111.0,
             181.0,
             121.0,
-            54.0
+            54.0,
+            151.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/step": [
             249.0,
@@ -1250,7 +1273,8 @@
             234.0,
             148.0,
             114.0,
-            233.0
+            233.0,
+            156.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/held": [
             249.0,
@@ -1278,7 +1302,8 @@
             234.0,
             228.0,
             188.0,
-            233.0
+            233.0,
+            235.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/carryover": [
             95.0,
@@ -1306,7 +1331,8 @@
             80.0,
             74.0,
             35.0,
-            79.0
+            79.0,
+            81.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/step": [
             101.0,
@@ -1334,7 +1360,8 @@
             89.0,
             89.0,
             62.0,
-            87.0
+            87.0,
+            97.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/held": [
             101.0,
@@ -1362,7 +1389,8 @@
             89.0,
             115.0,
             114.0,
-            87.0
+            87.0,
+            121.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/carryover": [
             38.0,
@@ -1390,7 +1418,8 @@
             26.0,
             52.0,
             51.0,
-            24.0
+            24.0,
+            59.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/step": [
             77.0,
@@ -1418,7 +1447,8 @@
             57.0,
             75.0,
             30.0,
-            63.0
+            63.0,
+            58.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/held": [
             77.0,
@@ -1446,7 +1476,8 @@
             57.0,
             80.0,
             58.0,
-            63.0
+            63.0,
+            69.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/carryover": [
             25.0,
@@ -1474,7 +1505,8 @@
             5.0,
             28.0,
             6.0,
-            11.0
+            11.0,
+            18.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/step": [
             282.0,
@@ -1502,7 +1534,8 @@
             182.0,
             190.0,
             112.0,
-            177.0
+            177.0,
+            218.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/held": [
             282.0,
@@ -1530,7 +1563,8 @@
             182.0,
             243.0,
             227.0,
-            177.0
+            177.0,
+            266.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/carryover": [
             153.0,
@@ -1558,7 +1592,8 @@
             53.0,
             115.0,
             98.0,
-            48.0
+            48.0,
+            138.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/step": [
             55.0,
@@ -1586,6 +1621,7 @@
             62.0,
             55.0,
             116.0,
+            55.0,
             55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/held": [
@@ -1614,6 +1650,7 @@
             62.0,
             55.0,
             116.0,
+            55.0,
             55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/carryover": [
@@ -1642,6 +1679,7 @@
             0.0,
             0.0,
             62.0,
+            0.0,
             0.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/step": [
@@ -1670,7 +1708,8 @@
             205.0,
             168.0,
             124.0,
-            190.0
+            190.0,
+            167.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/held": [
             227.0,
@@ -1698,7 +1737,8 @@
             205.0,
             219.0,
             189.0,
-            190.0
+            190.0,
+            203.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/carryover": [
             73.0,
@@ -1726,7 +1766,8 @@
             51.0,
             65.0,
             36.0,
-            36.0
+            36.0,
+            49.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/step": [
             48.0,
@@ -1754,7 +1795,8 @@
             40.0,
             32.0,
             29.0,
-            37.0
+            37.0,
+            38.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/held": [
             48.0,
@@ -1782,7 +1824,8 @@
             40.0,
             41.0,
             39.0,
-            37.0
+            37.0,
+            44.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/carryover": [
             17.0,
@@ -1810,7 +1853,8 @@
             9.0,
             10.0,
             7.0,
-            6.0
+            6.0,
+            13.0
           ],
           "dynsam/general/dataset-5610/num_accepted/step": [
             47.0,
@@ -1838,7 +1882,8 @@
             37.0,
             30.0,
             34.0,
-            40.0
+            40.0,
+            36.0
           ],
           "dynsam/general/dataset-5610/num_accepted/held": [
             47.0,
@@ -1866,7 +1911,8 @@
             37.0,
             36.0,
             39.0,
-            40.0
+            40.0,
+            45.0
           ],
           "dynsam/general/dataset-5610/num_accepted/carryover": [
             16.0,
@@ -1894,7 +1940,8 @@
             6.0,
             5.0,
             7.0,
-            9.0
+            9.0,
+            14.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/step": [
             102.0,
@@ -1922,7 +1969,8 @@
             88.0,
             71.0,
             52.0,
-            88.0
+            88.0,
+            71.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/held": [
             102.0,
@@ -1950,7 +1998,8 @@
             88.0,
             95.0,
             83.0,
-            88.0
+            88.0,
+            95.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/carryover": [
             38.0,
@@ -1978,7 +2027,8 @@
             24.0,
             31.0,
             19.0,
-            24.0
+            24.0,
+            30.0
           ],
           "dynsam/general/dataset-trla/num_accepted/step": [
             99.0,
@@ -2006,7 +2056,8 @@
             88.0,
             68.0,
             59.0,
-            82.0
+            82.0,
+            69.0
           ],
           "dynsam/general/dataset-trla/num_accepted/held": [
             99.0,
@@ -2034,7 +2085,8 @@
             88.0,
             92.0,
             87.0,
-            82.0
+            82.0,
+            87.0
           ],
           "dynsam/general/dataset-trla/num_accepted/carryover": [
             35.0,
@@ -2062,7 +2114,8 @@
             24.0,
             28.0,
             23.0,
-            18.0
+            18.0,
+            22.0
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/step": [
             196.0,
@@ -2079,6 +2132,7 @@
             112.0,
             124.0,
             97.0,
+            null,
             null,
             null,
             null,
@@ -2118,6 +2172,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/carryover": [
@@ -2135,6 +2190,7 @@
             47.0,
             107.0,
             118.0,
+            null,
             null,
             null,
             null,
@@ -2174,7 +2230,8 @@
             53.0,
             43.0,
             41.0,
-            47.0
+            47.0,
+            68.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/held": [
             54.0,
@@ -2202,7 +2259,8 @@
             53.0,
             57.0,
             58.0,
-            47.0
+            47.0,
+            76.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/carryover": [
             23.0,
@@ -2230,7 +2288,8 @@
             14.0,
             17.0,
             19.0,
-            8.0
+            8.0,
+            37.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/step": [
             63.0,
@@ -2258,7 +2317,8 @@
             91.0,
             68.0,
             62.0,
-            90.0
+            90.0,
+            70.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/held": [
             63.0,
@@ -2286,7 +2346,8 @@
             91.0,
             95.0,
             93.0,
-            90.0
+            90.0,
+            96.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/carryover": [
             22.0,
@@ -2314,7 +2375,8 @@
             27.0,
             31.0,
             29.0,
-            26.0
+            26.0,
+            31.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/step": [
             62.0,
@@ -2342,7 +2404,8 @@
             92.0,
             64.0,
             64.0,
-            90.0
+            90.0,
+            73.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/held": [
             62.0,
@@ -2370,7 +2433,8 @@
             92.0,
             92.0,
             92.0,
-            90.0
+            90.0,
+            99.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/carryover": [
             21.0,
@@ -2398,7 +2462,8 @@
             28.0,
             28.0,
             28.0,
-            26.0
+            26.0,
+            34.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/step": [
             57.0,
@@ -2426,7 +2491,8 @@
             53.0,
             57.0,
             27.0,
-            57.0
+            57.0,
+            61.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/held": [
             57.0,
@@ -2454,7 +2520,8 @@
             53.0,
             69.0,
             56.0,
-            57.0
+            57.0,
+            77.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/carryover": [
             26.0,
@@ -2482,7 +2549,8 @@
             12.0,
             29.0,
             15.0,
-            16.0
+            16.0,
+            36.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/step": [
             48.0,
@@ -2510,7 +2578,8 @@
             33.0,
             49.0,
             26.0,
-            37.0
+            37.0,
+            54.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/held": [
             48.0,
@@ -2538,7 +2607,8 @@
             33.0,
             49.0,
             44.0,
-            37.0
+            37.0,
+            60.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/carryover": [
             17.0,
@@ -2566,7 +2636,8 @@
             0.0,
             18.0,
             12.0,
-            6.0
+            6.0,
+            29.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/step": [
             52.0,
@@ -2594,7 +2665,8 @@
             33.0,
             53.0,
             32.0,
-            44.0
+            44.0,
+            51.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/held": [
             52.0,
@@ -2622,7 +2694,8 @@
             33.0,
             55.0,
             56.0,
-            44.0
+            44.0,
+            64.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/carryover": [
             21.0,
@@ -2650,7 +2723,8 @@
             2.0,
             24.0,
             24.0,
-            13.0
+            13.0,
+            33.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/step": [
             24.0,
@@ -2678,7 +2752,8 @@
             24.0,
             17.0,
             13.0,
-            24.0
+            24.0,
+            17.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/held": [
             24.0,
@@ -2706,7 +2781,8 @@
             24.0,
             25.0,
             22.0,
-            24.0
+            24.0,
+            25.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/carryover": [
             8.0,
@@ -2734,7 +2810,8 @@
             8.0,
             9.0,
             7.0,
-            8.0
+            8.0,
+            9.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/step": [
             26.0,
@@ -2762,7 +2839,8 @@
             25.0,
             16.0,
             15.0,
-            23.0
+            23.0,
+            17.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/held": [
             26.0,
@@ -2790,7 +2868,8 @@
             25.0,
             25.0,
             24.0,
-            23.0
+            23.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/carryover": [
             10.0,
@@ -2818,7 +2897,8 @@
             9.0,
             9.0,
             9.0,
-            7.0
+            7.0,
+            8.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/step": [
             23.0,
@@ -2846,6 +2926,7 @@
             23.0,
             18.0,
             13.0,
+            20.0,
             20.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/held": [
@@ -2874,7 +2955,8 @@
             23.0,
             26.0,
             22.0,
-            20.0
+            20.0,
+            25.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/carryover": [
             8.0,
@@ -2902,9 +2984,11 @@
             8.0,
             9.0,
             7.0,
-            5.0
+            5.0,
+            9.0
           ],
           "dynsam/num_target": [
+            1568.0,
             1568.0,
             1568.0,
             1568.0,
@@ -3448,7 +3532,7 @@
       "ctx_total_length/mean": "total context length per trajectory (prompt + response), in tokens"
     }
   },
-  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$3,036,361\nBEIJING\n04:42:12\nLOS ANGELES\n13:42:12\nNEW YORK\n16:42:12\nLONDON\n21:42:12\n◐\nnotices\n10h 27m ago\nwe filtered out tasks that are relatively easy for the current pro model.\n1d 16h ago\nthe pro run restarted at step 17 due to a GPU OOM issue caused by expert load imbalance. we have adjusted the training parallelism strategy.\n2d 08h ago\nthere was a network connectivity issue between the pro training cluster and the grader deployment. we have restarted the run. we also removed the cyber dataset from the upcoming pro run, since we observed some bad patterns in the rollout logs.\n2d 18h ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n3d 00h ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n3d 02h ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nin progress\nstep 26\n4d 10:09:52\nstarted 2026-09-15 10:32 UTC\nstep 27: training · 2,528/1,568 accepted · 2h 46m in\ndynsam/avg@n · Δ vs step 1\n0.621 ▲0.057\ncost so far\n$2,182,316\ntokens · step 26\n2.93B\ntokens · total\n62B\nsamples trained\n652k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nstopped\nstep 30\n3d 11:05:40\nstarted 2026-09-15 15:16 UTC\nstopped 2026-09-19\ndynsam/avg@n · Δ vs step 1\n0.644 ▲0.130\ncost so far\n$854,044\ntokens · step 30\n3.7B\ntokens · total\n81.4B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 70.92\nmimo-v2.6-flash 65.68\nIn-house Coding Bench avg@3\nmimo-v2.6-pro 64.44\nmimo-v2.6-flash 62.87\nAutomationBench v1.0.6 avg@3\nmimo-v2.6-pro 51.00\nmimo-v2.6-flash 52.70\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.621▼0.005\n0.644▼0.019\ncritic/rewards/mean\n0.596▲0.010\n0.601▲0.00269\nactor/entropy_loss\n0.456▲0.00644\n0.471▲0.00254\nactor/pg_loss\n0.00439▼0.000445\n0.026▲0.014\nactor/grad_norm\n0.00468▲0.00000982\n0.00628▼0.00152\ntrain_infer_diff/new_infer/kl\n0.00444▼0.00504\n0.011▲0.00452\nctx_total_length/mean\ndynsam/agg_turn/mean\nperf/total_num_tokens\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 49m ago\n49m ago\naccepted 2,528/1,568 · judged 2,415 · pass 0.632 (n=6,443) · remaining 355 +811 partial +188 rewarding · prewarm 348\nstep 27\n50m ago\naccepted 2,520/1,568 · judged 2,402 · pass 0.632 (n=6,432) · remaining 356 +818 partial +183 rewarding · prewarm 348\nstep 27\n50m ago\naccepted 2,512/1,568 · judged 2,393 · pass 0.631 (n=6,423) · remaining 363 +816 partial +200 rewarding · prewarm 348\nstep 27\n51m ago\naccepted 2,504/1,568 · judged 2,386 · pass 0.631 (n=6,413) · remaining 363 +823 partial +204 rewarding · prewarm 348\nstep 27\n51m ago\naccepted 2,496/1,568 · judged 2,379 · pass 0.631 (n=6,402) · remaining 365 +832 partial +228 rewarding · prewarm 348\nstep 27\n52m ago\naccepted 2,488/1,568 · judged 2,370 · pass 0.631 (n=6,392) · remaining 366 +837 partial +203 rewarding · prewarm 348\nstep 27\n52m ago\naccepted 2,480/1,568 · judged 2,363 · pass 0.630 (n=6,383) · remaining 368 +841 partial +214 rewarding · prewarm 348\nstep 27\n53m ago\naccepted 2,472/1,568 · judged 2,353 · pass 0.630 (n=6,370) · remaining 371 +849 partial +217 rewarding · prewarm 348\nstep 27\n53m ago\naccepted 2,464/1,568 · judged 2,344 · pass 0.630 (n=6,361) · remaining 371 +857 partial +216 rewarding · prewarm 348\nstep 27\n54m ago\naccepted 2,456/1,568 · judged 2,332 · pass 0.630 (n=6,345) · remaining 378 +861 partial +199 rewarding · prewarm 348\nstep 27\n54m ago\naccepted 2,448/1,568 · judged 2,321 · pass 0.630 (n=6,335) · remaining 381 +866 partial +209 rewarding · prewarm 348\nstep 27\n55m ago\naccepted 2,440/1,568 · judged 2,313 · pass 0.630 (n=6,319) · remaining 382 +879 partial +205 rewarding · prewarm 348\nstep 27\n55m ago\naccepted 2,432/1,568 · judged 2,308 · pass 0.630 (n=6,310) · remaining 385 +882 partial +209 rewarding · prewarm 348\nstep 27\n56m ago\naccepted 2,424/1,568 · judged 2,296 · pass 0.630 (n=6,300) · remaining 387 +889 partial +216 rewarding · prewarm 348\nstep 27\n56m ago\naccepted 2,416/1,568 · judged 2,290 · pass 0.630 (n=6,289) · remaining 388 +896 partial +221 rewarding · prewarm 348\nstep 27\n57m ago\naccepted 2,408/1,568 · judged 2,281 · pass 0.629 (n=6,279) · remaining 388 +905 partial +225 rewarding · prewarm 348\nstep 27\n57m ago\naccepted 2,400/1,568 · judged 2,277 · pass 0.629 (n=6,270) · remaining 393 +907 partial +225 rewarding · prewarm 348\nstep 27\n57m ago\naccepted 2,392/1,568 · judged 2,269 · pass 0.629 (n=6,259) · remaining 395 +914 partial +221 rewarding · prewarm 348\nstep 27\n58m ago\naccepted 2,384/1,568 · judged 2,261 · pass 0.629 (n=6,248) · remaining 399 +919 partial +216 rewarding · prewarm 348\nstep 27\n58m ago\naccepted 2,376/1,568 · judged 2,256 · pass 0.629 (n=6,235) · remaining 402 +927 partial +229 rewarding · prewarm 348\nstep 27\n59m ago\naccepted 2,368/1,568 · judged 2,247 · pass 0.629 (n=6,222) · remaining 401 +936 partial +229 rewarding · prewarm 350\nstep 27\n59m ago\naccepted 2,360/1,568 · judged 2,234 · pass 0.629 (n=6,205) · remaining 408 +944 partial +244 rewarding · prewarm 350\nstep 27\n1h 00m ago\naccepted 2,352/1,568 · judged 2,226 · pass 0.629 (n=6,195) · remaining 410 +948 partial +219 rewarding · prewarm 351\nstep 27\n1h 00m ago\naccepted 2,344/1,568 · judged 2,213 · pass 0.629 (n=6,185) · remaining 412 +954 partial +237 rewarding · prewarm 351\nstep 27\n1h 01m ago\naccepted 2,336/1,568 · judged 2,204 · pass 0.629 (n=6,173) · remaining 415 +960 partial +245 rewarding · prewarm 351\nstep 27\n1h 01m ago\naccepted 2,328/1,568 · judged 2,192 · pass 0.628 (n=6,163) · remaining 420 +963 partial +272 rewarding · prewarm 351\nstep 27\n1h 02m ago\naccepted 2,320/1,568 · judged 2,184 · pass 0.628 (n=6,149) · remaining 420 +975 partial +284 rewarding · prewarm 351\nstep 27\n1h 02m ago\naccepted 2,312/1,568 · judged 2,173 · pass 0.628 (n=6,138) · remaining 419 +985 partial +275 rewarding · prewarm 351\nstep 27\n1h 02m ago\naccepted 2,304/1,568 · judged 2,168 · pass 0.628 (n=6,127) · remaining 422 +990 partial +267 rewarding · prewarm 351\nstep 27\n1h 03m ago\naccepted 2,296/1,568 · judged 2,161 · pass 0.628 (n=6,116) · remaining 427 +993 partial +290 rewarding · prewarm 351\nstep 27\n1h 03m ago\naccepted 2,288/1,568 · judged 2,153 · pass 0.628 (n=6,104) · remaining 430 +998 partial +267 rewarding · prewarm 351\nstep 27\n1h 04m ago\naccepted 2,280/1,568 · judged 2,141 · pass 0.628 (n=6,093) · remaining 434 +1,001 partial +254 rewarding · prewarm 351\nstep 27\n1h 04m ago\naccepted 2,272/1,568 · judged 2,132 · pass 0.627 (n=6,082) · remaining 438 +1,008 partial +280 rewarding · prewarm 351\nstep 27\n1h 05m ago\naccepted 2,264/1,568 · judged 2,125 · pass 0.627 (n=6,069) · remaining 441 +1,014 partial +279 rewarding · prewarm 352\nstep 27\n1h 05m ago\naccepted 2,256/1,568 · judged 2,117 · pass 0.628 (n=6,052) · remaining 446 +1,023 partial +262 rewarding · prewarm 352\nstep 27\n1h 05m ago\naccepted 2,248/1,568 · judged 2,108 · pass 0.628 (n=6,041) · remaining 445 +1,033 partial +278 rewarding · prewarm 352\nstep 27\n1h 06m ago\naccepted 2,240/1,568 · judged 2,097 · pass 0.628 (n=6,024) · remaining 453 +1,037 partial +272 rewarding · prewarm 352\nstep 27\n1h 06m ago\naccepted 2,232/1,568 · judged 2,092 · pass 0.628 (n=6,012) · remaining 456 +1,043 partial +282 rewarding · prewarm 352\nstep 27\n1h 07m ago\naccepted 2,224/1,568 · judged 2,087 · pass 0.628 (n=6,000) · remaining 460 +1,047 partial +300 rewarding · prewarm 353\nstep 27\n1h 07m ago\naccepted 2,216/1,568 · judged 2,081 · pass 0.628 (n=5,989) · remaining 461 +1,057 partial +306 rewarding · prewarm 353\nstep 27\nstep 27 · accepted 2,528/1,568\n49m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t302 / 154\t\n\t0\t277\t194\ncode/dataset-sin0\t235 / 154\t\n\t0\t211\t52\ncode/dataset-m1dt\t225 / 154\t\n\t0\t—\t24\ncode/dataset-zg6q\t202 / 154\t\n\t0\t197\t82\ncode/dataset-x7wh\t266 / 128\t\n\t0\t235\t123\nvisual/dataset-jzd3\t99 / 65\t\n\t0\t—\t0\nvisual/dataset-gtav\t96 / 65\t\n\t0\t—\t2\ngeneral/dataset-epqd\t95 / 65\t\n\t0\t—\t10\ngeneral/dataset-trla\t87 / 65\t\n\t0\t—\t23\ncode/dataset-ta4j\t121 / 62\t\n\t0\t110\t54\ncode/dataset-dnpn\t104 / 62\t\n\t0\t103\t10\ncode/dataset-yfch\t53 / 55\t\n\t2\t—\t432\ncode/dataset-bvg7\t86 / 51\t\n\t0\t75\t38\ncode/dataset-v7yx\t68 / 51\t\n\t0\t63\t43\nvisual/dataset-ol8x\t77 / 41\t\n\t0\t—\t9\nvisual/dataset-053e\t76 / 39\t\n\t0\t—\t4\nvisual/dataset-ve5o\t64 / 31\t\n\t0\t—\t25\nvisual/dataset-pt5v\t60 / 31\t\n\t0\t—\t24\ncode/dataset-4onq\t49 / 31\t\n\t0\t—\t0\ngeneral/dataset-5610\t45 / 31\t\n\t0\t—\t8\ngeneral/dataset-1doa\t44 / 31\t\n\t0\t—\t9\nchat/dataset-lm3t\t25 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t25 / 16\t\n\t0\t—\t0\nchat/dataset-eup7\t24 / 16\t\n\t0\t—\t0\ntotal\t2,528 / 1,568\t\t0\t2,415\t1,166\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 18h 22m ago\n18h 20m ago\nrun stopped\n18h 22m ago\naccepted 2,704/1,568 · judged 2,559 · pass 0.547 (n=13,430) · remaining 107 +1,001 partial +390 rewarding · prewarm 297\nstep 31\n18h 22m ago\naccepted 2,696/1,568 · judged 2,551 · pass 0.547 (n=13,421) · remaining 108 +1,009 partial +381 rewarding · prewarm 297\nstep 31\n18h 23m ago\naccepted 2,688/1,568 · judged 2,546 · pass 0.547 (n=13,410) · remaining 110 +1,018 partial +388 rewarding · prewarm 297\nstep 31\n18h 23m ago\naccepted 2,680/1,568 · judged 2,535 · pass 0.547 (n=13,396) · remaining 113 +1,029 partial +380 rewarding · prewarm 297\nstep 31\n18h 23m ago\naccepted 2,672/1,568 · judged 2,526 · pass 0.547 (n=13,382) · remaining 119 +1,036 partial +401 rewarding · prewarm 297\nstep 31\n18h 23m ago\naccepted 2,664/1,568 · judged 2,514 · pass 0.547 (n=13,368) · remaining 121 +1,048 partial +412 rewarding · prewarm 297\nstep 31\n18h 24m ago\naccepted 2,656/1,568 · judged 2,507 · pass 0.547 (n=13,354) · remaining 125 +1,058 partial +407 rewarding · prewarm 297\nstep 31\n18h 24m ago\naccepted 2,648/1,568 · judged 2,499 · pass 0.547 (n=13,337) · remaining 133 +1,067 partial +427 rewarding · prewarm 297\nstep 31\n18h 24m ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.547 (n=13,322) · remaining 137 +1,077 partial +438 rewarding · prewarm 297\nstep 31\n18h 25m ago\naccepted 2,632/1,568 · judged 2,486 · pass 0.547 (n=13,309) · remaining 143 +1,084 partial +452 rewarding · prewarm 297\nstep 31\n18h 25m ago\naccepted 2,624/1,568 · judged 2,481 · pass 0.546 (n=13,298) · remaining 151 +1,087 partial +463 rewarding · prewarm 297\nstep 31\n18h 25m ago\naccepted 2,616/1,568 · judged 2,475 · pass 0.546 (n=13,287) · remaining 153 +1,096 partial +465 rewarding · prewarm 297\nstep 31\n18h 25m ago\naccepted 2,608/1,568 · judged 2,469 · pass 0.546 (n=13,276) · remaining 156 +1,104 partial +448 rewarding · prewarm 297\nstep 31\n18h 26m ago\naccepted 2,600/1,568 · judged 2,459 · pass 0.546 (n=13,259) · remaining 164 +1,113 partial +472 rewarding · prewarm 297\nstep 31\n18h 26m ago\naccepted 2,592/1,568 · judged 2,450 · pass 0.546 (n=13,245) · remaining 167 +1,124 partial +486 rewarding · prewarm 297\nstep 31\n18h 26m ago\naccepted 2,584/1,568 · judged 2,442 · pass 0.546 (n=13,236) · remaining 171 +1,129 partial +470 rewarding · prewarm 297\nstep 31\n18h 27m ago\naccepted 2,576/1,568 · judged 2,433 · pass 0.546 (n=13,226) · remaining 173 +1,137 partial +462 rewarding · prewarm 297\nstep 31\n18h 27m ago\naccepted 2,568/1,568 · judged 2,427 · pass 0.546 (n=13,210) · remaining 182 +1,143 partial +465 rewarding · prewarm 297\nstep 31\n18h 27m ago\naccepted 2,560/1,568 · judged 2,418 · pass 0.546 (n=13,199) · remaining 185 +1,152 partial +486 rewarding · prewarm 297\nstep 31\n18h 28m ago\naccepted 2,552/1,568 · judged 2,412 · pass 0.545 (n=13,188) · remaining 189 +1,159 partial +498 rewarding · prewarm 297\nstep 31\n18h 28m ago\naccepted 2,544/1,568 · judged 2,406 · pass 0.545 (n=13,175) · remaining 193 +1,168 partial +488 rewarding · prewarm 297\nstep 31\n18h 28m ago\naccepted 2,536/1,568 · judged 2,402 · pass 0.545 (n=13,165) · remaining 194 +1,177 partial +456 rewarding · prewarm 297\nstep 31\n18h 29m ago\naccepted 2,528/1,568 · judged 2,397 · pass 0.545 (n=13,144) · remaining 195 +1,196 partial +486 rewarding · prewarm 297\nstep 31\n18h 29m ago\naccepted 2,520/1,568 · judged 2,391 · pass 0.546 (n=13,129) · remaining 200 +1,206 partial +517 rewarding · prewarm 297\nstep 31\n18h 29m ago\naccepted 2,512/1,568 · judged 2,380 · pass 0.546 (n=13,113) · remaining 208 +1,213 partial +537 rewarding · prewarm 297\nstep 31\n18h 29m ago\naccepted 2,504/1,568 · judged 2,375 · pass 0.545 (n=13,100) · remaining 209 +1,224 partial +534 rewarding · prewarm 297\nstep 31\n18h 30m ago\naccepted 2,496/1,568 · judged 2,368 · pass 0.545 (n=13,088) · remaining 215 +1,231 partial +512 rewarding · prewarm 297\nstep 31\n18h 30m ago\naccepted 2,488/1,568 · judged 2,360 · pass 0.545 (n=13,076) · remaining 220 +1,238 partial +514 rewarding · prewarm 297\nstep 31\n18h 30m ago\naccepted 2,480/1,568 · judged 2,354 · pass 0.545 (n=13,058) · remaining 226 +1,250 partial +524 rewarding · prewarm 297\nstep 31\n18h 31m ago\naccepted 2,464/1,568 · judged 2,339 · pass 0.545 (n=13,035) · remaining 236 +1,261 partial +529 rewarding · prewarm 297\nstep 31\n18h 31m ago\naccepted 2,456/1,568 · judged 2,333 · pass 0.545 (n=13,015) · remaining 240 +1,276 partial +546 rewarding · prewarm 297\nstep 31\n18h 32m ago\naccepted 2,448/1,568 · judged 2,323 · pass 0.545 (n=13,003) · remaining 245 +1,283 partial +575 rewarding · prewarm 297\nstep 31\n18h 32m ago\naccepted 2,440/1,568 · judged 2,315 · pass 0.546 (n=12,981) · remaining 253 +1,295 partial +556 rewarding · prewarm 298\nstep 31\n18h 32m ago\naccepted 2,432/1,568 · judged 2,310 · pass 0.545 (n=12,973) · remaining 254 +1,303 partial +559 rewarding · prewarm 298\nstep 31\n18h 32m ago\naccepted 2,424/1,568 · judged 2,305 · pass 0.545 (n=12,957) · remaining 253 +1,317 partial +565 rewarding · prewarm 298\nstep 31\n18h 33m ago\naccepted 2,416/1,568 · judged 2,299 · pass 0.545 (n=12,947) · remaining 257 +1,322 partial +566 rewarding · prewarm 298\nstep 31\n18h 33m ago\naccepted 2,408/1,568 · judged 2,293 · pass 0.545 (n=12,932) · remaining 258 +1,334 partial +568 rewarding · prewarm 298\nstep 31\n18h 33m ago\naccepted 2,400/1,568 · judged 2,285 · pass 0.545 (n=12,918) · remaining 263 +1,342 partial +601 rewarding · prewarm 298\nstep 31\n18h 34m ago\naccepted 2,392/1,568 · judged 2,278 · pass 0.545 (n=12,903) · remaining 264 +1,354 partial +595 rewarding · prewarm 298\nstep 31\nstep 31 · accepted 2,704/1,568\n18h 22m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t310 / 154\t\n\t0\t273\t156\ncode/dataset-zg6q\t229 / 154\t\n\t0\t223\t32\ncode/dataset-sin0\t227 / 154\t\n\t0\t193\t101\ncode/dataset-m1dt\t211 / 154\t\n\t0\t—\t47\ncode/dataset-x7wh\t221 / 129\t\n\t0\t189\t124\ncyber/dataset-9aui\t145 / 64\t\n\t0\t—\t139\ngeneral/dataset-epqd\t98 / 64\t\n\t0\t—\t10\ngeneral/dataset-trla\t98 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t103 / 63\t\n\t0\t90\t76\ncode/dataset-dnpn\t90 / 63\t\n\t0\t82\t11\ncode/dataset-yfch\t196 / 55\t\n\t0\t—\t195\ncode/dataset-bvg7\t82 / 52\t\n\t0\t76\t34\ncode/dataset-v7yx\t79 / 52\t\n\t0\t70\t29\nvisual/dataset-gtav\t59 / 41\t\n\t0\t—\t3\nvisual/dataset-jzd3\t52 / 41\t\n\t0\t—\t10\nvisual/dataset-ve5o\t95 / 31\t\n\t0\t—\t26\nvisual/dataset-pt5v\t73 / 31\t\n\t0\t—\t29\ngeneral/dataset-5610\t62 / 31\t\n\t0\t—\t10\nvisual/dataset-053e\t62 / 31\t\n\t0\t—\t13\nvisual/dataset-ol8x\t57 / 31\t\n\t0\t—\t20\ncode/dataset-4onq\t47 / 31\t\n\t0\t—\t6\ngeneral/dataset-1doa\t30 / 31\t\n\t1\t—\t30\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t26 / 15\t\n\t0\t—\t0\ntotal\t2,704 / 1,568\t\t0\t2,559\t1,108\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 26\n≈ 1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,050\t67.0%\t▼0.6 pt\ngeneral\t4\t183\t11.7%\t▼0.5 pt\ncyber\t1\t0\t0.0%\t0.0 pt\nvisual\t6\t281\t17.9%\t▲0.7 pt\nchat\t3\t54\t3.5%\t▲0.3 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
+  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$3,086,216\nBEIJING\n07:07:44\nLOS ANGELES\n16:07:44\nNEW YORK\n19:07:44\nLONDON\n00:07:44\n◐\nnotices\n12h 53m ago\nwe filtered out tasks that are relatively easy for the current pro model.\n1d 19h ago\nthe pro run restarted at step 17 due to a GPU OOM issue caused by expert load imbalance. we have adjusted the training parallelism strategy.\n2d 10h ago\nthere was a network connectivity issue between the pro training cluster and the grader deployment. we have restarted the run. we also removed the cyber dataset from the upcoming pro run, since we observed some bad patterns in the rollout logs.\n2d 20h ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n3d 02h ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n3d 05h ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nin progress\nstep 27\n4d 12:35:23\nstarted 2026-09-15 10:32 UTC\nstep 28: rollout · 1,544/1,568 accepted · 57m 38s in\ndynsam/avg@n · Δ vs step 1\n0.603 ▲0.038\ncost so far\n$2,232,171\ntokens · step 27\n3.15B\ntokens · total\n65.1B\nsamples trained\n677k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nstopped\nstep 30\n3d 11:05:40\nstarted 2026-09-15 15:16 UTC\nstopped 2026-09-19\ndynsam/avg@n · Δ vs step 1\n0.644 ▲0.130\ncost so far\n$854,044\ntokens · step 30\n3.7B\ntokens · total\n81.4B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 70.92\nmimo-v2.6-flash 65.68\nIn-house Coding Bench avg@3\nmimo-v2.6-pro 64.44\nmimo-v2.6-flash 62.87\nAutomationBench v1.0.6 avg@3\nmimo-v2.6-pro 51.00\nmimo-v2.6-flash 52.70\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.603▼0.019\n0.644▼0.019\ncritic/rewards/mean\n0.587▼0.00979\n0.601▲0.00269\nactor/entropy_loss\n0.457▲0.00111\n0.471▲0.00254\nactor/pg_loss\n0.00823▲0.00384\n0.026▲0.014\nactor/grad_norm\n0.00482▲0.00014\n0.00628▼0.00152\ntrain_infer_diff/new_infer/kl\n0.0074▲0.00296\n0.011▲0.00452\nctx_total_length/mean\ndynsam/agg_turn/mean\nperf/total_num_tokens\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog up to date\njust now\naccepted 1,544/1,568 · judged 1,488 · pass 0.630 (n=7,392) · remaining 721 +1,008 partial +250 rewarding · prewarm 512\nstep 28\njust now\naccepted 1,536/1,568 · judged 1,478 · pass 0.630 (n=7,378) · remaining 715 +1,012 partial +244 rewarding · prewarm 512\nstep 28\n1m ago\naccepted 1,528/1,568 · judged 1,471 · pass 0.631 (n=7,360) · remaining 719 +1,016 partial +255 rewarding · prewarm 512\nstep 28\n1m ago\naccepted 1,520/1,568 · judged 1,461 · pass 0.631 (n=7,348) · remaining 721 +1,007 partial +283 rewarding · prewarm 512\nstep 28\n2m ago\naccepted 1,512/1,568 · judged 1,453 · pass 0.631 (n=7,333) · remaining 719 +1,003 partial +257 rewarding · prewarm 512\nstep 28\n2m ago\naccepted 1,504/1,568 · judged 1,446 · pass 0.631 (n=7,322) · remaining 721 +993 partial +258 rewarding · prewarm 512\nstep 28\n3m ago\naccepted 1,496/1,568 · judged 1,436 · pass 0.631 (n=7,310) · remaining 729 +981 partial +270 rewarding · prewarm 512\nstep 28\n3m ago\naccepted 1,488/1,568 · judged 1,431 · pass 0.630 (n=7,298) · remaining 724 +986 partial +245 rewarding · prewarm 512\nstep 28\n4m ago\naccepted 1,480/1,568 · judged 1,420 · pass 0.631 (n=7,281) · remaining 721 +983 partial +223 rewarding · prewarm 512\nstep 28\n4m ago\naccepted 1,472/1,568 · judged 1,412 · pass 0.631 (n=7,268) · remaining 722 +978 partial +241 rewarding · prewarm 512\nstep 28\n5m ago\naccepted 1,464/1,568 · judged 1,403 · pass 0.631 (n=7,250) · remaining 726 +961 partial +213 rewarding · prewarm 512\nstep 28\n6m ago\naccepted 1,456/1,568 · judged 1,391 · pass 0.632 (n=7,233) · remaining 728 +959 partial +214 rewarding · prewarm 512\nstep 28\n6m ago\naccepted 1,448/1,568 · judged 1,381 · pass 0.632 (n=7,220) · remaining 722 +961 partial +211 rewarding · prewarm 512\nstep 28\n7m ago\naccepted 1,432/1,568 · judged 1,361 · pass 0.632 (n=7,189) · remaining 704 +955 partial +225 rewarding · prewarm 512\nstep 28\n8m ago\naccepted 1,424/1,568 · judged 1,353 · pass 0.632 (n=7,175) · remaining 697 +964 partial +247 rewarding · prewarm 512\nstep 28\n9m ago\naccepted 1,416/1,568 · judged 1,345 · pass 0.632 (n=7,161) · remaining 703 +942 partial +204 rewarding · prewarm 512\nstep 28\n9m ago\naccepted 1,408/1,568 · judged 1,338 · pass 0.632 (n=7,149) · remaining 700 +938 partial +217 rewarding · prewarm 512\nstep 28\n9m ago\naccepted 1,400/1,568 · judged 1,325 · pass 0.632 (n=7,137) · remaining 700 +939 partial +232 rewarding · prewarm 512\nstep 28\n10m ago\naccepted 1,392/1,568 · judged 1,314 · pass 0.632 (n=7,125) · remaining 695 +920 partial +185 rewarding · prewarm 512\nstep 28\n11m ago\naccepted 1,384/1,568 · judged 1,310 · pass 0.632 (n=7,114) · remaining 700 +913 partial +268 rewarding · prewarm 512\nstep 28\n11m ago\naccepted 1,376/1,568 · judged 1,302 · pass 0.632 (n=7,102) · remaining 687 +912 partial +215 rewarding · prewarm 512\nstep 28\n12m ago\naccepted 1,368/1,568 · judged 1,295 · pass 0.632 (n=7,090) · remaining 670 +913 partial +206 rewarding · prewarm 512\nstep 28\n12m ago\naccepted 1,360/1,568 · judged 1,289 · pass 0.632 (n=7,077) · remaining 671 +911 partial +237 rewarding · prewarm 512\nstep 28\n13m ago\naccepted 1,352/1,568 · judged 1,283 · pass 0.632 (n=7,064) · remaining 673 +898 partial +224 rewarding · prewarm 512\nstep 28\n14m ago\naccepted 1,344/1,568 · judged 1,277 · pass 0.632 (n=7,053) · remaining 668 +877 partial +198 rewarding · prewarm 512\nstep 28\n14m ago\naccepted 1,336/1,568 · judged 1,272 · pass 0.632 (n=7,040) · remaining 666 +885 partial +215 rewarding · prewarm 512\nstep 28\n15m ago\naccepted 1,328/1,568 · judged 1,262 · pass 0.632 (n=7,030) · remaining 664 +878 partial +195 rewarding · prewarm 512\nstep 28\n15m ago\naccepted 1,320/1,568 · judged 1,259 · pass 0.631 (n=7,020) · remaining 663 +877 partial +226 rewarding · prewarm 512\nstep 28\n16m ago\naccepted 1,312/1,568 · judged 1,255 · pass 0.631 (n=7,006) · remaining 651 +875 partial +203 rewarding · prewarm 512\nstep 28\n16m ago\naccepted 1,304/1,568 · judged 1,245 · pass 0.631 (n=6,994) · remaining 645 +875 partial +195 rewarding · prewarm 512\nstep 28\n17m ago\naccepted 1,296/1,568 · judged 1,240 · pass 0.631 (n=6,983) · remaining 636 +878 partial +190 rewarding · prewarm 512\nstep 28\n17m ago\naccepted 1,288/1,568 · judged 1,230 · pass 0.631 (n=6,969) · remaining 584 +876 partial +234 rewarding · prewarm 512\nstep 28\n18m ago\naccepted 1,280/1,568 · judged 1,217 · pass 0.631 (n=6,956) · remaining 605 +869 partial +188 rewarding · prewarm 512\nstep 28\n19m ago\naccepted 1,272/1,568 · judged 1,210 · pass 0.632 (n=6,942) · remaining 613 +872 partial +206 rewarding · prewarm 512\nstep 28\n19m ago\naccepted 1,264/1,568 · judged 1,204 · pass 0.631 (n=6,933) · remaining 619 +869 partial +207 rewarding · prewarm 512\nstep 28\n19m ago\naccepted 1,256/1,568 · judged 1,202 · pass 0.631 (n=6,922) · remaining 618 +866 partial +181 rewarding · prewarm 512\nstep 28\n20m ago\naccepted 1,248/1,568 · judged 1,194 · pass 0.631 (n=6,909) · remaining 555 +867 partial +187 rewarding · prewarm 512\nstep 28\n21m ago\naccepted 1,240/1,568 · judged 1,188 · pass 0.631 (n=6,900) · remaining 562 +869 partial +184 rewarding · prewarm 512\nstep 28\n21m ago\naccepted 1,232/1,568 · judged 1,182 · pass 0.631 (n=6,889) · remaining 580 +862 partial +159 rewarding · prewarm 512\nstep 28\n23m ago\naccepted 1,224/1,568 · judged 1,165 · pass 0.631 (n=6,872) · remaining 576 +856 partial +193 rewarding · prewarm 512\nstep 28\nstep 28 · accepted 1,544/1,568\njust now\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-m1dt\t105 / 154\t\n\t49\t—\t104\ncode/dataset-obg8\t206 / 153\t\n\t0\t197\t184\ncode/dataset-sin0\t131 / 153\t\n\t22\t121\t113\ncode/dataset-zg6q\t97 / 153\t\n\t56\t81\t287\ncode/dataset-x7wh\t198 / 128\t\n\t0\t187\t105\nvisual/dataset-jzd3\t64 / 65\t\n\t1\t—\t24\ngeneral/dataset-epqd\t59 / 65\t\n\t6\t—\t35\nvisual/dataset-gtav\t55 / 65\t\n\t10\t—\t29\ngeneral/dataset-trla\t50 / 65\t\n\t15\t—\t49\ncode/dataset-ta4j\t79 / 62\t\n\t0\t76\t51\ncode/dataset-dnpn\t56 / 62\t\n\t6\t56\t64\ncode/dataset-yfch\t44 / 55\t\n\t11\t—\t406\ncode/dataset-bvg7\t60 / 51\t\n\t0\t56\t38\ncode/dataset-v7yx\t31 / 51\t\n\t20\t28\t70\nvisual/dataset-ol8x\t43 / 41\t\n\t0\t—\t17\nvisual/dataset-053e\t43 / 39\t\n\t0\t—\t15\nvisual/dataset-ve5o\t51 / 32\t\n\t0\t—\t17\nvisual/dataset-pt5v\t48 / 32\t\n\t0\t—\t18\ngeneral/dataset-1doa\t29 / 32\t\n\t3\t—\t27\ncode/dataset-4onq\t24 / 32\t\n\t8\t—\t25\ngeneral/dataset-5610\t19 / 32\t\n\t13\t—\t44\nchat/dataset-lm3t\t20 / 16\t\n\t0\t—\t4\nchat/dataset-eup7\t16 / 15\t\n\t0\t—\t2\nchat/dataset-8kb6\t16 / 15\t\n\t0\t—\t3\ntotal\t1,544 / 1,568\t\t24\t1,488\t1,731\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 20h 48m ago\n20h 45m ago\nrun stopped\n20h 48m ago\naccepted 2,704/1,568 · judged 2,559 · pass 0.547 (n=13,430) · remaining 107 +1,001 partial +390 rewarding · prewarm 297\nstep 31\n20h 48m ago\naccepted 2,696/1,568 · judged 2,551 · pass 0.547 (n=13,421) · remaining 108 +1,009 partial +381 rewarding · prewarm 297\nstep 31\n20h 48m ago\naccepted 2,688/1,568 · judged 2,546 · pass 0.547 (n=13,410) · remaining 110 +1,018 partial +388 rewarding · prewarm 297\nstep 31\n20h 49m ago\naccepted 2,680/1,568 · judged 2,535 · pass 0.547 (n=13,396) · remaining 113 +1,029 partial +380 rewarding · prewarm 297\nstep 31\n20h 49m ago\naccepted 2,672/1,568 · judged 2,526 · pass 0.547 (n=13,382) · remaining 119 +1,036 partial +401 rewarding · prewarm 297\nstep 31\n20h 49m ago\naccepted 2,664/1,568 · judged 2,514 · pass 0.547 (n=13,368) · remaining 121 +1,048 partial +412 rewarding · prewarm 297\nstep 31\n20h 49m ago\naccepted 2,656/1,568 · judged 2,507 · pass 0.547 (n=13,354) · remaining 125 +1,058 partial +407 rewarding · prewarm 297\nstep 31\n20h 50m ago\naccepted 2,648/1,568 · judged 2,499 · pass 0.547 (n=13,337) · remaining 133 +1,067 partial +427 rewarding · prewarm 297\nstep 31\n20h 50m ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.547 (n=13,322) · remaining 137 +1,077 partial +438 rewarding · prewarm 297\nstep 31\n20h 50m ago\naccepted 2,632/1,568 · judged 2,486 · pass 0.547 (n=13,309) · remaining 143 +1,084 partial +452 rewarding · prewarm 297\nstep 31\n20h 50m ago\naccepted 2,624/1,568 · judged 2,481 · pass 0.546 (n=13,298) · remaining 151 +1,087 partial +463 rewarding · prewarm 297\nstep 31\n20h 51m ago\naccepted 2,616/1,568 · judged 2,475 · pass 0.546 (n=13,287) · remaining 153 +1,096 partial +465 rewarding · prewarm 297\nstep 31\n20h 51m ago\naccepted 2,608/1,568 · judged 2,469 · pass 0.546 (n=13,276) · remaining 156 +1,104 partial +448 rewarding · prewarm 297\nstep 31\n20h 51m ago\naccepted 2,600/1,568 · judged 2,459 · pass 0.546 (n=13,259) · remaining 164 +1,113 partial +472 rewarding · prewarm 297\nstep 31\n20h 51m ago\naccepted 2,592/1,568 · judged 2,450 · pass 0.546 (n=13,245) · remaining 167 +1,124 partial +486 rewarding · prewarm 297\nstep 31\n20h 52m ago\naccepted 2,584/1,568 · judged 2,442 · pass 0.546 (n=13,236) · remaining 171 +1,129 partial +470 rewarding · prewarm 297\nstep 31\n20h 52m ago\naccepted 2,576/1,568 · judged 2,433 · pass 0.546 (n=13,226) · remaining 173 +1,137 partial +462 rewarding · prewarm 297\nstep 31\n20h 53m ago\naccepted 2,568/1,568 · judged 2,427 · pass 0.546 (n=13,210) · remaining 182 +1,143 partial +465 rewarding · prewarm 297\nstep 31\n20h 53m ago\naccepted 2,560/1,568 · judged 2,418 · pass 0.546 (n=13,199) · remaining 185 +1,152 partial +486 rewarding · prewarm 297\nstep 31\n20h 53m ago\naccepted 2,552/1,568 · judged 2,412 · pass 0.545 (n=13,188) · remaining 189 +1,159 partial +498 rewarding · prewarm 297\nstep 31\n20h 54m ago\naccepted 2,544/1,568 · judged 2,406 · pass 0.545 (n=13,175) · remaining 193 +1,168 partial +488 rewarding · prewarm 297\nstep 31\n20h 54m ago\naccepted 2,536/1,568 · judged 2,402 · pass 0.545 (n=13,165) · remaining 194 +1,177 partial +456 rewarding · prewarm 297\nstep 31\n20h 54m ago\naccepted 2,528/1,568 · judged 2,397 · pass 0.545 (n=13,144) · remaining 195 +1,196 partial +486 rewarding · prewarm 297\nstep 31\n20h 54m ago\naccepted 2,520/1,568 · judged 2,391 · pass 0.546 (n=13,129) · remaining 200 +1,206 partial +517 rewarding · prewarm 297\nstep 31\n20h 55m ago\naccepted 2,512/1,568 · judged 2,380 · pass 0.546 (n=13,113) · remaining 208 +1,213 partial +537 rewarding · prewarm 297\nstep 31\n20h 55m ago\naccepted 2,504/1,568 · judged 2,375 · pass 0.545 (n=13,100) · remaining 209 +1,224 partial +534 rewarding · prewarm 297\nstep 31\n20h 55m ago\naccepted 2,496/1,568 · judged 2,368 · pass 0.545 (n=13,088) · remaining 215 +1,231 partial +512 rewarding · prewarm 297\nstep 31\n20h 55m ago\naccepted 2,488/1,568 · judged 2,360 · pass 0.545 (n=13,076) · remaining 220 +1,238 partial +514 rewarding · prewarm 297\nstep 31\n20h 56m ago\naccepted 2,480/1,568 · judged 2,354 · pass 0.545 (n=13,058) · remaining 226 +1,250 partial +524 rewarding · prewarm 297\nstep 31\n20h 57m ago\naccepted 2,464/1,568 · judged 2,339 · pass 0.545 (n=13,035) · remaining 236 +1,261 partial +529 rewarding · prewarm 297\nstep 31\n20h 57m ago\naccepted 2,456/1,568 · judged 2,333 · pass 0.545 (n=13,015) · remaining 240 +1,276 partial +546 rewarding · prewarm 297\nstep 31\n20h 57m ago\naccepted 2,448/1,568 · judged 2,323 · pass 0.545 (n=13,003) · remaining 245 +1,283 partial +575 rewarding · prewarm 297\nstep 31\n20h 58m ago\naccepted 2,440/1,568 · judged 2,315 · pass 0.546 (n=12,981) · remaining 253 +1,295 partial +556 rewarding · prewarm 298\nstep 31\n20h 58m ago\naccepted 2,432/1,568 · judged 2,310 · pass 0.545 (n=12,973) · remaining 254 +1,303 partial +559 rewarding · prewarm 298\nstep 31\n20h 58m ago\naccepted 2,424/1,568 · judged 2,305 · pass 0.545 (n=12,957) · remaining 253 +1,317 partial +565 rewarding · prewarm 298\nstep 31\n20h 58m ago\naccepted 2,416/1,568 · judged 2,299 · pass 0.545 (n=12,947) · remaining 257 +1,322 partial +566 rewarding · prewarm 298\nstep 31\n20h 59m ago\naccepted 2,408/1,568 · judged 2,293 · pass 0.545 (n=12,932) · remaining 258 +1,334 partial +568 rewarding · prewarm 298\nstep 31\n20h 59m ago\naccepted 2,400/1,568 · judged 2,285 · pass 0.545 (n=12,918) · remaining 263 +1,342 partial +601 rewarding · prewarm 298\nstep 31\n20h 59m ago\naccepted 2,392/1,568 · judged 2,278 · pass 0.545 (n=12,903) · remaining 264 +1,354 partial +595 rewarding · prewarm 298\nstep 31\nstep 31 · accepted 2,704/1,568\n20h 48m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t310 / 154\t\n\t0\t273\t156\ncode/dataset-zg6q\t229 / 154\t\n\t0\t223\t32\ncode/dataset-sin0\t227 / 154\t\n\t0\t193\t101\ncode/dataset-m1dt\t211 / 154\t\n\t0\t—\t47\ncode/dataset-x7wh\t221 / 129\t\n\t0\t189\t124\ncyber/dataset-9aui\t145 / 64\t\n\t0\t—\t139\ngeneral/dataset-epqd\t98 / 64\t\n\t0\t—\t10\ngeneral/dataset-trla\t98 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t103 / 63\t\n\t0\t90\t76\ncode/dataset-dnpn\t90 / 63\t\n\t0\t82\t11\ncode/dataset-yfch\t196 / 55\t\n\t0\t—\t195\ncode/dataset-bvg7\t82 / 52\t\n\t0\t76\t34\ncode/dataset-v7yx\t79 / 52\t\n\t0\t70\t29\nvisual/dataset-gtav\t59 / 41\t\n\t0\t—\t3\nvisual/dataset-jzd3\t52 / 41\t\n\t0\t—\t10\nvisual/dataset-ve5o\t95 / 31\t\n\t0\t—\t26\nvisual/dataset-pt5v\t73 / 31\t\n\t0\t—\t29\ngeneral/dataset-5610\t62 / 31\t\n\t0\t—\t10\nvisual/dataset-053e\t62 / 31\t\n\t0\t—\t13\nvisual/dataset-ol8x\t57 / 31\t\n\t0\t—\t20\ncode/dataset-4onq\t47 / 31\t\n\t0\t—\t6\ngeneral/dataset-1doa\t30 / 31\t\n\t1\t—\t30\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t26 / 15\t\n\t0\t—\t0\ntotal\t2,704 / 1,568\t\t0\t2,559\t1,108\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 27\n1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,061\t67.7%\t▲0.7 pt\ngeneral\t4\t190\t12.1%\t▲0.5 pt\ncyber\t1\t0\t0.0%\t0.0 pt\nvisual\t6\t270\t17.2%\t▼0.7 pt\nchat\t3\t47\t3.0%\t▼0.5 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
   "public_json_responses": [
     {
       "url": "https://mimo.xiaomi.com/rl/api/runs",
@@ -3614,7 +3698,7 @@
           "so_far": 854044.7
         },
         "clock": {
-          "now": 1789850525.2848797
+          "now": 1789859255.4725935
         },
         "version": "3-5513.32.6.28",
         "step": {
@@ -3905,42 +3989,33 @@
         },
         "cost": {
           "rate_per_s": 5.71,
-          "so_far": 2182281.7750870227
+          "so_far": 2232134.4804520346
         },
         "clock": {
-          "now": 1789850525.284103
+          "now": 1789859256.0556204
         },
-        "version": "3-5513.26.13.26",
+        "version": "3-5513.27.13.26",
         "step": {
-          "last": 26,
-          "last_wall": 1789840512.2571833,
-          "since": 10013.026919603348,
-          "expected": 13385.1,
-          "progress": 0.7480726269959393,
-          "phase": "training",
-          "gen_frac": 0.5035824042424049,
+          "last": 27,
+          "last_wall": 1789855804.2271216,
+          "since": 3451.828498840332,
+          "expected": 15286.5,
+          "progress": 0.22580894899684897,
+          "phase": "rollout",
+          "gen_frac": 0.4679161351519315,
           "restarted_at": null
         },
         "totals": {
-          "tokens_step": 2925840000.0,
+          "tokens_step": 3151650000.0,
           "trained_step": 25088.0,
-          "sandboxes_step": 22784.0,
+          "sandboxes_step": 86352.0,
           "prompts_per_step": 1568.0,
-          "tokens_cum": 61975610000.0,
-          "trained_cum": 652288.0,
-          "sandboxes_cum": 3356112.0,
+          "tokens_cum": 65127260000.0,
+          "trained_cum": 677376.0,
+          "sandboxes_cum": 3442464.0,
           "restarts": 12
         },
         "events": [
-          {
-            "t": 1789540010.4015698,
-            "kind": "step",
-            "step": 5,
-            "value": 0.569944,
-            "delta": -0.005681000000000047,
-            "tokens": 2009690000.0,
-            "redo": false
-          },
           {
             "t": 1789546959.498796,
             "kind": "step",
@@ -4161,12 +4236,21 @@
             "delta": -0.005058999999999925,
             "tokens": 2925840000.0,
             "redo": false
+          },
+          {
+            "t": 1789855804.2271216,
+            "kind": "step",
+            "step": 27,
+            "value": 0.602605,
+            "delta": -0.018775000000000097,
+            "tokens": 3151650000.0,
+            "redo": false
           }
         ],
         "headline": {
           "tag": "dynsam/avg@n",
-          "last": 0.62138,
-          "prev": 0.626439,
+          "last": 0.602605,
+          "prev": 0.62138,
           "first": 0.564662,
           "first_step": 1
         }
@@ -5738,579 +5822,280 @@
     {
       "url": "https://mimo.xiaomi.com/rl/api/live?run=pro",
       "data": {
-        "log_time": 1789847558.334,
+        "log_time": 1789859232.334,
         "latest": {
-          "t": 1789847558.334,
-          "step": 27,
-          "accept": 2528,
+          "t": 1789859232.334,
+          "step": 28,
+          "accept": 1544,
           "target": 1568,
-          "judged": 2415,
-          "judged_of": 2528,
+          "judged": 1488,
+          "judged_of": 1544,
           "ds": {
             "code/dataset-bvg7": [
-              86,
+              60,
               51,
-              75,
+              56,
               38
             ],
             "code/dataset-v7yx": [
-              68,
+              31,
               51,
-              63,
-              43
+              28,
+              70
             ],
             "code/dataset-dnpn": [
-              104,
+              56,
               62,
-              103,
-              10
+              56,
+              64
             ],
             "code/dataset-ta4j": [
-              121,
+              79,
               62,
-              110,
-              54
+              76,
+              51
             ],
             "code/dataset-sin0": [
-              235,
-              154,
-              211,
-              52
+              131,
+              153,
+              121,
+              113
             ],
             "code/dataset-obg8": [
-              302,
-              154,
-              277,
-              194
+              206,
+              153,
+              197,
+              184
             ],
             "code/dataset-zg6q": [
-              202,
-              154,
-              197,
-              82
+              97,
+              153,
+              81,
+              287
             ],
             "code/dataset-yfch": [
-              53,
+              44,
               55,
               null,
-              432
+              406
             ],
             "code/dataset-x7wh": [
-              266,
+              198,
               128,
-              235,
-              123
+              187,
+              105
             ],
             "code/dataset-m1dt": [
-              225,
+              105,
               154,
               null,
-              24
+              104
             ],
             "general/dataset-epqd": [
-              95,
+              59,
               65,
               null,
-              10
+              35
             ],
             "general/dataset-trla": [
-              87,
+              50,
               65,
               null,
-              23
+              49
             ],
             "general/dataset-1doa": [
-              44,
-              31,
+              29,
+              32,
               null,
-              9
+              27
             ],
             "general/dataset-5610": [
-              45,
-              31,
+              19,
+              32,
               null,
-              8
+              44
             ],
             "chat/dataset-lm3t": [
-              25,
+              20,
               16,
-              null,
-              0
-            ],
-            "chat/dataset-eup7": [
-              24,
-              16,
-              null,
-              0
-            ],
-            "chat/dataset-8kb6": [
-              25,
-              16,
-              null,
-              0
-            ],
-            "visual/dataset-gtav": [
-              96,
-              65,
-              null,
-              2
-            ],
-            "visual/dataset-jzd3": [
-              99,
-              65,
-              null,
-              0
-            ],
-            "visual/dataset-ol8x": [
-              77,
-              41,
-              null,
-              9
-            ],
-            "visual/dataset-053e": [
-              76,
-              39,
               null,
               4
             ],
-            "visual/dataset-ve5o": [
-              64,
-              31,
+            "chat/dataset-eup7": [
+              16,
+              15,
               null,
-              25
+              2
             ],
-            "visual/dataset-pt5v": [
-              60,
-              31,
+            "chat/dataset-8kb6": [
+              16,
+              15,
+              null,
+              3
+            ],
+            "visual/dataset-gtav": [
+              55,
+              65,
+              null,
+              29
+            ],
+            "visual/dataset-jzd3": [
+              64,
+              65,
               null,
               24
             ],
-            "code/dataset-4onq": [
-              49,
-              31,
+            "visual/dataset-ol8x": [
+              43,
+              41,
               null,
-              0
+              17
+            ],
+            "visual/dataset-053e": [
+              43,
+              39,
+              null,
+              15
+            ],
+            "visual/dataset-ve5o": [
+              51,
+              32,
+              null,
+              17
+            ],
+            "visual/dataset-pt5v": [
+              48,
+              32,
+              null,
+              18
+            ],
+            "code/dataset-4onq": [
+              24,
+              32,
+              null,
+              25
             ]
           },
-          "passrate": 0.632,
-          "n": 6443,
+          "passrate": 0.63,
+          "n": 7392,
           "pr0": 0.14,
-          "pr1": 0.228,
+          "pr1": 0.23,
           "partial": [
             0,
             0,
             0
           ],
           "working": 256,
-          "remain": 355,
-          "remain_partial": 811,
-          "remain_seq": 188,
-          "prewarm": 348,
-          "prewarm_wait": 2649.3
+          "remain": 721,
+          "remain_partial": 1008,
+          "remain_seq": 250,
+          "prewarm": 512,
+          "prewarm_wait": 6474.6
         },
         "entries": [
           {
-            "t": 1789845963.334,
-            "step": 27,
-            "accept": 2048,
+            "t": 1789856883.334,
+            "step": 28,
+            "accept": 1048,
             "target": 1568,
-            "judged": 1925,
-            "judged_of": 2048,
-            "passrate": 0.627,
-            "n": 5727,
+            "judged": 1001,
+            "judged_of": 1048,
+            "passrate": 0.631,
+            "n": 6597,
             "pr0": 0.141,
-            "pr1": 0.232,
+            "pr1": 0.228,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 550,
-            "remain_partial": 1169,
-            "remain_seq": 342,
-            "prewarm": 374,
-            "prewarm_wait": 2664.2
+            "remain": 484,
+            "remain_partial": 780,
+            "remain_seq": 126,
+            "prewarm": 665,
+            "prewarm_wait": 8853.6
           },
           {
-            "t": 1789846001.334,
-            "step": 27,
-            "accept": 2056,
+            "t": 1789856928.334,
+            "step": 28,
+            "accept": 1056,
             "target": 1568,
-            "judged": 1937,
-            "judged_of": 2056,
-            "passrate": 0.627,
-            "n": 5741,
+            "judged": 1004,
+            "judged_of": 1056,
+            "passrate": 0.63,
+            "n": 6611,
             "pr0": 0.141,
-            "pr1": 0.232,
+            "pr1": 0.228,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 543,
-            "remain_partial": 1167,
-            "remain_seq": 354,
-            "prewarm": 369,
-            "prewarm_wait": 2661.0
+            "remain": 469,
+            "remain_partial": 781,
+            "remain_seq": 101,
+            "prewarm": 665,
+            "prewarm_wait": 8853.6
           },
           {
-            "t": 1789846025.334,
-            "step": 27,
-            "accept": 2064,
+            "t": 1789856985.334,
+            "step": 28,
+            "accept": 1072,
             "target": 1568,
-            "judged": 1941,
-            "judged_of": 2064,
-            "passrate": 0.627,
-            "n": 5753,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 541,
-            "remain_partial": 1160,
-            "remain_seq": 353,
-            "prewarm": 366,
-            "prewarm_wait": 2658.9
-          },
-          {
-            "t": 1789846048.334,
-            "step": 27,
-            "accept": 2072,
-            "target": 1568,
-            "judged": 1948,
-            "judged_of": 2072,
-            "passrate": 0.627,
-            "n": 5763,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 533,
-            "remain_partial": 1161,
-            "remain_seq": 341,
-            "prewarm": 363,
-            "prewarm_wait": 2656.8
-          },
-          {
-            "t": 1789846072.334,
-            "step": 27,
-            "accept": 2080,
-            "target": 1568,
-            "judged": 1956,
-            "judged_of": 2080,
-            "passrate": 0.627,
-            "n": 5777,
+            "judged": 1017,
+            "judged_of": 1072,
+            "passrate": 0.631,
+            "n": 6632,
             "pr0": 0.141,
-            "pr1": 0.232,
+            "pr1": 0.228,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 530,
-            "remain_partial": 1153,
-            "remain_seq": 338,
-            "prewarm": 360,
-            "prewarm_wait": 2654.6
+            "remain": 489,
+            "remain_partial": 770,
+            "remain_seq": 123,
+            "prewarm": 635,
+            "prewarm_wait": 8901.3
           },
           {
-            "t": 1789846095.334,
-            "step": 27,
-            "accept": 2088,
+            "t": 1789857032.334,
+            "step": 28,
+            "accept": 1080,
             "target": 1568,
-            "judged": 1963,
-            "judged_of": 2088,
-            "passrate": 0.627,
-            "n": 5790,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 528,
-            "remain_partial": 1145,
-            "remain_seq": 358,
-            "prewarm": 357,
-            "prewarm_wait": 2652.5
-          },
-          {
-            "t": 1789846105.334,
-            "step": 27,
-            "accept": 2096,
-            "target": 1568,
-            "judged": 1971,
-            "judged_of": 2096,
-            "passrate": 0.628,
-            "n": 5799,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 527,
-            "remain_partial": 1139,
-            "remain_seq": 368,
-            "prewarm": 355,
-            "prewarm_wait": 2651.0
-          },
-          {
-            "t": 1789846123.334,
-            "step": 27,
-            "accept": 2104,
-            "target": 1568,
-            "judged": 1980,
-            "judged_of": 2104,
-            "passrate": 0.628,
-            "n": 5813,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 522,
-            "remain_partial": 1131,
-            "remain_seq": 343,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846138.334,
-            "step": 27,
-            "accept": 2112,
-            "target": 1568,
-            "judged": 1986,
-            "judged_of": 2112,
-            "passrate": 0.628,
-            "n": 5824,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 524,
-            "remain_partial": 1120,
-            "remain_seq": 349,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846159.334,
-            "step": 27,
-            "accept": 2120,
-            "target": 1568,
-            "judged": 1992,
-            "judged_of": 2120,
-            "passrate": 0.628,
-            "n": 5833,
-            "pr0": 0.14,
-            "pr1": 0.232,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 523,
-            "remain_partial": 1116,
-            "remain_seq": 333,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846181.334,
-            "step": 27,
-            "accept": 2128,
-            "target": 1568,
-            "judged": 2005,
-            "judged_of": 2128,
-            "passrate": 0.628,
-            "n": 5843,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 522,
-            "remain_partial": 1110,
-            "remain_seq": 344,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846213.334,
-            "step": 27,
-            "accept": 2136,
-            "target": 1568,
-            "judged": 2014,
-            "judged_of": 2136,
-            "passrate": 0.628,
-            "n": 5858,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 514,
-            "remain_partial": 1106,
-            "remain_seq": 326,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846249.334,
-            "step": 27,
-            "accept": 2144,
-            "target": 1568,
-            "judged": 2020,
-            "judged_of": 2144,
-            "passrate": 0.628,
-            "n": 5871,
+            "judged": 1025,
+            "judged_of": 1080,
+            "passrate": 0.631,
+            "n": 6647,
             "pr0": 0.141,
-            "pr1": 0.231,
+            "pr1": 0.228,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 510,
-            "remain_partial": 1100,
-            "remain_seq": 347,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
+            "remain": 506,
+            "remain_partial": 774,
+            "remain_seq": 97,
+            "prewarm": 599,
+            "prewarm_wait": 8957.5
           },
           {
-            "t": 1789846266.334,
-            "step": 27,
-            "accept": 2152,
+            "t": 1789857108.334,
+            "step": 28,
+            "accept": 1088,
             "target": 1568,
-            "judged": 2026,
-            "judged_of": 2152,
-            "passrate": 0.628,
-            "n": 5882,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 501,
-            "remain_partial": 1099,
-            "remain_seq": 321,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846298.334,
-            "step": 27,
-            "accept": 2160,
-            "target": 1568,
-            "judged": 2033,
-            "judged_of": 2160,
-            "passrate": 0.628,
-            "n": 5895,
+            "judged": 1038,
+            "judged_of": 1088,
+            "passrate": 0.631,
+            "n": 6660,
             "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 500,
-            "remain_partial": 1092,
-            "remain_seq": 323,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846313.334,
-            "step": 27,
-            "accept": 2168,
-            "target": 1568,
-            "judged": 2036,
-            "judged_of": 2168,
-            "passrate": 0.628,
-            "n": 5907,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 497,
-            "remain_partial": 1083,
-            "remain_seq": 320,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846328.334,
-            "step": 27,
-            "accept": 2176,
-            "target": 1568,
-            "judged": 2042,
-            "judged_of": 2176,
-            "passrate": 0.629,
-            "n": 5917,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 494,
-            "remain_partial": 1078,
-            "remain_seq": 320,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846353.334,
-            "step": 27,
-            "accept": 2184,
-            "target": 1568,
-            "judged": 2048,
-            "judged_of": 2184,
-            "passrate": 0.629,
-            "n": 5930,
-            "pr0": 0.141,
-            "pr1": 0.23,
+            "pr1": 0.228,
             "partial": [
               0,
               0,
@@ -6318,802 +6103,20 @@
             ],
             "working": 256,
             "remain": 490,
-            "remain_partial": 1072,
-            "remain_seq": 303,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
+            "remain_partial": 776,
+            "remain_seq": 102,
+            "prewarm": 599,
+            "prewarm_wait": 8957.5
           },
           {
-            "t": 1789846398.334,
-            "step": 27,
-            "accept": 2192,
+            "t": 1789857147.334,
+            "step": 28,
+            "accept": 1096,
             "target": 1568,
-            "judged": 2058,
-            "judged_of": 2192,
-            "passrate": 0.628,
-            "n": 5949,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 479,
-            "remain_partial": 1068,
-            "remain_seq": 312,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846435.334,
-            "step": 27,
-            "accept": 2200,
-            "target": 1568,
-            "judged": 2066,
-            "judged_of": 2200,
-            "passrate": 0.628,
-            "n": 5965,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 476,
-            "remain_partial": 1060,
-            "remain_seq": 339,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846479.334,
-            "step": 27,
-            "accept": 2216,
-            "target": 1568,
-            "judged": 2081,
-            "judged_of": 2216,
-            "passrate": 0.628,
-            "n": 5989,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 461,
-            "remain_partial": 1057,
-            "remain_seq": 306,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846497.334,
-            "step": 27,
-            "accept": 2224,
-            "target": 1568,
-            "judged": 2087,
-            "judged_of": 2224,
-            "passrate": 0.628,
-            "n": 6000,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 460,
-            "remain_partial": 1047,
-            "remain_seq": 300,
-            "prewarm": 353,
-            "prewarm_wait": 2649.4
-          },
-          {
-            "t": 1789846524.334,
-            "step": 27,
-            "accept": 2232,
-            "target": 1568,
-            "judged": 2092,
-            "judged_of": 2232,
-            "passrate": 0.628,
-            "n": 6012,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 456,
-            "remain_partial": 1043,
-            "remain_seq": 282,
-            "prewarm": 352,
-            "prewarm_wait": 2649.0
-          },
-          {
-            "t": 1789846531.334,
-            "step": 27,
-            "accept": 2240,
-            "target": 1568,
-            "judged": 2097,
-            "judged_of": 2240,
-            "passrate": 0.628,
-            "n": 6024,
-            "pr0": 0.14,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 453,
-            "remain_partial": 1037,
-            "remain_seq": 272,
-            "prewarm": 352,
-            "prewarm_wait": 2649.0
-          },
-          {
-            "t": 1789846574.334,
-            "step": 27,
-            "accept": 2248,
-            "target": 1568,
-            "judged": 2108,
-            "judged_of": 2248,
-            "passrate": 0.628,
-            "n": 6041,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 445,
-            "remain_partial": 1033,
-            "remain_seq": 278,
-            "prewarm": 352,
-            "prewarm_wait": 2649.0
-          },
-          {
-            "t": 1789846597.334,
-            "step": 27,
-            "accept": 2256,
-            "target": 1568,
-            "judged": 2117,
-            "judged_of": 2256,
-            "passrate": 0.628,
-            "n": 6052,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 446,
-            "remain_partial": 1023,
-            "remain_seq": 262,
-            "prewarm": 352,
-            "prewarm_wait": 2649.0
-          },
-          {
-            "t": 1789846621.334,
-            "step": 27,
-            "accept": 2264,
-            "target": 1568,
-            "judged": 2125,
-            "judged_of": 2264,
-            "passrate": 0.627,
-            "n": 6069,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 441,
-            "remain_partial": 1014,
-            "remain_seq": 279,
-            "prewarm": 352,
-            "prewarm_wait": 2649.0
-          },
-          {
-            "t": 1789846649.334,
-            "step": 27,
-            "accept": 2272,
-            "target": 1568,
-            "judged": 2132,
-            "judged_of": 2272,
-            "passrate": 0.627,
-            "n": 6082,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 438,
-            "remain_partial": 1008,
-            "remain_seq": 280,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846681.334,
-            "step": 27,
-            "accept": 2280,
-            "target": 1568,
-            "judged": 2141,
-            "judged_of": 2280,
-            "passrate": 0.628,
-            "n": 6093,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 434,
-            "remain_partial": 1001,
-            "remain_seq": 254,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846706.334,
-            "step": 27,
-            "accept": 2288,
-            "target": 1568,
-            "judged": 2153,
-            "judged_of": 2288,
-            "passrate": 0.628,
-            "n": 6104,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 430,
-            "remain_partial": 998,
-            "remain_seq": 267,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846734.334,
-            "step": 27,
-            "accept": 2296,
-            "target": 1568,
-            "judged": 2161,
-            "judged_of": 2296,
-            "passrate": 0.628,
-            "n": 6116,
-            "pr0": 0.141,
-            "pr1": 0.231,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 427,
-            "remain_partial": 993,
-            "remain_seq": 290,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846755.334,
-            "step": 27,
-            "accept": 2304,
-            "target": 1568,
-            "judged": 2168,
-            "judged_of": 2304,
-            "passrate": 0.628,
-            "n": 6127,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 422,
-            "remain_partial": 990,
-            "remain_seq": 267,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846782.334,
-            "step": 27,
-            "accept": 2312,
-            "target": 1568,
-            "judged": 2173,
-            "judged_of": 2312,
-            "passrate": 0.628,
-            "n": 6138,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 419,
-            "remain_partial": 985,
-            "remain_seq": 275,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846806.334,
-            "step": 27,
-            "accept": 2320,
-            "target": 1568,
-            "judged": 2184,
-            "judged_of": 2320,
-            "passrate": 0.628,
-            "n": 6149,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 420,
-            "remain_partial": 975,
-            "remain_seq": 284,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846829.334,
-            "step": 27,
-            "accept": 2328,
-            "target": 1568,
-            "judged": 2192,
-            "judged_of": 2328,
-            "passrate": 0.628,
-            "n": 6163,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 420,
-            "remain_partial": 963,
-            "remain_seq": 272,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846855.334,
-            "step": 27,
-            "accept": 2336,
-            "target": 1568,
-            "judged": 2204,
-            "judged_of": 2336,
-            "passrate": 0.629,
-            "n": 6173,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 415,
-            "remain_partial": 960,
-            "remain_seq": 245,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846881.334,
-            "step": 27,
-            "accept": 2344,
-            "target": 1568,
-            "judged": 2213,
-            "judged_of": 2344,
-            "passrate": 0.629,
-            "n": 6185,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 412,
-            "remain_partial": 954,
-            "remain_seq": 237,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846910.334,
-            "step": 27,
-            "accept": 2352,
-            "target": 1568,
-            "judged": 2226,
-            "judged_of": 2352,
-            "passrate": 0.629,
-            "n": 6195,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 410,
-            "remain_partial": 948,
-            "remain_seq": 219,
-            "prewarm": 351,
-            "prewarm_wait": 2648.5
-          },
-          {
-            "t": 1789846944.334,
-            "step": 27,
-            "accept": 2360,
-            "target": 1568,
-            "judged": 2234,
-            "judged_of": 2360,
-            "passrate": 0.629,
-            "n": 6205,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 408,
-            "remain_partial": 944,
-            "remain_seq": 244,
-            "prewarm": 350,
-            "prewarm_wait": 2648.2
-          },
-          {
-            "t": 1789846972.334,
-            "step": 27,
-            "accept": 2368,
-            "target": 1568,
-            "judged": 2247,
-            "judged_of": 2368,
-            "passrate": 0.629,
-            "n": 6222,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 401,
-            "remain_partial": 936,
-            "remain_seq": 229,
-            "prewarm": 350,
-            "prewarm_wait": 2648.2
-          },
-          {
-            "t": 1789847015.334,
-            "step": 27,
-            "accept": 2376,
-            "target": 1568,
-            "judged": 2256,
-            "judged_of": 2376,
-            "passrate": 0.629,
-            "n": 6235,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 402,
-            "remain_partial": 927,
-            "remain_seq": 229,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847035.334,
-            "step": 27,
-            "accept": 2384,
-            "target": 1568,
-            "judged": 2261,
-            "judged_of": 2384,
-            "passrate": 0.629,
-            "n": 6248,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 399,
-            "remain_partial": 919,
-            "remain_seq": 216,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847069.334,
-            "step": 27,
-            "accept": 2392,
-            "target": 1568,
-            "judged": 2269,
-            "judged_of": 2392,
-            "passrate": 0.629,
-            "n": 6259,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 395,
-            "remain_partial": 914,
-            "remain_seq": 221,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847084.334,
-            "step": 27,
-            "accept": 2400,
-            "target": 1568,
-            "judged": 2277,
-            "judged_of": 2400,
-            "passrate": 0.629,
-            "n": 6270,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 393,
-            "remain_partial": 907,
-            "remain_seq": 225,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847111.334,
-            "step": 27,
-            "accept": 2408,
-            "target": 1568,
-            "judged": 2281,
-            "judged_of": 2408,
-            "passrate": 0.629,
-            "n": 6279,
-            "pr0": 0.141,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 388,
-            "remain_partial": 905,
-            "remain_seq": 225,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847125.334,
-            "step": 27,
-            "accept": 2416,
-            "target": 1568,
-            "judged": 2290,
-            "judged_of": 2416,
-            "passrate": 0.63,
-            "n": 6289,
-            "pr0": 0.14,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 388,
-            "remain_partial": 896,
-            "remain_seq": 221,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847159.334,
-            "step": 27,
-            "accept": 2424,
-            "target": 1568,
-            "judged": 2296,
-            "judged_of": 2424,
-            "passrate": 0.63,
-            "n": 6300,
-            "pr0": 0.14,
-            "pr1": 0.23,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 387,
-            "remain_partial": 889,
-            "remain_seq": 216,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847190.334,
-            "step": 27,
-            "accept": 2432,
-            "target": 1568,
-            "judged": 2308,
-            "judged_of": 2432,
-            "passrate": 0.63,
-            "n": 6310,
-            "pr0": 0.14,
-            "pr1": 0.229,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 385,
-            "remain_partial": 882,
-            "remain_seq": 209,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847205.334,
-            "step": 27,
-            "accept": 2440,
-            "target": 1568,
-            "judged": 2313,
-            "judged_of": 2440,
-            "passrate": 0.63,
-            "n": 6319,
-            "pr0": 0.14,
-            "pr1": 0.229,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 382,
-            "remain_partial": 879,
-            "remain_seq": 205,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847241.334,
-            "step": 27,
-            "accept": 2448,
-            "target": 1568,
-            "judged": 2321,
-            "judged_of": 2448,
-            "passrate": 0.63,
-            "n": 6335,
-            "pr0": 0.141,
-            "pr1": 0.229,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 381,
-            "remain_partial": 866,
-            "remain_seq": 209,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847268.334,
-            "step": 27,
-            "accept": 2456,
-            "target": 1568,
-            "judged": 2332,
-            "judged_of": 2456,
-            "passrate": 0.63,
-            "n": 6345,
-            "pr0": 0.141,
-            "pr1": 0.229,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 378,
-            "remain_partial": 861,
-            "remain_seq": 199,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847325.334,
-            "step": 27,
-            "accept": 2464,
-            "target": 1568,
-            "judged": 2344,
-            "judged_of": 2464,
-            "passrate": 0.63,
-            "n": 6361,
-            "pr0": 0.141,
-            "pr1": 0.229,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 371,
-            "remain_partial": 857,
-            "remain_seq": 216,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
-          },
-          {
-            "t": 1789847351.334,
-            "step": 27,
-            "accept": 2472,
-            "target": 1568,
-            "judged": 2353,
-            "judged_of": 2472,
-            "passrate": 0.63,
-            "n": 6370,
+            "judged": 1042,
+            "judged_of": 1096,
+            "passrate": 0.631,
+            "n": 6671,
             "pr0": 0.141,
             "pr1": 0.228,
             "partial": [
@@ -7122,21 +6125,343 @@
               0
             ],
             "working": 256,
-            "remain": 371,
+            "remain": 521,
+            "remain_partial": 774,
+            "remain_seq": 111,
+            "prewarm": 560,
+            "prewarm_wait": 9015.6
+          },
+          {
+            "t": 1789857193.334,
+            "step": 28,
+            "accept": 1104,
+            "target": 1568,
+            "judged": 1048,
+            "judged_of": 1104,
+            "passrate": 0.631,
+            "n": 6684,
+            "pr0": 0.141,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 502,
+            "remain_partial": 780,
+            "remain_seq": 137,
+            "prewarm": 560,
+            "prewarm_wait": 9015.6
+          },
+          {
+            "t": 1789857218.334,
+            "step": 28,
+            "accept": 1112,
+            "target": 1568,
+            "judged": 1053,
+            "judged_of": 1112,
+            "passrate": 0.631,
+            "n": 6693,
+            "pr0": 0.141,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 493,
+            "remain_partial": 779,
+            "remain_seq": 133,
+            "prewarm": 560,
+            "prewarm_wait": 9015.6
+          },
+          {
+            "t": 1789857245.334,
+            "step": 28,
+            "accept": 1120,
+            "target": 1568,
+            "judged": 1059,
+            "judged_of": 1120,
+            "passrate": 0.631,
+            "n": 6704,
+            "pr0": 0.141,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 485,
+            "remain_partial": 775,
+            "remain_seq": 133,
+            "prewarm": 560,
+            "prewarm_wait": 9015.6
+          },
+          {
+            "t": 1789857280.334,
+            "step": 28,
+            "accept": 1128,
+            "target": 1568,
+            "judged": 1063,
+            "judged_of": 1128,
+            "passrate": 0.631,
+            "n": 6716,
+            "pr0": 0.141,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 508,
+            "remain_partial": 772,
+            "remain_seq": 126,
+            "prewarm": 529,
+            "prewarm_wait": 9063.1
+          },
+          {
+            "t": 1789857321.334,
+            "step": 28,
+            "accept": 1136,
+            "target": 1568,
+            "judged": 1071,
+            "judged_of": 1136,
+            "passrate": 0.632,
+            "n": 6725,
+            "pr0": 0.141,
+            "pr1": 0.227,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 495,
+            "remain_partial": 777,
+            "remain_seq": 134,
+            "prewarm": 529,
+            "prewarm_wait": 9063.1
+          },
+          {
+            "t": 1789857362.334,
+            "step": 28,
+            "accept": 1144,
+            "target": 1568,
+            "judged": 1079,
+            "judged_of": 1144,
+            "passrate": 0.632,
+            "n": 6736,
+            "pr0": 0.14,
+            "pr1": 0.227,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 537,
+            "remain_partial": 784,
+            "remain_seq": 140,
+            "prewarm": 512,
+            "prewarm_wait": 9150.2
+          },
+          {
+            "t": 1789857434.334,
+            "step": 28,
+            "accept": 1152,
+            "target": 1568,
+            "judged": 1091,
+            "judged_of": 1152,
+            "passrate": 0.632,
+            "n": 6752,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 547,
+            "remain_partial": 780,
+            "remain_seq": 173,
+            "prewarm": 512,
+            "prewarm_wait": 9177.0
+          },
+          {
+            "t": 1789857470.334,
+            "step": 28,
+            "accept": 1160,
+            "target": 1568,
+            "judged": 1100,
+            "judged_of": 1160,
+            "passrate": 0.632,
+            "n": 6764,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 534,
+            "remain_partial": 781,
+            "remain_seq": 123,
+            "prewarm": 512,
+            "prewarm_wait": 9177.0
+          },
+          {
+            "t": 1789857553.334,
+            "step": 28,
+            "accept": 1168,
+            "target": 1568,
+            "judged": 1108,
+            "judged_of": 1168,
+            "passrate": 0.631,
+            "n": 6780,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 581,
+            "remain_partial": 797,
+            "remain_seq": 193,
+            "prewarm": 512,
+            "prewarm_wait": 9270.2
+          },
+          {
+            "t": 1789857578.334,
+            "step": 28,
+            "accept": 1176,
+            "target": 1568,
+            "judged": 1114,
+            "judged_of": 1176,
+            "passrate": 0.632,
+            "n": 6790,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 571,
+            "remain_partial": 797,
+            "remain_seq": 181,
+            "prewarm": 512,
+            "prewarm_wait": 9270.2
+          },
+          {
+            "t": 1789857617.334,
+            "step": 28,
+            "accept": 1184,
+            "target": 1568,
+            "judged": 1122,
+            "judged_of": 1184,
+            "passrate": 0.631,
+            "n": 6803,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 545,
+            "remain_partial": 809,
+            "remain_seq": 196,
+            "prewarm": 512,
+            "prewarm_wait": 9270.2
+          },
+          {
+            "t": 1789857688.334,
+            "step": 28,
+            "accept": 1200,
+            "target": 1568,
+            "judged": 1139,
+            "judged_of": 1200,
+            "passrate": 0.631,
+            "n": 6830,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 543,
+            "remain_partial": 820,
+            "remain_seq": 196,
+            "prewarm": 512,
+            "prewarm_wait": 9316.8
+          },
+          {
+            "t": 1789857755.334,
+            "step": 28,
+            "accept": 1208,
+            "target": 1568,
+            "judged": 1146,
+            "judged_of": 1208,
+            "passrate": 0.631,
+            "n": 6843,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 558,
+            "remain_partial": 838,
+            "remain_seq": 211,
+            "prewarm": 512,
+            "prewarm_wait": 9376.7
+          },
+          {
+            "t": 1789857813.334,
+            "step": 28,
+            "accept": 1216,
+            "target": 1568,
+            "judged": 1153,
+            "judged_of": 1216,
+            "passrate": 0.631,
+            "n": 6856,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 546,
             "remain_partial": 849,
-            "remain_seq": 217,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain_seq": 224,
+            "prewarm": 512,
+            "prewarm_wait": 9388.5
           },
           {
-            "t": 1789847383.334,
-            "step": 27,
-            "accept": 2480,
+            "t": 1789857880.334,
+            "step": 28,
+            "accept": 1224,
             "target": 1568,
-            "judged": 2363,
-            "judged_of": 2480,
-            "passrate": 0.63,
-            "n": 6383,
+            "judged": 1165,
+            "judged_of": 1224,
+            "passrate": 0.631,
+            "n": 6872,
             "pr0": 0.141,
             "pr1": 0.228,
             "partial": [
@@ -7145,90 +6470,90 @@
               0
             ],
             "working": 256,
-            "remain": 368,
-            "remain_partial": 841,
-            "remain_seq": 214,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain": 576,
+            "remain_partial": 856,
+            "remain_seq": 193,
+            "prewarm": 512,
+            "prewarm_wait": 9454.7
           },
           {
-            "t": 1789847404.334,
-            "step": 27,
-            "accept": 2488,
+            "t": 1789857955.334,
+            "step": 28,
+            "accept": 1232,
             "target": 1568,
-            "judged": 2370,
-            "judged_of": 2488,
+            "judged": 1182,
+            "judged_of": 1232,
             "passrate": 0.631,
-            "n": 6392,
+            "n": 6889,
             "pr0": 0.141,
-            "pr1": 0.228,
+            "pr1": 0.229,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 366,
-            "remain_partial": 837,
-            "remain_seq": 203,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain": 580,
+            "remain_partial": 862,
+            "remain_seq": 159,
+            "prewarm": 512,
+            "prewarm_wait": 9485.6
           },
           {
-            "t": 1789847438.334,
-            "step": 27,
-            "accept": 2496,
+            "t": 1789857996.334,
+            "step": 28,
+            "accept": 1240,
             "target": 1568,
-            "judged": 2379,
-            "judged_of": 2496,
+            "judged": 1188,
+            "judged_of": 1240,
             "passrate": 0.631,
-            "n": 6402,
-            "pr0": 0.141,
-            "pr1": 0.228,
+            "n": 6900,
+            "pr0": 0.14,
+            "pr1": 0.229,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 365,
-            "remain_partial": 832,
-            "remain_seq": 228,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain": 562,
+            "remain_partial": 869,
+            "remain_seq": 184,
+            "prewarm": 512,
+            "prewarm_wait": 9485.6
           },
           {
-            "t": 1789847460.334,
-            "step": 27,
-            "accept": 2504,
+            "t": 1789858018.334,
+            "step": 28,
+            "accept": 1248,
             "target": 1568,
-            "judged": 2386,
-            "judged_of": 2504,
+            "judged": 1194,
+            "judged_of": 1248,
             "passrate": 0.631,
-            "n": 6413,
-            "pr0": 0.141,
-            "pr1": 0.228,
+            "n": 6909,
+            "pr0": 0.14,
+            "pr1": 0.229,
             "partial": [
               0,
               0,
               0
             ],
             "working": 256,
-            "remain": 363,
-            "remain_partial": 823,
-            "remain_seq": 204,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain": 555,
+            "remain_partial": 867,
+            "remain_seq": 187,
+            "prewarm": 512,
+            "prewarm_wait": 9485.6
           },
           {
-            "t": 1789847486.334,
-            "step": 27,
-            "accept": 2512,
+            "t": 1789858072.334,
+            "step": 28,
+            "accept": 1256,
             "target": 1568,
-            "judged": 2393,
-            "judged_of": 2512,
+            "judged": 1202,
+            "judged_of": 1256,
             "passrate": 0.631,
-            "n": 6423,
+            "n": 6922,
             "pr0": 0.14,
             "pr1": 0.228,
             "partial": [
@@ -7237,21 +6562,44 @@
               0
             ],
             "working": 256,
-            "remain": 363,
-            "remain_partial": 816,
-            "remain_seq": 200,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain": 618,
+            "remain_partial": 866,
+            "remain_seq": 181,
+            "prewarm": 512,
+            "prewarm_wait": 9545.0
           },
           {
-            "t": 1789847524.334,
-            "step": 27,
-            "accept": 2520,
+            "t": 1789858100.334,
+            "step": 28,
+            "accept": 1264,
             "target": 1568,
-            "judged": 2402,
-            "judged_of": 2520,
+            "judged": 1204,
+            "judged_of": 1264,
+            "passrate": 0.631,
+            "n": 6933,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 619,
+            "remain_partial": 869,
+            "remain_seq": 207,
+            "prewarm": 512,
+            "prewarm_wait": 9535.2
+          },
+          {
+            "t": 1789858122.334,
+            "step": 28,
+            "accept": 1272,
+            "target": 1568,
+            "judged": 1210,
+            "judged_of": 1272,
             "passrate": 0.632,
-            "n": 6432,
+            "n": 6942,
             "pr0": 0.14,
             "pr1": 0.228,
             "partial": [
@@ -7260,21 +6608,21 @@
               0
             ],
             "working": 256,
-            "remain": 356,
-            "remain_partial": 818,
-            "remain_seq": 183,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "remain": 613,
+            "remain_partial": 872,
+            "remain_seq": 206,
+            "prewarm": 512,
+            "prewarm_wait": 9528.2
           },
           {
-            "t": 1789847558.334,
-            "step": 27,
-            "accept": 2528,
+            "t": 1789858152.334,
+            "step": 28,
+            "accept": 1280,
             "target": 1568,
-            "judged": 2415,
-            "judged_of": 2528,
-            "passrate": 0.632,
-            "n": 6443,
+            "judged": 1217,
+            "judged_of": 1280,
+            "passrate": 0.631,
+            "n": 6956,
             "pr0": 0.14,
             "pr1": 0.228,
             "partial": [
@@ -7283,11 +6631,747 @@
               0
             ],
             "working": 256,
-            "remain": 355,
-            "remain_partial": 811,
+            "remain": 605,
+            "remain_partial": 869,
             "remain_seq": 188,
-            "prewarm": 348,
-            "prewarm_wait": 2649.3
+            "prewarm": 512,
+            "prewarm_wait": 9532.1
+          },
+          {
+            "t": 1789858197.334,
+            "step": 28,
+            "accept": 1288,
+            "target": 1568,
+            "judged": 1230,
+            "judged_of": 1288,
+            "passrate": 0.631,
+            "n": 6969,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 584,
+            "remain_partial": 876,
+            "remain_seq": 234,
+            "prewarm": 512,
+            "prewarm_wait": 9532.1
+          },
+          {
+            "t": 1789858241.334,
+            "step": 28,
+            "accept": 1296,
+            "target": 1568,
+            "judged": 1240,
+            "judged_of": 1296,
+            "passrate": 0.631,
+            "n": 6983,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 636,
+            "remain_partial": 878,
+            "remain_seq": 190,
+            "prewarm": 512,
+            "prewarm_wait": 9337.9
+          },
+          {
+            "t": 1789858264.334,
+            "step": 28,
+            "accept": 1304,
+            "target": 1568,
+            "judged": 1245,
+            "judged_of": 1304,
+            "passrate": 0.631,
+            "n": 6994,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 645,
+            "remain_partial": 875,
+            "remain_seq": 195,
+            "prewarm": 512,
+            "prewarm_wait": 9249.2
+          },
+          {
+            "t": 1789858292.334,
+            "step": 28,
+            "accept": 1312,
+            "target": 1568,
+            "judged": 1255,
+            "judged_of": 1312,
+            "passrate": 0.631,
+            "n": 7006,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 651,
+            "remain_partial": 875,
+            "remain_seq": 203,
+            "prewarm": 512,
+            "prewarm_wait": 9164.6
+          },
+          {
+            "t": 1789858332.334,
+            "step": 28,
+            "accept": 1320,
+            "target": 1568,
+            "judged": 1259,
+            "judged_of": 1320,
+            "passrate": 0.631,
+            "n": 7020,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 663,
+            "remain_partial": 877,
+            "remain_seq": 226,
+            "prewarm": 512,
+            "prewarm_wait": 8978.4
+          },
+          {
+            "t": 1789858353.334,
+            "step": 28,
+            "accept": 1328,
+            "target": 1568,
+            "judged": 1262,
+            "judged_of": 1328,
+            "passrate": 0.632,
+            "n": 7030,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 664,
+            "remain_partial": 878,
+            "remain_seq": 195,
+            "prewarm": 512,
+            "prewarm_wait": 8893.5
+          },
+          {
+            "t": 1789858381.334,
+            "step": 28,
+            "accept": 1336,
+            "target": 1568,
+            "judged": 1272,
+            "judged_of": 1336,
+            "passrate": 0.632,
+            "n": 7040,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 666,
+            "remain_partial": 885,
+            "remain_seq": 215,
+            "prewarm": 512,
+            "prewarm_wait": 8773.4
+          },
+          {
+            "t": 1789858390.334,
+            "step": 28,
+            "accept": 1344,
+            "target": 1568,
+            "judged": 1277,
+            "judged_of": 1344,
+            "passrate": 0.632,
+            "n": 7053,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 668,
+            "remain_partial": 877,
+            "remain_seq": 198,
+            "prewarm": 512,
+            "prewarm_wait": 8729.3
+          },
+          {
+            "t": 1789858453.334,
+            "step": 28,
+            "accept": 1352,
+            "target": 1568,
+            "judged": 1283,
+            "judged_of": 1352,
+            "passrate": 0.632,
+            "n": 7064,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 673,
+            "remain_partial": 898,
+            "remain_seq": 224,
+            "prewarm": 512,
+            "prewarm_wait": 8530.7
+          },
+          {
+            "t": 1789858489.334,
+            "step": 28,
+            "accept": 1360,
+            "target": 1568,
+            "judged": 1289,
+            "judged_of": 1360,
+            "passrate": 0.632,
+            "n": 7077,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 671,
+            "remain_partial": 911,
+            "remain_seq": 237,
+            "prewarm": 512,
+            "prewarm_wait": 8407.0
+          },
+          {
+            "t": 1789858518.334,
+            "step": 28,
+            "accept": 1368,
+            "target": 1568,
+            "judged": 1295,
+            "judged_of": 1368,
+            "passrate": 0.632,
+            "n": 7090,
+            "pr0": 0.139,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 670,
+            "remain_partial": 913,
+            "remain_seq": 206,
+            "prewarm": 512,
+            "prewarm_wait": 8340.3
+          },
+          {
+            "t": 1789858553.334,
+            "step": 28,
+            "accept": 1376,
+            "target": 1568,
+            "judged": 1302,
+            "judged_of": 1376,
+            "passrate": 0.632,
+            "n": 7102,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 687,
+            "remain_partial": 912,
+            "remain_seq": 215,
+            "prewarm": 512,
+            "prewarm_wait": 8177.4
+          },
+          {
+            "t": 1789858586.334,
+            "step": 28,
+            "accept": 1384,
+            "target": 1568,
+            "judged": 1310,
+            "judged_of": 1384,
+            "passrate": 0.632,
+            "n": 7114,
+            "pr0": 0.14,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 700,
+            "remain_partial": 913,
+            "remain_seq": 268,
+            "prewarm": 512,
+            "prewarm_wait": 8049.6
+          },
+          {
+            "t": 1789858618.334,
+            "step": 28,
+            "accept": 1392,
+            "target": 1568,
+            "judged": 1314,
+            "judged_of": 1392,
+            "passrate": 0.632,
+            "n": 7125,
+            "pr0": 0.139,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 695,
+            "remain_partial": 920,
+            "remain_seq": 185,
+            "prewarm": 512,
+            "prewarm_wait": 7970.2
+          },
+          {
+            "t": 1789858667.334,
+            "step": 28,
+            "accept": 1400,
+            "target": 1568,
+            "judged": 1325,
+            "judged_of": 1400,
+            "passrate": 0.632,
+            "n": 7137,
+            "pr0": 0.139,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 700,
+            "remain_partial": 939,
+            "remain_seq": 232,
+            "prewarm": 512,
+            "prewarm_wait": 7771.8
+          },
+          {
+            "t": 1789858688.334,
+            "step": 28,
+            "accept": 1408,
+            "target": 1568,
+            "judged": 1338,
+            "judged_of": 1408,
+            "passrate": 0.632,
+            "n": 7149,
+            "pr0": 0.139,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 700,
+            "remain_partial": 938,
+            "remain_seq": 217,
+            "prewarm": 512,
+            "prewarm_wait": 7736.9
+          },
+          {
+            "t": 1789858711.334,
+            "step": 28,
+            "accept": 1416,
+            "target": 1568,
+            "judged": 1345,
+            "judged_of": 1416,
+            "passrate": 0.632,
+            "n": 7161,
+            "pr0": 0.139,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 703,
+            "remain_partial": 942,
+            "remain_seq": 204,
+            "prewarm": 512,
+            "prewarm_wait": 7636.4
+          },
+          {
+            "t": 1789858769.334,
+            "step": 28,
+            "accept": 1424,
+            "target": 1568,
+            "judged": 1353,
+            "judged_of": 1424,
+            "passrate": 0.632,
+            "n": 7175,
+            "pr0": 0.139,
+            "pr1": 0.228,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 697,
+            "remain_partial": 964,
+            "remain_seq": 247,
+            "prewarm": 512,
+            "prewarm_wait": 7504.7
+          },
+          {
+            "t": 1789858786.334,
+            "step": 28,
+            "accept": 1432,
+            "target": 1568,
+            "judged": 1361,
+            "judged_of": 1432,
+            "passrate": 0.632,
+            "n": 7189,
+            "pr0": 0.139,
+            "pr1": 0.229,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 704,
+            "remain_partial": 955,
+            "remain_seq": 225,
+            "prewarm": 512,
+            "prewarm_wait": 7436.0
+          },
+          {
+            "t": 1789858862.334,
+            "step": 28,
+            "accept": 1448,
+            "target": 1568,
+            "judged": 1381,
+            "judged_of": 1448,
+            "passrate": 0.632,
+            "n": 7220,
+            "pr0": 0.139,
+            "pr1": 0.229,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 722,
+            "remain_partial": 961,
+            "remain_seq": 211,
+            "prewarm": 512,
+            "prewarm_wait": 7200.4
+          },
+          {
+            "t": 1789858888.334,
+            "step": 28,
+            "accept": 1456,
+            "target": 1568,
+            "judged": 1391,
+            "judged_of": 1456,
+            "passrate": 0.632,
+            "n": 7233,
+            "pr0": 0.139,
+            "pr1": 0.229,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 728,
+            "remain_partial": 959,
+            "remain_seq": 214,
+            "prewarm": 512,
+            "prewarm_wait": 7118.7
+          },
+          {
+            "t": 1789858921.334,
+            "step": 28,
+            "accept": 1464,
+            "target": 1568,
+            "judged": 1403,
+            "judged_of": 1464,
+            "passrate": 0.631,
+            "n": 7250,
+            "pr0": 0.139,
+            "pr1": 0.229,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 726,
+            "remain_partial": 961,
+            "remain_seq": 213,
+            "prewarm": 512,
+            "prewarm_wait": 7043.7
+          },
+          {
+            "t": 1789858978.334,
+            "step": 28,
+            "accept": 1472,
+            "target": 1568,
+            "judged": 1412,
+            "judged_of": 1472,
+            "passrate": 0.631,
+            "n": 7268,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 722,
+            "remain_partial": 978,
+            "remain_seq": 241,
+            "prewarm": 512,
+            "prewarm_wait": 6898.9
+          },
+          {
+            "t": 1789859009.334,
+            "step": 28,
+            "accept": 1480,
+            "target": 1568,
+            "judged": 1420,
+            "judged_of": 1480,
+            "passrate": 0.631,
+            "n": 7281,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 721,
+            "remain_partial": 983,
+            "remain_seq": 223,
+            "prewarm": 512,
+            "prewarm_wait": 6824.5
+          },
+          {
+            "t": 1789859048.334,
+            "step": 28,
+            "accept": 1488,
+            "target": 1568,
+            "judged": 1431,
+            "judged_of": 1488,
+            "passrate": 0.63,
+            "n": 7298,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 724,
+            "remain_partial": 986,
+            "remain_seq": 245,
+            "prewarm": 512,
+            "prewarm_wait": 6743.2
+          },
+          {
+            "t": 1789859067.334,
+            "step": 28,
+            "accept": 1496,
+            "target": 1568,
+            "judged": 1436,
+            "judged_of": 1496,
+            "passrate": 0.631,
+            "n": 7310,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 729,
+            "remain_partial": 981,
+            "remain_seq": 270,
+            "prewarm": 512,
+            "prewarm_wait": 6714.4
+          },
+          {
+            "t": 1789859086.334,
+            "step": 28,
+            "accept": 1504,
+            "target": 1568,
+            "judged": 1446,
+            "judged_of": 1504,
+            "passrate": 0.631,
+            "n": 7322,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 721,
+            "remain_partial": 993,
+            "remain_seq": 258,
+            "prewarm": 512,
+            "prewarm_wait": 6679.9
+          },
+          {
+            "t": 1789859130.334,
+            "step": 28,
+            "accept": 1512,
+            "target": 1568,
+            "judged": 1453,
+            "judged_of": 1512,
+            "passrate": 0.631,
+            "n": 7333,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 719,
+            "remain_partial": 1003,
+            "remain_seq": 257,
+            "prewarm": 512,
+            "prewarm_wait": 6632.5
+          },
+          {
+            "t": 1789859160.334,
+            "step": 28,
+            "accept": 1520,
+            "target": 1568,
+            "judged": 1461,
+            "judged_of": 1520,
+            "passrate": 0.631,
+            "n": 7348,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 721,
+            "remain_partial": 1007,
+            "remain_seq": 283,
+            "prewarm": 512,
+            "prewarm_wait": 6581.7
+          },
+          {
+            "t": 1789859184.334,
+            "step": 28,
+            "accept": 1528,
+            "target": 1568,
+            "judged": 1471,
+            "judged_of": 1528,
+            "passrate": 0.631,
+            "n": 7360,
+            "pr0": 0.139,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 719,
+            "remain_partial": 1016,
+            "remain_seq": 255,
+            "prewarm": 512,
+            "prewarm_wait": 6542.4
+          },
+          {
+            "t": 1789859211.334,
+            "step": 28,
+            "accept": 1536,
+            "target": 1568,
+            "judged": 1478,
+            "judged_of": 1536,
+            "passrate": 0.63,
+            "n": 7378,
+            "pr0": 0.14,
+            "pr1": 0.229,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 715,
+            "remain_partial": 1012,
+            "remain_seq": 244,
+            "prewarm": 512,
+            "prewarm_wait": 6511.2
+          },
+          {
+            "t": 1789859232.334,
+            "step": 28,
+            "accept": 1544,
+            "target": 1568,
+            "judged": 1488,
+            "judged_of": 1544,
+            "passrate": 0.63,
+            "n": 7392,
+            "pr0": 0.14,
+            "pr1": 0.23,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 721,
+            "remain_partial": 1008,
+            "remain_seq": 250,
+            "prewarm": 512,
+            "prewarm_wait": 6474.6
           }
         ]
       }
@@ -9599,10 +9683,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/tags?run=pro&v=3-5513.26.13.26",
+      "url": "https://mimo.xiaomi.com/rl/api/tags?run=pro&v=3-5513.27.13.26",
       "data": {
         "run": "pro",
-        "version": "3-5513.26.13.26",
+        "version": "3-5513.27.13.26",
         "tags": [
           "actor/agentic/entropy_loss",
           "actor/agentic/pg_clipfrac",
@@ -11637,10 +11721,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.26.13.26&tags=dynsam%2Favg%40n%2Ccritic%2Frewards%2Fmean%2Cactor%2Fentropy_loss%2Cactor%2Fpg_loss%2Cactor%2Fgrad_norm%2Ctrain_infer_diff%2Fnew_infer%2Fkl",
+      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.27.13.26&tags=dynsam%2Favg%40n%2Ccritic%2Frewards%2Fmean%2Cactor%2Fentropy_loss%2Cactor%2Fpg_loss%2Cactor%2Fgrad_norm%2Ctrain_infer_diff%2Fnew_infer%2Fkl",
       "data": {
         "run": "pro",
-        "version": "3-5513.26.13.26",
+        "version": "3-5513.27.13.26",
         "steps": [
           1,
           2,
@@ -11667,7 +11751,8 @@
           23,
           24,
           25,
-          26
+          26,
+          27
         ],
         "walls": [
           1789492877.8213444,
@@ -11695,7 +11780,8 @@
           1789791158.7968752,
           1789804322.9385362,
           1789817711.3393211,
-          1789840512.2571833
+          1789840512.2571833,
+          1789855804.2271216
         ],
         "run_start": 1789468339.334,
         "series": {
@@ -11725,7 +11811,8 @@
             0.621683,
             0.596417,
             0.626439,
-            0.62138
+            0.62138,
+            0.602605
           ],
           "critic/rewards/mean": [
             0.552211,
@@ -11753,7 +11840,8 @@
             0.594113,
             0.596313,
             0.585872,
-            0.59637
+            0.59637,
+            0.586579
           ],
           "actor/entropy_loss": [
             0.395265,
@@ -11781,7 +11869,8 @@
             0.44236,
             0.443705,
             0.449144,
-            0.455583
+            0.455583,
+            0.456695
           ],
           "actor/pg_loss": [
             0.00411032,
@@ -11809,7 +11898,8 @@
             0.00474929,
             0.00639693,
             0.00483615,
-            0.00439114
+            0.00439114,
+            0.00822892
           ],
           "actor/grad_norm": [
             0.00533389,
@@ -11837,7 +11927,8 @@
             0.00609306,
             0.00541792,
             0.00467387,
-            0.00468369
+            0.00468369,
+            0.00482392
           ],
           "train_infer_diff/new_infer/kl": [
             0.0021894,
@@ -11865,7 +11956,8 @@
             0.00382564,
             0.00697729,
             0.00948334,
-            0.00444067
+            0.00444067,
+            0.00740074
           ],
           "dynsam/code/dataset-4onq/num_accepted/step": [
             66.0,
@@ -11893,7 +11985,8 @@
             42.0,
             36.0,
             23.0,
-            44.0
+            44.0,
+            36.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/held": [
             66.0,
@@ -11921,7 +12014,8 @@
             42.0,
             47.0,
             39.0,
-            44.0
+            44.0,
+            49.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/carryover": [
             35.0,
@@ -11949,7 +12043,8 @@
             11.0,
             16.0,
             7.0,
-            13.0
+            13.0,
+            18.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/step": [
             126.0,
@@ -11977,7 +12072,8 @@
             80.0,
             59.0,
             40.0,
-            67.0
+            67.0,
+            71.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/held": [
             126.0,
@@ -12005,7 +12101,8 @@
             80.0,
             87.0,
             75.0,
-            67.0
+            67.0,
+            86.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/carryover": [
             74.0,
@@ -12033,7 +12130,8 @@
             28.0,
             35.0,
             23.0,
-            15.0
+            15.0,
+            35.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/step": [
             95.0,
@@ -12061,7 +12159,8 @@
             94.0,
             54.0,
             49.0,
-            88.0
+            88.0,
+            79.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/held": [
             95.0,
@@ -12089,7 +12188,8 @@
             94.0,
             85.0,
             71.0,
-            88.0
+            88.0,
+            104.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/carryover": [
             32.0,
@@ -12117,7 +12217,8 @@
             31.0,
             22.0,
             8.0,
-            25.0
+            25.0,
+            42.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/step": [
             311.0,
@@ -12145,7 +12246,8 @@
             172.0,
             152.0,
             138.0,
-            187.0
+            187.0,
+            192.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/held": [
             311.0,
@@ -12173,7 +12275,8 @@
             172.0,
             170.0,
             155.0,
-            187.0
+            187.0,
+            225.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/carryover": [
             157.0,
@@ -12201,7 +12304,8 @@
             18.0,
             17.0,
             0.0,
-            33.0
+            33.0,
+            71.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/step": [
             246.0,
@@ -12229,7 +12333,8 @@
             265.0,
             224.0,
             93.0,
-            208.0
+            208.0,
+            251.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/held": [
             246.0,
@@ -12257,7 +12362,8 @@
             265.0,
             335.0,
             274.0,
-            208.0
+            208.0,
+            305.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/carryover": [
             92.0,
@@ -12285,7 +12391,8 @@
             111.0,
             181.0,
             121.0,
-            54.0
+            54.0,
+            151.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/step": [
             249.0,
@@ -12313,7 +12420,8 @@
             234.0,
             148.0,
             114.0,
-            233.0
+            233.0,
+            156.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/held": [
             249.0,
@@ -12341,7 +12449,8 @@
             234.0,
             228.0,
             188.0,
-            233.0
+            233.0,
+            235.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/carryover": [
             95.0,
@@ -12369,7 +12478,8 @@
             80.0,
             74.0,
             35.0,
-            79.0
+            79.0,
+            81.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/step": [
             101.0,
@@ -12397,7 +12507,8 @@
             89.0,
             89.0,
             62.0,
-            87.0
+            87.0,
+            97.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/held": [
             101.0,
@@ -12425,7 +12536,8 @@
             89.0,
             115.0,
             114.0,
-            87.0
+            87.0,
+            121.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/carryover": [
             38.0,
@@ -12453,7 +12565,8 @@
             26.0,
             52.0,
             51.0,
-            24.0
+            24.0,
+            59.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/step": [
             77.0,
@@ -12481,7 +12594,8 @@
             57.0,
             75.0,
             30.0,
-            63.0
+            63.0,
+            58.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/held": [
             77.0,
@@ -12509,7 +12623,8 @@
             57.0,
             80.0,
             58.0,
-            63.0
+            63.0,
+            69.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/carryover": [
             25.0,
@@ -12537,7 +12652,8 @@
             5.0,
             28.0,
             6.0,
-            11.0
+            11.0,
+            18.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/step": [
             282.0,
@@ -12565,7 +12681,8 @@
             182.0,
             190.0,
             112.0,
-            177.0
+            177.0,
+            218.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/held": [
             282.0,
@@ -12593,7 +12710,8 @@
             182.0,
             243.0,
             227.0,
-            177.0
+            177.0,
+            266.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/carryover": [
             153.0,
@@ -12621,7 +12739,8 @@
             53.0,
             115.0,
             98.0,
-            48.0
+            48.0,
+            138.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/step": [
             55.0,
@@ -12649,6 +12768,7 @@
             62.0,
             55.0,
             116.0,
+            55.0,
             55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/held": [
@@ -12677,6 +12797,7 @@
             62.0,
             55.0,
             116.0,
+            55.0,
             55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/carryover": [
@@ -12705,6 +12826,7 @@
             0.0,
             0.0,
             62.0,
+            0.0,
             0.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/step": [
@@ -12733,7 +12855,8 @@
             205.0,
             168.0,
             124.0,
-            190.0
+            190.0,
+            167.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/held": [
             227.0,
@@ -12761,7 +12884,8 @@
             205.0,
             219.0,
             189.0,
-            190.0
+            190.0,
+            203.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/carryover": [
             73.0,
@@ -12789,7 +12913,8 @@
             51.0,
             65.0,
             36.0,
-            36.0
+            36.0,
+            49.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/step": [
             48.0,
@@ -12817,7 +12942,8 @@
             40.0,
             32.0,
             29.0,
-            37.0
+            37.0,
+            38.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/held": [
             48.0,
@@ -12845,7 +12971,8 @@
             40.0,
             41.0,
             39.0,
-            37.0
+            37.0,
+            44.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/carryover": [
             17.0,
@@ -12873,7 +13000,8 @@
             9.0,
             10.0,
             7.0,
-            6.0
+            6.0,
+            13.0
           ],
           "dynsam/general/dataset-5610/num_accepted/step": [
             47.0,
@@ -12901,7 +13029,8 @@
             37.0,
             30.0,
             34.0,
-            40.0
+            40.0,
+            36.0
           ],
           "dynsam/general/dataset-5610/num_accepted/held": [
             47.0,
@@ -12929,7 +13058,8 @@
             37.0,
             36.0,
             39.0,
-            40.0
+            40.0,
+            45.0
           ],
           "dynsam/general/dataset-5610/num_accepted/carryover": [
             16.0,
@@ -12957,7 +13087,8 @@
             6.0,
             5.0,
             7.0,
-            9.0
+            9.0,
+            14.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/step": [
             102.0,
@@ -12985,7 +13116,8 @@
             88.0,
             71.0,
             52.0,
-            88.0
+            88.0,
+            71.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/held": [
             102.0,
@@ -13013,7 +13145,8 @@
             88.0,
             95.0,
             83.0,
-            88.0
+            88.0,
+            95.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/carryover": [
             38.0,
@@ -13041,7 +13174,8 @@
             24.0,
             31.0,
             19.0,
-            24.0
+            24.0,
+            30.0
           ],
           "dynsam/general/dataset-trla/num_accepted/step": [
             99.0,
@@ -13069,7 +13203,8 @@
             88.0,
             68.0,
             59.0,
-            82.0
+            82.0,
+            69.0
           ],
           "dynsam/general/dataset-trla/num_accepted/held": [
             99.0,
@@ -13097,7 +13232,8 @@
             88.0,
             92.0,
             87.0,
-            82.0
+            82.0,
+            87.0
           ],
           "dynsam/general/dataset-trla/num_accepted/carryover": [
             35.0,
@@ -13125,7 +13261,8 @@
             24.0,
             28.0,
             23.0,
-            18.0
+            18.0,
+            22.0
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/step": [
             196.0,
@@ -13142,6 +13279,7 @@
             112.0,
             124.0,
             97.0,
+            null,
             null,
             null,
             null,
@@ -13181,6 +13319,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/carryover": [
@@ -13198,6 +13337,7 @@
             47.0,
             107.0,
             118.0,
+            null,
             null,
             null,
             null,
@@ -13237,7 +13377,8 @@
             53.0,
             43.0,
             41.0,
-            47.0
+            47.0,
+            68.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/held": [
             54.0,
@@ -13265,7 +13406,8 @@
             53.0,
             57.0,
             58.0,
-            47.0
+            47.0,
+            76.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/carryover": [
             23.0,
@@ -13293,7 +13435,8 @@
             14.0,
             17.0,
             19.0,
-            8.0
+            8.0,
+            37.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/step": [
             63.0,
@@ -13321,7 +13464,8 @@
             91.0,
             68.0,
             62.0,
-            90.0
+            90.0,
+            70.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/held": [
             63.0,
@@ -13349,7 +13493,8 @@
             91.0,
             95.0,
             93.0,
-            90.0
+            90.0,
+            96.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/carryover": [
             22.0,
@@ -13377,7 +13522,8 @@
             27.0,
             31.0,
             29.0,
-            26.0
+            26.0,
+            31.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/step": [
             62.0,
@@ -13405,7 +13551,8 @@
             92.0,
             64.0,
             64.0,
-            90.0
+            90.0,
+            73.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/held": [
             62.0,
@@ -13433,7 +13580,8 @@
             92.0,
             92.0,
             92.0,
-            90.0
+            90.0,
+            99.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/carryover": [
             21.0,
@@ -13461,7 +13609,8 @@
             28.0,
             28.0,
             28.0,
-            26.0
+            26.0,
+            34.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/step": [
             57.0,
@@ -13489,7 +13638,8 @@
             53.0,
             57.0,
             27.0,
-            57.0
+            57.0,
+            61.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/held": [
             57.0,
@@ -13517,7 +13667,8 @@
             53.0,
             69.0,
             56.0,
-            57.0
+            57.0,
+            77.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/carryover": [
             26.0,
@@ -13545,7 +13696,8 @@
             12.0,
             29.0,
             15.0,
-            16.0
+            16.0,
+            36.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/step": [
             48.0,
@@ -13573,7 +13725,8 @@
             33.0,
             49.0,
             26.0,
-            37.0
+            37.0,
+            54.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/held": [
             48.0,
@@ -13601,7 +13754,8 @@
             33.0,
             49.0,
             44.0,
-            37.0
+            37.0,
+            60.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/carryover": [
             17.0,
@@ -13629,7 +13783,8 @@
             0.0,
             18.0,
             12.0,
-            6.0
+            6.0,
+            29.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/step": [
             52.0,
@@ -13657,7 +13812,8 @@
             33.0,
             53.0,
             32.0,
-            44.0
+            44.0,
+            51.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/held": [
             52.0,
@@ -13685,7 +13841,8 @@
             33.0,
             55.0,
             56.0,
-            44.0
+            44.0,
+            64.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/carryover": [
             21.0,
@@ -13713,7 +13870,8 @@
             2.0,
             24.0,
             24.0,
-            13.0
+            13.0,
+            33.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/step": [
             24.0,
@@ -13741,7 +13899,8 @@
             24.0,
             17.0,
             13.0,
-            24.0
+            24.0,
+            17.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/held": [
             24.0,
@@ -13769,7 +13928,8 @@
             24.0,
             25.0,
             22.0,
-            24.0
+            24.0,
+            25.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/carryover": [
             8.0,
@@ -13797,7 +13957,8 @@
             8.0,
             9.0,
             7.0,
-            8.0
+            8.0,
+            9.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/step": [
             26.0,
@@ -13825,7 +13986,8 @@
             25.0,
             16.0,
             15.0,
-            23.0
+            23.0,
+            17.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/held": [
             26.0,
@@ -13853,7 +14015,8 @@
             25.0,
             25.0,
             24.0,
-            23.0
+            23.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/carryover": [
             10.0,
@@ -13881,7 +14044,8 @@
             9.0,
             9.0,
             9.0,
-            7.0
+            7.0,
+            8.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/step": [
             23.0,
@@ -13909,6 +14073,7 @@
             23.0,
             18.0,
             13.0,
+            20.0,
             20.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/held": [
@@ -13937,7 +14102,8 @@
             23.0,
             26.0,
             22.0,
-            20.0
+            20.0,
+            25.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/carryover": [
             8.0,
@@ -13965,9 +14131,11 @@
             8.0,
             9.0,
             7.0,
-            5.0
+            5.0,
+            9.0
           ],
           "dynsam/num_target": [
+            1568.0,
             1568.0,
             1568.0,
             1568.0,
@@ -14265,10 +14433,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.26.13.26&tags=dynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fstep%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fheld%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fnum_target",
+      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.27.13.26&tags=dynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fstep%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fheld%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fnum_target",
       "data": {
         "run": "pro",
-        "version": "3-5513.26.13.26",
+        "version": "3-5513.27.13.26",
         "steps": [
           1,
           2,
@@ -14295,7 +14463,8 @@
           23,
           24,
           25,
-          26
+          26,
+          27
         ],
         "walls": [
           1789492877.8213444,
@@ -14323,7 +14492,8 @@
           1789791158.7968752,
           1789804322.9385362,
           1789817711.3393211,
-          1789840512.2571833
+          1789840512.2571833,
+          1789855804.2271216
         ],
         "run_start": 1789468339.334,
         "series": {
@@ -14353,7 +14523,8 @@
             42.0,
             36.0,
             23.0,
-            44.0
+            44.0,
+            36.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/held": [
             66.0,
@@ -14381,7 +14552,8 @@
             42.0,
             47.0,
             39.0,
-            44.0
+            44.0,
+            49.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/carryover": [
             35.0,
@@ -14409,7 +14581,8 @@
             11.0,
             16.0,
             7.0,
-            13.0
+            13.0,
+            18.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/step": [
             126.0,
@@ -14437,7 +14610,8 @@
             80.0,
             59.0,
             40.0,
-            67.0
+            67.0,
+            71.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/held": [
             126.0,
@@ -14465,7 +14639,8 @@
             80.0,
             87.0,
             75.0,
-            67.0
+            67.0,
+            86.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/carryover": [
             74.0,
@@ -14493,7 +14668,8 @@
             28.0,
             35.0,
             23.0,
-            15.0
+            15.0,
+            35.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/step": [
             95.0,
@@ -14521,7 +14697,8 @@
             94.0,
             54.0,
             49.0,
-            88.0
+            88.0,
+            79.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/held": [
             95.0,
@@ -14549,7 +14726,8 @@
             94.0,
             85.0,
             71.0,
-            88.0
+            88.0,
+            104.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/carryover": [
             32.0,
@@ -14577,7 +14755,8 @@
             31.0,
             22.0,
             8.0,
-            25.0
+            25.0,
+            42.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/step": [
             311.0,
@@ -14605,7 +14784,8 @@
             172.0,
             152.0,
             138.0,
-            187.0
+            187.0,
+            192.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/held": [
             311.0,
@@ -14633,7 +14813,8 @@
             172.0,
             170.0,
             155.0,
-            187.0
+            187.0,
+            225.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/carryover": [
             157.0,
@@ -14661,7 +14842,8 @@
             18.0,
             17.0,
             0.0,
-            33.0
+            33.0,
+            71.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/step": [
             246.0,
@@ -14689,7 +14871,8 @@
             265.0,
             224.0,
             93.0,
-            208.0
+            208.0,
+            251.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/held": [
             246.0,
@@ -14717,7 +14900,8 @@
             265.0,
             335.0,
             274.0,
-            208.0
+            208.0,
+            305.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/carryover": [
             92.0,
@@ -14745,7 +14929,8 @@
             111.0,
             181.0,
             121.0,
-            54.0
+            54.0,
+            151.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/step": [
             249.0,
@@ -14773,7 +14958,8 @@
             234.0,
             148.0,
             114.0,
-            233.0
+            233.0,
+            156.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/held": [
             249.0,
@@ -14801,7 +14987,8 @@
             234.0,
             228.0,
             188.0,
-            233.0
+            233.0,
+            235.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/carryover": [
             95.0,
@@ -14829,7 +15016,8 @@
             80.0,
             74.0,
             35.0,
-            79.0
+            79.0,
+            81.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/step": [
             101.0,
@@ -14857,7 +15045,8 @@
             89.0,
             89.0,
             62.0,
-            87.0
+            87.0,
+            97.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/held": [
             101.0,
@@ -14885,7 +15074,8 @@
             89.0,
             115.0,
             114.0,
-            87.0
+            87.0,
+            121.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/carryover": [
             38.0,
@@ -14913,7 +15103,8 @@
             26.0,
             52.0,
             51.0,
-            24.0
+            24.0,
+            59.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/step": [
             77.0,
@@ -14941,7 +15132,8 @@
             57.0,
             75.0,
             30.0,
-            63.0
+            63.0,
+            58.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/held": [
             77.0,
@@ -14969,7 +15161,8 @@
             57.0,
             80.0,
             58.0,
-            63.0
+            63.0,
+            69.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/carryover": [
             25.0,
@@ -14997,7 +15190,8 @@
             5.0,
             28.0,
             6.0,
-            11.0
+            11.0,
+            18.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/step": [
             282.0,
@@ -15025,7 +15219,8 @@
             182.0,
             190.0,
             112.0,
-            177.0
+            177.0,
+            218.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/held": [
             282.0,
@@ -15053,7 +15248,8 @@
             182.0,
             243.0,
             227.0,
-            177.0
+            177.0,
+            266.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/carryover": [
             153.0,
@@ -15081,7 +15277,8 @@
             53.0,
             115.0,
             98.0,
-            48.0
+            48.0,
+            138.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/step": [
             55.0,
@@ -15109,6 +15306,7 @@
             62.0,
             55.0,
             116.0,
+            55.0,
             55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/held": [
@@ -15137,6 +15335,7 @@
             62.0,
             55.0,
             116.0,
+            55.0,
             55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/carryover": [
@@ -15165,6 +15364,7 @@
             0.0,
             0.0,
             62.0,
+            0.0,
             0.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/step": [
@@ -15193,7 +15393,8 @@
             205.0,
             168.0,
             124.0,
-            190.0
+            190.0,
+            167.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/held": [
             227.0,
@@ -15221,7 +15422,8 @@
             205.0,
             219.0,
             189.0,
-            190.0
+            190.0,
+            203.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/carryover": [
             73.0,
@@ -15249,7 +15451,8 @@
             51.0,
             65.0,
             36.0,
-            36.0
+            36.0,
+            49.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/step": [
             48.0,
@@ -15277,7 +15480,8 @@
             40.0,
             32.0,
             29.0,
-            37.0
+            37.0,
+            38.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/held": [
             48.0,
@@ -15305,7 +15509,8 @@
             40.0,
             41.0,
             39.0,
-            37.0
+            37.0,
+            44.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/carryover": [
             17.0,
@@ -15333,7 +15538,8 @@
             9.0,
             10.0,
             7.0,
-            6.0
+            6.0,
+            13.0
           ],
           "dynsam/general/dataset-5610/num_accepted/step": [
             47.0,
@@ -15361,7 +15567,8 @@
             37.0,
             30.0,
             34.0,
-            40.0
+            40.0,
+            36.0
           ],
           "dynsam/general/dataset-5610/num_accepted/held": [
             47.0,
@@ -15389,7 +15596,8 @@
             37.0,
             36.0,
             39.0,
-            40.0
+            40.0,
+            45.0
           ],
           "dynsam/general/dataset-5610/num_accepted/carryover": [
             16.0,
@@ -15417,7 +15625,8 @@
             6.0,
             5.0,
             7.0,
-            9.0
+            9.0,
+            14.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/step": [
             102.0,
@@ -15445,7 +15654,8 @@
             88.0,
             71.0,
             52.0,
-            88.0
+            88.0,
+            71.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/held": [
             102.0,
@@ -15473,7 +15683,8 @@
             88.0,
             95.0,
             83.0,
-            88.0
+            88.0,
+            95.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/carryover": [
             38.0,
@@ -15501,7 +15712,8 @@
             24.0,
             31.0,
             19.0,
-            24.0
+            24.0,
+            30.0
           ],
           "dynsam/general/dataset-trla/num_accepted/step": [
             99.0,
@@ -15529,7 +15741,8 @@
             88.0,
             68.0,
             59.0,
-            82.0
+            82.0,
+            69.0
           ],
           "dynsam/general/dataset-trla/num_accepted/held": [
             99.0,
@@ -15557,7 +15770,8 @@
             88.0,
             92.0,
             87.0,
-            82.0
+            82.0,
+            87.0
           ],
           "dynsam/general/dataset-trla/num_accepted/carryover": [
             35.0,
@@ -15585,7 +15799,8 @@
             24.0,
             28.0,
             23.0,
-            18.0
+            18.0,
+            22.0
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/step": [
             196.0,
@@ -15602,6 +15817,7 @@
             112.0,
             124.0,
             97.0,
+            null,
             null,
             null,
             null,
@@ -15641,6 +15857,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/carryover": [
@@ -15658,6 +15875,7 @@
             47.0,
             107.0,
             118.0,
+            null,
             null,
             null,
             null,
@@ -15697,7 +15915,8 @@
             53.0,
             43.0,
             41.0,
-            47.0
+            47.0,
+            68.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/held": [
             54.0,
@@ -15725,7 +15944,8 @@
             53.0,
             57.0,
             58.0,
-            47.0
+            47.0,
+            76.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/carryover": [
             23.0,
@@ -15753,7 +15973,8 @@
             14.0,
             17.0,
             19.0,
-            8.0
+            8.0,
+            37.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/step": [
             63.0,
@@ -15781,7 +16002,8 @@
             91.0,
             68.0,
             62.0,
-            90.0
+            90.0,
+            70.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/held": [
             63.0,
@@ -15809,7 +16031,8 @@
             91.0,
             95.0,
             93.0,
-            90.0
+            90.0,
+            96.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/carryover": [
             22.0,
@@ -15837,7 +16060,8 @@
             27.0,
             31.0,
             29.0,
-            26.0
+            26.0,
+            31.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/step": [
             62.0,
@@ -15865,7 +16089,8 @@
             92.0,
             64.0,
             64.0,
-            90.0
+            90.0,
+            73.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/held": [
             62.0,
@@ -15893,7 +16118,8 @@
             92.0,
             92.0,
             92.0,
-            90.0
+            90.0,
+            99.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/carryover": [
             21.0,
@@ -15921,7 +16147,8 @@
             28.0,
             28.0,
             28.0,
-            26.0
+            26.0,
+            34.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/step": [
             57.0,
@@ -15949,7 +16176,8 @@
             53.0,
             57.0,
             27.0,
-            57.0
+            57.0,
+            61.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/held": [
             57.0,
@@ -15977,7 +16205,8 @@
             53.0,
             69.0,
             56.0,
-            57.0
+            57.0,
+            77.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/carryover": [
             26.0,
@@ -16005,7 +16234,8 @@
             12.0,
             29.0,
             15.0,
-            16.0
+            16.0,
+            36.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/step": [
             48.0,
@@ -16033,7 +16263,8 @@
             33.0,
             49.0,
             26.0,
-            37.0
+            37.0,
+            54.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/held": [
             48.0,
@@ -16061,7 +16292,8 @@
             33.0,
             49.0,
             44.0,
-            37.0
+            37.0,
+            60.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/carryover": [
             17.0,
@@ -16089,7 +16321,8 @@
             0.0,
             18.0,
             12.0,
-            6.0
+            6.0,
+            29.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/step": [
             52.0,
@@ -16117,7 +16350,8 @@
             33.0,
             53.0,
             32.0,
-            44.0
+            44.0,
+            51.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/held": [
             52.0,
@@ -16145,7 +16379,8 @@
             33.0,
             55.0,
             56.0,
-            44.0
+            44.0,
+            64.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/carryover": [
             21.0,
@@ -16173,7 +16408,8 @@
             2.0,
             24.0,
             24.0,
-            13.0
+            13.0,
+            33.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/step": [
             24.0,
@@ -16201,7 +16437,8 @@
             24.0,
             17.0,
             13.0,
-            24.0
+            24.0,
+            17.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/held": [
             24.0,
@@ -16229,7 +16466,8 @@
             24.0,
             25.0,
             22.0,
-            24.0
+            24.0,
+            25.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/carryover": [
             8.0,
@@ -16257,7 +16495,8 @@
             8.0,
             9.0,
             7.0,
-            8.0
+            8.0,
+            9.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/step": [
             26.0,
@@ -16285,7 +16524,8 @@
             25.0,
             16.0,
             15.0,
-            23.0
+            23.0,
+            17.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/held": [
             26.0,
@@ -16313,7 +16553,8 @@
             25.0,
             25.0,
             24.0,
-            23.0
+            23.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/carryover": [
             10.0,
@@ -16341,7 +16582,8 @@
             9.0,
             9.0,
             9.0,
-            7.0
+            7.0,
+            8.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/step": [
             23.0,
@@ -16369,6 +16611,7 @@
             23.0,
             18.0,
             13.0,
+            20.0,
             20.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/held": [
@@ -16397,7 +16640,8 @@
             23.0,
             26.0,
             22.0,
-            20.0
+            20.0,
+            25.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/carryover": [
             8.0,
@@ -16425,9 +16669,11 @@
             8.0,
             9.0,
             7.0,
-            5.0
+            5.0,
+            9.0
           ],
           "dynsam/num_target": [
+            1568.0,
             1568.0,
             1568.0,
             1568.0,
@@ -16468,5 +16714,5 @@
     "headline": "",
     "status": ""
   },
-  "finished_at": "2026-09-19T20:42:14+00:00"
+  "finished_at": "2026-09-19T23:07:47+00:00"
 }
