@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-20T16:48:47+00:00",
+  "captured_at": "2026-09-20T19:09:31+00:00",
   "source_url": "https://mimo.xiaomi.com/rl/",
   "capture_ok": true,
   "note": "Public browser capture; source material, not verified analysis.",
@@ -15,7 +15,7 @@
           "mode": "ended"
         },
         "clock": {
-          "now": 1789922928.0898848
+          "now": 1789931371.2209508
         },
         "version": "3-5513.32.6.28",
         "step": {
@@ -302,58 +302,45 @@
           "key": "pro",
           "label": "mimo-v2.6-pro",
           "start": 1789468339.334,
-          "end": null,
-          "mode": "live"
+          "end": 1789927300.953,
+          "mode": "ended"
         },
         "clock": {
-          "now": 1789922928.0309012
+          "now": 1789931371.217988
         },
-        "version": "3-5513.29.15.30",
+        "version": "3-5513.30.15.30",
         "step": {
-          "last": 29,
-          "last_wall": 1789897840.0371299,
-          "since": 20462.696901082993,
-          "expected": 16311.3,
-          "progress": 1.0,
-          "phase": "training",
-          "gen_frac": 0.44150080785111606,
-          "restarted_at": 1789902465.334
+          "last": 30,
+          "last_wall": 1789926408.4091287,
+          "since": 892.5438714027405,
+          "expected": 16711.0,
+          "progress": null,
+          "phase": null,
+          "gen_frac": 0.5417027865112327,
+          "restarted_at": null
         },
         "totals": {
-          "tokens_step": 3421290000.0,
+          "tokens_step": 3431370000.0,
           "trained_step": 25088.0,
-          "sandboxes_step": 84848.0,
+          "sandboxes_step": 11180.0,
           "prompts_per_step": 1568.0,
-          "tokens_cum": 71573020000.0,
-          "trained_cum": 727552.0,
-          "sandboxes_cum": 3549664.0,
+          "tokens_cum": 75004390000.0,
+          "trained_cum": 752640.0,
+          "sandboxes_cum": 3560844.0,
           "restarts": 14
         },
         "headline": {
           "tag": "dynsam/avg@n",
-          "last": 0.622112,
-          "prev": 0.626591,
+          "last": 0.633138,
+          "prev": 0.622112,
           "first": 0.564662,
           "first_step": 1
         },
         "cost": {
           "rate_per_s": 5.71,
-          "so_far": 2595701.459305184
+          "so_far": 2620670.84448976
         },
         "events": [
-          {
-            "t": 1789578788.328568,
-            "kind": "step",
-            "step": 10,
-            "value": 0.590406,
-            "delta": -0.01343099999999997,
-            "tokens": 2224380000.0,
-            "redo": false
-          },
-          {
-            "t": 1789588716.334,
-            "kind": "restart"
-          },
           {
             "t": 1789598901.2092798,
             "kind": "step",
@@ -560,6 +547,19 @@
           {
             "t": 1789902465.334,
             "kind": "restart"
+          },
+          {
+            "t": 1789926408.4091287,
+            "kind": "step",
+            "step": 30,
+            "value": 0.633138,
+            "delta": 0.01102599999999998,
+            "tokens": 3431370000.0,
+            "redo": false
+          },
+          {
+            "t": 1789927300.953,
+            "kind": "end"
           }
         ]
       }
@@ -926,7 +926,7 @@
       },
       "pro": {
         "run": "pro",
-        "version": "3-5513.29.15.30",
+        "version": "3-5513.30.15.30",
         "steps": [
           1,
           2,
@@ -956,7 +956,8 @@
           26,
           27,
           28,
-          29
+          29,
+          30
         ],
         "walls": [
           1789492877.8213444,
@@ -987,7 +988,8 @@
           1789840512.2571833,
           1789855804.2271216,
           1789881123.7658803,
-          1789897840.0371299
+          1789897840.0371299,
+          1789926408.4091287
         ],
         "run_start": 1789468339.334,
         "series": {
@@ -1020,7 +1022,8 @@
             0.62138,
             0.602605,
             0.626591,
-            0.622112
+            0.622112,
+            0.633138
           ],
           "critic/rewards/mean": [
             0.552211,
@@ -1051,7 +1054,8 @@
             0.59637,
             0.586579,
             0.594584,
-            0.593756
+            0.593756,
+            0.596393
           ],
           "actor/entropy_loss": [
             0.395265,
@@ -1082,7 +1086,8 @@
             0.455583,
             0.456695,
             0.468514,
-            0.46051
+            0.46051,
+            0.461504
           ],
           "actor/pg_loss": [
             0.00411032,
@@ -1113,7 +1118,8 @@
             0.00439114,
             0.00822892,
             0.00434965,
-            0.0144566
+            0.0144566,
+            0.0182077
           ],
           "actor/grad_norm": [
             0.00533389,
@@ -1144,7 +1150,8 @@
             0.00468369,
             0.00482392,
             0.00454988,
-            0.00437199
+            0.00437199,
+            0.0048511
           ],
           "train_infer_diff/new_infer/kl": [
             0.0021894,
@@ -1175,7 +1182,8 @@
             0.00444067,
             0.00740074,
             0.00383558,
-            0.00780915
+            0.00780915,
+            0.00277385
           ],
           "ctx_total_length/mean": [
             72177.6,
@@ -1206,7 +1214,8 @@
             117081.0,
             126097.0,
             121091.0,
-            136009.0
+            136009.0,
+            137239.0
           ],
           "dynsam/agg_turn/mean": [
             47.4689,
@@ -1237,7 +1246,8 @@
             42.1208,
             49.1554,
             41.3541,
-            48.9121
+            48.9121,
+            43.5635
           ],
           "perf/total_num_tokens": [
             1800520000.0,
@@ -1268,7 +1278,8 @@
             2925840000.0,
             3151650000.0,
             3024470000.0,
-            3421290000.0
+            3421290000.0,
+            3431370000.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/step": [
             66.0,
@@ -1299,7 +1310,8 @@
             44.0,
             36.0,
             41.0,
-            33.0
+            33.0,
+            44.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/held": [
             66.0,
@@ -1330,7 +1342,8 @@
             44.0,
             49.0,
             41.0,
-            43.0
+            43.0,
+            44.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/carryover": [
             35.0,
@@ -1361,7 +1374,8 @@
             13.0,
             18.0,
             10.0,
-            11.0
+            11.0,
+            13.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/step": [
             126.0,
@@ -1392,7 +1406,8 @@
             67.0,
             71.0,
             68.0,
-            68.0
+            68.0,
+            69.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/held": [
             126.0,
@@ -1423,7 +1438,8 @@
             67.0,
             86.0,
             68.0,
-            84.0
+            84.0,
+            69.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/carryover": [
             74.0,
@@ -1454,7 +1470,8 @@
             15.0,
             35.0,
             16.0,
-            33.0
+            33.0,
+            17.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/step": [
             95.0,
@@ -1485,7 +1502,8 @@
             88.0,
             79.0,
             69.0,
-            71.0
+            71.0,
+            82.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/held": [
             95.0,
@@ -1516,7 +1534,8 @@
             88.0,
             104.0,
             69.0,
-            77.0
+            77.0,
+            82.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/carryover": [
             32.0,
@@ -1547,7 +1566,8 @@
             25.0,
             42.0,
             6.0,
-            15.0
+            15.0,
+            19.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/step": [
             311.0,
@@ -1578,7 +1598,8 @@
             187.0,
             192.0,
             181.0,
-            163.0
+            163.0,
+            240.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/held": [
             311.0,
@@ -1609,7 +1630,8 @@
             187.0,
             225.0,
             181.0,
-            190.0
+            190.0,
+            240.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/carryover": [
             157.0,
@@ -1640,7 +1662,8 @@
             33.0,
             71.0,
             27.0,
-            36.0
+            36.0,
+            86.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/step": [
             246.0,
@@ -1671,7 +1694,8 @@
             208.0,
             251.0,
             176.0,
-            200.0
+            200.0,
+            203.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/held": [
             246.0,
@@ -1702,7 +1726,8 @@
             208.0,
             305.0,
             176.0,
-            222.0
+            222.0,
+            203.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/carryover": [
             92.0,
@@ -1733,7 +1758,8 @@
             54.0,
             151.0,
             22.0,
-            69.0
+            69.0,
+            49.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/step": [
             249.0,
@@ -1764,7 +1790,8 @@
             233.0,
             156.0,
             202.0,
-            148.0
+            148.0,
+            231.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/held": [
             249.0,
@@ -1795,7 +1822,8 @@
             233.0,
             235.0,
             202.0,
-            196.0
+            196.0,
+            231.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/carryover": [
             95.0,
@@ -1826,7 +1854,8 @@
             79.0,
             81.0,
             48.0,
-            43.0
+            43.0,
+            77.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/step": [
             101.0,
@@ -1857,7 +1886,8 @@
             87.0,
             97.0,
             82.0,
-            99.0
+            99.0,
+            85.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/held": [
             101.0,
@@ -1888,7 +1918,8 @@
             87.0,
             121.0,
             82.0,
-            118.0
+            118.0,
+            85.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/carryover": [
             38.0,
@@ -1919,7 +1950,8 @@
             24.0,
             59.0,
             19.0,
-            56.0
+            56.0,
+            22.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/step": [
             77.0,
@@ -1950,7 +1982,8 @@
             63.0,
             58.0,
             67.0,
-            60.0
+            60.0,
+            79.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/held": [
             77.0,
@@ -1981,7 +2014,8 @@
             63.0,
             69.0,
             67.0,
-            75.0
+            75.0,
+            79.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/carryover": [
             25.0,
@@ -2012,7 +2046,8 @@
             11.0,
             18.0,
             15.0,
-            24.0
+            24.0,
+            27.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/step": [
             282.0,
@@ -2043,7 +2078,8 @@
             177.0,
             218.0,
             156.0,
-            167.0
+            167.0,
+            174.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/held": [
             282.0,
@@ -2074,7 +2110,8 @@
             177.0,
             266.0,
             156.0,
-            194.0
+            194.0,
+            174.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/carryover": [
             153.0,
@@ -2105,7 +2142,8 @@
             48.0,
             138.0,
             27.0,
-            66.0
+            66.0,
+            45.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/step": [
             55.0,
@@ -2136,7 +2174,8 @@
             55.0,
             55.0,
             58.0,
-            80.0
+            80.0,
+            55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/held": [
             55.0,
@@ -2167,7 +2206,8 @@
             55.0,
             55.0,
             58.0,
-            80.0
+            80.0,
+            55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/carryover": [
             0.0,
@@ -2198,7 +2238,8 @@
             0.0,
             0.0,
             0.0,
-            25.0
+            25.0,
+            0.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/step": [
             227.0,
@@ -2229,7 +2270,8 @@
             190.0,
             167.0,
             181.0,
-            166.0
+            166.0,
+            212.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/held": [
             227.0,
@@ -2260,7 +2302,8 @@
             190.0,
             203.0,
             181.0,
-            193.0
+            193.0,
+            212.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/carryover": [
             73.0,
@@ -2291,7 +2334,8 @@
             36.0,
             49.0,
             27.0,
-            40.0
+            40.0,
+            58.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/step": [
             48.0,
@@ -2322,7 +2366,8 @@
             37.0,
             38.0,
             38.0,
-            37.0
+            37.0,
+            39.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/held": [
             48.0,
@@ -2353,7 +2398,8 @@
             37.0,
             44.0,
             38.0,
-            44.0
+            44.0,
+            39.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/carryover": [
             17.0,
@@ -2384,7 +2430,8 @@
             6.0,
             13.0,
             7.0,
-            12.0
+            12.0,
+            8.0
           ],
           "dynsam/general/dataset-5610/num_accepted/step": [
             47.0,
@@ -2415,7 +2462,8 @@
             40.0,
             36.0,
             37.0,
-            26.0
+            26.0,
+            42.0
           ],
           "dynsam/general/dataset-5610/num_accepted/held": [
             47.0,
@@ -2446,7 +2494,8 @@
             40.0,
             45.0,
             37.0,
-            32.0
+            32.0,
+            42.0
           ],
           "dynsam/general/dataset-5610/num_accepted/carryover": [
             16.0,
@@ -2477,7 +2526,8 @@
             9.0,
             14.0,
             6.0,
-            0.0
+            0.0,
+            11.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/step": [
             102.0,
@@ -2508,7 +2558,8 @@
             88.0,
             71.0,
             78.0,
-            74.0
+            74.0,
+            87.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/held": [
             102.0,
@@ -2539,7 +2590,8 @@
             88.0,
             95.0,
             78.0,
-            88.0
+            88.0,
+            87.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/carryover": [
             38.0,
@@ -2570,6 +2622,7 @@
             24.0,
             30.0,
             14.0,
+            23.0,
             23.0
           ],
           "dynsam/general/dataset-trla/num_accepted/step": [
@@ -2601,7 +2654,8 @@
             82.0,
             69.0,
             81.0,
-            71.0
+            71.0,
+            90.0
           ],
           "dynsam/general/dataset-trla/num_accepted/held": [
             99.0,
@@ -2632,7 +2686,8 @@
             82.0,
             87.0,
             81.0,
-            88.0
+            88.0,
+            90.0
           ],
           "dynsam/general/dataset-trla/num_accepted/carryover": [
             35.0,
@@ -2663,7 +2718,8 @@
             18.0,
             22.0,
             17.0,
-            23.0
+            23.0,
+            26.0
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/step": [
             196.0,
@@ -2680,6 +2736,7 @@
             112.0,
             124.0,
             97.0,
+            null,
             null,
             null,
             null,
@@ -2725,6 +2782,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/carryover": [
@@ -2742,6 +2800,7 @@
             47.0,
             107.0,
             118.0,
+            null,
             null,
             null,
             null,
@@ -2787,7 +2846,8 @@
             47.0,
             68.0,
             50.0,
-            54.0
+            54.0,
+            62.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/held": [
             54.0,
@@ -2818,7 +2878,8 @@
             47.0,
             76.0,
             50.0,
-            65.0
+            65.0,
+            62.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/carryover": [
             23.0,
@@ -2849,7 +2910,8 @@
             8.0,
             37.0,
             11.0,
-            26.0
+            26.0,
+            23.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/step": [
             63.0,
@@ -2880,7 +2942,8 @@
             90.0,
             70.0,
             81.0,
-            76.0
+            76.0,
+            95.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/held": [
             63.0,
@@ -2911,7 +2974,8 @@
             90.0,
             96.0,
             81.0,
-            93.0
+            93.0,
+            95.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/carryover": [
             22.0,
@@ -2942,7 +3006,8 @@
             26.0,
             31.0,
             17.0,
-            28.0
+            28.0,
+            31.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/step": [
             62.0,
@@ -2973,7 +3038,8 @@
             90.0,
             73.0,
             92.0,
-            65.0
+            65.0,
+            97.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/held": [
             62.0,
@@ -3004,7 +3070,8 @@
             90.0,
             99.0,
             92.0,
-            93.0
+            93.0,
+            97.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/carryover": [
             21.0,
@@ -3035,7 +3102,8 @@
             26.0,
             34.0,
             28.0,
-            28.0
+            28.0,
+            33.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/step": [
             57.0,
@@ -3066,7 +3134,8 @@
             57.0,
             61.0,
             61.0,
-            45.0
+            45.0,
+            66.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/held": [
             57.0,
@@ -3097,7 +3166,8 @@
             57.0,
             77.0,
             61.0,
-            65.0
+            65.0,
+            66.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/carryover": [
             26.0,
@@ -3128,7 +3198,8 @@
             16.0,
             36.0,
             20.0,
-            24.0
+            24.0,
+            25.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/step": [
             48.0,
@@ -3159,7 +3230,8 @@
             37.0,
             54.0,
             39.0,
-            46.0
+            46.0,
+            47.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/held": [
             48.0,
@@ -3190,7 +3262,8 @@
             37.0,
             60.0,
             39.0,
-            54.0
+            54.0,
+            47.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/carryover": [
             17.0,
@@ -3221,7 +3294,8 @@
             6.0,
             29.0,
             8.0,
-            22.0
+            22.0,
+            16.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/step": [
             52.0,
@@ -3252,7 +3326,8 @@
             44.0,
             51.0,
             42.0,
-            57.0
+            57.0,
+            38.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/held": [
             52.0,
@@ -3283,7 +3358,8 @@
             44.0,
             64.0,
             42.0,
-            68.0
+            68.0,
+            38.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/carryover": [
             21.0,
@@ -3314,7 +3390,8 @@
             13.0,
             33.0,
             11.0,
-            36.0
+            36.0,
+            7.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/step": [
             24.0,
@@ -3345,7 +3422,8 @@
             24.0,
             17.0,
             22.0,
-            17.0
+            17.0,
+            24.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/held": [
             24.0,
@@ -3376,7 +3454,8 @@
             24.0,
             25.0,
             22.0,
-            23.0
+            23.0,
+            24.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/carryover": [
             8.0,
@@ -3407,6 +3486,7 @@
             8.0,
             9.0,
             6.0,
+            8.0,
             8.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/step": [
@@ -3438,7 +3518,8 @@
             23.0,
             17.0,
             24.0,
-            14.0
+            14.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/held": [
             26.0,
@@ -3469,7 +3550,8 @@
             23.0,
             24.0,
             24.0,
-            22.0
+            22.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/carryover": [
             10.0,
@@ -3500,7 +3582,8 @@
             7.0,
             8.0,
             8.0,
-            7.0
+            7.0,
+            8.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/step": [
             23.0,
@@ -3531,7 +3614,8 @@
             20.0,
             20.0,
             23.0,
-            16.0
+            16.0,
+            23.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/held": [
             23.0,
@@ -3562,7 +3646,8 @@
             20.0,
             25.0,
             23.0,
-            24.0
+            24.0,
+            23.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/carryover": [
             8.0,
@@ -3593,9 +3678,11 @@
             5.0,
             9.0,
             8.0,
+            8.0,
             8.0
           ],
           "dynsam/num_target": [
+            1568.0,
             1568.0,
             1568.0,
             1568.0,
@@ -3890,7 +3977,7 @@
       "ctx_total_length/mean": "total context length per trajectory (prompt + response), in tokens"
     }
   },
-  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$3,449,782\nBEIJING\n00:48:56\nLOS ANGELES\n09:48:56\nNEW YORK\n12:48:56\nLONDON\n17:48:56\n◐\nnotices\n1d 06h ago\nwe filtered out tasks that are relatively easy for the current pro model.\n2d 12h ago\nthe pro run restarted at step 17 due to a GPU OOM issue caused by expert load imbalance. we have adjusted the training parallelism strategy.\n3d 04h ago\nthere was a network connectivity issue between the pro training cluster and the grader deployment. we have restarted the run. we also removed the cyber dataset from the upcoming pro run, since we observed some bad patterns in the rollout logs.\n3d 14h ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n3d 20h ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n3d 22h ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nin progress\nstep 29\n5d 06:16:35\nstarted 2026-09-15 10:32 UTC\nstep 30: training · 2,208/1,568 accepted · 5h 41m in\ndynsam/avg@n · Δ vs step 1\n0.622 ▲0.057\ncost so far\n$2,595,738\ntokens · step 29\n3.42B\ntokens · total\n71.6B\nsamples trained\n728k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nstopped\nstep 30\n3d 11:05:40\nstarted 2026-09-15 15:16 UTC\nstopped 2026-09-19\ndynsam/avg@n · Δ vs step 1\n0.644 ▲0.130\ncost so far\n$854,044\ntokens · step 30\n3.7B\ntokens · total\n81.4B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 72.57\nmimo-v2.6-flash 65.68\nIn-house Coding Bench avg@3\nmimo-v2.6-pro 64.39\nmimo-v2.6-flash 62.87\nAutomationBench v1.0.6 avg@3\nmimo-v2.6-pro 51.30\nmimo-v2.6-flash 52.70\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.622▼0.004\n0.644▼0.019\ncritic/rewards/mean\n0.594▼0.000828\n0.601▲0.00269\nactor/entropy_loss\n0.461▼0.008\n0.471▲0.00254\nactor/pg_loss\n0.014▲0.010\n0.026▲0.014\nactor/grad_norm\n0.00437▼0.000178\n0.00628▼0.00152\ntrain_infer_diff/new_infer/kl\n0.00781▲0.00397\n0.011▲0.00452\nctx_total_length/mean\n136k▲15k\n148k▲17k\ndynsam/agg_turn/mean\n48.9▲7.56\n68.5▲7.63\nperf/total_num_tokens\n3.42B▲400M\n3.7B▲430M\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 2h 00m ago\n2h 00m ago\naccepted 2,208/1,568 · judged 2,155 · pass 0.606 (n=3,644) · remaining 332 +537 partial +191 rewarding · prewarm 256\nstep 30\n2h 00m ago\naccepted 2,200/1,568 · judged 2,147 · pass 0.606 (n=3,632) · remaining 331 +539 partial +212 rewarding · prewarm 256\nstep 30\n2h 01m ago\naccepted 2,192/1,568 · judged 2,137 · pass 0.606 (n=3,616) · remaining 328 +542 partial +199 rewarding · prewarm 256\nstep 30\n2h 02m ago\naccepted 2,184/1,568 · judged 2,132 · pass 0.606 (n=3,604) · remaining 326 +543 partial +185 rewarding · prewarm 256\nstep 30\n2h 03m ago\naccepted 2,176/1,568 · judged 2,126 · pass 0.606 (n=3,589) · remaining 327 +547 partial +193 rewarding · prewarm 256\nstep 30\n2h 03m ago\naccepted 2,168/1,568 · judged 2,118 · pass 0.606 (n=3,578) · remaining 323 +555 partial +190 rewarding · prewarm 256\nstep 30\n2h 04m ago\naccepted 2,160/1,568 · judged 2,108 · pass 0.606 (n=3,566) · remaining 323 +555 partial +191 rewarding · prewarm 256\nstep 30\n2h 04m ago\naccepted 2,152/1,568 · judged 2,100 · pass 0.605 (n=3,556) · remaining 324 +556 partial +186 rewarding · prewarm 256\nstep 30\n2h 05m ago\naccepted 2,144/1,568 · judged 2,091 · pass 0.606 (n=3,539) · remaining 328 +547 partial +186 rewarding · prewarm 256\nstep 30\n2h 06m ago\naccepted 2,136/1,568 · judged 2,087 · pass 0.605 (n=3,528) · remaining 333 +546 partial +186 rewarding · prewarm 256\nstep 30\n2h 06m ago\naccepted 2,128/1,568 · judged 2,081 · pass 0.605 (n=3,518) · remaining 338 +544 partial +207 rewarding · prewarm 256\nstep 30\n2h 07m ago\naccepted 2,120/1,568 · judged 2,071 · pass 0.605 (n=3,502) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n2h 08m ago\naccepted 2,112/1,568 · judged 2,063 · pass 0.605 (n=3,489) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n2h 09m ago\naccepted 2,104/1,568 · judged 2,055 · pass 0.605 (n=3,476) · remaining 341 +534 partial +149 rewarding · prewarm 256\nstep 30\n2h 10m ago\naccepted 2,096/1,568 · judged 2,039 · pass 0.606 (n=3,459) · remaining 336 +537 partial +138 rewarding · prewarm 256\nstep 30\n2h 11m ago\naccepted 2,088/1,568 · judged 2,032 · pass 0.606 (n=3,447) · remaining 337 +539 partial +149 rewarding · prewarm 256\nstep 30\n2h 11m ago\naccepted 2,080/1,568 · judged 2,023 · pass 0.606 (n=3,433) · remaining 333 +543 partial +165 rewarding · prewarm 256\nstep 30\n2h 13m ago\naccepted 2,064/1,568 · judged 2,006 · pass 0.606 (n=3,407) · remaining 334 +540 partial +160 rewarding · prewarm 256\nstep 30\n2h 14m ago\naccepted 2,056/1,568 · judged 1,991 · pass 0.606 (n=3,390) · remaining 344 +531 partial +172 rewarding · prewarm 256\nstep 30\n2h 14m ago\naccepted 2,048/1,568 · judged 1,984 · pass 0.607 (n=3,375) · remaining 341 +540 partial +154 rewarding · prewarm 256\nstep 30\n2h 15m ago\naccepted 2,040/1,568 · judged 1,973 · pass 0.607 (n=3,363) · remaining 343 +538 partial +182 rewarding · prewarm 256\nstep 30\n2h 16m ago\naccepted 2,032/1,568 · judged 1,964 · pass 0.607 (n=3,350) · remaining 342 +543 partial +205 rewarding · prewarm 256\nstep 30\n2h 17m ago\naccepted 2,024/1,568 · judged 1,958 · pass 0.607 (n=3,337) · remaining 335 +546 partial +176 rewarding · prewarm 256\nstep 30\n2h 17m ago\naccepted 2,016/1,568 · judged 1,952 · pass 0.606 (n=3,325) · remaining 331 +552 partial +192 rewarding · prewarm 256\nstep 30\n2h 18m ago\naccepted 2,008/1,568 · judged 1,945 · pass 0.606 (n=3,312) · remaining 327 +558 partial +182 rewarding · prewarm 256\nstep 30\n2h 18m ago\naccepted 2,000/1,568 · judged 1,939 · pass 0.606 (n=3,300) · remaining 326 +560 partial +171 rewarding · prewarm 256\nstep 30\n2h 18m ago\naccepted 1,992/1,568 · judged 1,933 · pass 0.606 (n=3,289) · remaining 326 +566 partial +172 rewarding · prewarm 256\nstep 30\n2h 19m ago\naccepted 1,984/1,568 · judged 1,926 · pass 0.607 (n=3,271) · remaining 327 +570 partial +172 rewarding · prewarm 256\nstep 30\n2h 19m ago\naccepted 1,976/1,568 · judged 1,921 · pass 0.606 (n=3,260) · remaining 325 +574 partial +157 rewarding · prewarm 256\nstep 30\n2h 20m ago\naccepted 1,968/1,568 · judged 1,910 · pass 0.606 (n=3,248) · remaining 329 +568 partial +160 rewarding · prewarm 256\nstep 30\n2h 21m ago\naccepted 1,960/1,568 · judged 1,896 · pass 0.606 (n=3,236) · remaining 325 +569 partial +160 rewarding · prewarm 256\nstep 30\n2h 22m ago\naccepted 1,944/1,568 · judged 1,884 · pass 0.605 (n=3,212) · remaining 334 +563 partial +163 rewarding · prewarm 256\nstep 30\n2h 23m ago\naccepted 1,936/1,568 · judged 1,876 · pass 0.605 (n=3,200) · remaining 331 +561 partial +148 rewarding · prewarm 256\nstep 30\n2h 24m ago\naccepted 1,928/1,568 · judged 1,867 · pass 0.605 (n=3,186) · remaining 333 +557 partial +154 rewarding · prewarm 256\nstep 30\n2h 24m ago\naccepted 1,920/1,568 · judged 1,858 · pass 0.605 (n=3,176) · remaining 332 +561 partial +157 rewarding · prewarm 256\nstep 30\n2h 25m ago\naccepted 1,912/1,568 · judged 1,846 · pass 0.605 (n=3,161) · remaining 330 +565 partial +160 rewarding · prewarm 256\nstep 30\n2h 26m ago\naccepted 1,904/1,568 · judged 1,839 · pass 0.605 (n=3,148) · remaining 332 +567 partial +164 rewarding · prewarm 256\nstep 30\n2h 26m ago\naccepted 1,896/1,568 · judged 1,832 · pass 0.605 (n=3,133) · remaining 330 +573 partial +212 rewarding · prewarm 256\nstep 30\n2h 27m ago\naccepted 1,888/1,568 · judged 1,829 · pass 0.605 (n=3,120) · remaining 331 +579 partial +246 rewarding · prewarm 256\nstep 30\n2h 27m ago\naccepted 1,880/1,568 · judged 1,820 · pass 0.605 (n=3,109) · remaining 325 +581 partial +204 rewarding · prewarm 256\nstep 30\nstep 30 · accepted 2,208/1,568\n2h 00m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-m1dt\t240 / 154\t\n\t0\t—\t30\ncode/dataset-sin0\t231 / 154\t\n\t0\t222\t49\ncode/dataset-zg6q\t212 / 154\t\n\t0\t207\t50\ncode/dataset-obg8\t203 / 154\t\n\t0\t190\t197\ncode/dataset-x7wh\t174 / 129\t\n\t0\t166\t133\nvisual/dataset-jzd3\t97 / 64\t\n\t0\t—\t0\nvisual/dataset-gtav\t95 / 64\t\n\t0\t—\t2\ngeneral/dataset-trla\t90 / 64\t\n\t0\t—\t13\ngeneral/dataset-epqd\t87 / 64\t\n\t0\t—\t17\ncode/dataset-ta4j\t85 / 63\t\n\t0\t79\t70\ncode/dataset-dnpn\t82 / 63\t\n\t0\t78\t25\ncode/dataset-yfch\t55 / 55\t\n\t0\t—\t91\ncode/dataset-v7yx\t79 / 52\t\n\t0\t75\t30\ncode/dataset-bvg7\t69 / 52\t\n\t0\t65\t45\nvisual/dataset-ol8x\t66 / 41\t\n\t0\t—\t16\nvisual/dataset-053e\t62 / 39\t\n\t0\t—\t16\nvisual/dataset-pt5v\t47 / 31\t\n\t0\t—\t25\ncode/dataset-4onq\t44 / 31\t\n\t0\t—\t5\ngeneral/dataset-5610\t42 / 31\t\n\t0\t—\t20\ngeneral/dataset-1doa\t39 / 31\t\n\t0\t—\t15\nvisual/dataset-ve5o\t38 / 31\t\n\t0\t—\t20\nchat/dataset-eup7\t24 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t24 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t23 / 15\t\n\t0\t—\t0\ntotal\t2,208 / 1,568\t\t0\t2,155\t869\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 1d 14h ago\n1d 14h ago\nrun stopped\n1d 14h ago\naccepted 2,704/1,568 · judged 2,559 · pass 0.547 (n=13,430) · remaining 107 +1,001 partial +390 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,696/1,568 · judged 2,551 · pass 0.547 (n=13,421) · remaining 108 +1,009 partial +381 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,688/1,568 · judged 2,546 · pass 0.547 (n=13,410) · remaining 110 +1,018 partial +388 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,680/1,568 · judged 2,535 · pass 0.547 (n=13,396) · remaining 113 +1,029 partial +380 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,672/1,568 · judged 2,526 · pass 0.547 (n=13,382) · remaining 119 +1,036 partial +401 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,664/1,568 · judged 2,514 · pass 0.547 (n=13,368) · remaining 121 +1,048 partial +412 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,656/1,568 · judged 2,507 · pass 0.547 (n=13,354) · remaining 125 +1,058 partial +407 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,648/1,568 · judged 2,499 · pass 0.547 (n=13,337) · remaining 133 +1,067 partial +427 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.547 (n=13,322) · remaining 137 +1,077 partial +438 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,632/1,568 · judged 2,486 · pass 0.547 (n=13,309) · remaining 143 +1,084 partial +452 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,624/1,568 · judged 2,481 · pass 0.546 (n=13,298) · remaining 151 +1,087 partial +463 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,616/1,568 · judged 2,475 · pass 0.546 (n=13,287) · remaining 153 +1,096 partial +465 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,608/1,568 · judged 2,469 · pass 0.546 (n=13,276) · remaining 156 +1,104 partial +448 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,600/1,568 · judged 2,459 · pass 0.546 (n=13,259) · remaining 164 +1,113 partial +472 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,592/1,568 · judged 2,450 · pass 0.546 (n=13,245) · remaining 167 +1,124 partial +486 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,584/1,568 · judged 2,442 · pass 0.546 (n=13,236) · remaining 171 +1,129 partial +470 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,576/1,568 · judged 2,433 · pass 0.546 (n=13,226) · remaining 173 +1,137 partial +462 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,568/1,568 · judged 2,427 · pass 0.546 (n=13,210) · remaining 182 +1,143 partial +465 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,560/1,568 · judged 2,418 · pass 0.546 (n=13,199) · remaining 185 +1,152 partial +486 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,552/1,568 · judged 2,412 · pass 0.545 (n=13,188) · remaining 189 +1,159 partial +498 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,544/1,568 · judged 2,406 · pass 0.545 (n=13,175) · remaining 193 +1,168 partial +488 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,536/1,568 · judged 2,402 · pass 0.545 (n=13,165) · remaining 194 +1,177 partial +456 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,528/1,568 · judged 2,397 · pass 0.545 (n=13,144) · remaining 195 +1,196 partial +486 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,520/1,568 · judged 2,391 · pass 0.546 (n=13,129) · remaining 200 +1,206 partial +517 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,512/1,568 · judged 2,380 · pass 0.546 (n=13,113) · remaining 208 +1,213 partial +537 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,504/1,568 · judged 2,375 · pass 0.545 (n=13,100) · remaining 209 +1,224 partial +534 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,496/1,568 · judged 2,368 · pass 0.545 (n=13,088) · remaining 215 +1,231 partial +512 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,488/1,568 · judged 2,360 · pass 0.545 (n=13,076) · remaining 220 +1,238 partial +514 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,480/1,568 · judged 2,354 · pass 0.545 (n=13,058) · remaining 226 +1,250 partial +524 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,464/1,568 · judged 2,339 · pass 0.545 (n=13,035) · remaining 236 +1,261 partial +529 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,456/1,568 · judged 2,333 · pass 0.545 (n=13,015) · remaining 240 +1,276 partial +546 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,448/1,568 · judged 2,323 · pass 0.545 (n=13,003) · remaining 245 +1,283 partial +575 rewarding · prewarm 297\nstep 31\n1d 14h ago\naccepted 2,440/1,568 · judged 2,315 · pass 0.546 (n=12,981) · remaining 253 +1,295 partial +556 rewarding · prewarm 298\nstep 31\n1d 14h ago\naccepted 2,432/1,568 · judged 2,310 · pass 0.545 (n=12,973) · remaining 254 +1,303 partial +559 rewarding · prewarm 298\nstep 31\n1d 14h ago\naccepted 2,424/1,568 · judged 2,305 · pass 0.545 (n=12,957) · remaining 253 +1,317 partial +565 rewarding · prewarm 298\nstep 31\n1d 14h ago\naccepted 2,416/1,568 · judged 2,299 · pass 0.545 (n=12,947) · remaining 257 +1,322 partial +566 rewarding · prewarm 298\nstep 31\n1d 14h ago\naccepted 2,408/1,568 · judged 2,293 · pass 0.545 (n=12,932) · remaining 258 +1,334 partial +568 rewarding · prewarm 298\nstep 31\n1d 14h ago\naccepted 2,400/1,568 · judged 2,285 · pass 0.545 (n=12,918) · remaining 263 +1,342 partial +601 rewarding · prewarm 298\nstep 31\n1d 14h ago\naccepted 2,392/1,568 · judged 2,278 · pass 0.545 (n=12,903) · remaining 264 +1,354 partial +595 rewarding · prewarm 298\nstep 31\nstep 31 · accepted 2,704/1,568\n1d 14h ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t310 / 154\t\n\t0\t273\t156\ncode/dataset-zg6q\t229 / 154\t\n\t0\t223\t32\ncode/dataset-sin0\t227 / 154\t\n\t0\t193\t101\ncode/dataset-m1dt\t211 / 154\t\n\t0\t—\t47\ncode/dataset-x7wh\t221 / 129\t\n\t0\t189\t124\ncyber/dataset-9aui\t145 / 64\t\n\t0\t—\t139\ngeneral/dataset-epqd\t98 / 64\t\n\t0\t—\t10\ngeneral/dataset-trla\t98 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t103 / 63\t\n\t0\t90\t76\ncode/dataset-dnpn\t90 / 63\t\n\t0\t82\t11\ncode/dataset-yfch\t196 / 55\t\n\t0\t—\t195\ncode/dataset-bvg7\t82 / 52\t\n\t0\t76\t34\ncode/dataset-v7yx\t79 / 52\t\n\t0\t70\t29\nvisual/dataset-gtav\t59 / 41\t\n\t0\t—\t3\nvisual/dataset-jzd3\t52 / 41\t\n\t0\t—\t10\nvisual/dataset-ve5o\t95 / 31\t\n\t0\t—\t26\nvisual/dataset-pt5v\t73 / 31\t\n\t0\t—\t29\ngeneral/dataset-5610\t62 / 31\t\n\t0\t—\t10\nvisual/dataset-053e\t62 / 31\t\n\t0\t—\t13\nvisual/dataset-ol8x\t57 / 31\t\n\t0\t—\t20\ncode/dataset-4onq\t47 / 31\t\n\t0\t—\t6\ngeneral/dataset-1doa\t30 / 31\t\n\t1\t—\t30\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t26 / 15\t\n\t0\t—\t0\ntotal\t2,704 / 1,568\t\t0\t2,559\t1,108\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 29\n1,571 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,064\t67.7%\t▲4.0 pt\ngeneral\t4\t190\t12.1%\t▲0.2 pt\ncyber\t1\t0\t0.0%\t0.0 pt\nvisual\t6\t270\t17.2%\t▼3.1 pt\nchat\t3\t47\t3.0%\t▼1.1 pt\ntotal\t25\t1,571\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
+  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$3,474,715\nBEIJING\n03:09:40\nLOS ANGELES\n12:09:40\nNEW YORK\n15:09:40\nLONDON\n20:09:40\n◐\nnotices\n1d 08h ago\nwe filtered out tasks that are relatively easy for the current pro model.\n2d 15h ago\nthe pro run restarted at step 17 due to a GPU OOM issue caused by expert load imbalance. we have adjusted the training parallelism strategy.\n3d 06h ago\nthere was a network connectivity issue between the pro training cluster and the grader deployment. we have restarted the run. we also removed the cyber dataset from the upcoming pro run, since we observed some bad patterns in the rollout logs.\n3d 16h ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n3d 23h ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n4d 01h ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nstopped\nstep 30\n5d 07:29:21\nstarted 2026-09-15 10:32 UTC\nstopped 2026-09-20\ndynsam/avg@n · Δ vs step 1\n0.633 ▲0.068\ncost so far\n$2,620,670\ntokens · step 30\n3.43B\ntokens · total\n75B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nstopped\nstep 30\n3d 11:05:40\nstarted 2026-09-15 15:16 UTC\nstopped 2026-09-19\ndynsam/avg@n · Δ vs step 1\n0.644 ▲0.130\ncost so far\n$854,044\ntokens · step 30\n3.7B\ntokens · total\n81.4B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 72.57\nmimo-v2.6-flash 65.68\nIn-house Coding Bench avg@3\nmimo-v2.6-pro 64.39\nmimo-v2.6-flash 62.87\nAutomationBench v1.0.6 avg@3\nmimo-v2.6-pro 51.30\nmimo-v2.6-flash 52.70\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.633▲0.011\n0.644▼0.019\ncritic/rewards/mean\n0.596▲0.00264\n0.601▲0.00269\nactor/entropy_loss\n0.462▲0.000994\n0.471▲0.00254\nactor/pg_loss\n0.018▲0.00375\n0.026▲0.014\nactor/grad_norm\n0.00485▲0.000479\n0.00628▼0.00152\ntrain_infer_diff/new_infer/kl\n0.00277▼0.00504\n0.011▲0.00452\nctx_total_length/mean\n137k▲1.2k\n148k▲17k\ndynsam/agg_turn/mean\n43.6▼5.35\n68.5▲7.63\nperf/total_num_tokens\n3.43B▲10M\n3.7B▲430M\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 1h 10m ago\n1h 07m ago\nrun stopped\n1h 10m ago\naccepted 664/1,568 · judged 658 · pass 0.606 (n=3,680) · remaining 325 +542 partial +69 rewarding · prewarm 256\nstep 31\n1h 12m ago\naccepted 656/1,568 · judged 653 · pass 0.606 (n=3,668) · remaining 322 +539 partial +36 rewarding · prewarm 256\nstep 31\n1h 21m ago\naccepted 650/1,568 · judged 647 · pass 0.605 (n=3,659) · remaining 326 +529 partial +0 rewarding · prewarm 256\nstep 31\n1h 22m ago\nstep 30 done · dynsam/avg@n 0.633 ▲0.011\n3.43B tok\n4h 20m ago\naccepted 2,208/1,568 · judged 2,155 · pass 0.606 (n=3,644) · remaining 332 +537 partial +191 rewarding · prewarm 256\nstep 30\n4h 21m ago\naccepted 2,200/1,568 · judged 2,147 · pass 0.606 (n=3,632) · remaining 331 +539 partial +212 rewarding · prewarm 256\nstep 30\n4h 22m ago\naccepted 2,192/1,568 · judged 2,137 · pass 0.606 (n=3,616) · remaining 328 +542 partial +199 rewarding · prewarm 256\nstep 30\n4h 23m ago\naccepted 2,184/1,568 · judged 2,132 · pass 0.606 (n=3,604) · remaining 326 +543 partial +185 rewarding · prewarm 256\nstep 30\n4h 23m ago\naccepted 2,176/1,568 · judged 2,126 · pass 0.606 (n=3,589) · remaining 327 +547 partial +193 rewarding · prewarm 256\nstep 30\n4h 24m ago\naccepted 2,168/1,568 · judged 2,118 · pass 0.606 (n=3,578) · remaining 323 +555 partial +190 rewarding · prewarm 256\nstep 30\n4h 24m ago\naccepted 2,160/1,568 · judged 2,108 · pass 0.606 (n=3,566) · remaining 323 +555 partial +191 rewarding · prewarm 256\nstep 30\n4h 25m ago\naccepted 2,152/1,568 · judged 2,100 · pass 0.605 (n=3,556) · remaining 324 +556 partial +186 rewarding · prewarm 256\nstep 30\n4h 26m ago\naccepted 2,144/1,568 · judged 2,091 · pass 0.606 (n=3,539) · remaining 328 +547 partial +186 rewarding · prewarm 256\nstep 30\n4h 26m ago\naccepted 2,136/1,568 · judged 2,087 · pass 0.605 (n=3,528) · remaining 333 +546 partial +186 rewarding · prewarm 256\nstep 30\n4h 27m ago\naccepted 2,128/1,568 · judged 2,081 · pass 0.605 (n=3,518) · remaining 338 +544 partial +207 rewarding · prewarm 256\nstep 30\n4h 28m ago\naccepted 2,120/1,568 · judged 2,071 · pass 0.605 (n=3,502) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n4h 29m ago\naccepted 2,112/1,568 · judged 2,063 · pass 0.605 (n=3,489) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n4h 30m ago\naccepted 2,104/1,568 · judged 2,055 · pass 0.605 (n=3,476) · remaining 341 +534 partial +149 rewarding · prewarm 256\nstep 30\n4h 31m ago\naccepted 2,096/1,568 · judged 2,039 · pass 0.606 (n=3,459) · remaining 336 +537 partial +138 rewarding · prewarm 256\nstep 30\n4h 31m ago\naccepted 2,088/1,568 · judged 2,032 · pass 0.606 (n=3,447) · remaining 337 +539 partial +149 rewarding · prewarm 256\nstep 30\n4h 32m ago\naccepted 2,080/1,568 · judged 2,023 · pass 0.606 (n=3,433) · remaining 333 +543 partial +165 rewarding · prewarm 256\nstep 30\n4h 34m ago\naccepted 2,064/1,568 · judged 2,006 · pass 0.606 (n=3,407) · remaining 334 +540 partial +160 rewarding · prewarm 256\nstep 30\n4h 35m ago\naccepted 2,056/1,568 · judged 1,991 · pass 0.606 (n=3,390) · remaining 344 +531 partial +172 rewarding · prewarm 256\nstep 30\n4h 35m ago\naccepted 2,048/1,568 · judged 1,984 · pass 0.607 (n=3,375) · remaining 341 +540 partial +154 rewarding · prewarm 256\nstep 30\n4h 36m ago\naccepted 2,040/1,568 · judged 1,973 · pass 0.607 (n=3,363) · remaining 343 +538 partial +182 rewarding · prewarm 256\nstep 30\n4h 36m ago\naccepted 2,032/1,568 · judged 1,964 · pass 0.607 (n=3,350) · remaining 342 +543 partial +205 rewarding · prewarm 256\nstep 30\n4h 37m ago\naccepted 2,024/1,568 · judged 1,958 · pass 0.607 (n=3,337) · remaining 335 +546 partial +176 rewarding · prewarm 256\nstep 30\n4h 38m ago\naccepted 2,016/1,568 · judged 1,952 · pass 0.606 (n=3,325) · remaining 331 +552 partial +192 rewarding · prewarm 256\nstep 30\n4h 38m ago\naccepted 2,008/1,568 · judged 1,945 · pass 0.606 (n=3,312) · remaining 327 +558 partial +182 rewarding · prewarm 256\nstep 30\n4h 39m ago\naccepted 2,000/1,568 · judged 1,939 · pass 0.606 (n=3,300) · remaining 326 +560 partial +171 rewarding · prewarm 256\nstep 30\n4h 39m ago\naccepted 1,992/1,568 · judged 1,933 · pass 0.606 (n=3,289) · remaining 326 +566 partial +172 rewarding · prewarm 256\nstep 30\n4h 40m ago\naccepted 1,984/1,568 · judged 1,926 · pass 0.607 (n=3,271) · remaining 327 +570 partial +172 rewarding · prewarm 256\nstep 30\n4h 40m ago\naccepted 1,976/1,568 · judged 1,921 · pass 0.606 (n=3,260) · remaining 325 +574 partial +157 rewarding · prewarm 256\nstep 30\n4h 41m ago\naccepted 1,968/1,568 · judged 1,910 · pass 0.606 (n=3,248) · remaining 329 +568 partial +160 rewarding · prewarm 256\nstep 30\n4h 42m ago\naccepted 1,960/1,568 · judged 1,896 · pass 0.606 (n=3,236) · remaining 325 +569 partial +160 rewarding · prewarm 256\nstep 30\n4h 43m ago\naccepted 1,944/1,568 · judged 1,884 · pass 0.605 (n=3,212) · remaining 334 +563 partial +163 rewarding · prewarm 256\nstep 30\n4h 44m ago\naccepted 1,936/1,568 · judged 1,876 · pass 0.605 (n=3,200) · remaining 331 +561 partial +148 rewarding · prewarm 256\nstep 30\n4h 45m ago\naccepted 1,928/1,568 · judged 1,867 · pass 0.605 (n=3,186) · remaining 333 +557 partial +154 rewarding · prewarm 256\nstep 30\n4h 45m ago\naccepted 1,920/1,568 · judged 1,858 · pass 0.605 (n=3,176) · remaining 332 +561 partial +157 rewarding · prewarm 256\nstep 30\nstep 31 · accepted 664/1,568\n1h 10m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-m1dt\t90 / 154\t\n\t64\t—\t30\ncode/dataset-sin0\t79 / 153\t\n\t74\t78\t52\ncode/dataset-zg6q\t58 / 153\t\n\t95\t58\t57\ncode/dataset-obg8\t51 / 153\t\n\t102\t49\t199\ncode/dataset-x7wh\t51 / 128\t\n\t77\t49\t128\nvisual/dataset-jzd3\t33 / 64\t\n\t31\t—\t0\nvisual/dataset-gtav\t31 / 64\t\n\t33\t—\t3\ngeneral/dataset-trla\t26 / 64\t\n\t38\t—\t13\ngeneral/dataset-epqd\t24 / 64\t\n\t40\t—\t19\ncode/dataset-ta4j\t22 / 63\t\n\t41\t22\t67\ncode/dataset-dnpn\t20 / 63\t\n\t43\t19\t20\ncode/dataset-yfch\t1 / 54\t\n\t53\t—\t91\ncode/dataset-v7yx\t27 / 52\t\n\t25\t27\t31\ncode/dataset-bvg7\t17 / 52\t\n\t35\t17\t45\nvisual/dataset-ol8x\t25 / 40\t\n\t15\t—\t17\nvisual/dataset-053e\t25 / 40\t\n\t15\t—\t15\nvisual/dataset-pt5v\t18 / 32\t\n\t14\t—\t23\ncode/dataset-4onq\t14 / 32\t\n\t18\t—\t4\ngeneral/dataset-5610\t13 / 32\t\n\t19\t—\t17\ngeneral/dataset-1doa\t8 / 32\t\n\t24\t—\t15\nvisual/dataset-ve5o\t7 / 32\t\n\t25\t—\t21\nchat/dataset-lm3t\t8 / 17\t\n\t9\t—\t0\nchat/dataset-eup7\t8 / 15\t\n\t7\t—\t0\nchat/dataset-8kb6\t8 / 15\t\n\t7\t—\t0\ntotal\t664 / 1,568\t\t904\t658\t867\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 1d 16h ago\n1d 16h ago\nrun stopped\n1d 16h ago\naccepted 2,704/1,568 · judged 2,559 · pass 0.547 (n=13,430) · remaining 107 +1,001 partial +390 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,696/1,568 · judged 2,551 · pass 0.547 (n=13,421) · remaining 108 +1,009 partial +381 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,688/1,568 · judged 2,546 · pass 0.547 (n=13,410) · remaining 110 +1,018 partial +388 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,680/1,568 · judged 2,535 · pass 0.547 (n=13,396) · remaining 113 +1,029 partial +380 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,672/1,568 · judged 2,526 · pass 0.547 (n=13,382) · remaining 119 +1,036 partial +401 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,664/1,568 · judged 2,514 · pass 0.547 (n=13,368) · remaining 121 +1,048 partial +412 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,656/1,568 · judged 2,507 · pass 0.547 (n=13,354) · remaining 125 +1,058 partial +407 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,648/1,568 · judged 2,499 · pass 0.547 (n=13,337) · remaining 133 +1,067 partial +427 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.547 (n=13,322) · remaining 137 +1,077 partial +438 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,632/1,568 · judged 2,486 · pass 0.547 (n=13,309) · remaining 143 +1,084 partial +452 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,624/1,568 · judged 2,481 · pass 0.546 (n=13,298) · remaining 151 +1,087 partial +463 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,616/1,568 · judged 2,475 · pass 0.546 (n=13,287) · remaining 153 +1,096 partial +465 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,608/1,568 · judged 2,469 · pass 0.546 (n=13,276) · remaining 156 +1,104 partial +448 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,600/1,568 · judged 2,459 · pass 0.546 (n=13,259) · remaining 164 +1,113 partial +472 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,592/1,568 · judged 2,450 · pass 0.546 (n=13,245) · remaining 167 +1,124 partial +486 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,584/1,568 · judged 2,442 · pass 0.546 (n=13,236) · remaining 171 +1,129 partial +470 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,576/1,568 · judged 2,433 · pass 0.546 (n=13,226) · remaining 173 +1,137 partial +462 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,568/1,568 · judged 2,427 · pass 0.546 (n=13,210) · remaining 182 +1,143 partial +465 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,560/1,568 · judged 2,418 · pass 0.546 (n=13,199) · remaining 185 +1,152 partial +486 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,552/1,568 · judged 2,412 · pass 0.545 (n=13,188) · remaining 189 +1,159 partial +498 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,544/1,568 · judged 2,406 · pass 0.545 (n=13,175) · remaining 193 +1,168 partial +488 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,536/1,568 · judged 2,402 · pass 0.545 (n=13,165) · remaining 194 +1,177 partial +456 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,528/1,568 · judged 2,397 · pass 0.545 (n=13,144) · remaining 195 +1,196 partial +486 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,520/1,568 · judged 2,391 · pass 0.546 (n=13,129) · remaining 200 +1,206 partial +517 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,512/1,568 · judged 2,380 · pass 0.546 (n=13,113) · remaining 208 +1,213 partial +537 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,504/1,568 · judged 2,375 · pass 0.545 (n=13,100) · remaining 209 +1,224 partial +534 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,496/1,568 · judged 2,368 · pass 0.545 (n=13,088) · remaining 215 +1,231 partial +512 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,488/1,568 · judged 2,360 · pass 0.545 (n=13,076) · remaining 220 +1,238 partial +514 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,480/1,568 · judged 2,354 · pass 0.545 (n=13,058) · remaining 226 +1,250 partial +524 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,464/1,568 · judged 2,339 · pass 0.545 (n=13,035) · remaining 236 +1,261 partial +529 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,456/1,568 · judged 2,333 · pass 0.545 (n=13,015) · remaining 240 +1,276 partial +546 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,448/1,568 · judged 2,323 · pass 0.545 (n=13,003) · remaining 245 +1,283 partial +575 rewarding · prewarm 297\nstep 31\n1d 16h ago\naccepted 2,440/1,568 · judged 2,315 · pass 0.546 (n=12,981) · remaining 253 +1,295 partial +556 rewarding · prewarm 298\nstep 31\n1d 17h ago\naccepted 2,432/1,568 · judged 2,310 · pass 0.545 (n=12,973) · remaining 254 +1,303 partial +559 rewarding · prewarm 298\nstep 31\n1d 17h ago\naccepted 2,424/1,568 · judged 2,305 · pass 0.545 (n=12,957) · remaining 253 +1,317 partial +565 rewarding · prewarm 298\nstep 31\n1d 17h ago\naccepted 2,416/1,568 · judged 2,299 · pass 0.545 (n=12,947) · remaining 257 +1,322 partial +566 rewarding · prewarm 298\nstep 31\n1d 17h ago\naccepted 2,408/1,568 · judged 2,293 · pass 0.545 (n=12,932) · remaining 258 +1,334 partial +568 rewarding · prewarm 298\nstep 31\n1d 17h ago\naccepted 2,400/1,568 · judged 2,285 · pass 0.545 (n=12,918) · remaining 263 +1,342 partial +601 rewarding · prewarm 298\nstep 31\n1d 17h ago\naccepted 2,392/1,568 · judged 2,278 · pass 0.545 (n=12,903) · remaining 264 +1,354 partial +595 rewarding · prewarm 298\nstep 31\nstep 31 · accepted 2,704/1,568\n1d 16h ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t310 / 154\t\n\t0\t273\t156\ncode/dataset-zg6q\t229 / 154\t\n\t0\t223\t32\ncode/dataset-sin0\t227 / 154\t\n\t0\t193\t101\ncode/dataset-m1dt\t211 / 154\t\n\t0\t—\t47\ncode/dataset-x7wh\t221 / 129\t\n\t0\t189\t124\ncyber/dataset-9aui\t145 / 64\t\n\t0\t—\t139\ngeneral/dataset-epqd\t98 / 64\t\n\t0\t—\t10\ngeneral/dataset-trla\t98 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t103 / 63\t\n\t0\t90\t76\ncode/dataset-dnpn\t90 / 63\t\n\t0\t82\t11\ncode/dataset-yfch\t196 / 55\t\n\t0\t—\t195\ncode/dataset-bvg7\t82 / 52\t\n\t0\t76\t34\ncode/dataset-v7yx\t79 / 52\t\n\t0\t70\t29\nvisual/dataset-gtav\t59 / 41\t\n\t0\t—\t3\nvisual/dataset-jzd3\t52 / 41\t\n\t0\t—\t10\nvisual/dataset-ve5o\t95 / 31\t\n\t0\t—\t26\nvisual/dataset-pt5v\t73 / 31\t\n\t0\t—\t29\ngeneral/dataset-5610\t62 / 31\t\n\t0\t—\t10\nvisual/dataset-053e\t62 / 31\t\n\t0\t—\t13\nvisual/dataset-ol8x\t57 / 31\t\n\t0\t—\t20\ncode/dataset-4onq\t47 / 31\t\n\t0\t—\t6\ngeneral/dataset-1doa\t30 / 31\t\n\t1\t—\t30\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t26 / 15\t\n\t0\t—\t0\ntotal\t2,704 / 1,568\t\t0\t2,559\t1,108\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 30\n≈ 1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,033\t65.8%\t▼1.9 pt\ngeneral\t4\t176\t11.3%\t▼0.8 pt\ncyber\t1\t0\t0.0%\t0.0 pt\nvisual\t6\t305\t19.5%\t▲2.3 pt\nchat\t3\t54\t3.4%\t▲0.4 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
   "public_json_responses": [
     {
       "url": "https://mimo.xiaomi.com/rl/api/runs",
@@ -4056,7 +4143,7 @@
           "so_far": 854044.7
         },
         "clock": {
-          "now": 1789922928.0898848
+          "now": 1789931371.2209508
         },
         "version": "3-5513.32.6.28",
         "step": {
@@ -4342,51 +4429,38 @@
           "key": "pro",
           "label": "mimo-v2.6-pro",
           "start": 1789468339.334,
-          "end": null,
-          "mode": "live"
+          "end": 1789927300.953,
+          "mode": "ended"
         },
         "cost": {
           "rate_per_s": 5.71,
-          "so_far": 2595701.459305184
+          "so_far": 2620670.84448976
         },
         "clock": {
-          "now": 1789922928.0309012
+          "now": 1789931371.217988
         },
-        "version": "3-5513.29.15.30",
+        "version": "3-5513.30.15.30",
         "step": {
-          "last": 29,
-          "last_wall": 1789897840.0371299,
-          "since": 20462.696901082993,
-          "expected": 16311.3,
-          "progress": 1.0,
-          "phase": "training",
-          "gen_frac": 0.44150080785111606,
-          "restarted_at": 1789902465.334
+          "last": 30,
+          "last_wall": 1789926408.4091287,
+          "since": 892.5438714027405,
+          "expected": 16711.0,
+          "progress": null,
+          "phase": null,
+          "gen_frac": 0.5417027865112327,
+          "restarted_at": null
         },
         "totals": {
-          "tokens_step": 3421290000.0,
+          "tokens_step": 3431370000.0,
           "trained_step": 25088.0,
-          "sandboxes_step": 84848.0,
+          "sandboxes_step": 11180.0,
           "prompts_per_step": 1568.0,
-          "tokens_cum": 71573020000.0,
-          "trained_cum": 727552.0,
-          "sandboxes_cum": 3549664.0,
+          "tokens_cum": 75004390000.0,
+          "trained_cum": 752640.0,
+          "sandboxes_cum": 3560844.0,
           "restarts": 14
         },
         "events": [
-          {
-            "t": 1789578788.328568,
-            "kind": "step",
-            "step": 10,
-            "value": 0.590406,
-            "delta": -0.01343099999999997,
-            "tokens": 2224380000.0,
-            "redo": false
-          },
-          {
-            "t": 1789588716.334,
-            "kind": "restart"
-          },
           {
             "t": 1789598901.2092798,
             "kind": "step",
@@ -4593,12 +4667,25 @@
           {
             "t": 1789902465.334,
             "kind": "restart"
+          },
+          {
+            "t": 1789926408.4091287,
+            "kind": "step",
+            "step": 30,
+            "value": 0.633138,
+            "delta": 0.01102599999999998,
+            "tokens": 3431370000.0,
+            "redo": false
+          },
+          {
+            "t": 1789927300.953,
+            "kind": "end"
           }
         ],
         "headline": {
           "tag": "dynsam/avg@n",
-          "last": 0.622112,
-          "prev": 0.626591,
+          "last": 0.633138,
+          "prev": 0.622112,
           "first": 0.564662,
           "first_step": 1
         }
@@ -6170,246 +6257,177 @@
     {
       "url": "https://mimo.xiaomi.com/rl/api/live?run=pro",
       "data": {
-        "log_time": 1789915724.334,
+        "log_time": 1789927159.334,
         "latest": {
-          "t": 1789915724.334,
-          "step": 30,
-          "accept": 2208,
+          "t": 1789927159.334,
+          "step": 31,
+          "accept": 664,
           "target": 1568,
-          "judged": 2155,
-          "judged_of": 2208,
+          "judged": 658,
+          "judged_of": 664,
           "ds": {
             "code/dataset-bvg7": [
-              69,
+              17,
               52,
-              65,
+              17,
               45
             ],
             "code/dataset-v7yx": [
-              79,
+              27,
               52,
-              75,
-              30
+              27,
+              31
             ],
             "code/dataset-dnpn": [
-              82,
+              20,
               63,
-              78,
-              25
+              19,
+              20
             ],
             "code/dataset-ta4j": [
-              85,
+              22,
               63,
-              79,
-              70
+              22,
+              67
             ],
             "code/dataset-sin0": [
-              231,
-              154,
-              222,
-              49
+              79,
+              153,
+              78,
+              52
             ],
             "code/dataset-obg8": [
-              203,
-              154,
-              190,
-              197
+              51,
+              153,
+              49,
+              199
             ],
             "code/dataset-zg6q": [
-              212,
-              154,
-              207,
-              50
+              58,
+              153,
+              58,
+              57
             ],
             "code/dataset-yfch": [
-              55,
-              55,
+              1,
+              54,
               null,
               91
             ],
             "code/dataset-x7wh": [
-              174,
-              129,
-              166,
-              133
+              51,
+              128,
+              49,
+              128
             ],
             "code/dataset-m1dt": [
-              240,
+              90,
               154,
               null,
               30
             ],
             "general/dataset-epqd": [
-              87,
+              24,
               64,
               null,
-              17
+              19
             ],
             "general/dataset-trla": [
-              90,
+              26,
               64,
               null,
               13
             ],
             "general/dataset-1doa": [
-              39,
-              31,
+              8,
+              32,
               null,
               15
             ],
             "general/dataset-5610": [
-              42,
-              31,
+              13,
+              32,
               null,
-              20
+              17
             ],
             "chat/dataset-lm3t": [
-              23,
-              15,
+              8,
+              17,
               null,
               0
             ],
             "chat/dataset-eup7": [
-              24,
-              16,
+              8,
+              15,
               null,
               0
             ],
             "chat/dataset-8kb6": [
-              24,
-              16,
+              8,
+              15,
               null,
               0
             ],
             "visual/dataset-gtav": [
-              95,
+              31,
               64,
               null,
-              2
+              3
             ],
             "visual/dataset-jzd3": [
-              97,
+              33,
               64,
               null,
               0
             ],
             "visual/dataset-ol8x": [
-              66,
-              41,
+              25,
+              40,
               null,
-              16
+              17
             ],
             "visual/dataset-053e": [
-              62,
-              39,
+              25,
+              40,
               null,
-              16
+              15
             ],
             "visual/dataset-ve5o": [
-              38,
-              31,
+              7,
+              32,
               null,
-              20
+              21
             ],
             "visual/dataset-pt5v": [
-              47,
-              31,
+              18,
+              32,
               null,
-              25
+              23
             ],
             "code/dataset-4onq": [
-              44,
-              31,
+              14,
+              32,
               null,
-              5
+              4
             ]
           },
           "passrate": 0.606,
-          "n": 3644,
-          "pr0": 0.132,
-          "pr1": 0.262,
+          "n": 3680,
+          "pr0": 0.133,
+          "pr1": 0.261,
           "partial": [
             0,
             0,
             0
           ],
           "working": 256,
-          "remain": 332,
-          "remain_partial": 537,
-          "remain_seq": 191,
+          "remain": 325,
+          "remain_partial": 542,
+          "remain_seq": 69,
           "prewarm": 256,
-          "prewarm_wait": 626.0
+          "prewarm_wait": 11188.5
         },
         "entries": [
-          {
-            "t": 1789913290.334,
-            "step": 30,
-            "accept": 1712,
-            "target": 1568,
-            "judged": 1648,
-            "judged_of": 1712,
-            "passrate": 0.602,
-            "n": 2842,
-            "pr0": 0.131,
-            "pr1": 0.266,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 327,
-            "remain_partial": 587,
-            "remain_seq": 217,
-            "prewarm": 256,
-            "prewarm_wait": 590.0
-          },
-          {
-            "t": 1789913341.334,
-            "step": 30,
-            "accept": 1720,
-            "target": 1568,
-            "judged": 1660,
-            "judged_of": 1720,
-            "passrate": 0.601,
-            "n": 2864,
-            "pr0": 0.132,
-            "pr1": 0.267,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 326,
-            "remain_partial": 585,
-            "remain_seq": 243,
-            "prewarm": 256,
-            "prewarm_wait": 590.8
-          },
-          {
-            "t": 1789913364.334,
-            "step": 30,
-            "accept": 1728,
-            "target": 1568,
-            "judged": 1668,
-            "judged_of": 1728,
-            "passrate": 0.6,
-            "n": 2881,
-            "pr0": 0.132,
-            "pr1": 0.268,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 327,
-            "remain_partial": 575,
-            "remain_seq": 196,
-            "prewarm": 256,
-            "prewarm_wait": 590.5
-          },
           {
             "t": 1789913406.334,
             "step": 30,
@@ -7720,6 +7738,75 @@
             "remain_seq": 191,
             "prewarm": 256,
             "prewarm_wait": 626.0
+          },
+          {
+            "t": 1789926459.334,
+            "step": 31,
+            "accept": 650,
+            "target": 1568,
+            "judged": 647,
+            "judged_of": 650,
+            "passrate": 0.605,
+            "n": 3659,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 326,
+            "remain_partial": 529,
+            "remain_seq": 0,
+            "prewarm": 256,
+            "prewarm_wait": 10636.6
+          },
+          {
+            "t": 1789927050.334,
+            "step": 31,
+            "accept": 656,
+            "target": 1568,
+            "judged": 653,
+            "judged_of": 656,
+            "passrate": 0.606,
+            "n": 3668,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 322,
+            "remain_partial": 539,
+            "remain_seq": 36,
+            "prewarm": 256,
+            "prewarm_wait": 11041.2
+          },
+          {
+            "t": 1789927159.334,
+            "step": 31,
+            "accept": 664,
+            "target": 1568,
+            "judged": 658,
+            "judged_of": 664,
+            "passrate": 0.606,
+            "n": 3680,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 542,
+            "remain_seq": 69,
+            "prewarm": 256,
+            "prewarm_wait": 11188.5
           }
         ]
       }
@@ -7971,10 +8058,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/tags?run=pro&v=3-5513.29.15.30",
+      "url": "https://mimo.xiaomi.com/rl/api/tags?run=pro&v=3-5513.30.15.30",
       "data": {
         "run": "pro",
-        "version": "3-5513.29.15.30",
+        "version": "3-5513.30.15.30",
         "tags": [
           "actor/agentic/entropy_loss",
           "actor/agentic/pg_clipfrac",
@@ -12442,10 +12529,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.29.15.30&tags=dynsam%2Favg%40n%2Ccritic%2Frewards%2Fmean%2Cactor%2Fentropy_loss%2Cactor%2Fpg_loss%2Cactor%2Fgrad_norm%2Ctrain_infer_diff%2Fnew_infer%2Fkl%2Cctx_total_length%2Fmean%2Cdynsam%2Fagg_turn%2Fmean%2Cperf%2Ftotal_num_tokens",
+      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.30.15.30&tags=dynsam%2Favg%40n%2Ccritic%2Frewards%2Fmean%2Cactor%2Fentropy_loss%2Cactor%2Fpg_loss%2Cactor%2Fgrad_norm%2Ctrain_infer_diff%2Fnew_infer%2Fkl%2Cctx_total_length%2Fmean%2Cdynsam%2Fagg_turn%2Fmean%2Cperf%2Ftotal_num_tokens",
       "data": {
         "run": "pro",
-        "version": "3-5513.29.15.30",
+        "version": "3-5513.30.15.30",
         "steps": [
           1,
           2,
@@ -12475,7 +12562,8 @@
           26,
           27,
           28,
-          29
+          29,
+          30
         ],
         "walls": [
           1789492877.8213444,
@@ -12506,7 +12594,8 @@
           1789840512.2571833,
           1789855804.2271216,
           1789881123.7658803,
-          1789897840.0371299
+          1789897840.0371299,
+          1789926408.4091287
         ],
         "run_start": 1789468339.334,
         "series": {
@@ -12539,7 +12628,8 @@
             0.62138,
             0.602605,
             0.626591,
-            0.622112
+            0.622112,
+            0.633138
           ],
           "critic/rewards/mean": [
             0.552211,
@@ -12570,7 +12660,8 @@
             0.59637,
             0.586579,
             0.594584,
-            0.593756
+            0.593756,
+            0.596393
           ],
           "actor/entropy_loss": [
             0.395265,
@@ -12601,7 +12692,8 @@
             0.455583,
             0.456695,
             0.468514,
-            0.46051
+            0.46051,
+            0.461504
           ],
           "actor/pg_loss": [
             0.00411032,
@@ -12632,7 +12724,8 @@
             0.00439114,
             0.00822892,
             0.00434965,
-            0.0144566
+            0.0144566,
+            0.0182077
           ],
           "actor/grad_norm": [
             0.00533389,
@@ -12663,7 +12756,8 @@
             0.00468369,
             0.00482392,
             0.00454988,
-            0.00437199
+            0.00437199,
+            0.0048511
           ],
           "train_infer_diff/new_infer/kl": [
             0.0021894,
@@ -12694,7 +12788,8 @@
             0.00444067,
             0.00740074,
             0.00383558,
-            0.00780915
+            0.00780915,
+            0.00277385
           ],
           "ctx_total_length/mean": [
             72177.6,
@@ -12725,7 +12820,8 @@
             117081.0,
             126097.0,
             121091.0,
-            136009.0
+            136009.0,
+            137239.0
           ],
           "dynsam/agg_turn/mean": [
             47.4689,
@@ -12756,7 +12852,8 @@
             42.1208,
             49.1554,
             41.3541,
-            48.9121
+            48.9121,
+            43.5635
           ],
           "perf/total_num_tokens": [
             1800520000.0,
@@ -12787,7 +12884,8 @@
             2925840000.0,
             3151650000.0,
             3024470000.0,
-            3421290000.0
+            3421290000.0,
+            3431370000.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/step": [
             66.0,
@@ -12818,7 +12916,8 @@
             44.0,
             36.0,
             41.0,
-            33.0
+            33.0,
+            44.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/held": [
             66.0,
@@ -12849,7 +12948,8 @@
             44.0,
             49.0,
             41.0,
-            43.0
+            43.0,
+            44.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/carryover": [
             35.0,
@@ -12880,7 +12980,8 @@
             13.0,
             18.0,
             10.0,
-            11.0
+            11.0,
+            13.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/step": [
             126.0,
@@ -12911,7 +13012,8 @@
             67.0,
             71.0,
             68.0,
-            68.0
+            68.0,
+            69.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/held": [
             126.0,
@@ -12942,7 +13044,8 @@
             67.0,
             86.0,
             68.0,
-            84.0
+            84.0,
+            69.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/carryover": [
             74.0,
@@ -12973,7 +13076,8 @@
             15.0,
             35.0,
             16.0,
-            33.0
+            33.0,
+            17.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/step": [
             95.0,
@@ -13004,7 +13108,8 @@
             88.0,
             79.0,
             69.0,
-            71.0
+            71.0,
+            82.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/held": [
             95.0,
@@ -13035,7 +13140,8 @@
             88.0,
             104.0,
             69.0,
-            77.0
+            77.0,
+            82.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/carryover": [
             32.0,
@@ -13066,7 +13172,8 @@
             25.0,
             42.0,
             6.0,
-            15.0
+            15.0,
+            19.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/step": [
             311.0,
@@ -13097,7 +13204,8 @@
             187.0,
             192.0,
             181.0,
-            163.0
+            163.0,
+            240.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/held": [
             311.0,
@@ -13128,7 +13236,8 @@
             187.0,
             225.0,
             181.0,
-            190.0
+            190.0,
+            240.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/carryover": [
             157.0,
@@ -13159,7 +13268,8 @@
             33.0,
             71.0,
             27.0,
-            36.0
+            36.0,
+            86.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/step": [
             246.0,
@@ -13190,7 +13300,8 @@
             208.0,
             251.0,
             176.0,
-            200.0
+            200.0,
+            203.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/held": [
             246.0,
@@ -13221,7 +13332,8 @@
             208.0,
             305.0,
             176.0,
-            222.0
+            222.0,
+            203.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/carryover": [
             92.0,
@@ -13252,7 +13364,8 @@
             54.0,
             151.0,
             22.0,
-            69.0
+            69.0,
+            49.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/step": [
             249.0,
@@ -13283,7 +13396,8 @@
             233.0,
             156.0,
             202.0,
-            148.0
+            148.0,
+            231.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/held": [
             249.0,
@@ -13314,7 +13428,8 @@
             233.0,
             235.0,
             202.0,
-            196.0
+            196.0,
+            231.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/carryover": [
             95.0,
@@ -13345,7 +13460,8 @@
             79.0,
             81.0,
             48.0,
-            43.0
+            43.0,
+            77.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/step": [
             101.0,
@@ -13376,7 +13492,8 @@
             87.0,
             97.0,
             82.0,
-            99.0
+            99.0,
+            85.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/held": [
             101.0,
@@ -13407,7 +13524,8 @@
             87.0,
             121.0,
             82.0,
-            118.0
+            118.0,
+            85.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/carryover": [
             38.0,
@@ -13438,7 +13556,8 @@
             24.0,
             59.0,
             19.0,
-            56.0
+            56.0,
+            22.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/step": [
             77.0,
@@ -13469,7 +13588,8 @@
             63.0,
             58.0,
             67.0,
-            60.0
+            60.0,
+            79.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/held": [
             77.0,
@@ -13500,7 +13620,8 @@
             63.0,
             69.0,
             67.0,
-            75.0
+            75.0,
+            79.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/carryover": [
             25.0,
@@ -13531,7 +13652,8 @@
             11.0,
             18.0,
             15.0,
-            24.0
+            24.0,
+            27.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/step": [
             282.0,
@@ -13562,7 +13684,8 @@
             177.0,
             218.0,
             156.0,
-            167.0
+            167.0,
+            174.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/held": [
             282.0,
@@ -13593,7 +13716,8 @@
             177.0,
             266.0,
             156.0,
-            194.0
+            194.0,
+            174.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/carryover": [
             153.0,
@@ -13624,7 +13748,8 @@
             48.0,
             138.0,
             27.0,
-            66.0
+            66.0,
+            45.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/step": [
             55.0,
@@ -13655,7 +13780,8 @@
             55.0,
             55.0,
             58.0,
-            80.0
+            80.0,
+            55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/held": [
             55.0,
@@ -13686,7 +13812,8 @@
             55.0,
             55.0,
             58.0,
-            80.0
+            80.0,
+            55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/carryover": [
             0.0,
@@ -13717,7 +13844,8 @@
             0.0,
             0.0,
             0.0,
-            25.0
+            25.0,
+            0.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/step": [
             227.0,
@@ -13748,7 +13876,8 @@
             190.0,
             167.0,
             181.0,
-            166.0
+            166.0,
+            212.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/held": [
             227.0,
@@ -13779,7 +13908,8 @@
             190.0,
             203.0,
             181.0,
-            193.0
+            193.0,
+            212.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/carryover": [
             73.0,
@@ -13810,7 +13940,8 @@
             36.0,
             49.0,
             27.0,
-            40.0
+            40.0,
+            58.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/step": [
             48.0,
@@ -13841,7 +13972,8 @@
             37.0,
             38.0,
             38.0,
-            37.0
+            37.0,
+            39.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/held": [
             48.0,
@@ -13872,7 +14004,8 @@
             37.0,
             44.0,
             38.0,
-            44.0
+            44.0,
+            39.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/carryover": [
             17.0,
@@ -13903,7 +14036,8 @@
             6.0,
             13.0,
             7.0,
-            12.0
+            12.0,
+            8.0
           ],
           "dynsam/general/dataset-5610/num_accepted/step": [
             47.0,
@@ -13934,7 +14068,8 @@
             40.0,
             36.0,
             37.0,
-            26.0
+            26.0,
+            42.0
           ],
           "dynsam/general/dataset-5610/num_accepted/held": [
             47.0,
@@ -13965,7 +14100,8 @@
             40.0,
             45.0,
             37.0,
-            32.0
+            32.0,
+            42.0
           ],
           "dynsam/general/dataset-5610/num_accepted/carryover": [
             16.0,
@@ -13996,7 +14132,8 @@
             9.0,
             14.0,
             6.0,
-            0.0
+            0.0,
+            11.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/step": [
             102.0,
@@ -14027,7 +14164,8 @@
             88.0,
             71.0,
             78.0,
-            74.0
+            74.0,
+            87.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/held": [
             102.0,
@@ -14058,7 +14196,8 @@
             88.0,
             95.0,
             78.0,
-            88.0
+            88.0,
+            87.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/carryover": [
             38.0,
@@ -14089,6 +14228,7 @@
             24.0,
             30.0,
             14.0,
+            23.0,
             23.0
           ],
           "dynsam/general/dataset-trla/num_accepted/step": [
@@ -14120,7 +14260,8 @@
             82.0,
             69.0,
             81.0,
-            71.0
+            71.0,
+            90.0
           ],
           "dynsam/general/dataset-trla/num_accepted/held": [
             99.0,
@@ -14151,7 +14292,8 @@
             82.0,
             87.0,
             81.0,
-            88.0
+            88.0,
+            90.0
           ],
           "dynsam/general/dataset-trla/num_accepted/carryover": [
             35.0,
@@ -14182,7 +14324,8 @@
             18.0,
             22.0,
             17.0,
-            23.0
+            23.0,
+            26.0
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/step": [
             196.0,
@@ -14199,6 +14342,7 @@
             112.0,
             124.0,
             97.0,
+            null,
             null,
             null,
             null,
@@ -14244,6 +14388,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/carryover": [
@@ -14261,6 +14406,7 @@
             47.0,
             107.0,
             118.0,
+            null,
             null,
             null,
             null,
@@ -14306,7 +14452,8 @@
             47.0,
             68.0,
             50.0,
-            54.0
+            54.0,
+            62.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/held": [
             54.0,
@@ -14337,7 +14484,8 @@
             47.0,
             76.0,
             50.0,
-            65.0
+            65.0,
+            62.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/carryover": [
             23.0,
@@ -14368,7 +14516,8 @@
             8.0,
             37.0,
             11.0,
-            26.0
+            26.0,
+            23.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/step": [
             63.0,
@@ -14399,7 +14548,8 @@
             90.0,
             70.0,
             81.0,
-            76.0
+            76.0,
+            95.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/held": [
             63.0,
@@ -14430,7 +14580,8 @@
             90.0,
             96.0,
             81.0,
-            93.0
+            93.0,
+            95.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/carryover": [
             22.0,
@@ -14461,7 +14612,8 @@
             26.0,
             31.0,
             17.0,
-            28.0
+            28.0,
+            31.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/step": [
             62.0,
@@ -14492,7 +14644,8 @@
             90.0,
             73.0,
             92.0,
-            65.0
+            65.0,
+            97.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/held": [
             62.0,
@@ -14523,7 +14676,8 @@
             90.0,
             99.0,
             92.0,
-            93.0
+            93.0,
+            97.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/carryover": [
             21.0,
@@ -14554,7 +14708,8 @@
             26.0,
             34.0,
             28.0,
-            28.0
+            28.0,
+            33.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/step": [
             57.0,
@@ -14585,7 +14740,8 @@
             57.0,
             61.0,
             61.0,
-            45.0
+            45.0,
+            66.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/held": [
             57.0,
@@ -14616,7 +14772,8 @@
             57.0,
             77.0,
             61.0,
-            65.0
+            65.0,
+            66.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/carryover": [
             26.0,
@@ -14647,7 +14804,8 @@
             16.0,
             36.0,
             20.0,
-            24.0
+            24.0,
+            25.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/step": [
             48.0,
@@ -14678,7 +14836,8 @@
             37.0,
             54.0,
             39.0,
-            46.0
+            46.0,
+            47.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/held": [
             48.0,
@@ -14709,7 +14868,8 @@
             37.0,
             60.0,
             39.0,
-            54.0
+            54.0,
+            47.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/carryover": [
             17.0,
@@ -14740,7 +14900,8 @@
             6.0,
             29.0,
             8.0,
-            22.0
+            22.0,
+            16.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/step": [
             52.0,
@@ -14771,7 +14932,8 @@
             44.0,
             51.0,
             42.0,
-            57.0
+            57.0,
+            38.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/held": [
             52.0,
@@ -14802,7 +14964,8 @@
             44.0,
             64.0,
             42.0,
-            68.0
+            68.0,
+            38.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/carryover": [
             21.0,
@@ -14833,7 +14996,8 @@
             13.0,
             33.0,
             11.0,
-            36.0
+            36.0,
+            7.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/step": [
             24.0,
@@ -14864,7 +15028,8 @@
             24.0,
             17.0,
             22.0,
-            17.0
+            17.0,
+            24.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/held": [
             24.0,
@@ -14895,7 +15060,8 @@
             24.0,
             25.0,
             22.0,
-            23.0
+            23.0,
+            24.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/carryover": [
             8.0,
@@ -14926,6 +15092,7 @@
             8.0,
             9.0,
             6.0,
+            8.0,
             8.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/step": [
@@ -14957,7 +15124,8 @@
             23.0,
             17.0,
             24.0,
-            14.0
+            14.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/held": [
             26.0,
@@ -14988,7 +15156,8 @@
             23.0,
             24.0,
             24.0,
-            22.0
+            22.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/carryover": [
             10.0,
@@ -15019,7 +15188,8 @@
             7.0,
             8.0,
             8.0,
-            7.0
+            7.0,
+            8.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/step": [
             23.0,
@@ -15050,7 +15220,8 @@
             20.0,
             20.0,
             23.0,
-            16.0
+            16.0,
+            23.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/held": [
             23.0,
@@ -15081,7 +15252,8 @@
             20.0,
             25.0,
             23.0,
-            24.0
+            24.0,
+            23.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/carryover": [
             8.0,
@@ -15112,9 +15284,11 @@
             5.0,
             9.0,
             8.0,
+            8.0,
             8.0
           ],
           "dynsam/num_target": [
+            1568.0,
             1568.0,
             1568.0,
             1568.0,
@@ -15149,10 +15323,10 @@
       }
     },
     {
-      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.29.15.30&tags=dynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fstep%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fheld%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fnum_target",
+      "url": "https://mimo.xiaomi.com/rl/api/series?run=pro&v=3-5513.30.15.30&tags=dynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-4onq%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-bvg7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-dnpn%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-m1dt%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-obg8%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-sin0%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-ta4j%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-v7yx%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-x7wh%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-yfch%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fstep%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fheld%2Cdynsam%2Fcode%2Fdataset-zg6q%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-1doa%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-5610%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-epqd%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fstep%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fheld%2Cdynsam%2Fgeneral%2Fdataset-trla%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fstep%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fheld%2Cdynsam%2Fcyber%2Fdataset-9aui%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-053e%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-gtav%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-jzd3%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ol8x%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-pt5v%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fstep%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fheld%2Cdynsam%2Fvisual%2Fdataset-ve5o%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-8kb6%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-eup7%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fstep%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fheld%2Cdynsam%2Fchat%2Fdataset-lm3t%2Fnum_accepted%2Fcarryover%2Cdynsam%2Fnum_target",
       "data": {
         "run": "pro",
-        "version": "3-5513.29.15.30",
+        "version": "3-5513.30.15.30",
         "steps": [
           1,
           2,
@@ -15182,7 +15356,8 @@
           26,
           27,
           28,
-          29
+          29,
+          30
         ],
         "walls": [
           1789492877.8213444,
@@ -15213,7 +15388,8 @@
           1789840512.2571833,
           1789855804.2271216,
           1789881123.7658803,
-          1789897840.0371299
+          1789897840.0371299,
+          1789926408.4091287
         ],
         "run_start": 1789468339.334,
         "series": {
@@ -15246,7 +15422,8 @@
             44.0,
             36.0,
             41.0,
-            33.0
+            33.0,
+            44.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/held": [
             66.0,
@@ -15277,7 +15454,8 @@
             44.0,
             49.0,
             41.0,
-            43.0
+            43.0,
+            44.0
           ],
           "dynsam/code/dataset-4onq/num_accepted/carryover": [
             35.0,
@@ -15308,7 +15486,8 @@
             13.0,
             18.0,
             10.0,
-            11.0
+            11.0,
+            13.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/step": [
             126.0,
@@ -15339,7 +15518,8 @@
             67.0,
             71.0,
             68.0,
-            68.0
+            68.0,
+            69.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/held": [
             126.0,
@@ -15370,7 +15550,8 @@
             67.0,
             86.0,
             68.0,
-            84.0
+            84.0,
+            69.0
           ],
           "dynsam/code/dataset-bvg7/num_accepted/carryover": [
             74.0,
@@ -15401,7 +15582,8 @@
             15.0,
             35.0,
             16.0,
-            33.0
+            33.0,
+            17.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/step": [
             95.0,
@@ -15432,7 +15614,8 @@
             88.0,
             79.0,
             69.0,
-            71.0
+            71.0,
+            82.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/held": [
             95.0,
@@ -15463,7 +15646,8 @@
             88.0,
             104.0,
             69.0,
-            77.0
+            77.0,
+            82.0
           ],
           "dynsam/code/dataset-dnpn/num_accepted/carryover": [
             32.0,
@@ -15494,7 +15678,8 @@
             25.0,
             42.0,
             6.0,
-            15.0
+            15.0,
+            19.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/step": [
             311.0,
@@ -15525,7 +15710,8 @@
             187.0,
             192.0,
             181.0,
-            163.0
+            163.0,
+            240.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/held": [
             311.0,
@@ -15556,7 +15742,8 @@
             187.0,
             225.0,
             181.0,
-            190.0
+            190.0,
+            240.0
           ],
           "dynsam/code/dataset-m1dt/num_accepted/carryover": [
             157.0,
@@ -15587,7 +15774,8 @@
             33.0,
             71.0,
             27.0,
-            36.0
+            36.0,
+            86.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/step": [
             246.0,
@@ -15618,7 +15806,8 @@
             208.0,
             251.0,
             176.0,
-            200.0
+            200.0,
+            203.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/held": [
             246.0,
@@ -15649,7 +15838,8 @@
             208.0,
             305.0,
             176.0,
-            222.0
+            222.0,
+            203.0
           ],
           "dynsam/code/dataset-obg8/num_accepted/carryover": [
             92.0,
@@ -15680,7 +15870,8 @@
             54.0,
             151.0,
             22.0,
-            69.0
+            69.0,
+            49.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/step": [
             249.0,
@@ -15711,7 +15902,8 @@
             233.0,
             156.0,
             202.0,
-            148.0
+            148.0,
+            231.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/held": [
             249.0,
@@ -15742,7 +15934,8 @@
             233.0,
             235.0,
             202.0,
-            196.0
+            196.0,
+            231.0
           ],
           "dynsam/code/dataset-sin0/num_accepted/carryover": [
             95.0,
@@ -15773,7 +15966,8 @@
             79.0,
             81.0,
             48.0,
-            43.0
+            43.0,
+            77.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/step": [
             101.0,
@@ -15804,7 +15998,8 @@
             87.0,
             97.0,
             82.0,
-            99.0
+            99.0,
+            85.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/held": [
             101.0,
@@ -15835,7 +16030,8 @@
             87.0,
             121.0,
             82.0,
-            118.0
+            118.0,
+            85.0
           ],
           "dynsam/code/dataset-ta4j/num_accepted/carryover": [
             38.0,
@@ -15866,7 +16062,8 @@
             24.0,
             59.0,
             19.0,
-            56.0
+            56.0,
+            22.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/step": [
             77.0,
@@ -15897,7 +16094,8 @@
             63.0,
             58.0,
             67.0,
-            60.0
+            60.0,
+            79.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/held": [
             77.0,
@@ -15928,7 +16126,8 @@
             63.0,
             69.0,
             67.0,
-            75.0
+            75.0,
+            79.0
           ],
           "dynsam/code/dataset-v7yx/num_accepted/carryover": [
             25.0,
@@ -15959,7 +16158,8 @@
             11.0,
             18.0,
             15.0,
-            24.0
+            24.0,
+            27.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/step": [
             282.0,
@@ -15990,7 +16190,8 @@
             177.0,
             218.0,
             156.0,
-            167.0
+            167.0,
+            174.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/held": [
             282.0,
@@ -16021,7 +16222,8 @@
             177.0,
             266.0,
             156.0,
-            194.0
+            194.0,
+            174.0
           ],
           "dynsam/code/dataset-x7wh/num_accepted/carryover": [
             153.0,
@@ -16052,7 +16254,8 @@
             48.0,
             138.0,
             27.0,
-            66.0
+            66.0,
+            45.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/step": [
             55.0,
@@ -16083,7 +16286,8 @@
             55.0,
             55.0,
             58.0,
-            80.0
+            80.0,
+            55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/held": [
             55.0,
@@ -16114,7 +16318,8 @@
             55.0,
             55.0,
             58.0,
-            80.0
+            80.0,
+            55.0
           ],
           "dynsam/code/dataset-yfch/num_accepted/carryover": [
             0.0,
@@ -16145,7 +16350,8 @@
             0.0,
             0.0,
             0.0,
-            25.0
+            25.0,
+            0.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/step": [
             227.0,
@@ -16176,7 +16382,8 @@
             190.0,
             167.0,
             181.0,
-            166.0
+            166.0,
+            212.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/held": [
             227.0,
@@ -16207,7 +16414,8 @@
             190.0,
             203.0,
             181.0,
-            193.0
+            193.0,
+            212.0
           ],
           "dynsam/code/dataset-zg6q/num_accepted/carryover": [
             73.0,
@@ -16238,7 +16446,8 @@
             36.0,
             49.0,
             27.0,
-            40.0
+            40.0,
+            58.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/step": [
             48.0,
@@ -16269,7 +16478,8 @@
             37.0,
             38.0,
             38.0,
-            37.0
+            37.0,
+            39.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/held": [
             48.0,
@@ -16300,7 +16510,8 @@
             37.0,
             44.0,
             38.0,
-            44.0
+            44.0,
+            39.0
           ],
           "dynsam/general/dataset-1doa/num_accepted/carryover": [
             17.0,
@@ -16331,7 +16542,8 @@
             6.0,
             13.0,
             7.0,
-            12.0
+            12.0,
+            8.0
           ],
           "dynsam/general/dataset-5610/num_accepted/step": [
             47.0,
@@ -16362,7 +16574,8 @@
             40.0,
             36.0,
             37.0,
-            26.0
+            26.0,
+            42.0
           ],
           "dynsam/general/dataset-5610/num_accepted/held": [
             47.0,
@@ -16393,7 +16606,8 @@
             40.0,
             45.0,
             37.0,
-            32.0
+            32.0,
+            42.0
           ],
           "dynsam/general/dataset-5610/num_accepted/carryover": [
             16.0,
@@ -16424,7 +16638,8 @@
             9.0,
             14.0,
             6.0,
-            0.0
+            0.0,
+            11.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/step": [
             102.0,
@@ -16455,7 +16670,8 @@
             88.0,
             71.0,
             78.0,
-            74.0
+            74.0,
+            87.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/held": [
             102.0,
@@ -16486,7 +16702,8 @@
             88.0,
             95.0,
             78.0,
-            88.0
+            88.0,
+            87.0
           ],
           "dynsam/general/dataset-epqd/num_accepted/carryover": [
             38.0,
@@ -16517,6 +16734,7 @@
             24.0,
             30.0,
             14.0,
+            23.0,
             23.0
           ],
           "dynsam/general/dataset-trla/num_accepted/step": [
@@ -16548,7 +16766,8 @@
             82.0,
             69.0,
             81.0,
-            71.0
+            71.0,
+            90.0
           ],
           "dynsam/general/dataset-trla/num_accepted/held": [
             99.0,
@@ -16579,7 +16798,8 @@
             82.0,
             87.0,
             81.0,
-            88.0
+            88.0,
+            90.0
           ],
           "dynsam/general/dataset-trla/num_accepted/carryover": [
             35.0,
@@ -16610,7 +16830,8 @@
             18.0,
             22.0,
             17.0,
-            23.0
+            23.0,
+            26.0
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/step": [
             196.0,
@@ -16627,6 +16848,7 @@
             112.0,
             124.0,
             97.0,
+            null,
             null,
             null,
             null,
@@ -16672,6 +16894,7 @@
             null,
             null,
             null,
+            null,
             null
           ],
           "dynsam/cyber/dataset-9aui/num_accepted/carryover": [
@@ -16689,6 +16912,7 @@
             47.0,
             107.0,
             118.0,
+            null,
             null,
             null,
             null,
@@ -16734,7 +16958,8 @@
             47.0,
             68.0,
             50.0,
-            54.0
+            54.0,
+            62.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/held": [
             54.0,
@@ -16765,7 +16990,8 @@
             47.0,
             76.0,
             50.0,
-            65.0
+            65.0,
+            62.0
           ],
           "dynsam/visual/dataset-053e/num_accepted/carryover": [
             23.0,
@@ -16796,7 +17022,8 @@
             8.0,
             37.0,
             11.0,
-            26.0
+            26.0,
+            23.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/step": [
             63.0,
@@ -16827,7 +17054,8 @@
             90.0,
             70.0,
             81.0,
-            76.0
+            76.0,
+            95.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/held": [
             63.0,
@@ -16858,7 +17086,8 @@
             90.0,
             96.0,
             81.0,
-            93.0
+            93.0,
+            95.0
           ],
           "dynsam/visual/dataset-gtav/num_accepted/carryover": [
             22.0,
@@ -16889,7 +17118,8 @@
             26.0,
             31.0,
             17.0,
-            28.0
+            28.0,
+            31.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/step": [
             62.0,
@@ -16920,7 +17150,8 @@
             90.0,
             73.0,
             92.0,
-            65.0
+            65.0,
+            97.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/held": [
             62.0,
@@ -16951,7 +17182,8 @@
             90.0,
             99.0,
             92.0,
-            93.0
+            93.0,
+            97.0
           ],
           "dynsam/visual/dataset-jzd3/num_accepted/carryover": [
             21.0,
@@ -16982,7 +17214,8 @@
             26.0,
             34.0,
             28.0,
-            28.0
+            28.0,
+            33.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/step": [
             57.0,
@@ -17013,7 +17246,8 @@
             57.0,
             61.0,
             61.0,
-            45.0
+            45.0,
+            66.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/held": [
             57.0,
@@ -17044,7 +17278,8 @@
             57.0,
             77.0,
             61.0,
-            65.0
+            65.0,
+            66.0
           ],
           "dynsam/visual/dataset-ol8x/num_accepted/carryover": [
             26.0,
@@ -17075,7 +17310,8 @@
             16.0,
             36.0,
             20.0,
-            24.0
+            24.0,
+            25.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/step": [
             48.0,
@@ -17106,7 +17342,8 @@
             37.0,
             54.0,
             39.0,
-            46.0
+            46.0,
+            47.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/held": [
             48.0,
@@ -17137,7 +17374,8 @@
             37.0,
             60.0,
             39.0,
-            54.0
+            54.0,
+            47.0
           ],
           "dynsam/visual/dataset-pt5v/num_accepted/carryover": [
             17.0,
@@ -17168,7 +17406,8 @@
             6.0,
             29.0,
             8.0,
-            22.0
+            22.0,
+            16.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/step": [
             52.0,
@@ -17199,7 +17438,8 @@
             44.0,
             51.0,
             42.0,
-            57.0
+            57.0,
+            38.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/held": [
             52.0,
@@ -17230,7 +17470,8 @@
             44.0,
             64.0,
             42.0,
-            68.0
+            68.0,
+            38.0
           ],
           "dynsam/visual/dataset-ve5o/num_accepted/carryover": [
             21.0,
@@ -17261,7 +17502,8 @@
             13.0,
             33.0,
             11.0,
-            36.0
+            36.0,
+            7.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/step": [
             24.0,
@@ -17292,7 +17534,8 @@
             24.0,
             17.0,
             22.0,
-            17.0
+            17.0,
+            24.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/held": [
             24.0,
@@ -17323,7 +17566,8 @@
             24.0,
             25.0,
             22.0,
-            23.0
+            23.0,
+            24.0
           ],
           "dynsam/chat/dataset-8kb6/num_accepted/carryover": [
             8.0,
@@ -17354,6 +17598,7 @@
             8.0,
             9.0,
             6.0,
+            8.0,
             8.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/step": [
@@ -17385,7 +17630,8 @@
             23.0,
             17.0,
             24.0,
-            14.0
+            14.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/held": [
             26.0,
@@ -17416,7 +17662,8 @@
             23.0,
             24.0,
             24.0,
-            22.0
+            22.0,
+            24.0
           ],
           "dynsam/chat/dataset-eup7/num_accepted/carryover": [
             10.0,
@@ -17447,7 +17694,8 @@
             7.0,
             8.0,
             8.0,
-            7.0
+            7.0,
+            8.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/step": [
             23.0,
@@ -17478,7 +17726,8 @@
             20.0,
             20.0,
             23.0,
-            16.0
+            16.0,
+            23.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/held": [
             23.0,
@@ -17509,7 +17758,8 @@
             20.0,
             25.0,
             23.0,
-            24.0
+            24.0,
+            23.0
           ],
           "dynsam/chat/dataset-lm3t/num_accepted/carryover": [
             8.0,
@@ -17540,9 +17790,11 @@
             5.0,
             9.0,
             8.0,
+            8.0,
             8.0
           ],
           "dynsam/num_target": [
+            1568.0,
             1568.0,
             1568.0,
             1568.0,
@@ -17586,5 +17838,5 @@
     "headline": "",
     "status": ""
   },
-  "finished_at": "2026-09-20T16:48:58+00:00"
+  "finished_at": "2026-09-20T19:09:43+00:00"
 }
