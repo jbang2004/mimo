@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-21T09:03:40+00:00",
+  "captured_at": "2026-09-21T12:33:44+00:00",
   "source_url": "https://mimo.xiaomi.com/rl/",
   "capture_ok": true,
   "note": "Public browser capture; source material, not verified analysis.",
@@ -15,7 +15,7 @@
           "mode": "ended"
         },
         "clock": {
-          "now": 1789981419.8557568
+          "now": 1789994026.984316
         },
         "version": "3-5513.32.6.28",
         "step": {
@@ -306,7 +306,7 @@
           "mode": "ended"
         },
         "clock": {
-          "now": 1789981420.2995138
+          "now": 1789994026.9851055
         },
         "version": "3-5513.30.15.30",
         "step": {
@@ -3985,7 +3985,7 @@
       "ctx_total_length/mean": "total context length per trajectory (prompt + response), in tokens"
     }
   },
-  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$3,474,715\nBEIJING\n17:03:49\nLOS ANGELES\n02:03:49\nNEW YORK\n05:03:49\nLONDON\n10:03:49\n◐\nnotices\n1d 22h ago\nwe filtered out tasks that are relatively easy for the current pro model.\n3d 05h ago\nthe pro run restarted at step 17 due to a GPU OOM issue caused by expert load imbalance. we have adjusted the training parallelism strategy.\n3d 20h ago\nthere was a network connectivity issue between the pro training cluster and the grader deployment. we have restarted the run. we also removed the cyber dataset from the upcoming pro run, since we observed some bad patterns in the rollout logs.\n4d 06h ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n4d 12h ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n4d 15h ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nstopped\nstep 30\n5d 07:29:21\nstarted 2026-09-15 10:32 UTC\nstopped 2026-09-20\ndynsam/avg@n · Δ vs step 1\n0.633 ▲0.068\ncost so far\n$2,620,670\ntokens · step 30\n3.43B\ntokens · total\n75B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nstopped\nstep 30\n3d 11:05:40\nstarted 2026-09-15 15:16 UTC\nstopped 2026-09-19\ndynsam/avg@n · Δ vs step 1\n0.644 ▲0.130\ncost so far\n$854,044\ntokens · step 30\n3.7B\ntokens · total\n81.4B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 72.57\nmimo-v2.6-flash 65.68\nIn-house Coding Bench avg@3\nmimo-v2.6-pro 65.43\nmimo-v2.6-flash 62.87\nAutomationBench v1.0.6 avg@3\nmimo-v2.6-pro 53.10\nmimo-v2.6-flash 52.70\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.633▲0.011\n0.644▼0.019\ncritic/rewards/mean\n0.596▲0.00264\n0.601▲0.00269\nactor/entropy_loss\n0.462▲0.000994\n0.471▲0.00254\nactor/pg_loss\n0.018▲0.00375\n0.026▲0.014\nactor/grad_norm\n0.00485▲0.000479\n0.00628▼0.00152\ntrain_infer_diff/new_infer/kl\n0.00277▼0.00504\n0.011▲0.00452\nctx_total_length/mean\n137k▲1.2k\n148k▲17k\ndynsam/agg_turn/mean\n43.6▼5.35\n68.5▲7.63\nperf/total_num_tokens\n3.43B▲10M\n3.7B▲430M\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 15h 04m ago\n15h 02m ago\nrun stopped\n15h 04m ago\naccepted 664/1,568 · judged 658 · pass 0.606 (n=3,680) · remaining 325 +542 partial +69 rewarding · prewarm 256\nstep 31\n15h 06m ago\naccepted 656/1,568 · judged 653 · pass 0.606 (n=3,668) · remaining 322 +539 partial +36 rewarding · prewarm 256\nstep 31\n15h 16m ago\naccepted 650/1,568 · judged 647 · pass 0.605 (n=3,659) · remaining 326 +529 partial +0 rewarding · prewarm 256\nstep 31\n15h 16m ago\nstep 30 done · dynsam/avg@n 0.633 ▲0.011\n3.43B tok\n18h 15m ago\naccepted 2,208/1,568 · judged 2,155 · pass 0.606 (n=3,644) · remaining 332 +537 partial +191 rewarding · prewarm 256\nstep 30\n18h 15m ago\naccepted 2,200/1,568 · judged 2,147 · pass 0.606 (n=3,632) · remaining 331 +539 partial +212 rewarding · prewarm 256\nstep 30\n18h 16m ago\naccepted 2,192/1,568 · judged 2,137 · pass 0.606 (n=3,616) · remaining 328 +542 partial +199 rewarding · prewarm 256\nstep 30\n18h 17m ago\naccepted 2,184/1,568 · judged 2,132 · pass 0.606 (n=3,604) · remaining 326 +543 partial +185 rewarding · prewarm 256\nstep 30\n18h 17m ago\naccepted 2,176/1,568 · judged 2,126 · pass 0.606 (n=3,589) · remaining 327 +547 partial +193 rewarding · prewarm 256\nstep 30\n18h 18m ago\naccepted 2,168/1,568 · judged 2,118 · pass 0.606 (n=3,578) · remaining 323 +555 partial +190 rewarding · prewarm 256\nstep 30\n18h 19m ago\naccepted 2,160/1,568 · judged 2,108 · pass 0.606 (n=3,566) · remaining 323 +555 partial +191 rewarding · prewarm 256\nstep 30\n18h 19m ago\naccepted 2,152/1,568 · judged 2,100 · pass 0.605 (n=3,556) · remaining 324 +556 partial +186 rewarding · prewarm 256\nstep 30\n18h 20m ago\naccepted 2,144/1,568 · judged 2,091 · pass 0.606 (n=3,539) · remaining 328 +547 partial +186 rewarding · prewarm 256\nstep 30\n18h 21m ago\naccepted 2,136/1,568 · judged 2,087 · pass 0.605 (n=3,528) · remaining 333 +546 partial +186 rewarding · prewarm 256\nstep 30\n18h 21m ago\naccepted 2,128/1,568 · judged 2,081 · pass 0.605 (n=3,518) · remaining 338 +544 partial +207 rewarding · prewarm 256\nstep 30\n18h 22m ago\naccepted 2,120/1,568 · judged 2,071 · pass 0.605 (n=3,502) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n18h 23m ago\naccepted 2,112/1,568 · judged 2,063 · pass 0.605 (n=3,489) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n18h 24m ago\naccepted 2,104/1,568 · judged 2,055 · pass 0.605 (n=3,476) · remaining 341 +534 partial +149 rewarding · prewarm 256\nstep 30\n18h 25m ago\naccepted 2,096/1,568 · judged 2,039 · pass 0.606 (n=3,459) · remaining 336 +537 partial +138 rewarding · prewarm 256\nstep 30\n18h 26m ago\naccepted 2,088/1,568 · judged 2,032 · pass 0.606 (n=3,447) · remaining 337 +539 partial +149 rewarding · prewarm 256\nstep 30\n18h 26m ago\naccepted 2,080/1,568 · judged 2,023 · pass 0.606 (n=3,433) · remaining 333 +543 partial +165 rewarding · prewarm 256\nstep 30\n18h 28m ago\naccepted 2,064/1,568 · judged 2,006 · pass 0.606 (n=3,407) · remaining 334 +540 partial +160 rewarding · prewarm 256\nstep 30\n18h 29m ago\naccepted 2,056/1,568 · judged 1,991 · pass 0.606 (n=3,390) · remaining 344 +531 partial +172 rewarding · prewarm 256\nstep 30\n18h 29m ago\naccepted 2,048/1,568 · judged 1,984 · pass 0.607 (n=3,375) · remaining 341 +540 partial +154 rewarding · prewarm 256\nstep 30\n18h 30m ago\naccepted 2,040/1,568 · judged 1,973 · pass 0.607 (n=3,363) · remaining 343 +538 partial +182 rewarding · prewarm 256\nstep 30\n18h 31m ago\naccepted 2,032/1,568 · judged 1,964 · pass 0.607 (n=3,350) · remaining 342 +543 partial +205 rewarding · prewarm 256\nstep 30\n18h 31m ago\naccepted 2,024/1,568 · judged 1,958 · pass 0.607 (n=3,337) · remaining 335 +546 partial +176 rewarding · prewarm 256\nstep 30\n18h 32m ago\naccepted 2,016/1,568 · judged 1,952 · pass 0.606 (n=3,325) · remaining 331 +552 partial +192 rewarding · prewarm 256\nstep 30\n18h 33m ago\naccepted 2,008/1,568 · judged 1,945 · pass 0.606 (n=3,312) · remaining 327 +558 partial +182 rewarding · prewarm 256\nstep 30\n18h 33m ago\naccepted 2,000/1,568 · judged 1,939 · pass 0.606 (n=3,300) · remaining 326 +560 partial +171 rewarding · prewarm 256\nstep 30\n18h 33m ago\naccepted 1,992/1,568 · judged 1,933 · pass 0.606 (n=3,289) · remaining 326 +566 partial +172 rewarding · prewarm 256\nstep 30\n18h 34m ago\naccepted 1,984/1,568 · judged 1,926 · pass 0.607 (n=3,271) · remaining 327 +570 partial +172 rewarding · prewarm 256\nstep 30\n18h 34m ago\naccepted 1,976/1,568 · judged 1,921 · pass 0.606 (n=3,260) · remaining 325 +574 partial +157 rewarding · prewarm 256\nstep 30\n18h 35m ago\naccepted 1,968/1,568 · judged 1,910 · pass 0.606 (n=3,248) · remaining 329 +568 partial +160 rewarding · prewarm 256\nstep 30\n18h 36m ago\naccepted 1,960/1,568 · judged 1,896 · pass 0.606 (n=3,236) · remaining 325 +569 partial +160 rewarding · prewarm 256\nstep 30\n18h 37m ago\naccepted 1,944/1,568 · judged 1,884 · pass 0.605 (n=3,212) · remaining 334 +563 partial +163 rewarding · prewarm 256\nstep 30\n18h 38m ago\naccepted 1,936/1,568 · judged 1,876 · pass 0.605 (n=3,200) · remaining 331 +561 partial +148 rewarding · prewarm 256\nstep 30\n18h 39m ago\naccepted 1,928/1,568 · judged 1,867 · pass 0.605 (n=3,186) · remaining 333 +557 partial +154 rewarding · prewarm 256\nstep 30\n18h 39m ago\naccepted 1,920/1,568 · judged 1,858 · pass 0.605 (n=3,176) · remaining 332 +561 partial +157 rewarding · prewarm 256\nstep 30\nstep 31 · accepted 664/1,568\n15h 04m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-m1dt\t90 / 154\t\n\t64\t—\t30\ncode/dataset-sin0\t79 / 153\t\n\t74\t78\t52\ncode/dataset-zg6q\t58 / 153\t\n\t95\t58\t57\ncode/dataset-obg8\t51 / 153\t\n\t102\t49\t199\ncode/dataset-x7wh\t51 / 128\t\n\t77\t49\t128\nvisual/dataset-jzd3\t33 / 64\t\n\t31\t—\t0\nvisual/dataset-gtav\t31 / 64\t\n\t33\t—\t3\ngeneral/dataset-trla\t26 / 64\t\n\t38\t—\t13\ngeneral/dataset-epqd\t24 / 64\t\n\t40\t—\t19\ncode/dataset-ta4j\t22 / 63\t\n\t41\t22\t67\ncode/dataset-dnpn\t20 / 63\t\n\t43\t19\t20\ncode/dataset-yfch\t1 / 54\t\n\t53\t—\t91\ncode/dataset-v7yx\t27 / 52\t\n\t25\t27\t31\ncode/dataset-bvg7\t17 / 52\t\n\t35\t17\t45\nvisual/dataset-ol8x\t25 / 40\t\n\t15\t—\t17\nvisual/dataset-053e\t25 / 40\t\n\t15\t—\t15\nvisual/dataset-pt5v\t18 / 32\t\n\t14\t—\t23\ncode/dataset-4onq\t14 / 32\t\n\t18\t—\t4\ngeneral/dataset-5610\t13 / 32\t\n\t19\t—\t17\ngeneral/dataset-1doa\t8 / 32\t\n\t24\t—\t15\nvisual/dataset-ve5o\t7 / 32\t\n\t25\t—\t21\nchat/dataset-lm3t\t8 / 17\t\n\t9\t—\t0\nchat/dataset-eup7\t8 / 15\t\n\t7\t—\t0\nchat/dataset-8kb6\t8 / 15\t\n\t7\t—\t0\ntotal\t664 / 1,568\t\t904\t658\t867\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 2d 06h ago\n2d 06h ago\nrun stopped\n2d 06h ago\naccepted 2,704/1,568 · judged 2,559 · pass 0.547 (n=13,430) · remaining 107 +1,001 partial +390 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,696/1,568 · judged 2,551 · pass 0.547 (n=13,421) · remaining 108 +1,009 partial +381 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,688/1,568 · judged 2,546 · pass 0.547 (n=13,410) · remaining 110 +1,018 partial +388 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,680/1,568 · judged 2,535 · pass 0.547 (n=13,396) · remaining 113 +1,029 partial +380 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,672/1,568 · judged 2,526 · pass 0.547 (n=13,382) · remaining 119 +1,036 partial +401 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,664/1,568 · judged 2,514 · pass 0.547 (n=13,368) · remaining 121 +1,048 partial +412 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,656/1,568 · judged 2,507 · pass 0.547 (n=13,354) · remaining 125 +1,058 partial +407 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,648/1,568 · judged 2,499 · pass 0.547 (n=13,337) · remaining 133 +1,067 partial +427 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.547 (n=13,322) · remaining 137 +1,077 partial +438 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,632/1,568 · judged 2,486 · pass 0.547 (n=13,309) · remaining 143 +1,084 partial +452 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,624/1,568 · judged 2,481 · pass 0.546 (n=13,298) · remaining 151 +1,087 partial +463 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,616/1,568 · judged 2,475 · pass 0.546 (n=13,287) · remaining 153 +1,096 partial +465 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,608/1,568 · judged 2,469 · pass 0.546 (n=13,276) · remaining 156 +1,104 partial +448 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,600/1,568 · judged 2,459 · pass 0.546 (n=13,259) · remaining 164 +1,113 partial +472 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,592/1,568 · judged 2,450 · pass 0.546 (n=13,245) · remaining 167 +1,124 partial +486 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,584/1,568 · judged 2,442 · pass 0.546 (n=13,236) · remaining 171 +1,129 partial +470 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,576/1,568 · judged 2,433 · pass 0.546 (n=13,226) · remaining 173 +1,137 partial +462 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,568/1,568 · judged 2,427 · pass 0.546 (n=13,210) · remaining 182 +1,143 partial +465 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,560/1,568 · judged 2,418 · pass 0.546 (n=13,199) · remaining 185 +1,152 partial +486 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,552/1,568 · judged 2,412 · pass 0.545 (n=13,188) · remaining 189 +1,159 partial +498 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,544/1,568 · judged 2,406 · pass 0.545 (n=13,175) · remaining 193 +1,168 partial +488 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,536/1,568 · judged 2,402 · pass 0.545 (n=13,165) · remaining 194 +1,177 partial +456 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,528/1,568 · judged 2,397 · pass 0.545 (n=13,144) · remaining 195 +1,196 partial +486 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,520/1,568 · judged 2,391 · pass 0.546 (n=13,129) · remaining 200 +1,206 partial +517 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,512/1,568 · judged 2,380 · pass 0.546 (n=13,113) · remaining 208 +1,213 partial +537 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,504/1,568 · judged 2,375 · pass 0.545 (n=13,100) · remaining 209 +1,224 partial +534 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,496/1,568 · judged 2,368 · pass 0.545 (n=13,088) · remaining 215 +1,231 partial +512 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,488/1,568 · judged 2,360 · pass 0.545 (n=13,076) · remaining 220 +1,238 partial +514 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,480/1,568 · judged 2,354 · pass 0.545 (n=13,058) · remaining 226 +1,250 partial +524 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,464/1,568 · judged 2,339 · pass 0.545 (n=13,035) · remaining 236 +1,261 partial +529 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,456/1,568 · judged 2,333 · pass 0.545 (n=13,015) · remaining 240 +1,276 partial +546 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,448/1,568 · judged 2,323 · pass 0.545 (n=13,003) · remaining 245 +1,283 partial +575 rewarding · prewarm 297\nstep 31\n2d 06h ago\naccepted 2,440/1,568 · judged 2,315 · pass 0.546 (n=12,981) · remaining 253 +1,295 partial +556 rewarding · prewarm 298\nstep 31\n2d 06h ago\naccepted 2,432/1,568 · judged 2,310 · pass 0.545 (n=12,973) · remaining 254 +1,303 partial +559 rewarding · prewarm 298\nstep 31\n2d 06h ago\naccepted 2,424/1,568 · judged 2,305 · pass 0.545 (n=12,957) · remaining 253 +1,317 partial +565 rewarding · prewarm 298\nstep 31\n2d 06h ago\naccepted 2,416/1,568 · judged 2,299 · pass 0.545 (n=12,947) · remaining 257 +1,322 partial +566 rewarding · prewarm 298\nstep 31\n2d 06h ago\naccepted 2,408/1,568 · judged 2,293 · pass 0.545 (n=12,932) · remaining 258 +1,334 partial +568 rewarding · prewarm 298\nstep 31\n2d 06h ago\naccepted 2,400/1,568 · judged 2,285 · pass 0.545 (n=12,918) · remaining 263 +1,342 partial +601 rewarding · prewarm 298\nstep 31\n2d 06h ago\naccepted 2,392/1,568 · judged 2,278 · pass 0.545 (n=12,903) · remaining 264 +1,354 partial +595 rewarding · prewarm 298\nstep 31\nstep 31 · accepted 2,704/1,568\n2d 06h ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t310 / 154\t\n\t0\t273\t156\ncode/dataset-zg6q\t229 / 154\t\n\t0\t223\t32\ncode/dataset-sin0\t227 / 154\t\n\t0\t193\t101\ncode/dataset-m1dt\t211 / 154\t\n\t0\t—\t47\ncode/dataset-x7wh\t221 / 129\t\n\t0\t189\t124\ncyber/dataset-9aui\t145 / 64\t\n\t0\t—\t139\ngeneral/dataset-epqd\t98 / 64\t\n\t0\t—\t10\ngeneral/dataset-trla\t98 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t103 / 63\t\n\t0\t90\t76\ncode/dataset-dnpn\t90 / 63\t\n\t0\t82\t11\ncode/dataset-yfch\t196 / 55\t\n\t0\t—\t195\ncode/dataset-bvg7\t82 / 52\t\n\t0\t76\t34\ncode/dataset-v7yx\t79 / 52\t\n\t0\t70\t29\nvisual/dataset-gtav\t59 / 41\t\n\t0\t—\t3\nvisual/dataset-jzd3\t52 / 41\t\n\t0\t—\t10\nvisual/dataset-ve5o\t95 / 31\t\n\t0\t—\t26\nvisual/dataset-pt5v\t73 / 31\t\n\t0\t—\t29\ngeneral/dataset-5610\t62 / 31\t\n\t0\t—\t10\nvisual/dataset-053e\t62 / 31\t\n\t0\t—\t13\nvisual/dataset-ol8x\t57 / 31\t\n\t0\t—\t20\ncode/dataset-4onq\t47 / 31\t\n\t0\t—\t6\ngeneral/dataset-1doa\t30 / 31\t\n\t1\t—\t30\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t26 / 15\t\n\t0\t—\t0\ntotal\t2,704 / 1,568\t\t0\t2,559\t1,108\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 30\n≈ 1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,033\t65.8%\t▼1.9 pt\ngeneral\t4\t176\t11.3%\t▼0.8 pt\ncyber\t1\t0\t0.0%\t0.0 pt\nvisual\t6\t305\t19.5%\t▲2.3 pt\nchat\t3\t54\t3.4%\t▲0.4 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
+  "visible_text": "overview\nmetrics\nabout\nTOTAL COST\n$3,474,715\nBEIJING\n20:33:54\nLOS ANGELES\n05:33:54\nNEW YORK\n08:33:54\nLONDON\n13:33:54\n◐\nnotices\n2d 02h ago\nwe filtered out tasks that are relatively easy for the current pro model.\n3d 08h ago\nthe pro run restarted at step 17 due to a GPU OOM issue caused by expert load imbalance. we have adjusted the training parallelism strategy.\n4d 00h ago\nthere was a network connectivity issue between the pro training cluster and the grader deployment. we have restarted the run. we also removed the cyber dataset from the upcoming pro run, since we observed some bad patterns in the rollout logs.\n4d 10h ago\nwe restarted the flash run from step 15. reason: a type of infra error on one of datasets was not correctly detected over the past ~3 hours.\n4d 16h ago\nthe mimo-v2.6-pro run is restarting due to a vram issue on one node.\n4d 18h ago\nwe have updated the latest deepswe results for flash step 12 & pro step 8. we will keep posting as the offline evaluation results come out.\nmimo-v2.6-pro\nstopped\nstep 30\n5d 07:29:21\nstarted 2026-09-15 10:32 UTC\nstopped 2026-09-20\ndynsam/avg@n · Δ vs step 1\n0.633 ▲0.068\ncost so far\n$2,620,670\ntokens · step 30\n3.43B\ntokens · total\n75B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nmimo-v2.6-flash\nstopped\nstep 30\n3d 11:05:40\nstarted 2026-09-15 15:16 UTC\nstopped 2026-09-19\ndynsam/avg@n · Δ vs step 1\n0.644 ▲0.130\ncost so far\n$854,044\ntokens · step 30\n3.7B\ntokens · total\n81.4B\nsamples trained\n753k\ntrain batch size × n\n1,568 × 16seqs\nbenchmarks\nDeepSWE v1.1 mini-swe-agent, avg@3\nmimo-v2.6-pro 72.57\nmimo-v2.6-flash 65.68\nIn-house Coding Bench avg@3\nmimo-v2.6-pro 65.43\nmimo-v2.6-flash 62.87\nAutomationBench v1.0.6 avg@3\nmimo-v2.6-pro 53.10\nmimo-v2.6-flash 52.70\nstep\ntime\nlinear\nlog\nsmoothing\noff\nmimo-v2.6-pro\nmimo-v2.6-flash\ndynsam/avg@n\n0.633▲0.011\n0.644▼0.019\ncritic/rewards/mean\n0.596▲0.00264\n0.601▲0.00269\nactor/entropy_loss\n0.462▲0.000994\n0.471▲0.00254\nactor/pg_loss\n0.018▲0.00375\n0.026▲0.014\nactor/grad_norm\n0.00485▲0.000479\n0.00628▼0.00152\ntrain_infer_diff/new_infer/kl\n0.00277▼0.00504\n0.011▲0.00452\nctx_total_length/mean\n137k▲1.2k\n148k▲17k\ndynsam/agg_turn/mean\n43.6▼5.35\n68.5▲7.63\nperf/total_num_tokens\n3.43B▲10M\n3.7B▲430M\ntiming_s/step\ntiming_s/outer_gen\ntiming_s/trainer_ops\ndynsam/passrate/zero\ndynsam/passrate/one\ndynsam/infra_error/seq_rate\nenv/active\npartial/avg_staleness\ndynsam/num_measurable\ndynamic sampler mimo-v2.6-pro\nfeed\nlog 18h 34m ago\n18h 32m ago\nrun stopped\n18h 34m ago\naccepted 664/1,568 · judged 658 · pass 0.606 (n=3,680) · remaining 325 +542 partial +69 rewarding · prewarm 256\nstep 31\n18h 36m ago\naccepted 656/1,568 · judged 653 · pass 0.606 (n=3,668) · remaining 322 +539 partial +36 rewarding · prewarm 256\nstep 31\n18h 46m ago\naccepted 650/1,568 · judged 647 · pass 0.605 (n=3,659) · remaining 326 +529 partial +0 rewarding · prewarm 256\nstep 31\n18h 47m ago\nstep 30 done · dynsam/avg@n 0.633 ▲0.011\n3.43B tok\n21h 45m ago\naccepted 2,208/1,568 · judged 2,155 · pass 0.606 (n=3,644) · remaining 332 +537 partial +191 rewarding · prewarm 256\nstep 30\n21h 45m ago\naccepted 2,200/1,568 · judged 2,147 · pass 0.606 (n=3,632) · remaining 331 +539 partial +212 rewarding · prewarm 256\nstep 30\n21h 46m ago\naccepted 2,192/1,568 · judged 2,137 · pass 0.606 (n=3,616) · remaining 328 +542 partial +199 rewarding · prewarm 256\nstep 30\n21h 47m ago\naccepted 2,184/1,568 · judged 2,132 · pass 0.606 (n=3,604) · remaining 326 +543 partial +185 rewarding · prewarm 256\nstep 30\n21h 48m ago\naccepted 2,176/1,568 · judged 2,126 · pass 0.606 (n=3,589) · remaining 327 +547 partial +193 rewarding · prewarm 256\nstep 30\n21h 48m ago\naccepted 2,168/1,568 · judged 2,118 · pass 0.606 (n=3,578) · remaining 323 +555 partial +190 rewarding · prewarm 256\nstep 30\n21h 49m ago\naccepted 2,160/1,568 · judged 2,108 · pass 0.606 (n=3,566) · remaining 323 +555 partial +191 rewarding · prewarm 256\nstep 30\n21h 49m ago\naccepted 2,152/1,568 · judged 2,100 · pass 0.605 (n=3,556) · remaining 324 +556 partial +186 rewarding · prewarm 256\nstep 30\n21h 50m ago\naccepted 2,144/1,568 · judged 2,091 · pass 0.606 (n=3,539) · remaining 328 +547 partial +186 rewarding · prewarm 256\nstep 30\n21h 51m ago\naccepted 2,136/1,568 · judged 2,087 · pass 0.605 (n=3,528) · remaining 333 +546 partial +186 rewarding · prewarm 256\nstep 30\n21h 51m ago\naccepted 2,128/1,568 · judged 2,081 · pass 0.605 (n=3,518) · remaining 338 +544 partial +207 rewarding · prewarm 256\nstep 30\n21h 52m ago\naccepted 2,120/1,568 · judged 2,071 · pass 0.605 (n=3,502) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n21h 53m ago\naccepted 2,112/1,568 · judged 2,063 · pass 0.605 (n=3,489) · remaining 333 +546 partial +178 rewarding · prewarm 256\nstep 30\n21h 54m ago\naccepted 2,104/1,568 · judged 2,055 · pass 0.605 (n=3,476) · remaining 341 +534 partial +149 rewarding · prewarm 256\nstep 30\n21h 55m ago\naccepted 2,096/1,568 · judged 2,039 · pass 0.606 (n=3,459) · remaining 336 +537 partial +138 rewarding · prewarm 256\nstep 30\n21h 56m ago\naccepted 2,088/1,568 · judged 2,032 · pass 0.606 (n=3,447) · remaining 337 +539 partial +149 rewarding · prewarm 256\nstep 30\n21h 56m ago\naccepted 2,080/1,568 · judged 2,023 · pass 0.606 (n=3,433) · remaining 333 +543 partial +165 rewarding · prewarm 256\nstep 30\n21h 58m ago\naccepted 2,064/1,568 · judged 2,006 · pass 0.606 (n=3,407) · remaining 334 +540 partial +160 rewarding · prewarm 256\nstep 30\n21h 59m ago\naccepted 2,056/1,568 · judged 1,991 · pass 0.606 (n=3,390) · remaining 344 +531 partial +172 rewarding · prewarm 256\nstep 30\n21h 59m ago\naccepted 2,048/1,568 · judged 1,984 · pass 0.607 (n=3,375) · remaining 341 +540 partial +154 rewarding · prewarm 256\nstep 30\n22h 00m ago\naccepted 2,040/1,568 · judged 1,973 · pass 0.607 (n=3,363) · remaining 343 +538 partial +182 rewarding · prewarm 256\nstep 30\n22h 01m ago\naccepted 2,032/1,568 · judged 1,964 · pass 0.607 (n=3,350) · remaining 342 +543 partial +205 rewarding · prewarm 256\nstep 30\n22h 02m ago\naccepted 2,024/1,568 · judged 1,958 · pass 0.607 (n=3,337) · remaining 335 +546 partial +176 rewarding · prewarm 256\nstep 30\n22h 02m ago\naccepted 2,016/1,568 · judged 1,952 · pass 0.606 (n=3,325) · remaining 331 +552 partial +192 rewarding · prewarm 256\nstep 30\n22h 03m ago\naccepted 2,008/1,568 · judged 1,945 · pass 0.606 (n=3,312) · remaining 327 +558 partial +182 rewarding · prewarm 256\nstep 30\n22h 03m ago\naccepted 2,000/1,568 · judged 1,939 · pass 0.606 (n=3,300) · remaining 326 +560 partial +171 rewarding · prewarm 256\nstep 30\n22h 03m ago\naccepted 1,992/1,568 · judged 1,933 · pass 0.606 (n=3,289) · remaining 326 +566 partial +172 rewarding · prewarm 256\nstep 30\n22h 04m ago\naccepted 1,984/1,568 · judged 1,926 · pass 0.607 (n=3,271) · remaining 327 +570 partial +172 rewarding · prewarm 256\nstep 30\n22h 04m ago\naccepted 1,976/1,568 · judged 1,921 · pass 0.606 (n=3,260) · remaining 325 +574 partial +157 rewarding · prewarm 256\nstep 30\n22h 05m ago\naccepted 1,968/1,568 · judged 1,910 · pass 0.606 (n=3,248) · remaining 329 +568 partial +160 rewarding · prewarm 256\nstep 30\n22h 06m ago\naccepted 1,960/1,568 · judged 1,896 · pass 0.606 (n=3,236) · remaining 325 +569 partial +160 rewarding · prewarm 256\nstep 30\n22h 07m ago\naccepted 1,944/1,568 · judged 1,884 · pass 0.605 (n=3,212) · remaining 334 +563 partial +163 rewarding · prewarm 256\nstep 30\n22h 08m ago\naccepted 1,936/1,568 · judged 1,876 · pass 0.605 (n=3,200) · remaining 331 +561 partial +148 rewarding · prewarm 256\nstep 30\n22h 09m ago\naccepted 1,928/1,568 · judged 1,867 · pass 0.605 (n=3,186) · remaining 333 +557 partial +154 rewarding · prewarm 256\nstep 30\n22h 09m ago\naccepted 1,920/1,568 · judged 1,858 · pass 0.605 (n=3,176) · remaining 332 +561 partial +157 rewarding · prewarm 256\nstep 30\nstep 31 · accepted 664/1,568\n18h 34m ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-m1dt\t90 / 154\t\n\t64\t—\t30\ncode/dataset-sin0\t79 / 153\t\n\t74\t78\t52\ncode/dataset-zg6q\t58 / 153\t\n\t95\t58\t57\ncode/dataset-obg8\t51 / 153\t\n\t102\t49\t199\ncode/dataset-x7wh\t51 / 128\t\n\t77\t49\t128\nvisual/dataset-jzd3\t33 / 64\t\n\t31\t—\t0\nvisual/dataset-gtav\t31 / 64\t\n\t33\t—\t3\ngeneral/dataset-trla\t26 / 64\t\n\t38\t—\t13\ngeneral/dataset-epqd\t24 / 64\t\n\t40\t—\t19\ncode/dataset-ta4j\t22 / 63\t\n\t41\t22\t67\ncode/dataset-dnpn\t20 / 63\t\n\t43\t19\t20\ncode/dataset-yfch\t1 / 54\t\n\t53\t—\t91\ncode/dataset-v7yx\t27 / 52\t\n\t25\t27\t31\ncode/dataset-bvg7\t17 / 52\t\n\t35\t17\t45\nvisual/dataset-ol8x\t25 / 40\t\n\t15\t—\t17\nvisual/dataset-053e\t25 / 40\t\n\t15\t—\t15\nvisual/dataset-pt5v\t18 / 32\t\n\t14\t—\t23\ncode/dataset-4onq\t14 / 32\t\n\t18\t—\t4\ngeneral/dataset-5610\t13 / 32\t\n\t19\t—\t17\ngeneral/dataset-1doa\t8 / 32\t\n\t24\t—\t15\nvisual/dataset-ve5o\t7 / 32\t\n\t25\t—\t21\nchat/dataset-lm3t\t8 / 17\t\n\t9\t—\t0\nchat/dataset-eup7\t8 / 15\t\n\t7\t—\t0\nchat/dataset-8kb6\t8 / 15\t\n\t7\t—\t0\ntotal\t664 / 1,568\t\t904\t658\t867\ndynamic sampler mimo-v2.6-flash\nfeed\nlog 2d 10h ago\n2d 10h ago\nrun stopped\n2d 10h ago\naccepted 2,704/1,568 · judged 2,559 · pass 0.547 (n=13,430) · remaining 107 +1,001 partial +390 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,696/1,568 · judged 2,551 · pass 0.547 (n=13,421) · remaining 108 +1,009 partial +381 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,688/1,568 · judged 2,546 · pass 0.547 (n=13,410) · remaining 110 +1,018 partial +388 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,680/1,568 · judged 2,535 · pass 0.547 (n=13,396) · remaining 113 +1,029 partial +380 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,672/1,568 · judged 2,526 · pass 0.547 (n=13,382) · remaining 119 +1,036 partial +401 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,664/1,568 · judged 2,514 · pass 0.547 (n=13,368) · remaining 121 +1,048 partial +412 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,656/1,568 · judged 2,507 · pass 0.547 (n=13,354) · remaining 125 +1,058 partial +407 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,648/1,568 · judged 2,499 · pass 0.547 (n=13,337) · remaining 133 +1,067 partial +427 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,640/1,568 · judged 2,492 · pass 0.547 (n=13,322) · remaining 137 +1,077 partial +438 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,632/1,568 · judged 2,486 · pass 0.547 (n=13,309) · remaining 143 +1,084 partial +452 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,624/1,568 · judged 2,481 · pass 0.546 (n=13,298) · remaining 151 +1,087 partial +463 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,616/1,568 · judged 2,475 · pass 0.546 (n=13,287) · remaining 153 +1,096 partial +465 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,608/1,568 · judged 2,469 · pass 0.546 (n=13,276) · remaining 156 +1,104 partial +448 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,600/1,568 · judged 2,459 · pass 0.546 (n=13,259) · remaining 164 +1,113 partial +472 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,592/1,568 · judged 2,450 · pass 0.546 (n=13,245) · remaining 167 +1,124 partial +486 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,584/1,568 · judged 2,442 · pass 0.546 (n=13,236) · remaining 171 +1,129 partial +470 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,576/1,568 · judged 2,433 · pass 0.546 (n=13,226) · remaining 173 +1,137 partial +462 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,568/1,568 · judged 2,427 · pass 0.546 (n=13,210) · remaining 182 +1,143 partial +465 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,560/1,568 · judged 2,418 · pass 0.546 (n=13,199) · remaining 185 +1,152 partial +486 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,552/1,568 · judged 2,412 · pass 0.545 (n=13,188) · remaining 189 +1,159 partial +498 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,544/1,568 · judged 2,406 · pass 0.545 (n=13,175) · remaining 193 +1,168 partial +488 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,536/1,568 · judged 2,402 · pass 0.545 (n=13,165) · remaining 194 +1,177 partial +456 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,528/1,568 · judged 2,397 · pass 0.545 (n=13,144) · remaining 195 +1,196 partial +486 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,520/1,568 · judged 2,391 · pass 0.546 (n=13,129) · remaining 200 +1,206 partial +517 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,512/1,568 · judged 2,380 · pass 0.546 (n=13,113) · remaining 208 +1,213 partial +537 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,504/1,568 · judged 2,375 · pass 0.545 (n=13,100) · remaining 209 +1,224 partial +534 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,496/1,568 · judged 2,368 · pass 0.545 (n=13,088) · remaining 215 +1,231 partial +512 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,488/1,568 · judged 2,360 · pass 0.545 (n=13,076) · remaining 220 +1,238 partial +514 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,480/1,568 · judged 2,354 · pass 0.545 (n=13,058) · remaining 226 +1,250 partial +524 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,464/1,568 · judged 2,339 · pass 0.545 (n=13,035) · remaining 236 +1,261 partial +529 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,456/1,568 · judged 2,333 · pass 0.545 (n=13,015) · remaining 240 +1,276 partial +546 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,448/1,568 · judged 2,323 · pass 0.545 (n=13,003) · remaining 245 +1,283 partial +575 rewarding · prewarm 297\nstep 31\n2d 10h ago\naccepted 2,440/1,568 · judged 2,315 · pass 0.546 (n=12,981) · remaining 253 +1,295 partial +556 rewarding · prewarm 298\nstep 31\n2d 10h ago\naccepted 2,432/1,568 · judged 2,310 · pass 0.545 (n=12,973) · remaining 254 +1,303 partial +559 rewarding · prewarm 298\nstep 31\n2d 10h ago\naccepted 2,424/1,568 · judged 2,305 · pass 0.545 (n=12,957) · remaining 253 +1,317 partial +565 rewarding · prewarm 298\nstep 31\n2d 10h ago\naccepted 2,416/1,568 · judged 2,299 · pass 0.545 (n=12,947) · remaining 257 +1,322 partial +566 rewarding · prewarm 298\nstep 31\n2d 10h ago\naccepted 2,408/1,568 · judged 2,293 · pass 0.545 (n=12,932) · remaining 258 +1,334 partial +568 rewarding · prewarm 298\nstep 31\n2d 10h ago\naccepted 2,400/1,568 · judged 2,285 · pass 0.545 (n=12,918) · remaining 263 +1,342 partial +601 rewarding · prewarm 298\nstep 31\n2d 10h ago\naccepted 2,392/1,568 · judged 2,278 · pass 0.545 (n=12,903) · remaining 264 +1,354 partial +595 rewarding · prewarm 298\nstep 31\nstep 31 · accepted 2,704/1,568\n2d 10h ago\nsource\taccepted / target\t\tremaining\tjudged\tin flight\ncode/dataset-obg8\t310 / 154\t\n\t0\t273\t156\ncode/dataset-zg6q\t229 / 154\t\n\t0\t223\t32\ncode/dataset-sin0\t227 / 154\t\n\t0\t193\t101\ncode/dataset-m1dt\t211 / 154\t\n\t0\t—\t47\ncode/dataset-x7wh\t221 / 129\t\n\t0\t189\t124\ncyber/dataset-9aui\t145 / 64\t\n\t0\t—\t139\ngeneral/dataset-epqd\t98 / 64\t\n\t0\t—\t10\ngeneral/dataset-trla\t98 / 64\t\n\t0\t—\t7\ncode/dataset-ta4j\t103 / 63\t\n\t0\t90\t76\ncode/dataset-dnpn\t90 / 63\t\n\t0\t82\t11\ncode/dataset-yfch\t196 / 55\t\n\t0\t—\t195\ncode/dataset-bvg7\t82 / 52\t\n\t0\t76\t34\ncode/dataset-v7yx\t79 / 52\t\n\t0\t70\t29\nvisual/dataset-gtav\t59 / 41\t\n\t0\t—\t3\nvisual/dataset-jzd3\t52 / 41\t\n\t0\t—\t10\nvisual/dataset-ve5o\t95 / 31\t\n\t0\t—\t26\nvisual/dataset-pt5v\t73 / 31\t\n\t0\t—\t29\ngeneral/dataset-5610\t62 / 31\t\n\t0\t—\t10\nvisual/dataset-053e\t62 / 31\t\n\t0\t—\t13\nvisual/dataset-ol8x\t57 / 31\t\n\t0\t—\t20\ncode/dataset-4onq\t47 / 31\t\n\t0\t—\t6\ngeneral/dataset-1doa\t30 / 31\t\n\t1\t—\t30\nchat/dataset-eup7\t26 / 16\t\n\t0\t—\t0\nchat/dataset-8kb6\t26 / 16\t\n\t0\t—\t0\nchat/dataset-lm3t\t26 / 15\t\n\t0\t—\t0\ntotal\t2,704 / 1,568\t\t0\t2,559\t1,108\nbatch composition what each step's samples are made of\nby\ndata source\nharness (trained)\nrun\nmimo-v2.6-pro\nmimo-v2.6-flash\ncount\nshare\ntrained prompts per step, by category\n25 sources · derived from dynsam/*/num_accepted\ncode\ngeneral\ncyber\nvisual\nchat\nstep 30\n≈ 1,568 prompts · train batch 1,568\ncategory\tsources\tprompts\tshare\tΔ share\ncode\t11\t1,033\t65.8%\t▼1.9 pt\ngeneral\t4\t176\t11.3%\t▼0.8 pt\ncyber\t1\t0\t0.0%\t0.0 pt\nvisual\t6\t305\t19.5%\t▲2.3 pt\nchat\t3\t54\t3.4%\t▲0.4 pt\ntotal\t25\t1,568\t100%\t\n≈ steps right after a restart report the pool before consumption; there the split is carryover + a proportional share of fresh accepts.\n@XiaomiMiMo\nstreaming since 2026-09-16 04:00 UTC\nOpen is what we value.",
   "public_json_responses": [
     {
       "url": "https://mimo.xiaomi.com/rl/api/runs",
@@ -4151,7 +4151,7 @@
           "so_far": 854044.7
         },
         "clock": {
-          "now": 1789981419.8557568
+          "now": 1789994026.984316
         },
         "version": "3-5513.32.6.28",
         "step": {
@@ -4445,7 +4445,7 @@
           "so_far": 2620670.84448976
         },
         "clock": {
-          "now": 1789981420.2995138
+          "now": 1789994026.9851055
         },
         "version": "3-5513.30.15.30",
         "step": {
@@ -4697,6 +4697,1563 @@
           "first": 0.564662,
           "first_step": 1
         }
+      }
+    },
+    {
+      "url": "https://mimo.xiaomi.com/rl/api/live?run=pro",
+      "data": {
+        "log_time": 1789927159.334,
+        "latest": {
+          "t": 1789927159.334,
+          "step": 31,
+          "accept": 664,
+          "target": 1568,
+          "judged": 658,
+          "judged_of": 664,
+          "ds": {
+            "code/dataset-bvg7": [
+              17,
+              52,
+              17,
+              45
+            ],
+            "code/dataset-v7yx": [
+              27,
+              52,
+              27,
+              31
+            ],
+            "code/dataset-dnpn": [
+              20,
+              63,
+              19,
+              20
+            ],
+            "code/dataset-ta4j": [
+              22,
+              63,
+              22,
+              67
+            ],
+            "code/dataset-sin0": [
+              79,
+              153,
+              78,
+              52
+            ],
+            "code/dataset-obg8": [
+              51,
+              153,
+              49,
+              199
+            ],
+            "code/dataset-zg6q": [
+              58,
+              153,
+              58,
+              57
+            ],
+            "code/dataset-yfch": [
+              1,
+              54,
+              null,
+              91
+            ],
+            "code/dataset-x7wh": [
+              51,
+              128,
+              49,
+              128
+            ],
+            "code/dataset-m1dt": [
+              90,
+              154,
+              null,
+              30
+            ],
+            "general/dataset-epqd": [
+              24,
+              64,
+              null,
+              19
+            ],
+            "general/dataset-trla": [
+              26,
+              64,
+              null,
+              13
+            ],
+            "general/dataset-1doa": [
+              8,
+              32,
+              null,
+              15
+            ],
+            "general/dataset-5610": [
+              13,
+              32,
+              null,
+              17
+            ],
+            "chat/dataset-lm3t": [
+              8,
+              17,
+              null,
+              0
+            ],
+            "chat/dataset-eup7": [
+              8,
+              15,
+              null,
+              0
+            ],
+            "chat/dataset-8kb6": [
+              8,
+              15,
+              null,
+              0
+            ],
+            "visual/dataset-gtav": [
+              31,
+              64,
+              null,
+              3
+            ],
+            "visual/dataset-jzd3": [
+              33,
+              64,
+              null,
+              0
+            ],
+            "visual/dataset-ol8x": [
+              25,
+              40,
+              null,
+              17
+            ],
+            "visual/dataset-053e": [
+              25,
+              40,
+              null,
+              15
+            ],
+            "visual/dataset-ve5o": [
+              7,
+              32,
+              null,
+              21
+            ],
+            "visual/dataset-pt5v": [
+              18,
+              32,
+              null,
+              23
+            ],
+            "code/dataset-4onq": [
+              14,
+              32,
+              null,
+              4
+            ]
+          },
+          "passrate": 0.606,
+          "n": 3680,
+          "pr0": 0.133,
+          "pr1": 0.261,
+          "partial": [
+            0,
+            0,
+            0
+          ],
+          "working": 256,
+          "remain": 325,
+          "remain_partial": 542,
+          "remain_seq": 69,
+          "prewarm": 256,
+          "prewarm_wait": 11188.5
+        },
+        "entries": [
+          {
+            "t": 1789913406.334,
+            "step": 30,
+            "accept": 1736,
+            "target": 1568,
+            "judged": 1678,
+            "judged_of": 1736,
+            "passrate": 0.6,
+            "n": 2891,
+            "pr0": 0.132,
+            "pr1": 0.267,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 580,
+            "remain_seq": 178,
+            "prewarm": 256,
+            "prewarm_wait": 591.7
+          },
+          {
+            "t": 1789913464.334,
+            "step": 30,
+            "accept": 1744,
+            "target": 1568,
+            "judged": 1691,
+            "judged_of": 1744,
+            "passrate": 0.601,
+            "n": 2902,
+            "pr0": 0.132,
+            "pr1": 0.267,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 587,
+            "remain_seq": 193,
+            "prewarm": 256,
+            "prewarm_wait": 592.3
+          },
+          {
+            "t": 1789913504.334,
+            "step": 30,
+            "accept": 1752,
+            "target": 1568,
+            "judged": 1699,
+            "judged_of": 1752,
+            "passrate": 0.601,
+            "n": 2914,
+            "pr0": 0.132,
+            "pr1": 0.267,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 326,
+            "remain_partial": 588,
+            "remain_seq": 200,
+            "prewarm": 256,
+            "prewarm_wait": 591.8
+          },
+          {
+            "t": 1789913541.334,
+            "step": 30,
+            "accept": 1760,
+            "target": 1568,
+            "judged": 1711,
+            "judged_of": 1760,
+            "passrate": 0.602,
+            "n": 2926,
+            "pr0": 0.132,
+            "pr1": 0.267,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 319,
+            "remain_partial": 596,
+            "remain_seq": 213,
+            "prewarm": 256,
+            "prewarm_wait": 593.1
+          },
+          {
+            "t": 1789913563.334,
+            "step": 30,
+            "accept": 1768,
+            "target": 1568,
+            "judged": 1717,
+            "judged_of": 1768,
+            "passrate": 0.603,
+            "n": 2934,
+            "pr0": 0.131,
+            "pr1": 0.266,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 322,
+            "remain_partial": 592,
+            "remain_seq": 209,
+            "prewarm": 256,
+            "prewarm_wait": 592.6
+          },
+          {
+            "t": 1789913615.334,
+            "step": 30,
+            "accept": 1776,
+            "target": 1568,
+            "judged": 1725,
+            "judged_of": 1776,
+            "passrate": 0.602,
+            "n": 2950,
+            "pr0": 0.132,
+            "pr1": 0.265,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 324,
+            "remain_partial": 590,
+            "remain_seq": 195,
+            "prewarm": 256,
+            "prewarm_wait": 592.0
+          },
+          {
+            "t": 1789913650.334,
+            "step": 30,
+            "accept": 1784,
+            "target": 1568,
+            "judged": 1732,
+            "judged_of": 1784,
+            "passrate": 0.603,
+            "n": 2959,
+            "pr0": 0.132,
+            "pr1": 0.265,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 329,
+            "remain_partial": 587,
+            "remain_seq": 215,
+            "prewarm": 256,
+            "prewarm_wait": 591.9
+          },
+          {
+            "t": 1789913682.334,
+            "step": 30,
+            "accept": 1792,
+            "target": 1568,
+            "judged": 1737,
+            "judged_of": 1792,
+            "passrate": 0.603,
+            "n": 2972,
+            "pr0": 0.132,
+            "pr1": 0.265,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 584,
+            "remain_seq": 228,
+            "prewarm": 256,
+            "prewarm_wait": 591.5
+          },
+          {
+            "t": 1789913717.334,
+            "step": 30,
+            "accept": 1800,
+            "target": 1568,
+            "judged": 1741,
+            "judged_of": 1800,
+            "passrate": 0.602,
+            "n": 2992,
+            "pr0": 0.132,
+            "pr1": 0.266,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 577,
+            "remain_seq": 210,
+            "prewarm": 256,
+            "prewarm_wait": 591.8
+          },
+          {
+            "t": 1789913741.334,
+            "step": 30,
+            "accept": 1808,
+            "target": 1568,
+            "judged": 1745,
+            "judged_of": 1808,
+            "passrate": 0.602,
+            "n": 3002,
+            "pr0": 0.133,
+            "pr1": 0.265,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 572,
+            "remain_seq": 190,
+            "prewarm": 256,
+            "prewarm_wait": 592.6
+          },
+          {
+            "t": 1789913796.334,
+            "step": 30,
+            "accept": 1816,
+            "target": 1568,
+            "judged": 1756,
+            "judged_of": 1816,
+            "passrate": 0.603,
+            "n": 3014,
+            "pr0": 0.133,
+            "pr1": 0.264,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 582,
+            "remain_seq": 204,
+            "prewarm": 256,
+            "prewarm_wait": 593.0
+          },
+          {
+            "t": 1789913822.334,
+            "step": 30,
+            "accept": 1824,
+            "target": 1568,
+            "judged": 1767,
+            "judged_of": 1824,
+            "passrate": 0.603,
+            "n": 3027,
+            "pr0": 0.133,
+            "pr1": 0.264,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 329,
+            "remain_partial": 574,
+            "remain_seq": 197,
+            "prewarm": 256,
+            "prewarm_wait": 593.8
+          },
+          {
+            "t": 1789913847.334,
+            "step": 30,
+            "accept": 1832,
+            "target": 1568,
+            "judged": 1776,
+            "judged_of": 1832,
+            "passrate": 0.603,
+            "n": 3039,
+            "pr0": 0.133,
+            "pr1": 0.264,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 328,
+            "remain_partial": 571,
+            "remain_seq": 178,
+            "prewarm": 256,
+            "prewarm_wait": 594.1
+          },
+          {
+            "t": 1789913883.334,
+            "step": 30,
+            "accept": 1840,
+            "target": 1568,
+            "judged": 1781,
+            "judged_of": 1840,
+            "passrate": 0.603,
+            "n": 3049,
+            "pr0": 0.133,
+            "pr1": 0.264,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 328,
+            "remain_partial": 574,
+            "remain_seq": 201,
+            "prewarm": 256,
+            "prewarm_wait": 593.7
+          },
+          {
+            "t": 1789913920.334,
+            "step": 30,
+            "accept": 1848,
+            "target": 1568,
+            "judged": 1789,
+            "judged_of": 1848,
+            "passrate": 0.603,
+            "n": 3065,
+            "pr0": 0.132,
+            "pr1": 0.265,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 328,
+            "remain_partial": 569,
+            "remain_seq": 178,
+            "prewarm": 256,
+            "prewarm_wait": 593.4
+          },
+          {
+            "t": 1789913972.334,
+            "step": 30,
+            "accept": 1856,
+            "target": 1568,
+            "judged": 1795,
+            "judged_of": 1856,
+            "passrate": 0.603,
+            "n": 3077,
+            "pr0": 0.132,
+            "pr1": 0.264,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 327,
+            "remain_partial": 578,
+            "remain_seq": 216,
+            "prewarm": 256,
+            "prewarm_wait": 594.6
+          },
+          {
+            "t": 1789914028.334,
+            "step": 30,
+            "accept": 1872,
+            "target": 1568,
+            "judged": 1808,
+            "judged_of": 1872,
+            "passrate": 0.604,
+            "n": 3099,
+            "pr0": 0.132,
+            "pr1": 0.263,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 572,
+            "remain_seq": 203,
+            "prewarm": 256,
+            "prewarm_wait": 595.9
+          },
+          {
+            "t": 1789914067.334,
+            "step": 30,
+            "accept": 1880,
+            "target": 1568,
+            "judged": 1820,
+            "judged_of": 1880,
+            "passrate": 0.605,
+            "n": 3109,
+            "pr0": 0.133,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 581,
+            "remain_seq": 204,
+            "prewarm": 256,
+            "prewarm_wait": 597.3
+          },
+          {
+            "t": 1789914107.334,
+            "step": 30,
+            "accept": 1888,
+            "target": 1568,
+            "judged": 1829,
+            "judged_of": 1888,
+            "passrate": 0.605,
+            "n": 3120,
+            "pr0": 0.133,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 331,
+            "remain_partial": 579,
+            "remain_seq": 246,
+            "prewarm": 256,
+            "prewarm_wait": 597.3
+          },
+          {
+            "t": 1789914127.334,
+            "step": 30,
+            "accept": 1896,
+            "target": 1568,
+            "judged": 1832,
+            "judged_of": 1896,
+            "passrate": 0.605,
+            "n": 3133,
+            "pr0": 0.133,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 330,
+            "remain_partial": 573,
+            "remain_seq": 212,
+            "prewarm": 256,
+            "prewarm_wait": 597.4
+          },
+          {
+            "t": 1789914161.334,
+            "step": 30,
+            "accept": 1904,
+            "target": 1568,
+            "judged": 1839,
+            "judged_of": 1904,
+            "passrate": 0.605,
+            "n": 3148,
+            "pr0": 0.133,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 567,
+            "remain_seq": 164,
+            "prewarm": 256,
+            "prewarm_wait": 596.7
+          },
+          {
+            "t": 1789914200.334,
+            "step": 30,
+            "accept": 1912,
+            "target": 1568,
+            "judged": 1846,
+            "judged_of": 1912,
+            "passrate": 0.605,
+            "n": 3161,
+            "pr0": 0.134,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 330,
+            "remain_partial": 565,
+            "remain_seq": 160,
+            "prewarm": 256,
+            "prewarm_wait": 597.9
+          },
+          {
+            "t": 1789914235.334,
+            "step": 30,
+            "accept": 1920,
+            "target": 1568,
+            "judged": 1858,
+            "judged_of": 1920,
+            "passrate": 0.605,
+            "n": 3176,
+            "pr0": 0.134,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 561,
+            "remain_seq": 157,
+            "prewarm": 256,
+            "prewarm_wait": 597.3
+          },
+          {
+            "t": 1789914256.334,
+            "step": 30,
+            "accept": 1928,
+            "target": 1568,
+            "judged": 1867,
+            "judged_of": 1928,
+            "passrate": 0.605,
+            "n": 3186,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 333,
+            "remain_partial": 557,
+            "remain_seq": 154,
+            "prewarm": 256,
+            "prewarm_wait": 597.3
+          },
+          {
+            "t": 1789914308.334,
+            "step": 30,
+            "accept": 1936,
+            "target": 1568,
+            "judged": 1876,
+            "judged_of": 1936,
+            "passrate": 0.605,
+            "n": 3200,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 331,
+            "remain_partial": 561,
+            "remain_seq": 148,
+            "prewarm": 256,
+            "prewarm_wait": 599.3
+          },
+          {
+            "t": 1789914359.334,
+            "step": 30,
+            "accept": 1944,
+            "target": 1568,
+            "judged": 1884,
+            "judged_of": 1944,
+            "passrate": 0.605,
+            "n": 3212,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 334,
+            "remain_partial": 563,
+            "remain_seq": 163,
+            "prewarm": 256,
+            "prewarm_wait": 598.2
+          },
+          {
+            "t": 1789914431.334,
+            "step": 30,
+            "accept": 1960,
+            "target": 1568,
+            "judged": 1896,
+            "judged_of": 1960,
+            "passrate": 0.606,
+            "n": 3236,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 569,
+            "remain_seq": 160,
+            "prewarm": 256,
+            "prewarm_wait": 599.8
+          },
+          {
+            "t": 1789914480.334,
+            "step": 30,
+            "accept": 1968,
+            "target": 1568,
+            "judged": 1910,
+            "judged_of": 1968,
+            "passrate": 0.606,
+            "n": 3248,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 329,
+            "remain_partial": 568,
+            "remain_seq": 160,
+            "prewarm": 256,
+            "prewarm_wait": 601.1
+          },
+          {
+            "t": 1789914537.334,
+            "step": 30,
+            "accept": 1976,
+            "target": 1568,
+            "judged": 1921,
+            "judged_of": 1976,
+            "passrate": 0.606,
+            "n": 3260,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 574,
+            "remain_seq": 157,
+            "prewarm": 256,
+            "prewarm_wait": 601.7
+          },
+          {
+            "t": 1789914561.334,
+            "step": 30,
+            "accept": 1984,
+            "target": 1568,
+            "judged": 1926,
+            "judged_of": 1984,
+            "passrate": 0.607,
+            "n": 3271,
+            "pr0": 0.132,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 327,
+            "remain_partial": 570,
+            "remain_seq": 172,
+            "prewarm": 256,
+            "prewarm_wait": 602.0
+          },
+          {
+            "t": 1789914602.334,
+            "step": 30,
+            "accept": 1992,
+            "target": 1568,
+            "judged": 1933,
+            "judged_of": 1992,
+            "passrate": 0.606,
+            "n": 3289,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 326,
+            "remain_partial": 566,
+            "remain_seq": 172,
+            "prewarm": 256,
+            "prewarm_wait": 602.8
+          },
+          {
+            "t": 1789914623.334,
+            "step": 30,
+            "accept": 2000,
+            "target": 1568,
+            "judged": 1939,
+            "judged_of": 2000,
+            "passrate": 0.606,
+            "n": 3300,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 326,
+            "remain_partial": 560,
+            "remain_seq": 171,
+            "prewarm": 256,
+            "prewarm_wait": 603.7
+          },
+          {
+            "t": 1789914647.334,
+            "step": 30,
+            "accept": 2008,
+            "target": 1568,
+            "judged": 1945,
+            "judged_of": 2008,
+            "passrate": 0.606,
+            "n": 3312,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 327,
+            "remain_partial": 558,
+            "remain_seq": 182,
+            "prewarm": 256,
+            "prewarm_wait": 604.1
+          },
+          {
+            "t": 1789914683.334,
+            "step": 30,
+            "accept": 2016,
+            "target": 1568,
+            "judged": 1952,
+            "judged_of": 2016,
+            "passrate": 0.606,
+            "n": 3325,
+            "pr0": 0.131,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 331,
+            "remain_partial": 552,
+            "remain_seq": 192,
+            "prewarm": 256,
+            "prewarm_wait": 604.5
+          },
+          {
+            "t": 1789914713.334,
+            "step": 30,
+            "accept": 2024,
+            "target": 1568,
+            "judged": 1958,
+            "judged_of": 2024,
+            "passrate": 0.607,
+            "n": 3337,
+            "pr0": 0.131,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 335,
+            "remain_partial": 546,
+            "remain_seq": 176,
+            "prewarm": 256,
+            "prewarm_wait": 604.0
+          },
+          {
+            "t": 1789914766.334,
+            "step": 30,
+            "accept": 2032,
+            "target": 1568,
+            "judged": 1964,
+            "judged_of": 2032,
+            "passrate": 0.607,
+            "n": 3350,
+            "pr0": 0.131,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 342,
+            "remain_partial": 543,
+            "remain_seq": 205,
+            "prewarm": 256,
+            "prewarm_wait": 607.1
+          },
+          {
+            "t": 1789914793.334,
+            "step": 30,
+            "accept": 2040,
+            "target": 1568,
+            "judged": 1973,
+            "judged_of": 2040,
+            "passrate": 0.607,
+            "n": 3363,
+            "pr0": 0.132,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 343,
+            "remain_partial": 538,
+            "remain_seq": 182,
+            "prewarm": 256,
+            "prewarm_wait": 607.4
+          },
+          {
+            "t": 1789914841.334,
+            "step": 30,
+            "accept": 2048,
+            "target": 1568,
+            "judged": 1984,
+            "judged_of": 2048,
+            "passrate": 0.607,
+            "n": 3375,
+            "pr0": 0.132,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 341,
+            "remain_partial": 540,
+            "remain_seq": 154,
+            "prewarm": 256,
+            "prewarm_wait": 607.3
+          },
+          {
+            "t": 1789914873.334,
+            "step": 30,
+            "accept": 2056,
+            "target": 1568,
+            "judged": 1991,
+            "judged_of": 2056,
+            "passrate": 0.606,
+            "n": 3390,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 344,
+            "remain_partial": 531,
+            "remain_seq": 172,
+            "prewarm": 256,
+            "prewarm_wait": 607.8
+          },
+          {
+            "t": 1789914927.334,
+            "step": 30,
+            "accept": 2064,
+            "target": 1568,
+            "judged": 2006,
+            "judged_of": 2064,
+            "passrate": 0.606,
+            "n": 3407,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 334,
+            "remain_partial": 540,
+            "remain_seq": 160,
+            "prewarm": 256,
+            "prewarm_wait": 608.3
+          },
+          {
+            "t": 1789915017.334,
+            "step": 30,
+            "accept": 2080,
+            "target": 1568,
+            "judged": 2023,
+            "judged_of": 2080,
+            "passrate": 0.606,
+            "n": 3433,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 333,
+            "remain_partial": 543,
+            "remain_seq": 165,
+            "prewarm": 256,
+            "prewarm_wait": 610.5
+          },
+          {
+            "t": 1789915067.334,
+            "step": 30,
+            "accept": 2088,
+            "target": 1568,
+            "judged": 2032,
+            "judged_of": 2088,
+            "passrate": 0.606,
+            "n": 3447,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 337,
+            "remain_partial": 539,
+            "remain_seq": 149,
+            "prewarm": 256,
+            "prewarm_wait": 612.4
+          },
+          {
+            "t": 1789915102.334,
+            "step": 30,
+            "accept": 2096,
+            "target": 1568,
+            "judged": 2039,
+            "judged_of": 2096,
+            "passrate": 0.606,
+            "n": 3459,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 336,
+            "remain_partial": 537,
+            "remain_seq": 138,
+            "prewarm": 256,
+            "prewarm_wait": 613.0
+          },
+          {
+            "t": 1789915172.334,
+            "step": 30,
+            "accept": 2104,
+            "target": 1568,
+            "judged": 2055,
+            "judged_of": 2104,
+            "passrate": 0.605,
+            "n": 3476,
+            "pr0": 0.134,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 341,
+            "remain_partial": 534,
+            "remain_seq": 149,
+            "prewarm": 256,
+            "prewarm_wait": 614.3
+          },
+          {
+            "t": 1789915231.334,
+            "step": 30,
+            "accept": 2112,
+            "target": 1568,
+            "judged": 2063,
+            "judged_of": 2112,
+            "passrate": 0.605,
+            "n": 3489,
+            "pr0": 0.134,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 333,
+            "remain_partial": 546,
+            "remain_seq": 178,
+            "prewarm": 256,
+            "prewarm_wait": 614.9
+          },
+          {
+            "t": 1789915280.334,
+            "step": 30,
+            "accept": 2120,
+            "target": 1568,
+            "judged": 2071,
+            "judged_of": 2120,
+            "passrate": 0.605,
+            "n": 3502,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 333,
+            "remain_partial": 546,
+            "remain_seq": 178,
+            "prewarm": 256,
+            "prewarm_wait": 616.5
+          },
+          {
+            "t": 1789915329.334,
+            "step": 30,
+            "accept": 2128,
+            "target": 1568,
+            "judged": 2081,
+            "judged_of": 2128,
+            "passrate": 0.605,
+            "n": 3518,
+            "pr0": 0.133,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 338,
+            "remain_partial": 544,
+            "remain_seq": 207,
+            "prewarm": 256,
+            "prewarm_wait": 618.2
+          },
+          {
+            "t": 1789915361.334,
+            "step": 30,
+            "accept": 2136,
+            "target": 1568,
+            "judged": 2087,
+            "judged_of": 2136,
+            "passrate": 0.605,
+            "n": 3528,
+            "pr0": 0.133,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 333,
+            "remain_partial": 546,
+            "remain_seq": 186,
+            "prewarm": 256,
+            "prewarm_wait": 619.4
+          },
+          {
+            "t": 1789915386.334,
+            "step": 30,
+            "accept": 2144,
+            "target": 1568,
+            "judged": 2091,
+            "judged_of": 2144,
+            "passrate": 0.606,
+            "n": 3539,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 328,
+            "remain_partial": 547,
+            "remain_seq": 186,
+            "prewarm": 256,
+            "prewarm_wait": 619.7
+          },
+          {
+            "t": 1789915446.334,
+            "step": 30,
+            "accept": 2152,
+            "target": 1568,
+            "judged": 2100,
+            "judged_of": 2152,
+            "passrate": 0.605,
+            "n": 3556,
+            "pr0": 0.132,
+            "pr1": 0.263,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 324,
+            "remain_partial": 556,
+            "remain_seq": 186,
+            "prewarm": 256,
+            "prewarm_wait": 621.7
+          },
+          {
+            "t": 1789915479.334,
+            "step": 30,
+            "accept": 2160,
+            "target": 1568,
+            "judged": 2108,
+            "judged_of": 2160,
+            "passrate": 0.606,
+            "n": 3566,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 323,
+            "remain_partial": 555,
+            "remain_seq": 191,
+            "prewarm": 256,
+            "prewarm_wait": 622.7
+          },
+          {
+            "t": 1789915522.334,
+            "step": 30,
+            "accept": 2168,
+            "target": 1568,
+            "judged": 2118,
+            "judged_of": 2168,
+            "passrate": 0.606,
+            "n": 3578,
+            "pr0": 0.131,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 323,
+            "remain_partial": 555,
+            "remain_seq": 190,
+            "prewarm": 256,
+            "prewarm_wait": 623.5
+          },
+          {
+            "t": 1789915548.334,
+            "step": 30,
+            "accept": 2176,
+            "target": 1568,
+            "judged": 2126,
+            "judged_of": 2176,
+            "passrate": 0.606,
+            "n": 3589,
+            "pr0": 0.131,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 327,
+            "remain_partial": 547,
+            "remain_seq": 193,
+            "prewarm": 256,
+            "prewarm_wait": 623.5
+          },
+          {
+            "t": 1789915588.334,
+            "step": 30,
+            "accept": 2184,
+            "target": 1568,
+            "judged": 2132,
+            "judged_of": 2184,
+            "passrate": 0.606,
+            "n": 3604,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 326,
+            "remain_partial": 543,
+            "remain_seq": 185,
+            "prewarm": 256,
+            "prewarm_wait": 623.7
+          },
+          {
+            "t": 1789915639.334,
+            "step": 30,
+            "accept": 2192,
+            "target": 1568,
+            "judged": 2137,
+            "judged_of": 2192,
+            "passrate": 0.606,
+            "n": 3616,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 328,
+            "remain_partial": 542,
+            "remain_seq": 199,
+            "prewarm": 256,
+            "prewarm_wait": 625.1
+          },
+          {
+            "t": 1789915695.334,
+            "step": 30,
+            "accept": 2200,
+            "target": 1568,
+            "judged": 2147,
+            "judged_of": 2200,
+            "passrate": 0.606,
+            "n": 3632,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 331,
+            "remain_partial": 539,
+            "remain_seq": 212,
+            "prewarm": 256,
+            "prewarm_wait": 625.5
+          },
+          {
+            "t": 1789915724.334,
+            "step": 30,
+            "accept": 2208,
+            "target": 1568,
+            "judged": 2155,
+            "judged_of": 2208,
+            "passrate": 0.606,
+            "n": 3644,
+            "pr0": 0.132,
+            "pr1": 0.262,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 332,
+            "remain_partial": 537,
+            "remain_seq": 191,
+            "prewarm": 256,
+            "prewarm_wait": 626.0
+          },
+          {
+            "t": 1789926459.334,
+            "step": 31,
+            "accept": 650,
+            "target": 1568,
+            "judged": 647,
+            "judged_of": 650,
+            "passrate": 0.605,
+            "n": 3659,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 326,
+            "remain_partial": 529,
+            "remain_seq": 0,
+            "prewarm": 256,
+            "prewarm_wait": 10636.6
+          },
+          {
+            "t": 1789927050.334,
+            "step": 31,
+            "accept": 656,
+            "target": 1568,
+            "judged": 653,
+            "judged_of": 656,
+            "passrate": 0.606,
+            "n": 3668,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 322,
+            "remain_partial": 539,
+            "remain_seq": 36,
+            "prewarm": 256,
+            "prewarm_wait": 11041.2
+          },
+          {
+            "t": 1789927159.334,
+            "step": 31,
+            "accept": 664,
+            "target": 1568,
+            "judged": 658,
+            "judged_of": 664,
+            "passrate": 0.606,
+            "n": 3680,
+            "pr0": 0.133,
+            "pr1": 0.261,
+            "partial": [
+              0,
+              0,
+              0
+            ],
+            "working": 256,
+            "remain": 325,
+            "remain_partial": 542,
+            "remain_seq": 69,
+            "prewarm": 256,
+            "prewarm_wait": 11188.5
+          }
+        ]
       }
     },
     {
@@ -6258,1563 +7815,6 @@
             "remain_seq": 390,
             "prewarm": 297,
             "prewarm_wait": 5281.7
-          }
-        ]
-      }
-    },
-    {
-      "url": "https://mimo.xiaomi.com/rl/api/live?run=pro",
-      "data": {
-        "log_time": 1789927159.334,
-        "latest": {
-          "t": 1789927159.334,
-          "step": 31,
-          "accept": 664,
-          "target": 1568,
-          "judged": 658,
-          "judged_of": 664,
-          "ds": {
-            "code/dataset-bvg7": [
-              17,
-              52,
-              17,
-              45
-            ],
-            "code/dataset-v7yx": [
-              27,
-              52,
-              27,
-              31
-            ],
-            "code/dataset-dnpn": [
-              20,
-              63,
-              19,
-              20
-            ],
-            "code/dataset-ta4j": [
-              22,
-              63,
-              22,
-              67
-            ],
-            "code/dataset-sin0": [
-              79,
-              153,
-              78,
-              52
-            ],
-            "code/dataset-obg8": [
-              51,
-              153,
-              49,
-              199
-            ],
-            "code/dataset-zg6q": [
-              58,
-              153,
-              58,
-              57
-            ],
-            "code/dataset-yfch": [
-              1,
-              54,
-              null,
-              91
-            ],
-            "code/dataset-x7wh": [
-              51,
-              128,
-              49,
-              128
-            ],
-            "code/dataset-m1dt": [
-              90,
-              154,
-              null,
-              30
-            ],
-            "general/dataset-epqd": [
-              24,
-              64,
-              null,
-              19
-            ],
-            "general/dataset-trla": [
-              26,
-              64,
-              null,
-              13
-            ],
-            "general/dataset-1doa": [
-              8,
-              32,
-              null,
-              15
-            ],
-            "general/dataset-5610": [
-              13,
-              32,
-              null,
-              17
-            ],
-            "chat/dataset-lm3t": [
-              8,
-              17,
-              null,
-              0
-            ],
-            "chat/dataset-eup7": [
-              8,
-              15,
-              null,
-              0
-            ],
-            "chat/dataset-8kb6": [
-              8,
-              15,
-              null,
-              0
-            ],
-            "visual/dataset-gtav": [
-              31,
-              64,
-              null,
-              3
-            ],
-            "visual/dataset-jzd3": [
-              33,
-              64,
-              null,
-              0
-            ],
-            "visual/dataset-ol8x": [
-              25,
-              40,
-              null,
-              17
-            ],
-            "visual/dataset-053e": [
-              25,
-              40,
-              null,
-              15
-            ],
-            "visual/dataset-ve5o": [
-              7,
-              32,
-              null,
-              21
-            ],
-            "visual/dataset-pt5v": [
-              18,
-              32,
-              null,
-              23
-            ],
-            "code/dataset-4onq": [
-              14,
-              32,
-              null,
-              4
-            ]
-          },
-          "passrate": 0.606,
-          "n": 3680,
-          "pr0": 0.133,
-          "pr1": 0.261,
-          "partial": [
-            0,
-            0,
-            0
-          ],
-          "working": 256,
-          "remain": 325,
-          "remain_partial": 542,
-          "remain_seq": 69,
-          "prewarm": 256,
-          "prewarm_wait": 11188.5
-        },
-        "entries": [
-          {
-            "t": 1789913406.334,
-            "step": 30,
-            "accept": 1736,
-            "target": 1568,
-            "judged": 1678,
-            "judged_of": 1736,
-            "passrate": 0.6,
-            "n": 2891,
-            "pr0": 0.132,
-            "pr1": 0.267,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 580,
-            "remain_seq": 178,
-            "prewarm": 256,
-            "prewarm_wait": 591.7
-          },
-          {
-            "t": 1789913464.334,
-            "step": 30,
-            "accept": 1744,
-            "target": 1568,
-            "judged": 1691,
-            "judged_of": 1744,
-            "passrate": 0.601,
-            "n": 2902,
-            "pr0": 0.132,
-            "pr1": 0.267,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 587,
-            "remain_seq": 193,
-            "prewarm": 256,
-            "prewarm_wait": 592.3
-          },
-          {
-            "t": 1789913504.334,
-            "step": 30,
-            "accept": 1752,
-            "target": 1568,
-            "judged": 1699,
-            "judged_of": 1752,
-            "passrate": 0.601,
-            "n": 2914,
-            "pr0": 0.132,
-            "pr1": 0.267,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 326,
-            "remain_partial": 588,
-            "remain_seq": 200,
-            "prewarm": 256,
-            "prewarm_wait": 591.8
-          },
-          {
-            "t": 1789913541.334,
-            "step": 30,
-            "accept": 1760,
-            "target": 1568,
-            "judged": 1711,
-            "judged_of": 1760,
-            "passrate": 0.602,
-            "n": 2926,
-            "pr0": 0.132,
-            "pr1": 0.267,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 319,
-            "remain_partial": 596,
-            "remain_seq": 213,
-            "prewarm": 256,
-            "prewarm_wait": 593.1
-          },
-          {
-            "t": 1789913563.334,
-            "step": 30,
-            "accept": 1768,
-            "target": 1568,
-            "judged": 1717,
-            "judged_of": 1768,
-            "passrate": 0.603,
-            "n": 2934,
-            "pr0": 0.131,
-            "pr1": 0.266,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 322,
-            "remain_partial": 592,
-            "remain_seq": 209,
-            "prewarm": 256,
-            "prewarm_wait": 592.6
-          },
-          {
-            "t": 1789913615.334,
-            "step": 30,
-            "accept": 1776,
-            "target": 1568,
-            "judged": 1725,
-            "judged_of": 1776,
-            "passrate": 0.602,
-            "n": 2950,
-            "pr0": 0.132,
-            "pr1": 0.265,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 324,
-            "remain_partial": 590,
-            "remain_seq": 195,
-            "prewarm": 256,
-            "prewarm_wait": 592.0
-          },
-          {
-            "t": 1789913650.334,
-            "step": 30,
-            "accept": 1784,
-            "target": 1568,
-            "judged": 1732,
-            "judged_of": 1784,
-            "passrate": 0.603,
-            "n": 2959,
-            "pr0": 0.132,
-            "pr1": 0.265,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 329,
-            "remain_partial": 587,
-            "remain_seq": 215,
-            "prewarm": 256,
-            "prewarm_wait": 591.9
-          },
-          {
-            "t": 1789913682.334,
-            "step": 30,
-            "accept": 1792,
-            "target": 1568,
-            "judged": 1737,
-            "judged_of": 1792,
-            "passrate": 0.603,
-            "n": 2972,
-            "pr0": 0.132,
-            "pr1": 0.265,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 584,
-            "remain_seq": 228,
-            "prewarm": 256,
-            "prewarm_wait": 591.5
-          },
-          {
-            "t": 1789913717.334,
-            "step": 30,
-            "accept": 1800,
-            "target": 1568,
-            "judged": 1741,
-            "judged_of": 1800,
-            "passrate": 0.602,
-            "n": 2992,
-            "pr0": 0.132,
-            "pr1": 0.266,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 577,
-            "remain_seq": 210,
-            "prewarm": 256,
-            "prewarm_wait": 591.8
-          },
-          {
-            "t": 1789913741.334,
-            "step": 30,
-            "accept": 1808,
-            "target": 1568,
-            "judged": 1745,
-            "judged_of": 1808,
-            "passrate": 0.602,
-            "n": 3002,
-            "pr0": 0.133,
-            "pr1": 0.265,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 572,
-            "remain_seq": 190,
-            "prewarm": 256,
-            "prewarm_wait": 592.6
-          },
-          {
-            "t": 1789913796.334,
-            "step": 30,
-            "accept": 1816,
-            "target": 1568,
-            "judged": 1756,
-            "judged_of": 1816,
-            "passrate": 0.603,
-            "n": 3014,
-            "pr0": 0.133,
-            "pr1": 0.264,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 582,
-            "remain_seq": 204,
-            "prewarm": 256,
-            "prewarm_wait": 593.0
-          },
-          {
-            "t": 1789913822.334,
-            "step": 30,
-            "accept": 1824,
-            "target": 1568,
-            "judged": 1767,
-            "judged_of": 1824,
-            "passrate": 0.603,
-            "n": 3027,
-            "pr0": 0.133,
-            "pr1": 0.264,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 329,
-            "remain_partial": 574,
-            "remain_seq": 197,
-            "prewarm": 256,
-            "prewarm_wait": 593.8
-          },
-          {
-            "t": 1789913847.334,
-            "step": 30,
-            "accept": 1832,
-            "target": 1568,
-            "judged": 1776,
-            "judged_of": 1832,
-            "passrate": 0.603,
-            "n": 3039,
-            "pr0": 0.133,
-            "pr1": 0.264,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 328,
-            "remain_partial": 571,
-            "remain_seq": 178,
-            "prewarm": 256,
-            "prewarm_wait": 594.1
-          },
-          {
-            "t": 1789913883.334,
-            "step": 30,
-            "accept": 1840,
-            "target": 1568,
-            "judged": 1781,
-            "judged_of": 1840,
-            "passrate": 0.603,
-            "n": 3049,
-            "pr0": 0.133,
-            "pr1": 0.264,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 328,
-            "remain_partial": 574,
-            "remain_seq": 201,
-            "prewarm": 256,
-            "prewarm_wait": 593.7
-          },
-          {
-            "t": 1789913920.334,
-            "step": 30,
-            "accept": 1848,
-            "target": 1568,
-            "judged": 1789,
-            "judged_of": 1848,
-            "passrate": 0.603,
-            "n": 3065,
-            "pr0": 0.132,
-            "pr1": 0.265,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 328,
-            "remain_partial": 569,
-            "remain_seq": 178,
-            "prewarm": 256,
-            "prewarm_wait": 593.4
-          },
-          {
-            "t": 1789913972.334,
-            "step": 30,
-            "accept": 1856,
-            "target": 1568,
-            "judged": 1795,
-            "judged_of": 1856,
-            "passrate": 0.603,
-            "n": 3077,
-            "pr0": 0.132,
-            "pr1": 0.264,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 327,
-            "remain_partial": 578,
-            "remain_seq": 216,
-            "prewarm": 256,
-            "prewarm_wait": 594.6
-          },
-          {
-            "t": 1789914028.334,
-            "step": 30,
-            "accept": 1872,
-            "target": 1568,
-            "judged": 1808,
-            "judged_of": 1872,
-            "passrate": 0.604,
-            "n": 3099,
-            "pr0": 0.132,
-            "pr1": 0.263,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 572,
-            "remain_seq": 203,
-            "prewarm": 256,
-            "prewarm_wait": 595.9
-          },
-          {
-            "t": 1789914067.334,
-            "step": 30,
-            "accept": 1880,
-            "target": 1568,
-            "judged": 1820,
-            "judged_of": 1880,
-            "passrate": 0.605,
-            "n": 3109,
-            "pr0": 0.133,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 581,
-            "remain_seq": 204,
-            "prewarm": 256,
-            "prewarm_wait": 597.3
-          },
-          {
-            "t": 1789914107.334,
-            "step": 30,
-            "accept": 1888,
-            "target": 1568,
-            "judged": 1829,
-            "judged_of": 1888,
-            "passrate": 0.605,
-            "n": 3120,
-            "pr0": 0.133,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 331,
-            "remain_partial": 579,
-            "remain_seq": 246,
-            "prewarm": 256,
-            "prewarm_wait": 597.3
-          },
-          {
-            "t": 1789914127.334,
-            "step": 30,
-            "accept": 1896,
-            "target": 1568,
-            "judged": 1832,
-            "judged_of": 1896,
-            "passrate": 0.605,
-            "n": 3133,
-            "pr0": 0.133,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 330,
-            "remain_partial": 573,
-            "remain_seq": 212,
-            "prewarm": 256,
-            "prewarm_wait": 597.4
-          },
-          {
-            "t": 1789914161.334,
-            "step": 30,
-            "accept": 1904,
-            "target": 1568,
-            "judged": 1839,
-            "judged_of": 1904,
-            "passrate": 0.605,
-            "n": 3148,
-            "pr0": 0.133,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 567,
-            "remain_seq": 164,
-            "prewarm": 256,
-            "prewarm_wait": 596.7
-          },
-          {
-            "t": 1789914200.334,
-            "step": 30,
-            "accept": 1912,
-            "target": 1568,
-            "judged": 1846,
-            "judged_of": 1912,
-            "passrate": 0.605,
-            "n": 3161,
-            "pr0": 0.134,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 330,
-            "remain_partial": 565,
-            "remain_seq": 160,
-            "prewarm": 256,
-            "prewarm_wait": 597.9
-          },
-          {
-            "t": 1789914235.334,
-            "step": 30,
-            "accept": 1920,
-            "target": 1568,
-            "judged": 1858,
-            "judged_of": 1920,
-            "passrate": 0.605,
-            "n": 3176,
-            "pr0": 0.134,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 561,
-            "remain_seq": 157,
-            "prewarm": 256,
-            "prewarm_wait": 597.3
-          },
-          {
-            "t": 1789914256.334,
-            "step": 30,
-            "accept": 1928,
-            "target": 1568,
-            "judged": 1867,
-            "judged_of": 1928,
-            "passrate": 0.605,
-            "n": 3186,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 333,
-            "remain_partial": 557,
-            "remain_seq": 154,
-            "prewarm": 256,
-            "prewarm_wait": 597.3
-          },
-          {
-            "t": 1789914308.334,
-            "step": 30,
-            "accept": 1936,
-            "target": 1568,
-            "judged": 1876,
-            "judged_of": 1936,
-            "passrate": 0.605,
-            "n": 3200,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 331,
-            "remain_partial": 561,
-            "remain_seq": 148,
-            "prewarm": 256,
-            "prewarm_wait": 599.3
-          },
-          {
-            "t": 1789914359.334,
-            "step": 30,
-            "accept": 1944,
-            "target": 1568,
-            "judged": 1884,
-            "judged_of": 1944,
-            "passrate": 0.605,
-            "n": 3212,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 334,
-            "remain_partial": 563,
-            "remain_seq": 163,
-            "prewarm": 256,
-            "prewarm_wait": 598.2
-          },
-          {
-            "t": 1789914431.334,
-            "step": 30,
-            "accept": 1960,
-            "target": 1568,
-            "judged": 1896,
-            "judged_of": 1960,
-            "passrate": 0.606,
-            "n": 3236,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 569,
-            "remain_seq": 160,
-            "prewarm": 256,
-            "prewarm_wait": 599.8
-          },
-          {
-            "t": 1789914480.334,
-            "step": 30,
-            "accept": 1968,
-            "target": 1568,
-            "judged": 1910,
-            "judged_of": 1968,
-            "passrate": 0.606,
-            "n": 3248,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 329,
-            "remain_partial": 568,
-            "remain_seq": 160,
-            "prewarm": 256,
-            "prewarm_wait": 601.1
-          },
-          {
-            "t": 1789914537.334,
-            "step": 30,
-            "accept": 1976,
-            "target": 1568,
-            "judged": 1921,
-            "judged_of": 1976,
-            "passrate": 0.606,
-            "n": 3260,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 574,
-            "remain_seq": 157,
-            "prewarm": 256,
-            "prewarm_wait": 601.7
-          },
-          {
-            "t": 1789914561.334,
-            "step": 30,
-            "accept": 1984,
-            "target": 1568,
-            "judged": 1926,
-            "judged_of": 1984,
-            "passrate": 0.607,
-            "n": 3271,
-            "pr0": 0.132,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 327,
-            "remain_partial": 570,
-            "remain_seq": 172,
-            "prewarm": 256,
-            "prewarm_wait": 602.0
-          },
-          {
-            "t": 1789914602.334,
-            "step": 30,
-            "accept": 1992,
-            "target": 1568,
-            "judged": 1933,
-            "judged_of": 1992,
-            "passrate": 0.606,
-            "n": 3289,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 326,
-            "remain_partial": 566,
-            "remain_seq": 172,
-            "prewarm": 256,
-            "prewarm_wait": 602.8
-          },
-          {
-            "t": 1789914623.334,
-            "step": 30,
-            "accept": 2000,
-            "target": 1568,
-            "judged": 1939,
-            "judged_of": 2000,
-            "passrate": 0.606,
-            "n": 3300,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 326,
-            "remain_partial": 560,
-            "remain_seq": 171,
-            "prewarm": 256,
-            "prewarm_wait": 603.7
-          },
-          {
-            "t": 1789914647.334,
-            "step": 30,
-            "accept": 2008,
-            "target": 1568,
-            "judged": 1945,
-            "judged_of": 2008,
-            "passrate": 0.606,
-            "n": 3312,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 327,
-            "remain_partial": 558,
-            "remain_seq": 182,
-            "prewarm": 256,
-            "prewarm_wait": 604.1
-          },
-          {
-            "t": 1789914683.334,
-            "step": 30,
-            "accept": 2016,
-            "target": 1568,
-            "judged": 1952,
-            "judged_of": 2016,
-            "passrate": 0.606,
-            "n": 3325,
-            "pr0": 0.131,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 331,
-            "remain_partial": 552,
-            "remain_seq": 192,
-            "prewarm": 256,
-            "prewarm_wait": 604.5
-          },
-          {
-            "t": 1789914713.334,
-            "step": 30,
-            "accept": 2024,
-            "target": 1568,
-            "judged": 1958,
-            "judged_of": 2024,
-            "passrate": 0.607,
-            "n": 3337,
-            "pr0": 0.131,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 335,
-            "remain_partial": 546,
-            "remain_seq": 176,
-            "prewarm": 256,
-            "prewarm_wait": 604.0
-          },
-          {
-            "t": 1789914766.334,
-            "step": 30,
-            "accept": 2032,
-            "target": 1568,
-            "judged": 1964,
-            "judged_of": 2032,
-            "passrate": 0.607,
-            "n": 3350,
-            "pr0": 0.131,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 342,
-            "remain_partial": 543,
-            "remain_seq": 205,
-            "prewarm": 256,
-            "prewarm_wait": 607.1
-          },
-          {
-            "t": 1789914793.334,
-            "step": 30,
-            "accept": 2040,
-            "target": 1568,
-            "judged": 1973,
-            "judged_of": 2040,
-            "passrate": 0.607,
-            "n": 3363,
-            "pr0": 0.132,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 343,
-            "remain_partial": 538,
-            "remain_seq": 182,
-            "prewarm": 256,
-            "prewarm_wait": 607.4
-          },
-          {
-            "t": 1789914841.334,
-            "step": 30,
-            "accept": 2048,
-            "target": 1568,
-            "judged": 1984,
-            "judged_of": 2048,
-            "passrate": 0.607,
-            "n": 3375,
-            "pr0": 0.132,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 341,
-            "remain_partial": 540,
-            "remain_seq": 154,
-            "prewarm": 256,
-            "prewarm_wait": 607.3
-          },
-          {
-            "t": 1789914873.334,
-            "step": 30,
-            "accept": 2056,
-            "target": 1568,
-            "judged": 1991,
-            "judged_of": 2056,
-            "passrate": 0.606,
-            "n": 3390,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 344,
-            "remain_partial": 531,
-            "remain_seq": 172,
-            "prewarm": 256,
-            "prewarm_wait": 607.8
-          },
-          {
-            "t": 1789914927.334,
-            "step": 30,
-            "accept": 2064,
-            "target": 1568,
-            "judged": 2006,
-            "judged_of": 2064,
-            "passrate": 0.606,
-            "n": 3407,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 334,
-            "remain_partial": 540,
-            "remain_seq": 160,
-            "prewarm": 256,
-            "prewarm_wait": 608.3
-          },
-          {
-            "t": 1789915017.334,
-            "step": 30,
-            "accept": 2080,
-            "target": 1568,
-            "judged": 2023,
-            "judged_of": 2080,
-            "passrate": 0.606,
-            "n": 3433,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 333,
-            "remain_partial": 543,
-            "remain_seq": 165,
-            "prewarm": 256,
-            "prewarm_wait": 610.5
-          },
-          {
-            "t": 1789915067.334,
-            "step": 30,
-            "accept": 2088,
-            "target": 1568,
-            "judged": 2032,
-            "judged_of": 2088,
-            "passrate": 0.606,
-            "n": 3447,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 337,
-            "remain_partial": 539,
-            "remain_seq": 149,
-            "prewarm": 256,
-            "prewarm_wait": 612.4
-          },
-          {
-            "t": 1789915102.334,
-            "step": 30,
-            "accept": 2096,
-            "target": 1568,
-            "judged": 2039,
-            "judged_of": 2096,
-            "passrate": 0.606,
-            "n": 3459,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 336,
-            "remain_partial": 537,
-            "remain_seq": 138,
-            "prewarm": 256,
-            "prewarm_wait": 613.0
-          },
-          {
-            "t": 1789915172.334,
-            "step": 30,
-            "accept": 2104,
-            "target": 1568,
-            "judged": 2055,
-            "judged_of": 2104,
-            "passrate": 0.605,
-            "n": 3476,
-            "pr0": 0.134,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 341,
-            "remain_partial": 534,
-            "remain_seq": 149,
-            "prewarm": 256,
-            "prewarm_wait": 614.3
-          },
-          {
-            "t": 1789915231.334,
-            "step": 30,
-            "accept": 2112,
-            "target": 1568,
-            "judged": 2063,
-            "judged_of": 2112,
-            "passrate": 0.605,
-            "n": 3489,
-            "pr0": 0.134,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 333,
-            "remain_partial": 546,
-            "remain_seq": 178,
-            "prewarm": 256,
-            "prewarm_wait": 614.9
-          },
-          {
-            "t": 1789915280.334,
-            "step": 30,
-            "accept": 2120,
-            "target": 1568,
-            "judged": 2071,
-            "judged_of": 2120,
-            "passrate": 0.605,
-            "n": 3502,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 333,
-            "remain_partial": 546,
-            "remain_seq": 178,
-            "prewarm": 256,
-            "prewarm_wait": 616.5
-          },
-          {
-            "t": 1789915329.334,
-            "step": 30,
-            "accept": 2128,
-            "target": 1568,
-            "judged": 2081,
-            "judged_of": 2128,
-            "passrate": 0.605,
-            "n": 3518,
-            "pr0": 0.133,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 338,
-            "remain_partial": 544,
-            "remain_seq": 207,
-            "prewarm": 256,
-            "prewarm_wait": 618.2
-          },
-          {
-            "t": 1789915361.334,
-            "step": 30,
-            "accept": 2136,
-            "target": 1568,
-            "judged": 2087,
-            "judged_of": 2136,
-            "passrate": 0.605,
-            "n": 3528,
-            "pr0": 0.133,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 333,
-            "remain_partial": 546,
-            "remain_seq": 186,
-            "prewarm": 256,
-            "prewarm_wait": 619.4
-          },
-          {
-            "t": 1789915386.334,
-            "step": 30,
-            "accept": 2144,
-            "target": 1568,
-            "judged": 2091,
-            "judged_of": 2144,
-            "passrate": 0.606,
-            "n": 3539,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 328,
-            "remain_partial": 547,
-            "remain_seq": 186,
-            "prewarm": 256,
-            "prewarm_wait": 619.7
-          },
-          {
-            "t": 1789915446.334,
-            "step": 30,
-            "accept": 2152,
-            "target": 1568,
-            "judged": 2100,
-            "judged_of": 2152,
-            "passrate": 0.605,
-            "n": 3556,
-            "pr0": 0.132,
-            "pr1": 0.263,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 324,
-            "remain_partial": 556,
-            "remain_seq": 186,
-            "prewarm": 256,
-            "prewarm_wait": 621.7
-          },
-          {
-            "t": 1789915479.334,
-            "step": 30,
-            "accept": 2160,
-            "target": 1568,
-            "judged": 2108,
-            "judged_of": 2160,
-            "passrate": 0.606,
-            "n": 3566,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 323,
-            "remain_partial": 555,
-            "remain_seq": 191,
-            "prewarm": 256,
-            "prewarm_wait": 622.7
-          },
-          {
-            "t": 1789915522.334,
-            "step": 30,
-            "accept": 2168,
-            "target": 1568,
-            "judged": 2118,
-            "judged_of": 2168,
-            "passrate": 0.606,
-            "n": 3578,
-            "pr0": 0.131,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 323,
-            "remain_partial": 555,
-            "remain_seq": 190,
-            "prewarm": 256,
-            "prewarm_wait": 623.5
-          },
-          {
-            "t": 1789915548.334,
-            "step": 30,
-            "accept": 2176,
-            "target": 1568,
-            "judged": 2126,
-            "judged_of": 2176,
-            "passrate": 0.606,
-            "n": 3589,
-            "pr0": 0.131,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 327,
-            "remain_partial": 547,
-            "remain_seq": 193,
-            "prewarm": 256,
-            "prewarm_wait": 623.5
-          },
-          {
-            "t": 1789915588.334,
-            "step": 30,
-            "accept": 2184,
-            "target": 1568,
-            "judged": 2132,
-            "judged_of": 2184,
-            "passrate": 0.606,
-            "n": 3604,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 326,
-            "remain_partial": 543,
-            "remain_seq": 185,
-            "prewarm": 256,
-            "prewarm_wait": 623.7
-          },
-          {
-            "t": 1789915639.334,
-            "step": 30,
-            "accept": 2192,
-            "target": 1568,
-            "judged": 2137,
-            "judged_of": 2192,
-            "passrate": 0.606,
-            "n": 3616,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 328,
-            "remain_partial": 542,
-            "remain_seq": 199,
-            "prewarm": 256,
-            "prewarm_wait": 625.1
-          },
-          {
-            "t": 1789915695.334,
-            "step": 30,
-            "accept": 2200,
-            "target": 1568,
-            "judged": 2147,
-            "judged_of": 2200,
-            "passrate": 0.606,
-            "n": 3632,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 331,
-            "remain_partial": 539,
-            "remain_seq": 212,
-            "prewarm": 256,
-            "prewarm_wait": 625.5
-          },
-          {
-            "t": 1789915724.334,
-            "step": 30,
-            "accept": 2208,
-            "target": 1568,
-            "judged": 2155,
-            "judged_of": 2208,
-            "passrate": 0.606,
-            "n": 3644,
-            "pr0": 0.132,
-            "pr1": 0.262,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 332,
-            "remain_partial": 537,
-            "remain_seq": 191,
-            "prewarm": 256,
-            "prewarm_wait": 626.0
-          },
-          {
-            "t": 1789926459.334,
-            "step": 31,
-            "accept": 650,
-            "target": 1568,
-            "judged": 647,
-            "judged_of": 650,
-            "passrate": 0.605,
-            "n": 3659,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 326,
-            "remain_partial": 529,
-            "remain_seq": 0,
-            "prewarm": 256,
-            "prewarm_wait": 10636.6
-          },
-          {
-            "t": 1789927050.334,
-            "step": 31,
-            "accept": 656,
-            "target": 1568,
-            "judged": 653,
-            "judged_of": 656,
-            "passrate": 0.606,
-            "n": 3668,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 322,
-            "remain_partial": 539,
-            "remain_seq": 36,
-            "prewarm": 256,
-            "prewarm_wait": 11041.2
-          },
-          {
-            "t": 1789927159.334,
-            "step": 31,
-            "accept": 664,
-            "target": 1568,
-            "judged": 658,
-            "judged_of": 664,
-            "passrate": 0.606,
-            "n": 3680,
-            "pr0": 0.133,
-            "pr1": 0.261,
-            "partial": [
-              0,
-              0,
-              0
-            ],
-            "working": 256,
-            "remain": 325,
-            "remain_partial": 542,
-            "remain_seq": 69,
-            "prewarm": 256,
-            "prewarm_wait": 11188.5
           }
         ]
       }
@@ -17854,5 +17854,5 @@
     "headline": "",
     "status": ""
   },
-  "finished_at": "2026-09-21T09:03:52+00:00"
+  "finished_at": "2026-09-21T12:33:56+00:00"
 }
